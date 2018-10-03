@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
 		916E36412163209200602088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E36402163209200602088 /* AppDelegate.m */; };
 		916E36442163209200602088 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E36432163209200602088 /* ViewController.m */; };
 		916E36472163209200602088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E36452163209200602088 /* Main.storyboard */; };
 		916E36492163209400602088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916E36482163209400602088 /* Assets.xcassets */; };
 		916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E364A2163209400602088 /* LaunchScreen.storyboard */; };
 		916E364F2163209400602088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E364E2163209400602088 /* main.m */; };
+		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
+		9174038B2163300500EEC228 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038A2163300500EEC228 /* PaletteViewController.m */; };
+		9174038E2163304400EEC228 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038D2163304400EEC228 /* ThumbnailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		915075C02163467A0049B5CA /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
+		915075C12163467A0049B5CA /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
 		916E363C2163209200602088 /* Objective-C_Design_Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C_Design_Patterns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		916E363F2163209200602088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		916E36402163209200602088 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,12 @@
 		916E364B2163209400602088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		916E364D2163209400602088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916E364E2163209400602088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		917403892163300500EEC228 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		9174038A2163300500EEC228 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
+		9174038C2163304400EEC228 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
+		9174038D2163304400EEC228 /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		915075BF216346580049B5CA /* Coordinate */ = {
+			isa = PBXGroup;
+			children = (
+				915075C02163467A0049B5CA /* CoordinatingController.h */,
+				915075C12163467A0049B5CA /* CoordinatingController.m */,
+			);
+			path = Coordinate;
+			sourceTree = "<group>";
+		};
 		916E36332163209200602088 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +79,10 @@
 		916E363E2163209200602088 /* Objective-C_Design_Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				915075BF216346580049B5CA /* Coordinate */,
+				9174038521632F9400EEC228 /* Controller */,
+				9174038321632F9400EEC228 /* Model */,
+				9174038421632F9400EEC228 /* View */,
 				916E363F2163209200602088 /* AppDelegate.h */,
 				916E36402163209200602088 /* AppDelegate.m */,
 				916E36422163209200602088 /* ViewController.h */,
@@ -69,6 +94,33 @@
 				916E364E2163209400602088 /* main.m */,
 			);
 			path = "Objective-C_Design_Patterns";
+			sourceTree = "<group>";
+		};
+		9174038321632F9400EEC228 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9174038421632F9400EEC228 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9174038521632F9400EEC228 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9174038621632FC500EEC228 /* CanvasViewController.h */,
+				9174038721632FC500EEC228 /* CanvasViewController.m */,
+				917403892163300500EEC228 /* PaletteViewController.h */,
+				9174038A2163300500EEC228 /* PaletteViewController.m */,
+				9174038C2163304400EEC228 /* ThumbnailViewController.h */,
+				9174038D2163304400EEC228 /* ThumbnailViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
+				9174038E2163304400EEC228 /* ThumbnailViewController.m in Sources */,
+				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
+				9174038B2163300500EEC228 /* PaletteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
