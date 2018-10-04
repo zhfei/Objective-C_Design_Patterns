@@ -19,9 +19,49 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)segmentAction:(UISegmentedControl *)sender {
+    UIViewController *objVC;
+    switch (sender.selectedSegmentIndex) {
+        case 0:
+            //删除
+
+            break;
+        case 1:
+            //保存
+            
+            break;
+        case 2:
+            //打开
+            objVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ThumbnailViewControllerNav"];
+            break;
+        case 3:
+            //设置
+            objVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PaletteViewControllerNav"];
+            break;
+        case 4:
+            //撤销
+            
+            break;
+        case 5:
+            //恢复
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    objVC?[self presentViewController:objVC animated:YES completion:nil]:nil;
+}
+
+
+//其他界面返回到此界面调用的方法
+- (IBAction)ViewController1UnwindSegue:(UIStoryboardSegue *)unwindSegue {
+    if ([@"fromPalette" isEqualToString:unwindSegue.identifier]) {
+        NSLog(@"fromPalette.....");
+    } else if ([@"fromThumbnail" isEqualToString:unwindSegue.identifier]) {
+        NSLog(@"fromThumbnail.....");
+    }
 }
 
 /*
