@@ -19,4 +19,7 @@
 - (id<Mark>)lastChild;
 - (NSUInteger)count;
 
+#pragma mark - 绘图
+- (void)drawWithContext:(CGContextRef)context;
+
 @end

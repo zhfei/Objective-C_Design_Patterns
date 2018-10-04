@@ -20,6 +20,7 @@
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
+		91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79A2166680C0070DB88 /* CanvasView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		91C1B79421665E2D0070DB88 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		91C1B79621665EC70070DB88 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		91C1B79721665EC70070DB88 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		91C1B7992166680C0070DB88 /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		91C1B79A2166680C0070DB88 /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 		9174038421632F9400EEC228 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				91C1B7992166680C0070DB88 /* CanvasView.h */,
+				91C1B79A2166680C0070DB88 /* CanvasView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
+				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,

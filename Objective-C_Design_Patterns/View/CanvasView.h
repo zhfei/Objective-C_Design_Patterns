@@ -1,14 +1,14 @@
 //
-//  Vertex.h
+//  CanvasView.h
 //  Objective-C_Design_Patterns
 //
 //  Created by zhoufei on 2018/10/4.
 //  Copyright © 2018年 周飞. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "Mark.h"
 
-@interface Vertex : NSObject<Mark>
-@property (nonatomic, assign) CGPoint location;
+@interface CanvasView : UIView
+- (void)configMark:(id<Mark>)mark;
 @end

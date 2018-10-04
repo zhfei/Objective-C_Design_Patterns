@@ -9,11 +9,12 @@
 #import "Dot.h"
 
 @implementation Dot
-- (UIColor *)color {
-    return self.color;
-}
-
-- (CGSize *)size {
-    return self.size;
+- (void)drawWithContext:(CGContextRef)context {
+    CGFloat x = self.location.x - self.size.width*0.5;
+    CGFloat y = self.location.y - self.size.height*0.5;
+    CGRect rect = CGRectMake(x, y, self.size.width, self.size.height);
+    
+    CGContextSetFillColorWithColor(context, [self.color CGColor]);
+    CGContextFillRect(context, rect);
 }
 @end

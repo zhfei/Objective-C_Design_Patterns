@@ -9,6 +9,6 @@
 #import "Vertex.h"
 
 @interface Dot : Vertex
-@property (nonatomic, strong)UIColor *color;
-@property (nonatomic, assign)CGSize  *size;
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, assign) CGSize size;
 @end

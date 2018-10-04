@@ -10,5 +10,8 @@
 #import "Mark.h"
 
 @interface Stroke : NSObject<Mark>
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGPoint location;
 
 @end

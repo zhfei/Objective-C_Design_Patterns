@@ -40,4 +40,15 @@
 - (NSUInteger)count {
     return self.markArray.count;
 }
+
+- (void)drawWithContext:(CGContextRef)context {
+    CGContextMoveToPoint(context, self.location.x, self.location.y);
+    for (id<Mark> mark in self.markArray) {
+        [mark drawWithContext:context];
+    }
+    CGContextSetLineWidth(context, self.size.width);
+    CGContextSetLineCap(context, kCGLineCapRound);
+    CGContextSetStrokeColorWithColor(context, [self.color CGColor]);
+    CGContextStrokePath(context);
+}
 @end
