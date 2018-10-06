@@ -7,24 +7,46 @@
 //
 
 #import "CanvasViewController.h"
+#import "CanvasView.h"
 
 @interface CanvasViewController ()
 
+@property (weak, nonatomic) IBOutlet CanvasView *canvasView;
 @end
 
 @implementation CanvasViewController
-
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 }
 
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touchesBegan---------:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+    
+    
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touchesMoved:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touchesEnded********:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+}
+
+#pragma mark - Getter, Setter
+
+#pragma mark - Event
 - (IBAction)segmentAction:(UISegmentedControl *)sender {
     UIViewController *objVC;
     switch (sender.selectedSegmentIndex) {
         case 0:
             //删除
-
+            
             break;
         case 1:
             //保存
@@ -63,17 +85,15 @@
         NSLog(@"fromThumbnail.....");
     }
 }
+#pragma mark - Public Method
 
+#pragma mark - Private Method
 
+#pragma mark - Delegate
 
-/*
-#pragma mark - Navigation
+#pragma mark - NSCopying
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#pragma mark - NSObject
+
 
 @end

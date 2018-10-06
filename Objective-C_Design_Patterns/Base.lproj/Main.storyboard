@@ -36,19 +36,30 @@
                                     <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="5W5-fB-Gw6"/>
                                 </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhh-Dq-Wal" customClass="CanvasView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fhh-Dq-Wal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1MV-n4-ejj"/>
                             <constraint firstItem="8ax-J1-Myd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3pn-Bw-VC3"/>
                             <constraint firstAttribute="bottom" secondItem="8ax-J1-Myd" secondAttribute="bottom" id="4H2-n6-49x"/>
                             <constraint firstItem="8ax-J1-Myd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cho-2y-gvr"/>
+                            <constraint firstItem="8ax-J1-Myd" firstAttribute="top" secondItem="fhh-Dq-Wal" secondAttribute="bottom" id="OHE-7N-wkb"/>
+                            <constraint firstItem="fhh-Dq-Wal" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zf2-V1-Jfm"/>
+                            <constraint firstItem="fhh-Dq-Wal" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fUG-a0-7Po"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="canvasView" destination="fhh-Dq-Wal" id="98Q-pd-KIf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.75" y="129.92957746478874"/>
+            <point key="canvasLocation" x="138.75" y="128.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Wv-tk-hS3">

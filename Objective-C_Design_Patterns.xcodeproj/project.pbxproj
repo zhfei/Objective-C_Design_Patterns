@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5F9106E46290962FF8406B /* libPods-Objective-C_Design_Patterns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */; };
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
@@ -17,7 +18,10 @@
 		916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E364A2163209400602088 /* LaunchScreen.storyboard */; };
 		916E364F2163209400602088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E364E2163209400602088 /* main.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
+		919C64B121690B5300AADE1B /* GlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C64B021690B5300AADE1B /* GlobalConfig.m */; };
+		919C64B521690E7A00AADE1B /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C64B421690E7A00AADE1B /* FileManager.m */; };
 		91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */; };
+		91A6EC2F2168FF87002CC2B7 /* UIImage+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
@@ -25,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032EA1AC0C304488AEA2B113 /* Pods-Objective-C_Design_Patterns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-C_Design_Patterns.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns.debug.xcconfig"; sourceTree = "<group>"; };
+		7AF48F83BE7FACAC0BCF4001 /* Pods-Objective-C_Design_Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-C_Design_Patterns.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns.release.xcconfig"; sourceTree = "<group>"; };
 		914E5E28216648120089C1C7 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
 		914E5E29216648120089C1C7 /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 		914E5E2B21664DF00089C1C7 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
@@ -44,9 +50,16 @@
 		916E364E2163209400602088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		919C64AF21690B5300AADE1B /* GlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
+		919C64B021690B5300AADE1B /* GlobalConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConfig.m; sourceTree = "<group>"; };
+		919C64B321690E7A00AADE1B /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		919C64B421690E7A00AADE1B /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		91A6EC292168C54D002CC2B7 /* UIView+Draw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Draw.h"; sourceTree = "<group>"; };
 		91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draw.m"; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		91A6EC2D2168FF87002CC2B7 /* UIImage+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Custom.h"; sourceTree = "<group>"; };
+		91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Custom.m"; sourceTree = "<group>"; };
+		91A6EC30216906A9002CC2B7 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		91C1B79321665E2D0070DB88 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -55,6 +68,7 @@
 		91C1B79721665EC70070DB88 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		91C1B7992166680C0070DB88 /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		91C1B79A2166680C0070DB88 /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Objective-C_Design_Patterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +76,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5F9106E46290962FF8406B /* libPods-Objective-C_Design_Patterns.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073466E8EF1A59361E1C76BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				032EA1AC0C304488AEA2B113 /* Pods-Objective-C_Design_Patterns.debug.xcconfig */,
+				7AF48F83BE7FACAC0BCF4001 /* Pods-Objective-C_Design_Patterns.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		652EC8C14DD24A6F7E6BBE78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		914E5E2E216659650089C1C7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +122,8 @@
 			children = (
 				916E363E2163209200602088 /* Objective-C_Design_Patterns */,
 				916E363D2163209200602088 /* Products */,
+				073466E8EF1A59361E1C76BD /* Pods */,
+				652EC8C14DD24A6F7E6BBE78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,11 +193,32 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		919C64AE21690B0700AADE1B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				919C64AF21690B5300AADE1B /* GlobalConfig.h */,
+				919C64B021690B5300AADE1B /* GlobalConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		919C64B221690E6700AADE1B /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				919C64B321690E7A00AADE1B /* FileManager.h */,
+				919C64B421690E7A00AADE1B /* FileManager.m */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
 		91A6EC262168C507002CC2B7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				919C64B221690E6700AADE1B /* FileManager */,
+				919C64AE21690B0700AADE1B /* Config */,
 				91A6EC272168C507002CC2B7 /* Category */,
 				91A6EC282168C507002CC2B7 /* Helper */,
+				91A6EC30216906A9002CC2B7 /* Macro.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -173,6 +228,8 @@
 			children = (
 				91A6EC292168C54D002CC2B7 /* UIView+Draw.h */,
 				91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */,
+				91A6EC2D2168FF87002CC2B7 /* UIImage+Custom.h */,
+				91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -191,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 916E36522163209400602088 /* Build configuration list for PBXNativeTarget "Objective-C_Design_Patterns" */;
 			buildPhases = (
+				48A0ED1D54E68162ADD70103 /* [CP] Check Pods Manifest.lock */,
 				916E36382163209200602088 /* Sources */,
 				916E36392163209200602088 /* Frameworks */,
 				916E363A2163209200602088 /* Resources */,
@@ -249,6 +307,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48A0ED1D54E68162ADD70103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Objective-C_Design_Patterns-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		916E36382163209200602088 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +339,10 @@
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
+				919C64B121690B5300AADE1B /* GlobalConfig.m in Sources */,
 				91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */,
+				919C64B521690E7A00AADE1B /* FileManager.m in Sources */,
+				91A6EC2F2168FF87002CC2B7 /* UIImage+Custom.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
@@ -403,6 +485,7 @@
 		};
 		916E36532163209400602088 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032EA1AC0C304488AEA2B113 /* Pods-Objective-C_Design_Patterns.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,6 +504,7 @@
 		};
 		916E36542163209400602088 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF48F83BE7FACAC0BCF4001 /* Pods-Objective-C_Design_Patterns.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
