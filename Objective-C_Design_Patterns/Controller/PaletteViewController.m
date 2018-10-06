@@ -10,7 +10,15 @@
 #import "PaletteViewController.h"
 
 @interface PaletteViewController ()
+@property (weak, nonatomic) IBOutlet UIView *tempColor;
+@property (weak, nonatomic) IBOutlet UISlider *sliderR;
+@property (weak, nonatomic) IBOutlet UISlider *sliderG;
+@property (weak, nonatomic) IBOutlet UISlider *sliderB;
 
+@property (weak, nonatomic) IBOutlet UIView *smallCircle;
+@property (weak, nonatomic) IBOutlet UIView *bigCircle;
+
+@property (strong, nonatomic) UIView *lazyFalg;
 @end
 
 @implementation PaletteViewController
@@ -18,19 +26,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self setupTempColor];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+- (void)viewDidLayoutSubviews {
+    self.lazyFalg;
+}
+
+- (UIView *)lazyFalg {
+    if (!_lazyFalg) {
+        _lazyFalg = [UIView new];
+        [self.smallCircle drawCenterCircle:5 color:self.tempColor.backgroundColor];
+        [self.bigCircle drawCenterCircle:8 color:self.tempColor.backgroundColor];
+    }
+    return _lazyFalg;
+}
+
 - (IBAction)back:(UIBarButtonItem *)sender {
     [self performSegueWithIdentifier:@"fromPalette" sender:nil];
 }
+- (IBAction)sliderChangedAction:(UISlider *)sender {
+    switch (sender.tag) {
+        case 1:
+        case 2:
+        case 3:
+        {
+            [self setupTempColor];
+        }
+            break;
+        case 4:
+            
+            break;
+            
+        default:
+            break;
+    }
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)setupTempColor {
+    UIColor *temp = [UIColor colorWithRed:_sliderR.value/255.0 green:_sliderG.value/255.0 blue:_sliderB.value/255.0 alpha:1];
+    self.tempColor.backgroundColor = temp;
+    
+    [(CAShapeLayer *)self.smallCircle.layer.sublayers[0] setFillColor:temp.CGColor];
+    [(CAShapeLayer *)self.bigCircle.layer.sublayers[0] setFillColor:temp.CGColor];
 }
 
 #pragma mark - Table view data source

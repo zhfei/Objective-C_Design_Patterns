@@ -17,6 +17,7 @@
 		916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E364A2163209400602088 /* LaunchScreen.storyboard */; };
 		916E364F2163209400602088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E364E2163209400602088 /* main.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
+		91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
@@ -43,6 +44,9 @@
 		916E364E2163209400602088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		91A6EC292168C54D002CC2B7 /* UIView+Draw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Draw.h"; sourceTree = "<group>"; };
+		91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draw.m"; sourceTree = "<group>"; };
+		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		91C1B79321665E2D0070DB88 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 		916E363E2163209200602088 /* Objective-C_Design_Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				91A6EC262168C507002CC2B7 /* Common */,
 				914E5E2E216659650089C1C7 /* Protocols */,
 				915075BF216346580049B5CA /* Coordinate */,
 				9174038521632F9400EEC228 /* Controller */,
@@ -114,6 +119,7 @@
 				916E364A2163209400602088 /* LaunchScreen.storyboard */,
 				916E364D2163209400602088 /* Info.plist */,
 				916E364E2163209400602088 /* main.m */,
+				91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */,
 			);
 			path = "Objective-C_Design_Patterns";
 			sourceTree = "<group>";
@@ -151,6 +157,31 @@
 				914E5E29216648120089C1C7 /* ThumbnailViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		91A6EC262168C507002CC2B7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				91A6EC272168C507002CC2B7 /* Category */,
+				91A6EC282168C507002CC2B7 /* Helper */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		91A6EC272168C507002CC2B7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				91A6EC292168C54D002CC2B7 /* UIView+Draw.h */,
+				91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		91A6EC282168C507002CC2B7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +260,7 @@
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
+				91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
@@ -375,6 +407,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Objective-C_Design_Patterns/PrefixHeader.pch";
 				INFOPLIST_FILE = "Objective-C_Design_Patterns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Objective-C_Design_Patterns/PrefixHeader.pch";
 				INFOPLIST_FILE = "Objective-C_Design_Patterns/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
