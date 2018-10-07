@@ -15,7 +15,6 @@
 @implementation CanvasView
 - (void)configMark:(id<Mark>)mark {
     _mark = mark;
-    [self setNeedsDisplay];
 }
 
 
@@ -24,6 +23,10 @@
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
     [_mark drawWithContext:context];
+    
+//    CGContextSetLineWidth(context, [GlobalConfig sharedGlobalConfig].lineWidth);
+//    CGContextSetStrokeColorWithColor(context, [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1].CGColor);
+//    CGContextStrokePath(context)
 }
 
 

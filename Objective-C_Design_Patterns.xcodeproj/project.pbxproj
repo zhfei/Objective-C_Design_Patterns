@@ -22,6 +22,7 @@
 		919C64B521690E7A00AADE1B /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C64B421690E7A00AADE1B /* FileManager.m */; };
 		91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */; };
 		91A6EC2F2168FF87002CC2B7 /* UIImage+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */; };
+		91B45D512169B47D00F45A8C /* UIColor+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B45D502169B47D00F45A8C /* UIColor+Transform.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
@@ -60,6 +61,8 @@
 		91A6EC2D2168FF87002CC2B7 /* UIImage+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Custom.h"; sourceTree = "<group>"; };
 		91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Custom.m"; sourceTree = "<group>"; };
 		91A6EC30216906A9002CC2B7 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		91B45D4F2169B47D00F45A8C /* UIColor+Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Transform.h"; sourceTree = "<group>"; };
+		91B45D502169B47D00F45A8C /* UIColor+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Transform.m"; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		91C1B79321665E2D0070DB88 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 				91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */,
 				91A6EC2D2168FF87002CC2B7 /* UIImage+Custom.h */,
 				91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */,
+				91B45D4F2169B47D00F45A8C /* UIColor+Transform.h */,
+				91B45D502169B47D00F45A8C /* UIColor+Transform.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 			files = (
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
+				91B45D512169B47D00F45A8C /* UIColor+Transform.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,

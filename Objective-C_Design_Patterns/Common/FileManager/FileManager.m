@@ -10,9 +10,7 @@
 
 @implementation FileManager
 + (void)saveObjet:(NSDictionary *)dict toPath:(NSString *)path {
-    if ([self createDir:path]) {
-        [dict writeToFile:path atomically:NO];
-    }
+    [dict writeToFile:path atomically:YES];
 }
 + (id)readObjetFromPath:(NSString *)path {
     if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {

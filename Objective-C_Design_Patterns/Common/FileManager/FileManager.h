@@ -11,4 +11,5 @@
 @interface FileManager : NSObject
 + (void)saveObjet:(NSDictionary *)dict toPath:(NSString *)path;
 + (id)readObjetFromPath:(NSString *)path;
++ (BOOL)createDir:(NSString *)dirPath;
 @end

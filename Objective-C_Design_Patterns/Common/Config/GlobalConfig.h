@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface GlobalConfig : NSObject
-@property (nonatomic, strong) UIColor *lineColor;
+SingletonH(GlobalConfig)
+@property (nonatomic, strong) NSString *lineColorHex;
 @property (nonatomic, assign) CGFloat lineWidth;
 
 - (void)saveConfig;
-- (void)readConfig;
+- (NSDictionary *)readConfig;
 @end

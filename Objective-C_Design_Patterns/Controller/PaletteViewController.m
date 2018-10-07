@@ -71,6 +71,8 @@
     
     [(CAShapeLayer *)self.smallCircle.layer.sublayers[0] setFillColor:temp.CGColor];
     [(CAShapeLayer *)self.bigCircle.layer.sublayers[0] setFillColor:temp.CGColor];
+    
+    [GlobalConfig sharedGlobalConfig].lineColorHex = [UIColor hexStringFromColor:temp];
 }
 
 #pragma mark - Table view data source

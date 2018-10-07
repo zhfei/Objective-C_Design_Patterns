@@ -11,21 +11,35 @@
 #import "FileManager.h"
 
 @implementation GlobalConfig
+SingletonM(GlobalConfig)
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        
+        [FileManager createDir:kConfigPath];
+        NSDictionary *dict = [self readConfig];
+        if (!dict) {
+            self.lineWidth = 2;
+            self.lineColorHex = @"#000000";
+            [self saveConfig];
+        } else {
+            [self setup:dict];
+        }
     }
     return self;
 }
+
+- (void)setup:(NSDictionary *)dict {
+    self.lineColorHex = dict[@"lineColorHex"];
+    self.lineWidth = [dict[@"lineWidth"] floatValue];
+}
+
 - (void)saveConfig {
     id dict = [self yy_modelToJSONObject];
-    [FileManager saveObjet:dict toPath:kConfigPath];
+    [FileManager saveObjet:dict toPath:[kConfigPath stringByAppendingPathComponent:@"config.plist"]];
 }
-- (void)readConfig {
-    NSDictionary *dict = [FileManager readObjetFromPath:kConfigPath];
-    GlobalConfig *config = [GlobalConfig yy_modelWithDictionary:dict];
-    NSLog(@"%@",config);
+- (NSDictionary *)readConfig {
+    NSDictionary *dict = [FileManager readObjetFromPath:[kConfigPath stringByAppendingPathComponent:@"config.plist"]];
+    return dict;
 }
 @end

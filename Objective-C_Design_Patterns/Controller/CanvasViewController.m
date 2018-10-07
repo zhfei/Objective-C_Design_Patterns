@@ -8,10 +8,12 @@
 
 #import "CanvasViewController.h"
 #import "CanvasView.h"
+#import "Stroke.h"
+#import "Vertex.h"
 
 @interface CanvasViewController ()
-
 @property (weak, nonatomic) IBOutlet CanvasView *canvasView;
+@property (strong, nonatomic) Stroke *stroke;
 @end
 
 @implementation CanvasViewController
@@ -19,19 +21,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.stroke = [Stroke new];
+    [self.canvasView configMark:self.stroke];
 }
 
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.stroke.color = [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1];
+    self.stroke.size = CGSizeMake([GlobalConfig sharedGlobalConfig].lineWidth, 0);
+}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"touchesBegan---------:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
-    
-    
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"touchesMoved:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+    
+    Vertex *ver = [Vertex new];
+    ver.location = [touches.anyObject locationInView:_canvasView];
+    [self.stroke addMark:ver];
+    [self.canvasView setNeedsDisplay];
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
