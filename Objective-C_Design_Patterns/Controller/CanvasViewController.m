@@ -7,6 +7,7 @@
 //
 
 #import "CanvasViewController.h"
+#import "ThumbnailViewController.h"
 #import "CanvasView.h"
 #import "Stroke.h"
 #import "Vertex.h"
@@ -68,11 +69,26 @@
             break;
         case 1:
             //保存
+            UIImageWriteToSavedPhotosAlbum([UIImage screenshotInView:self.canvasView], self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+            
+            self.stroke.color = [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1];
+            self.stroke.size = CGSizeMake([GlobalConfig sharedGlobalConfig].lineWidth, 0);
+            self.stroke.location = CGPointZero;
+            [self.stroke removeAllMarks];
+            
+            [self.paths removeAllObjects];
+            [self.canvasView setNeedsDisplay];
             
             break;
         case 2:
+        {
             //打开
             objVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ThumbnailViewControllerNav"];
+            __weak typeof(self) weakSelf = self;
+            [(ThumbnailViewController *)[(UINavigationController *)objVC topViewController] setBlock:^(UIImage *image) {
+                [weakSelf.canvasView configImage:image];
+            }];
+        }
             break;
         case 3:
             //设置
@@ -106,6 +122,17 @@
 #pragma mark - Public Method
 
 #pragma mark - Private Method
+- (void)image: (UIImage *) image didFinishSavingWithError: (NSError *)error contextInfo: (void *) contextInfo {
+    NSString *msg = nil;
+    if(error != NULL){
+        msg = @"保存图片失败" ;
+    }else{
+        msg = @"保存图片成功" ;
+    }
+    NSLog(@"%@",msg);
+}
+
+
 
 #pragma mark - Delegate
 

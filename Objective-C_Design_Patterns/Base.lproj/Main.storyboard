@@ -324,20 +324,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4L-YM-wwf">
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeImage" translatesAutoresizingMaskIntoConstraints="NO" id="Flb-xc-sU0">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                            <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        </imageView>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" red="0.61960784310000006" green="0.64313725489999995" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="P4L-YM-wwf" secondAttribute="bottom" id="ElP-Me-HjP"/>
-                                    <constraint firstItem="P4L-YM-wwf" firstAttribute="leading" secondItem="glQ-qo-gvM" secondAttribute="leading" id="KLJ-tz-ToT"/>
-                                    <constraint firstItem="P4L-YM-wwf" firstAttribute="top" secondItem="glQ-qo-gvM" secondAttribute="top" id="NMM-24-TcR"/>
-                                    <constraint firstAttribute="trailing" secondItem="P4L-YM-wwf" secondAttribute="trailing" id="duR-R2-ZLG"/>
+                                    <constraint firstItem="Flb-xc-sU0" firstAttribute="top" secondItem="glQ-qo-gvM" secondAttribute="top" constant="0.5" id="1HF-1d-6rF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Flb-xc-sU0" secondAttribute="bottom" constant="0.5" id="Eug-Zf-GvS"/>
+                                    <constraint firstItem="Flb-xc-sU0" firstAttribute="leading" secondItem="glQ-qo-gvM" secondAttribute="leading" constant="0.5" id="WNr-cT-OjZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Flb-xc-sU0" secondAttribute="trailing" constant="0.5" id="eYB-1T-li5"/>
                                 </constraints>
                             </collectionViewCell>
                         </cells>
@@ -363,4 +360,7 @@
             <point key="canvasLocation" x="2141" y="680"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeImage" width="64" height="64"/>
+    </resources>
 </document>

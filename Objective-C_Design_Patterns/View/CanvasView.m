@@ -23,6 +23,10 @@
     _historyPaths = historyPaths;
 }
 
+- (void)configImage:(UIImage *)image {
+    self.layer.contents = (__bridge id _Nullable)(image.CGImage);
+}
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {

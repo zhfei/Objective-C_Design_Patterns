@@ -12,5 +12,5 @@
 @interface CanvasView : UIView
 - (void)configMark:(id<Mark>)mark;
 - (void)configHistoryPaths:(NSMutableArray<id<Mark>> *)historyPaths;
-
+- (void)configImage:(UIImage *)image;
 @end
