@@ -221,7 +221,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <slider opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-Bs-HfF">
+                                                <slider opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-Bs-HfF">
                                                     <rect key="frame" x="36" y="0.0" width="242" height="45"/>
                                                     <connections>
                                                         <action selector="sliderChangedAction:" destination="AaH-db-mdg" eventType="valueChanged" id="vkd-do-MqT"/>

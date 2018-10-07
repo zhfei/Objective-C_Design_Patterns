@@ -10,6 +10,8 @@
 
 @interface CanvasView()
 @property (nonatomic, strong) id<Mark> mark;
+@property (nonatomic, strong) NSMutableArray <id<Mark>> *historyPaths;
+
 @end
 
 @implementation CanvasView
@@ -17,11 +19,18 @@
     _mark = mark;
 }
 
+- (void)configHistoryPaths:(NSMutableArray<id<Mark>> *)historyPaths {
+    _historyPaths = historyPaths;
+}
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
+    for (id mark in self.historyPaths) {
+        [mark drawWithContext:context];
+    }
+    
     [_mark drawWithContext:context];
     
 //    CGContextSetLineWidth(context, [GlobalConfig sharedGlobalConfig].lineWidth);

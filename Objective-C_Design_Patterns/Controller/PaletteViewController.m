@@ -25,9 +25,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    RGBValueType rgbValue = [UIColor rgbValueWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex];
+    _sliderR.value = rgbValue.r;
+    _sliderG.value = rgbValue.g;
+    _sliderB.value = rgbValue.b;
     
-    [self setupTempColor];
+    UIColor *temp = [UIColor colorWithRed:_sliderR.value/255.0 green:_sliderG.value/255.0 blue:_sliderB.value/255.0 alpha:1];
+    self.tempColor.backgroundColor = temp;
     
+    [(CAShapeLayer *)self.smallCircle.layer.sublayers[0] setFillColor:temp.CGColor];
+    [(CAShapeLayer *)self.bigCircle.layer.sublayers[0] setFillColor:temp.CGColor];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -56,7 +67,7 @@
         }
             break;
         case 4:
-            
+            [GlobalConfig sharedGlobalConfig].lineWidth = sender.value;
             break;
             
         default:

@@ -29,6 +29,10 @@
     [self.markArray removeObject:mark];
 }
 
+- (void)removeAllMarks {
+    [self.markArray removeAllObjects];
+}
+
 - (id<Mark>)childAtIndex:(int)index {
     return self.markArray[index];
 }
@@ -51,4 +55,18 @@
     CGContextSetStrokeColorWithColor(context, [self.color CGColor]);
     CGContextStrokePath(context);
 }
+
+//@property (nonatomic, strong) UIColor *color;
+//@property (nonatomic, assign) CGSize size;
+//@property (nonatomic, assign) CGPoint location;
+
+- (id)copyWithZone:(NSZone *)zone {
+    Stroke *stroke = [Stroke new];
+    stroke.color = self.color;
+    stroke.size = self.size;
+    stroke.location = self.location;
+    stroke.markArray = [self.markArray mutableCopy];
+    return stroke;
+}
+
 @end

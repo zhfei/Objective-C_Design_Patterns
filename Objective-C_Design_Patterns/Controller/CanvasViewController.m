@@ -14,6 +14,7 @@
 @interface CanvasViewController ()
 @property (weak, nonatomic) IBOutlet CanvasView *canvasView;
 @property (strong, nonatomic) Stroke *stroke;
+@property (strong, nonatomic) NSMutableArray <id<Mark>> *paths;
 @end
 
 @implementation CanvasViewController
@@ -22,7 +23,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.stroke = [Stroke new];
+    self.paths = @[].mutableCopy;
     [self.canvasView configMark:self.stroke];
+    [self.canvasView configHistoryPaths:_paths];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -33,11 +36,14 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"touchesBegan---------:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+    self.stroke.color = [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1];
+    self.stroke.size = CGSizeMake([GlobalConfig sharedGlobalConfig].lineWidth, 0);
+    self.stroke.location = [touches.anyObject locationInView:_canvasView];
+    [self.stroke removeAllMarks];
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"touchesMoved:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
-    
     Vertex *ver = [Vertex new];
     ver.location = [touches.anyObject locationInView:_canvasView];
     [self.stroke addMark:ver];
@@ -46,6 +52,8 @@
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"touchesEnded********:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+    [self.paths addObject:[self.stroke copyWithZone:nil]];
+    
 }
 
 #pragma mark - Getter, Setter

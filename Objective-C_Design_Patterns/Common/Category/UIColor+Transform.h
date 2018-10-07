@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef struct RGBValue {
+    CGFloat r;
+    CGFloat g;
+    CGFloat b;
+}RGBValueType;
+
 @interface UIColor (Transform)
 /**
   颜色转换：iOS中（以#开头）十六进制的颜色转换为UIColor(RGB)
@@ -17,6 +24,8 @@
  @return 颜色
  */
 + (UIColor *)colorWithHexString:(NSString *)hex alpha:(CGFloat)alpha;
+
++ (RGBValueType)rgbValueWithHexString:(NSString *)hex;
 
 /**
  color转换成十六进制字符串
