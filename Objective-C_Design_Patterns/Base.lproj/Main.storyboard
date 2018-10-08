@@ -19,37 +19,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8ax-J1-Myd">
-                                <rect key="frame" x="0.0" y="430" width="320" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="nNl-hE-ngT"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="删除"/>
-                                    <segment title="保存"/>
-                                    <segment title="打开"/>
-                                    <segment title="设置"/>
-                                    <segment title="撤销"/>
-                                    <segment title="恢复"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="5W5-fB-Gw6"/>
-                                </connections>
-                            </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhh-Dq-Wal" customClass="CanvasView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jNX-s8-dhL">
+                                <rect key="frame" x="0.0" y="420" width="320" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTg-GA-aKm">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="60"/>
+                                        <color key="backgroundColor" red="0.10588235410000001" green="0.72156864399999998" blue="0.8627451062" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <state key="normal" title="删除">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynU-DM-DBi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq5-D1-ghJ">
+                                        <rect key="frame" x="53.5" y="0.0" width="53" height="60"/>
+                                        <color key="backgroundColor" red="0.10588235410000001" green="0.72156864399999998" blue="0.8627451062" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <state key="normal" title="保存">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fE-sM-xlm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHh-sm-XFK">
+                                        <rect key="frame" x="106.5" y="0.0" width="53.5" height="60"/>
+                                        <color key="backgroundColor" red="0.10588235410000001" green="0.72156864399999998" blue="0.8627451062" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <state key="normal" title="打开">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwI-Ou-hQy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWh-5v-CmZ">
+                                        <rect key="frame" x="160" y="0.0" width="53.5" height="60"/>
+                                        <color key="backgroundColor" red="0.10588235410000001" green="0.72156864399999998" blue="0.8627451062" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <state key="normal" title="设置">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71v-7E-ch6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5t-ik-EQy">
+                                        <rect key="frame" x="213.5" y="0.0" width="53" height="60"/>
+                                        <color key="backgroundColor" red="0.10588235410000001" green="0.72156864399999998" blue="0.8627451062" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <state key="normal" title="撤销">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kcv-le-GnN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5p-yt-lkY">
+                                        <rect key="frame" x="266.5" y="0.0" width="53.5" height="60"/>
+                                        <color key="backgroundColor" red="0.10588235410000001" green="0.72156864399999998" blue="0.8627451062" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <state key="normal" title="恢复">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lmr-vM-4yA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="i3b-Pr-yi5"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fhh-Dq-Wal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1MV-n4-ejj"/>
-                            <constraint firstItem="8ax-J1-Myd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3pn-Bw-VC3"/>
-                            <constraint firstAttribute="bottom" secondItem="8ax-J1-Myd" secondAttribute="bottom" id="4H2-n6-49x"/>
-                            <constraint firstItem="8ax-J1-Myd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cho-2y-gvr"/>
-                            <constraint firstItem="8ax-J1-Myd" firstAttribute="top" secondItem="fhh-Dq-Wal" secondAttribute="bottom" id="OHE-7N-wkb"/>
+                            <constraint firstItem="jNX-s8-dhL" firstAttribute="top" secondItem="fhh-Dq-Wal" secondAttribute="bottom" constant="30" id="4JY-xN-yFV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jNX-s8-dhL" secondAttribute="bottom" id="JOV-HK-9J4"/>
                             <constraint firstItem="fhh-Dq-Wal" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zf2-V1-Jfm"/>
+                            <constraint firstItem="jNX-s8-dhL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dQU-gi-88t"/>
                             <constraint firstItem="fhh-Dq-Wal" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fUG-a0-7Po"/>
+                            <constraint firstItem="jNX-s8-dhL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i4H-bY-mw1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

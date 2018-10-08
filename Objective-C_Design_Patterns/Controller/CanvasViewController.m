@@ -60,12 +60,14 @@
 #pragma mark - Getter, Setter
 
 #pragma mark - Event
-- (IBAction)segmentAction:(UISegmentedControl *)sender {
+- (IBAction)tapAction:(UIButton *)sender {
     UIViewController *objVC;
-    switch (sender.selectedSegmentIndex) {
+    switch (sender.tag) {
         case 0:
             //删除
-            
+            [self.stroke removeAllMarks];
+            [self.paths removeAllObjects];
+            [self.canvasView setNeedsDisplay];
             break;
         case 1:
             //保存
@@ -96,7 +98,9 @@
             break;
         case 4:
             //撤销
-            
+            [self.paths removeLastObject];
+            [self.stroke removeAllMarks];
+            [self.canvasView setNeedsDisplay];
             break;
         case 5:
             //恢复
@@ -106,9 +110,9 @@
         default:
             break;
     }
-    
     objVC?[self presentViewController:objVC animated:YES completion:nil]:nil;
 }
+
 
 
 //其他界面返回到此界面调用的方法
