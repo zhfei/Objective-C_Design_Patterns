@@ -17,6 +17,8 @@
 #import "UIImage+Custom.h"
 #import "Macro.h"
 #import "GlobalConfig.h"
+#import "ZHFAlertControlle.h"
+#import "ZHFProgressHUD.h"
 
 
 #endif /* PrefixHeader_pch */

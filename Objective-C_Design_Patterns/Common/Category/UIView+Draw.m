@@ -16,7 +16,7 @@
     shape.path = bezier.CGPath;
     shape.fillColor = color.CGColor;
     shape.frame = self.bounds;
-    [self.layer addSublayer:shape];
+    [self.layer insertSublayer:shape atIndex:0];
 }
 
 @end

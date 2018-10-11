@@ -9,6 +9,24 @@
 #import "FileManager.h"
 
 @implementation FileManager
++ (NSString *)documentPath {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    return documentsDirectory;
+}
+//返回 "document/dir/" 文件夹路径,没有则创建
++ (NSString *)getDirectoryForDocuments:(NSString*) dir
+{
+    NSString* dirPath = [[self documentPath] stringByAppendingPathComponent:dir];
+    [self createDir:dirPath];
+    return dirPath;
+}
+//返回 "document/filename" 路径
++ (NSString*)getFilePathForDocuments:(NSString*)filename
+{
+    return [[self documentPath] stringByAppendingPathComponent:filename];
+}
+
 + (void)saveObjet:(NSDictionary *)dict toPath:(NSString *)path {
     [dict writeToFile:path atomically:YES];
 }

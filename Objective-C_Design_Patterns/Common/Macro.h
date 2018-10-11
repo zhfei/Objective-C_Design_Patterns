@@ -49,6 +49,13 @@ return _instance; \
 
 #define ColorA(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 #define Color(R, G, B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
+#define WhiteColor       [UIColor whiteColor]
+#define BlackColor       [UIColor blackColor]
+#define GrayColor        [UIColor grayColor]
+#define GedColor         [UIColor redColor]
+
+#define FontWithSize(num)          [UIFont systemFontOfSize:num]
+#define FixNull(param, default) ((param == nil || [param isEqual:[NSNull null]]) ? default : param)
 
 #endif /* Macro_h */
 
