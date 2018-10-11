@@ -24,6 +24,10 @@
 		9191DE0B216F7E18007B6E53 /* NSString+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE0A216F7E18007B6E53 /* NSString+ShortCut.m */; };
 		9191DE0F216F81CC007B6E53 /* ZHFNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE0E216F81CC007B6E53 /* ZHFNetWorking.m */; };
 		9191DE12216F8281007B6E53 /* ZHFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE11216F8281007B6E53 /* ZHFProgressHUD.m */; };
+		9191DE15216F856A007B6E53 /* NSDate+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE14216F856A007B6E53 /* NSDate+ShortCut.m */; };
+		9191DE18216F85C0007B6E53 /* NSDateFormatter+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE17216F85C0007B6E53 /* NSDateFormatter+ShortCut.m */; };
+		9191DE1B216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE1A216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m */; };
+		9191DE1E216F8948007B6E53 /* UILabel+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE1D216F8948007B6E53 /* UILabel+ShortCut.m */; };
 		919C64B121690B5300AADE1B /* GlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C64B021690B5300AADE1B /* GlobalConfig.m */; };
 		919C64B521690E7A00AADE1B /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C64B421690E7A00AADE1B /* FileManager.m */; };
 		91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */; };
@@ -69,6 +73,14 @@
 		9191DE0E216F81CC007B6E53 /* ZHFNetWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFNetWorking.m; sourceTree = "<group>"; };
 		9191DE10216F8281007B6E53 /* ZHFProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFProgressHUD.h; sourceTree = "<group>"; };
 		9191DE11216F8281007B6E53 /* ZHFProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFProgressHUD.m; sourceTree = "<group>"; };
+		9191DE13216F856A007B6E53 /* NSDate+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ShortCut.h"; sourceTree = "<group>"; };
+		9191DE14216F856A007B6E53 /* NSDate+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ShortCut.m"; sourceTree = "<group>"; };
+		9191DE16216F85C0007B6E53 /* NSDateFormatter+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ShortCut.h"; sourceTree = "<group>"; };
+		9191DE17216F85C0007B6E53 /* NSDateFormatter+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ShortCut.m"; sourceTree = "<group>"; };
+		9191DE19216F87FE007B6E53 /* NSDecimalNumber+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+ShortCut.h"; sourceTree = "<group>"; };
+		9191DE1A216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+ShortCut.m"; sourceTree = "<group>"; };
+		9191DE1C216F8948007B6E53 /* UILabel+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+ShortCut.h"; sourceTree = "<group>"; };
+		9191DE1D216F8948007B6E53 /* UILabel+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ShortCut.m"; sourceTree = "<group>"; };
 		919C64AF21690B5300AADE1B /* GlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
 		919C64B021690B5300AADE1B /* GlobalConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConfig.m; sourceTree = "<group>"; };
 		919C64B321690E7A00AADE1B /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
@@ -281,6 +293,14 @@
 				9191DE04216F77EF007B6E53 /* UIButton+ZHFShortCut.m */,
 				9191DE09216F7E18007B6E53 /* NSString+ShortCut.h */,
 				9191DE0A216F7E18007B6E53 /* NSString+ShortCut.m */,
+				9191DE13216F856A007B6E53 /* NSDate+ShortCut.h */,
+				9191DE14216F856A007B6E53 /* NSDate+ShortCut.m */,
+				9191DE16216F85C0007B6E53 /* NSDateFormatter+ShortCut.h */,
+				9191DE17216F85C0007B6E53 /* NSDateFormatter+ShortCut.m */,
+				9191DE19216F87FE007B6E53 /* NSDecimalNumber+ShortCut.h */,
+				9191DE1A216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m */,
+				9191DE1C216F8948007B6E53 /* UILabel+ShortCut.h */,
+				9191DE1D216F8948007B6E53 /* UILabel+ShortCut.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -385,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9191DE1E216F8948007B6E53 /* UILabel+ShortCut.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
 				9191DE02216F74BF007B6E53 /* ZHFAlertControlle.m in Sources */,
@@ -397,6 +418,7 @@
 				9191DE05216F77EF007B6E53 /* UIButton+ZHFShortCut.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				9191DDFF216F7388007B6E53 /* ZHFTopWindow.m in Sources */,
+				9191DE1B216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m in Sources */,
 				919C64B121690B5300AADE1B /* GlobalConfig.m in Sources */,
 				91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */,
 				919C64B521690E7A00AADE1B /* FileManager.m in Sources */,
@@ -404,9 +426,11 @@
 				91A6EC2F2168FF87002CC2B7 /* UIImage+Custom.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
+				9191DE15216F856A007B6E53 /* NSDate+ShortCut.m in Sources */,
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
+				9191DE18216F85C0007B6E53 /* NSDateFormatter+ShortCut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,7 @@
 #import "GlobalConfig.h"
 #import "ZHFAlertControlle.h"
 #import "ZHFProgressHUD.h"
+#import "NSDateFormatter+ShortCut.h"
 
 
 #endif /* PrefixHeader_pch */
