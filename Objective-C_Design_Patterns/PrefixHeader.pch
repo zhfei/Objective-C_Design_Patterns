@@ -12,14 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#import "UIView+Draw.h"
-#import "UIColor+Transform.h"
-#import "UIImage+Custom.h"
 #import "Macro.h"
-#import "GlobalConfig.h"
-#import "ZHFAlertControlle.h"
-#import "ZHFProgressHUD.h"
-#import "NSDateFormatter+ShortCut.h"
+#import "ZHFFoundation.h"
 
 
 #endif /* PrefixHeader_pch */

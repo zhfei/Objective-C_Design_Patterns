@@ -46,6 +46,19 @@
 //        NSLog(@"cool....");
 //    }];
 //    [ZHFProgressHUD popupMessage:@"test.."];
+    
+    ZHFRequestParameter *para = [ZHFRequestParameter new];
+    para.apiString = @"ZF_initData.zip";
+//    [ZHFNetworking asyncWithParameter:para success:^(NSURLSessionDataTask *task, id  _Nullable responseObject) {
+//
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError *error) {
+//
+//    }];
+    [ZHFNetworking downloadTaskWithWithParameters:para progress:^(NSProgress *downloadProgress) {
+        
+    } completionHandler:^(NSURLResponse *response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        
+    }];
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

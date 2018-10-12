@@ -23,11 +23,12 @@
 		918B573F2170466600E9B71D /* NSArray+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B573E2170466600E9B71D /* NSArray+ShortCut.m */; };
 		918B574221704A3C00E9B71D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574121704A3C00E9B71D /* UIView+Frame.m */; };
 		918B574521704BE700E9B71D /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574421704BE700E9B71D /* Utility.m */; };
+		918B574821704DC500E9B71D /* ZHFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574721704DC500E9B71D /* ZHFNetworking.m */; };
+		918B574B21704F3300E9B71D /* ZHFRequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574A21704F3300E9B71D /* ZHFRequestParameter.m */; };
 		9191DDFF216F7388007B6E53 /* ZHFTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */; };
 		9191DE02216F74BF007B6E53 /* ZHFAlertControlle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE01216F74BF007B6E53 /* ZHFAlertControlle.m */; };
 		9191DE05216F77EF007B6E53 /* UIButton+ZHFShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE04216F77EF007B6E53 /* UIButton+ZHFShortCut.m */; };
 		9191DE0B216F7E18007B6E53 /* NSString+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE0A216F7E18007B6E53 /* NSString+ShortCut.m */; };
-		9191DE0F216F81CC007B6E53 /* ZHFNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE0E216F81CC007B6E53 /* ZHFNetWorking.m */; };
 		9191DE12216F8281007B6E53 /* ZHFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE11216F8281007B6E53 /* ZHFProgressHUD.m */; };
 		9191DE15216F856A007B6E53 /* NSDate+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE14216F856A007B6E53 /* NSDate+ShortCut.m */; };
 		9191DE18216F85C0007B6E53 /* NSDateFormatter+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE17216F85C0007B6E53 /* NSDateFormatter+ShortCut.m */; };
@@ -76,6 +77,11 @@
 		918B574121704A3C00E9B71D /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		918B574321704BE700E9B71D /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		918B574421704BE700E9B71D /* Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		918B574621704DC500E9B71D /* ZHFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFNetworking.h; sourceTree = "<group>"; };
+		918B574721704DC500E9B71D /* ZHFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFNetworking.m; sourceTree = "<group>"; };
+		918B574921704F3300E9B71D /* ZHFRequestParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRequestParameter.h; sourceTree = "<group>"; };
+		918B574A21704F3300E9B71D /* ZHFRequestParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRequestParameter.m; sourceTree = "<group>"; };
+		918B574C2170744B00E9B71D /* ZHFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFFoundation.h; sourceTree = "<group>"; };
 		9191DDFD216F7388007B6E53 /* ZHFTopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFTopWindow.h; sourceTree = "<group>"; };
 		9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFTopWindow.m; sourceTree = "<group>"; };
 		9191DE00216F74BF007B6E53 /* ZHFAlertControlle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAlertControlle.h; sourceTree = "<group>"; };
@@ -84,8 +90,6 @@
 		9191DE04216F77EF007B6E53 /* UIButton+ZHFShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZHFShortCut.m"; sourceTree = "<group>"; };
 		9191DE09216F7E18007B6E53 /* NSString+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ShortCut.h"; sourceTree = "<group>"; };
 		9191DE0A216F7E18007B6E53 /* NSString+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShortCut.m"; sourceTree = "<group>"; };
-		9191DE0D216F81CC007B6E53 /* ZHFNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFNetWorking.h; sourceTree = "<group>"; };
-		9191DE0E216F81CC007B6E53 /* ZHFNetWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFNetWorking.m; sourceTree = "<group>"; };
 		9191DE10216F8281007B6E53 /* ZHFProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFProgressHUD.h; sourceTree = "<group>"; };
 		9191DE11216F8281007B6E53 /* ZHFProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFProgressHUD.m; sourceTree = "<group>"; };
 		9191DE13216F856A007B6E53 /* NSDate+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ShortCut.h"; sourceTree = "<group>"; };
@@ -259,8 +263,10 @@
 		9191DE0C216F81A6007B6E53 /* NetWorking */ = {
 			isa = PBXGroup;
 			children = (
-				9191DE0D216F81CC007B6E53 /* ZHFNetWorking.h */,
-				9191DE0E216F81CC007B6E53 /* ZHFNetWorking.m */,
+				918B574621704DC500E9B71D /* ZHFNetworking.h */,
+				918B574721704DC500E9B71D /* ZHFNetworking.m */,
+				918B574921704F3300E9B71D /* ZHFRequestParameter.h */,
+				918B574A21704F3300E9B71D /* ZHFRequestParameter.m */,
 			);
 			path = NetWorking;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				91A6EC272168C507002CC2B7 /* Category */,
 				91A6EC282168C507002CC2B7 /* Helper */,
 				91A6EC30216906A9002CC2B7 /* Macro.h */,
+				918B574C2170744B00E9B71D /* ZHFFoundation.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -432,11 +439,12 @@
 			files = (
 				918B573F2170466600E9B71D /* NSArray+ShortCut.m in Sources */,
 				9191DE1E216F8948007B6E53 /* UILabel+ShortCut.m in Sources */,
+				918B574B21704F3300E9B71D /* ZHFRequestParameter.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
+				918B574821704DC500E9B71D /* ZHFNetworking.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
 				9191DE02216F74BF007B6E53 /* ZHFAlertControlle.m in Sources */,
 				91B45D512169B47D00F45A8C /* UIColor+Transform.m in Sources */,
-				9191DE0F216F81CC007B6E53 /* ZHFNetWorking.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				9191DE0B216F7E18007B6E53 /* NSString+ShortCut.m in Sources */,
 				918B573621703E6300E9B71D /* CAShapeLayer+ShortCut.m in Sources */,

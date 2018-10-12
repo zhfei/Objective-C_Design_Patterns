@@ -6,6 +6,7 @@ target "Objective-C_Design_Patterns" do
     
    pod 'YYModel'
    pod 'MBProgressHUD'
+   pod 'AFNetworking'
 
 end
 
