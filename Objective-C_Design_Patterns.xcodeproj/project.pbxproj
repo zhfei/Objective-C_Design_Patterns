@@ -25,6 +25,7 @@
 		918B574521704BE700E9B71D /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574421704BE700E9B71D /* Utility.m */; };
 		918B574821704DC500E9B71D /* ZHFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574721704DC500E9B71D /* ZHFNetworking.m */; };
 		918B574B21704F3300E9B71D /* ZHFRequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574A21704F3300E9B71D /* ZHFRequestParameter.m */; };
+		918B574E2170804200E9B71D /* Document.strings in Resources */ = {isa = PBXBuildFile; fileRef = 918B574D2170804200E9B71D /* Document.strings */; };
 		9191DDFF216F7388007B6E53 /* ZHFTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */; };
 		9191DE02216F74BF007B6E53 /* ZHFAlertControlle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE01216F74BF007B6E53 /* ZHFAlertControlle.m */; };
 		9191DE05216F77EF007B6E53 /* UIButton+ZHFShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE04216F77EF007B6E53 /* UIButton+ZHFShortCut.m */; };
@@ -82,6 +83,7 @@
 		918B574921704F3300E9B71D /* ZHFRequestParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRequestParameter.h; sourceTree = "<group>"; };
 		918B574A21704F3300E9B71D /* ZHFRequestParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRequestParameter.m; sourceTree = "<group>"; };
 		918B574C2170744B00E9B71D /* ZHFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFFoundation.h; sourceTree = "<group>"; };
+		918B574D2170804200E9B71D /* Document.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Document.strings; sourceTree = "<group>"; };
 		9191DDFD216F7388007B6E53 /* ZHFTopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFTopWindow.h; sourceTree = "<group>"; };
 		9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFTopWindow.m; sourceTree = "<group>"; };
 		9191DE00216F74BF007B6E53 /* ZHFAlertControlle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAlertControlle.h; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				91A6EC282168C507002CC2B7 /* Helper */,
 				91A6EC30216906A9002CC2B7 /* Macro.h */,
 				918B574C2170744B00E9B71D /* ZHFFoundation.h */,
+				918B574D2170804200E9B71D /* Document.strings */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
+				918B574E2170804200E9B71D /* Document.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
