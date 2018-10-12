@@ -23,4 +23,7 @@
 - (CGSize)stringSizeWithFixedHeight:(CGFloat)height
                                font:(UIFont *)font
                                text:(NSString *)text;
+
+#pragma mark - 排序
+- (NSString *)pinYin;
 @end

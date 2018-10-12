@@ -21,4 +21,8 @@
  @return 截图
  */
 + (UIImage *)screenshotInView:(UIView *)view;
+/**
+ 在图片上加另一个图片作为水印
+ */
++ (UIImage *)waterMarkInImage:(UIImage *)image waterImage:(UIImage *)waterImage point:(CGPoint)point scale:(CGFloat)scale;
 @end

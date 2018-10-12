@@ -44,11 +44,26 @@ return _instance; \
 return _instance; \
 }
 
+#ifndef    WeakSelf
+#if __has_feature(objc_arc)
+#define WeakSelf  __weak __typeof__(self) weakRef = self;
+#else
+#define WeakSelf  __block __typeof__(self) blockRef = self;
+#endif
+#endif
+
+#ifndef     StrongSelf
+#if __has_feature(objc_arc)
+#define StrongSelf  __strong __typeof__(weakRef) self = weakRef;
+#else
+#define StrongSelf  __typeof__(blockRef) self = blockRef;
+#endif
+#endif
 
 #define kConfigPath [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/Config"]
 
 #define ColorA(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
-#define Color(R, G, B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
+#define Color(R, G, B) ColorA(R, G, B, 1)
 #define WhiteColor       [UIColor whiteColor]
 #define BlackColor       [UIColor blackColor]
 #define GrayColor        [UIColor grayColor]

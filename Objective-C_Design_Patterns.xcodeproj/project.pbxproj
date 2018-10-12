@@ -18,6 +18,11 @@
 		916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E364A2163209400602088 /* LaunchScreen.storyboard */; };
 		916E364F2163209400602088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E364E2163209400602088 /* main.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
+		918B573621703E6300E9B71D /* CAShapeLayer+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B573521703E6300E9B71D /* CAShapeLayer+ShortCut.m */; };
+		918B5739217040B100E9B71D /* ZHFQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B5738217040B100E9B71D /* ZHFQRCodeView.m */; };
+		918B573F2170466600E9B71D /* NSArray+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B573E2170466600E9B71D /* NSArray+ShortCut.m */; };
+		918B574221704A3C00E9B71D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574121704A3C00E9B71D /* UIView+Frame.m */; };
+		918B574521704BE700E9B71D /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574421704BE700E9B71D /* Utility.m */; };
 		9191DDFF216F7388007B6E53 /* ZHFTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */; };
 		9191DE02216F74BF007B6E53 /* ZHFAlertControlle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE01216F74BF007B6E53 /* ZHFAlertControlle.m */; };
 		9191DE05216F77EF007B6E53 /* UIButton+ZHFShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE04216F77EF007B6E53 /* UIButton+ZHFShortCut.m */; };
@@ -61,6 +66,16 @@
 		916E364E2163209400602088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		918B573421703E6300E9B71D /* CAShapeLayer+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+ShortCut.h"; sourceTree = "<group>"; };
+		918B573521703E6300E9B71D /* CAShapeLayer+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+ShortCut.m"; sourceTree = "<group>"; };
+		918B5737217040B100E9B71D /* ZHFQRCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFQRCodeView.h; sourceTree = "<group>"; };
+		918B5738217040B100E9B71D /* ZHFQRCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFQRCodeView.m; sourceTree = "<group>"; };
+		918B573D2170466600E9B71D /* NSArray+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ShortCut.h"; sourceTree = "<group>"; };
+		918B573E2170466600E9B71D /* NSArray+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ShortCut.m"; sourceTree = "<group>"; };
+		918B574021704A3C00E9B71D /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		918B574121704A3C00E9B71D /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		918B574321704BE700E9B71D /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		918B574421704BE700E9B71D /* Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		9191DDFD216F7388007B6E53 /* ZHFTopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFTopWindow.h; sourceTree = "<group>"; };
 		9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFTopWindow.m; sourceTree = "<group>"; };
 		9191DE00216F74BF007B6E53 /* ZHFAlertControlle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAlertControlle.h; sourceTree = "<group>"; };
@@ -235,6 +250,8 @@
 				9191DE01216F74BF007B6E53 /* ZHFAlertControlle.m */,
 				9191DE10216F8281007B6E53 /* ZHFProgressHUD.h */,
 				9191DE11216F8281007B6E53 /* ZHFProgressHUD.m */,
+				918B5737217040B100E9B71D /* ZHFQRCodeView.h */,
+				918B5738217040B100E9B71D /* ZHFQRCodeView.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -285,6 +302,8 @@
 			children = (
 				91A6EC292168C54D002CC2B7 /* UIView+Draw.h */,
 				91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */,
+				918B574021704A3C00E9B71D /* UIView+Frame.h */,
+				918B574121704A3C00E9B71D /* UIView+Frame.m */,
 				91A6EC2D2168FF87002CC2B7 /* UIImage+Custom.h */,
 				91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */,
 				91B45D4F2169B47D00F45A8C /* UIColor+Transform.h */,
@@ -301,6 +320,10 @@
 				9191DE1A216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m */,
 				9191DE1C216F8948007B6E53 /* UILabel+ShortCut.h */,
 				9191DE1D216F8948007B6E53 /* UILabel+ShortCut.m */,
+				918B573421703E6300E9B71D /* CAShapeLayer+ShortCut.h */,
+				918B573521703E6300E9B71D /* CAShapeLayer+ShortCut.m */,
+				918B573D2170466600E9B71D /* NSArray+ShortCut.h */,
+				918B573E2170466600E9B71D /* NSArray+ShortCut.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -308,6 +331,8 @@
 		91A6EC282168C507002CC2B7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				918B574321704BE700E9B71D /* Utility.h */,
+				918B574421704BE700E9B71D /* Utility.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -405,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918B573F2170466600E9B71D /* NSArray+ShortCut.m in Sources */,
 				9191DE1E216F8948007B6E53 /* UILabel+ShortCut.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
@@ -413,13 +439,17 @@
 				9191DE0F216F81CC007B6E53 /* ZHFNetWorking.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				9191DE0B216F7E18007B6E53 /* NSString+ShortCut.m in Sources */,
+				918B573621703E6300E9B71D /* CAShapeLayer+ShortCut.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
+				918B574521704BE700E9B71D /* Utility.m in Sources */,
 				9191DE05216F77EF007B6E53 /* UIButton+ZHFShortCut.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				9191DDFF216F7388007B6E53 /* ZHFTopWindow.m in Sources */,
 				9191DE1B216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m in Sources */,
+				918B5739217040B100E9B71D /* ZHFQRCodeView.m in Sources */,
 				919C64B121690B5300AADE1B /* GlobalConfig.m in Sources */,
+				918B574221704A3C00E9B71D /* UIView+Frame.m in Sources */,
 				91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */,
 				919C64B521690E7A00AADE1B /* FileManager.m in Sources */,
 				9191DE12216F8281007B6E53 /* ZHFProgressHUD.m in Sources */,

@@ -91,9 +91,10 @@
         {
             //打开
             objVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ThumbnailViewControllerNav"];
-            __weak typeof(self) weakSelf = self;
+            WeakSelf
             [(ThumbnailViewController *)[(UINavigationController *)objVC topViewController] setBlock:^(UIImage *image) {
-                [weakSelf.canvasView configImage:image];
+                StrongSelf
+                [self.canvasView configImage:image];
             }];
         }
             break;

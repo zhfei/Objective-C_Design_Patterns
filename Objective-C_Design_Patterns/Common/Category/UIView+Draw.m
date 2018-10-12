@@ -19,4 +19,14 @@
     [self.layer insertSublayer:shape atIndex:0];
 }
 
+- (void)addCornerAtPostion:(UIRectCorner)postion{
+    CGFloat radius = 6.f;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:postion cornerRadii:CGSizeMake(radius,radius)];
+    
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame         = self.bounds;
+    maskLayer.path          = maskPath.CGPath;
+    self.layer.mask         = maskLayer;
+    [self.layer setMasksToBounds:YES];
+}
 @end
