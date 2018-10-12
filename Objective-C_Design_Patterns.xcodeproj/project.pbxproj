@@ -18,28 +18,6 @@
 		916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E364A2163209400602088 /* LaunchScreen.storyboard */; };
 		916E364F2163209400602088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E364E2163209400602088 /* main.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
-		918B573621703E6300E9B71D /* CAShapeLayer+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B573521703E6300E9B71D /* CAShapeLayer+ShortCut.m */; };
-		918B5739217040B100E9B71D /* ZHFQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B5738217040B100E9B71D /* ZHFQRCodeView.m */; };
-		918B573F2170466600E9B71D /* NSArray+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B573E2170466600E9B71D /* NSArray+ShortCut.m */; };
-		918B574221704A3C00E9B71D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574121704A3C00E9B71D /* UIView+Frame.m */; };
-		918B574521704BE700E9B71D /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574421704BE700E9B71D /* Utility.m */; };
-		918B574821704DC500E9B71D /* ZHFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574721704DC500E9B71D /* ZHFNetworking.m */; };
-		918B574B21704F3300E9B71D /* ZHFRequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B574A21704F3300E9B71D /* ZHFRequestParameter.m */; };
-		918B574E2170804200E9B71D /* Document.strings in Resources */ = {isa = PBXBuildFile; fileRef = 918B574D2170804200E9B71D /* Document.strings */; };
-		9191DDFF216F7388007B6E53 /* ZHFTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */; };
-		9191DE02216F74BF007B6E53 /* ZHFAlertControlle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE01216F74BF007B6E53 /* ZHFAlertControlle.m */; };
-		9191DE05216F77EF007B6E53 /* UIButton+ZHFShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE04216F77EF007B6E53 /* UIButton+ZHFShortCut.m */; };
-		9191DE0B216F7E18007B6E53 /* NSString+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE0A216F7E18007B6E53 /* NSString+ShortCut.m */; };
-		9191DE12216F8281007B6E53 /* ZHFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE11216F8281007B6E53 /* ZHFProgressHUD.m */; };
-		9191DE15216F856A007B6E53 /* NSDate+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE14216F856A007B6E53 /* NSDate+ShortCut.m */; };
-		9191DE18216F85C0007B6E53 /* NSDateFormatter+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE17216F85C0007B6E53 /* NSDateFormatter+ShortCut.m */; };
-		9191DE1B216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE1A216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m */; };
-		9191DE1E216F8948007B6E53 /* UILabel+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191DE1D216F8948007B6E53 /* UILabel+ShortCut.m */; };
-		919C64B121690B5300AADE1B /* GlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C64B021690B5300AADE1B /* GlobalConfig.m */; };
-		919C64B521690E7A00AADE1B /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C64B421690E7A00AADE1B /* FileManager.m */; };
-		91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */; };
-		91A6EC2F2168FF87002CC2B7 /* UIImage+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */; };
-		91B45D512169B47D00F45A8C /* UIColor+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B45D502169B47D00F45A8C /* UIColor+Transform.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
@@ -68,52 +46,7 @@
 		916E364E2163209400602088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
-		918B573421703E6300E9B71D /* CAShapeLayer+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+ShortCut.h"; sourceTree = "<group>"; };
-		918B573521703E6300E9B71D /* CAShapeLayer+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+ShortCut.m"; sourceTree = "<group>"; };
-		918B5737217040B100E9B71D /* ZHFQRCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFQRCodeView.h; sourceTree = "<group>"; };
-		918B5738217040B100E9B71D /* ZHFQRCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFQRCodeView.m; sourceTree = "<group>"; };
-		918B573D2170466600E9B71D /* NSArray+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ShortCut.h"; sourceTree = "<group>"; };
-		918B573E2170466600E9B71D /* NSArray+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ShortCut.m"; sourceTree = "<group>"; };
-		918B574021704A3C00E9B71D /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		918B574121704A3C00E9B71D /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		918B574321704BE700E9B71D /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		918B574421704BE700E9B71D /* Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
-		918B574621704DC500E9B71D /* ZHFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFNetworking.h; sourceTree = "<group>"; };
-		918B574721704DC500E9B71D /* ZHFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFNetworking.m; sourceTree = "<group>"; };
-		918B574921704F3300E9B71D /* ZHFRequestParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRequestParameter.h; sourceTree = "<group>"; };
-		918B574A21704F3300E9B71D /* ZHFRequestParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRequestParameter.m; sourceTree = "<group>"; };
-		918B574C2170744B00E9B71D /* ZHFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFFoundation.h; sourceTree = "<group>"; };
-		918B574D2170804200E9B71D /* Document.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Document.strings; sourceTree = "<group>"; };
-		9191DDFD216F7388007B6E53 /* ZHFTopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFTopWindow.h; sourceTree = "<group>"; };
-		9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFTopWindow.m; sourceTree = "<group>"; };
-		9191DE00216F74BF007B6E53 /* ZHFAlertControlle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAlertControlle.h; sourceTree = "<group>"; };
-		9191DE01216F74BF007B6E53 /* ZHFAlertControlle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAlertControlle.m; sourceTree = "<group>"; };
-		9191DE03216F77EF007B6E53 /* UIButton+ZHFShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZHFShortCut.h"; sourceTree = "<group>"; };
-		9191DE04216F77EF007B6E53 /* UIButton+ZHFShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZHFShortCut.m"; sourceTree = "<group>"; };
-		9191DE09216F7E18007B6E53 /* NSString+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ShortCut.h"; sourceTree = "<group>"; };
-		9191DE0A216F7E18007B6E53 /* NSString+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShortCut.m"; sourceTree = "<group>"; };
-		9191DE10216F8281007B6E53 /* ZHFProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFProgressHUD.h; sourceTree = "<group>"; };
-		9191DE11216F8281007B6E53 /* ZHFProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFProgressHUD.m; sourceTree = "<group>"; };
-		9191DE13216F856A007B6E53 /* NSDate+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ShortCut.h"; sourceTree = "<group>"; };
-		9191DE14216F856A007B6E53 /* NSDate+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ShortCut.m"; sourceTree = "<group>"; };
-		9191DE16216F85C0007B6E53 /* NSDateFormatter+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ShortCut.h"; sourceTree = "<group>"; };
-		9191DE17216F85C0007B6E53 /* NSDateFormatter+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ShortCut.m"; sourceTree = "<group>"; };
-		9191DE19216F87FE007B6E53 /* NSDecimalNumber+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+ShortCut.h"; sourceTree = "<group>"; };
-		9191DE1A216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+ShortCut.m"; sourceTree = "<group>"; };
-		9191DE1C216F8948007B6E53 /* UILabel+ShortCut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+ShortCut.h"; sourceTree = "<group>"; };
-		9191DE1D216F8948007B6E53 /* UILabel+ShortCut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ShortCut.m"; sourceTree = "<group>"; };
-		919C64AF21690B5300AADE1B /* GlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
-		919C64B021690B5300AADE1B /* GlobalConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConfig.m; sourceTree = "<group>"; };
-		919C64B321690E7A00AADE1B /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
-		919C64B421690E7A00AADE1B /* FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
-		91A6EC292168C54D002CC2B7 /* UIView+Draw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Draw.h"; sourceTree = "<group>"; };
-		91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draw.m"; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		91A6EC2D2168FF87002CC2B7 /* UIImage+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Custom.h"; sourceTree = "<group>"; };
-		91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Custom.m"; sourceTree = "<group>"; };
-		91A6EC30216906A9002CC2B7 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		91B45D4F2169B47D00F45A8C /* UIColor+Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Transform.h"; sourceTree = "<group>"; };
-		91B45D502169B47D00F45A8C /* UIColor+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Transform.m"; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		91C1B79321665E2D0070DB88 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -192,7 +125,6 @@
 		916E363E2163209200602088 /* Objective-C_Design_Patterns */ = {
 			isa = PBXGroup;
 			children = (
-				91A6EC262168C507002CC2B7 /* Common */,
 				914E5E2E216659650089C1C7 /* Protocols */,
 				915075BF216346580049B5CA /* Coordinate */,
 				9174038521632F9400EEC228 /* Controller */,
@@ -247,106 +179,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		9191DDFC216F730C007B6E53 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				9191DDFD216F7388007B6E53 /* ZHFTopWindow.h */,
-				9191DDFE216F7388007B6E53 /* ZHFTopWindow.m */,
-				9191DE00216F74BF007B6E53 /* ZHFAlertControlle.h */,
-				9191DE01216F74BF007B6E53 /* ZHFAlertControlle.m */,
-				9191DE10216F8281007B6E53 /* ZHFProgressHUD.h */,
-				9191DE11216F8281007B6E53 /* ZHFProgressHUD.m */,
-				918B5737217040B100E9B71D /* ZHFQRCodeView.h */,
-				918B5738217040B100E9B71D /* ZHFQRCodeView.m */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		9191DE0C216F81A6007B6E53 /* NetWorking */ = {
-			isa = PBXGroup;
-			children = (
-				918B574621704DC500E9B71D /* ZHFNetworking.h */,
-				918B574721704DC500E9B71D /* ZHFNetworking.m */,
-				918B574921704F3300E9B71D /* ZHFRequestParameter.h */,
-				918B574A21704F3300E9B71D /* ZHFRequestParameter.m */,
-			);
-			path = NetWorking;
-			sourceTree = "<group>";
-		};
-		919C64AE21690B0700AADE1B /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				919C64AF21690B5300AADE1B /* GlobalConfig.h */,
-				919C64B021690B5300AADE1B /* GlobalConfig.m */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		919C64B221690E6700AADE1B /* FileManager */ = {
-			isa = PBXGroup;
-			children = (
-				919C64B321690E7A00AADE1B /* FileManager.h */,
-				919C64B421690E7A00AADE1B /* FileManager.m */,
-			);
-			path = FileManager;
-			sourceTree = "<group>";
-		};
-		91A6EC262168C507002CC2B7 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				9191DE0C216F81A6007B6E53 /* NetWorking */,
-				9191DDFC216F730C007B6E53 /* Foundation */,
-				919C64B221690E6700AADE1B /* FileManager */,
-				919C64AE21690B0700AADE1B /* Config */,
-				91A6EC272168C507002CC2B7 /* Category */,
-				91A6EC282168C507002CC2B7 /* Helper */,
-				91A6EC30216906A9002CC2B7 /* Macro.h */,
-				918B574C2170744B00E9B71D /* ZHFFoundation.h */,
-				918B574D2170804200E9B71D /* Document.strings */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		91A6EC272168C507002CC2B7 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				91A6EC292168C54D002CC2B7 /* UIView+Draw.h */,
-				91A6EC2A2168C54D002CC2B7 /* UIView+Draw.m */,
-				918B574021704A3C00E9B71D /* UIView+Frame.h */,
-				918B574121704A3C00E9B71D /* UIView+Frame.m */,
-				91A6EC2D2168FF87002CC2B7 /* UIImage+Custom.h */,
-				91A6EC2E2168FF87002CC2B7 /* UIImage+Custom.m */,
-				91B45D4F2169B47D00F45A8C /* UIColor+Transform.h */,
-				91B45D502169B47D00F45A8C /* UIColor+Transform.m */,
-				9191DE03216F77EF007B6E53 /* UIButton+ZHFShortCut.h */,
-				9191DE04216F77EF007B6E53 /* UIButton+ZHFShortCut.m */,
-				9191DE09216F7E18007B6E53 /* NSString+ShortCut.h */,
-				9191DE0A216F7E18007B6E53 /* NSString+ShortCut.m */,
-				9191DE13216F856A007B6E53 /* NSDate+ShortCut.h */,
-				9191DE14216F856A007B6E53 /* NSDate+ShortCut.m */,
-				9191DE16216F85C0007B6E53 /* NSDateFormatter+ShortCut.h */,
-				9191DE17216F85C0007B6E53 /* NSDateFormatter+ShortCut.m */,
-				9191DE19216F87FE007B6E53 /* NSDecimalNumber+ShortCut.h */,
-				9191DE1A216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m */,
-				9191DE1C216F8948007B6E53 /* UILabel+ShortCut.h */,
-				9191DE1D216F8948007B6E53 /* UILabel+ShortCut.m */,
-				918B573421703E6300E9B71D /* CAShapeLayer+ShortCut.h */,
-				918B573521703E6300E9B71D /* CAShapeLayer+ShortCut.m */,
-				918B573D2170466600E9B71D /* NSArray+ShortCut.h */,
-				918B573E2170466600E9B71D /* NSArray+ShortCut.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		91A6EC282168C507002CC2B7 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				918B574321704BE700E9B71D /* Utility.h */,
-				918B574421704BE700E9B71D /* Utility.m */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,6 +190,7 @@
 				916E36382163209200602088 /* Sources */,
 				916E36392163209200602088 /* Frameworks */,
 				916E363A2163209200602088 /* Resources */,
+				FE91E56C6630532E29F4EB8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -409,7 +242,6 @@
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
-				918B574E2170804200E9B71D /* Document.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +266,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FE91E56C6630532E29F4EB8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/BottomComponentLib/BottomComponentLib.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BottomComponentLib.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -441,38 +291,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				918B573F2170466600E9B71D /* NSArray+ShortCut.m in Sources */,
-				9191DE1E216F8948007B6E53 /* UILabel+ShortCut.m in Sources */,
-				918B574B21704F3300E9B71D /* ZHFRequestParameter.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
-				918B574821704DC500E9B71D /* ZHFNetworking.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
-				9191DE02216F74BF007B6E53 /* ZHFAlertControlle.m in Sources */,
-				91B45D512169B47D00F45A8C /* UIColor+Transform.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
-				9191DE0B216F7E18007B6E53 /* NSString+ShortCut.m in Sources */,
-				918B573621703E6300E9B71D /* CAShapeLayer+ShortCut.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
-				918B574521704BE700E9B71D /* Utility.m in Sources */,
-				9191DE05216F77EF007B6E53 /* UIButton+ZHFShortCut.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
-				9191DDFF216F7388007B6E53 /* ZHFTopWindow.m in Sources */,
-				9191DE1B216F87FE007B6E53 /* NSDecimalNumber+ShortCut.m in Sources */,
-				918B5739217040B100E9B71D /* ZHFQRCodeView.m in Sources */,
-				919C64B121690B5300AADE1B /* GlobalConfig.m in Sources */,
-				918B574221704A3C00E9B71D /* UIView+Frame.m in Sources */,
-				91A6EC2B2168C54D002CC2B7 /* UIView+Draw.m in Sources */,
-				919C64B521690E7A00AADE1B /* FileManager.m in Sources */,
-				9191DE12216F8281007B6E53 /* ZHFProgressHUD.m in Sources */,
-				91A6EC2F2168FF87002CC2B7 /* UIImage+Custom.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
-				9191DE15216F856A007B6E53 /* NSDate+ShortCut.m in Sources */,
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
-				9191DE18216F85C0007B6E53 /* NSDateFormatter+ShortCut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
