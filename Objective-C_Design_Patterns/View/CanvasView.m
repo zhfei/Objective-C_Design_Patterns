@@ -11,7 +11,7 @@
 @interface CanvasView()
 @property (nonatomic, strong) id<Mark> mark;
 @property (nonatomic, strong) NSMutableArray <id<Mark>> *historyPaths;
-
+@property (nonatomic, strong) UIImage *tempImage;
 @end
 
 @implementation CanvasView
@@ -24,12 +24,18 @@
 }
 
 - (void)configImage:(UIImage *)image {
-    self.layer.contents = (__bridge id _Nullable)(image.CGImage);
+    _tempImage = image;
+    [self setNeedsDisplay];
+//    self.layer.contents = (__bridge id _Nullable)(image.CGImage);
 }
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
+    if (_tempImage) {
+        [_tempImage drawInRect:rect];
+    }
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     for (id mark in self.historyPaths) {
         [mark drawWithContext:context];
