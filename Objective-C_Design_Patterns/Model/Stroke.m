@@ -14,6 +14,10 @@
 @end
 
 @implementation Stroke
+@synthesize color;
+@synthesize location;
+@synthesize size;
+
 - (NSMutableArray<id<Mark>> *)markArray {
     if (!_markArray) {
         _markArray = @[].mutableCopy;
@@ -68,5 +72,7 @@
     stroke.markArray = [self.markArray mutableCopy];
     return stroke;
 }
+
+
 
 @end

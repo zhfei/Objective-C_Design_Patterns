@@ -9,6 +9,9 @@
 #import "Dot.h"
 
 @implementation Dot
+@synthesize color;
+@synthesize size;
+
 - (void)drawWithContext:(CGContextRef)context {
     CGFloat x = self.location.x - self.size.width*0.5;
     CGFloat y = self.location.y - self.size.height*0.5;

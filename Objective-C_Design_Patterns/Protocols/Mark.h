@@ -10,9 +10,9 @@
 #import <UIKit/UIKit.h>
 
 @protocol Mark <NSObject>
-- (UIColor *)color;
-- (CGSize)size;
-- (CGPoint)location;
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGPoint location;
 - (void)addMark:(id<Mark>)mark;
 - (void)removeMark:(id<Mark>)mark;
 - (void)removeAllMarks;

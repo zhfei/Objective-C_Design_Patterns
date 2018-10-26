@@ -8,7 +8,10 @@
 
 #import "Vertex.h"
 
+
 @implementation Vertex
+@synthesize location;
+
 - (void)drawWithContext:(CGContextRef)context {
     CGContextAddLineToPoint(context, self.location.x, self.location.y);
 }

@@ -10,5 +10,5 @@
 #import "Mark.h"
 
 @interface Vertex : NSObject<Mark>
-@property (nonatomic, assign) CGPoint location;
+
 @end
