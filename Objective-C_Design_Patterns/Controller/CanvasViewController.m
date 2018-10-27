@@ -8,6 +8,7 @@
 
 #import "CanvasViewController.h"
 #import "ThumbnailViewController.h"
+#import "CoordinatingController.h"
 #import "CanvasView.h"
 #import "Stroke.h"
 #import "Vertex.h"
@@ -85,6 +86,7 @@
             //删除
             [self.stroke removeAllMarks];
             [self.paths removeAllObjects];
+            [self.canvasView configImage:nil];
             [self.canvasView setNeedsDisplay];
             break;
         case 1:
@@ -96,6 +98,7 @@
             self.stroke.location = CGPointZero;
             [self.stroke removeAllMarks];
             
+            [self.canvasView configImage:nil];
             [self.paths removeAllObjects];
             [self.canvasView setNeedsDisplay];
             
@@ -123,7 +126,7 @@
             break;
         case 5:
             //恢复
-            
+            [CoordinatingController persentStoryBoardVC:@"RecoverViewController" image:[UIImage screenshotInView:self.canvasView]];
             break;
             
         default:

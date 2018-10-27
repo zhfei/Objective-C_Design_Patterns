@@ -33,7 +33,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     if (_tempImage) {
-        [_tempImage drawInRect:rect];
+        [_tempImage drawInRect: rect];//CGRectMake(0, 0, _tempImage.size.width, _tempImage.size.height)];
     }
     
     CGContextRef context = UIGraphicsGetCurrentContext();

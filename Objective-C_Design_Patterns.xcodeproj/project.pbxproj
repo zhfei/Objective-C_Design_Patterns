@@ -18,6 +18,7 @@
 		916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E364A2163209400602088 /* LaunchScreen.storyboard */; };
 		916E364F2163209400602088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E364E2163209400602088 /* main.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
+		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
@@ -47,6 +48,8 @@
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
+		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		91C1B79321665E2D0070DB88 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				914E5E2C21664DF00089C1C7 /* PaletteViewController.m */,
 				914E5E28216648120089C1C7 /* ThumbnailViewController.h */,
 				914E5E29216648120089C1C7 /* ThumbnailViewController.m */,
+				91A84A1E2184A9C600A71138 /* RecoverViewController.h */,
+				91A84A1F2184A9C600A71138 /* RecoverViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
+				91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

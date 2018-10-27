@@ -47,12 +47,12 @@ static NSString * const reuseIdentifier = @"Cell";
             } else {
                 [weakSelf.groupArrays enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                     [obj enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
-                        if ([result thumbnail] != nil) {
+                        if ([result aspectRatioThumbnail] != nil) {
                             // 照片
                             if ([[result valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypePhoto]){
                                 
                                 NSDate *date= [result valueForProperty:ALAssetPropertyDate];
-                                UIImage *image = [UIImage imageWithCGImage:[result thumbnail]];
+                                UIImage *image = [UIImage imageWithCGImage:[result aspectRatioThumbnail]];
                                 NSString *fileName = [[result defaultRepresentation] filename];
                                 NSURL *url = [[result defaultRepresentation] url];
                                 int64_t fileSize = [[result defaultRepresentation] size];

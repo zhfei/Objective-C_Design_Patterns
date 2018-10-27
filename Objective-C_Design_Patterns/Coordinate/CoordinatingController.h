@@ -10,5 +10,5 @@
 #import <Foundation/Foundation.h>
 
 @interface CoordinatingController : NSObject
-
++ (void)persentStoryBoardVC:(NSString *)storyBoardID image:(UIImage *)image;
 @end
