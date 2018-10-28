@@ -131,6 +131,7 @@
         {
             UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"RecoverViewController"];
             [(RecoverViewController *)vc setImg:[UIImage screenshotInView:self.canvasView]];
+            [[CoordinatingController sharedCoordinatingController] presentVC:vc];
         }
             break;
             
