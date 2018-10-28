@@ -7,8 +7,9 @@
 //
 
 #import "CanvasViewController.h"
-#import "ThumbnailViewController.h"
+#import "RecoverViewController.h"
 #import "CoordinatingController.h"
+#import "ThumbnailViewController.h"
 #import "CanvasView.h"
 #import "Stroke.h"
 #import "Vertex.h"
@@ -80,7 +81,6 @@
 
 #pragma mark - Event
 - (IBAction)tapAction:(UIButton *)sender {
-    UIViewController *objVC;
     switch (sender.tag) {
         case 0:
             //删除
@@ -106,17 +106,19 @@
         case 2:
         {
             //打开
-            objVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ThumbnailViewControllerNav"];
+            UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"ThumbnailViewControllerNav"];
             WeakSelf
-            [(ThumbnailViewController *)[(UINavigationController *)objVC topViewController] setBlock:^(UIImage *image) {
+            [(ThumbnailViewController *)[(UINavigationController *)vc topViewController] setBlock:^(UIImage *image) {
                 StrongSelf
                 [self.canvasView configImage:image];
             }];
+            [[CoordinatingController sharedCoordinatingController] presentVC:vc];
+
         }
             break;
         case 3:
             //设置
-            objVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PaletteViewControllerNav"];
+            [[CoordinatingController sharedCoordinatingController] presentStoryBoardVC:@"PaletteViewControllerNav"];
             break;
         case 4:
             //撤销
@@ -126,13 +128,15 @@
             break;
         case 5:
             //恢复
-            [CoordinatingController persentStoryBoardVC:@"RecoverViewController" image:[UIImage screenshotInView:self.canvasView]];
+        {
+            UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"RecoverViewController"];
+            [(RecoverViewController *)vc setImg:[UIImage screenshotInView:self.canvasView]];
+        }
             break;
             
         default:
             break;
     }
-    objVC?[self presentViewController:objVC animated:YES completion:nil]:nil;
 }
 
 

@@ -8,7 +8,10 @@
 //  中介者，用来封装一组对象的交互逻辑
 
 #import <Foundation/Foundation.h>
+#import "CoordinateProtocol.h"
+#import <Macro.h>
 
-@interface CoordinatingController : NSObject
-+ (void)persentStoryBoardVC:(NSString *)storyBoardID image:(UIImage *)image;
+@interface CoordinatingController : NSObject <CoordinateProtocol>
+SingletonH(CoordinatingController)
+
 @end

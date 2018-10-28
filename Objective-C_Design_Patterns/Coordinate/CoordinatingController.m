@@ -10,12 +10,29 @@
 #import "RecoverViewController.h"
 
 @implementation CoordinatingController
-+ (void)persentStoryBoardVC:(NSString *)storyBoardID image:(UIImage *)image {
-   RecoverViewController *targetVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:storyBoardID];
-    targetVC.img = image;
+SingletonM(CoordinatingController)
+- (void)presentVC:(UIViewController *)targetVC {
+    UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [root presentViewController:targetVC animated:YES completion:nil];
+}
+
+- (void)presentStoryBoardVC:(NSString *)storyBoardID {
+    UIViewController *targetVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:storyBoardID];
     
     UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
     [root presentViewController:targetVC animated:YES completion:nil];
+}
+
+- (void)presentStoryBoardVC:(NSString *)storyBoardID storyBoardName:(NSString *)name {
+    UIViewController *targetVC = [[UIStoryboard storyboardWithName:name bundle:nil] instantiateViewControllerWithIdentifier:storyBoardID];
+    
+    UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [root presentViewController:targetVC animated:YES completion:nil];
+}
+
+- (UIViewController *)storyBoardVC:(NSString *)storyBoardID {
+    UIViewController *targetVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:storyBoardID];
+    return targetVC;
 }
 
 @end
