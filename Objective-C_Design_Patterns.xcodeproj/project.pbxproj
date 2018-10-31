@@ -18,6 +18,9 @@
 		916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E364A2163209400602088 /* LaunchScreen.storyboard */; };
 		916E364F2163209400602088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E364E2163209400602088 /* main.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
+		917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7923218A0BC000425A05 /* ScrawlManager.m */; };
+		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
+		917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7929218A0C3000425A05 /* ScrawlModel.m */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
@@ -48,6 +51,12 @@
 		916E364E2163209400602088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		917B7922218A0BC000425A05 /* ScrawlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlManager.h; sourceTree = "<group>"; };
+		917B7923218A0BC000425A05 /* ScrawlManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlManager.m; sourceTree = "<group>"; };
+		917B7925218A0C1B00425A05 /* MementoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoModel.h; sourceTree = "<group>"; };
+		917B7926218A0C1B00425A05 /* MementoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MementoModel.m; sourceTree = "<group>"; };
+		917B7928218A0C3000425A05 /* ScrawlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlModel.h; sourceTree = "<group>"; };
+		917B7929218A0C3000425A05 /* ScrawlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlModel.m; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
 		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
@@ -131,6 +140,7 @@
 		916E363E2163209200602088 /* Objective-C_Design_Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				917B7921218A0B7F00425A05 /* Manager */,
 				91A84A212184B98900A71138 /* MementoPattern */,
 				914E5E2E216659650089C1C7 /* Protocols */,
 				915075BF216346580049B5CA /* Coordinate */,
@@ -188,10 +198,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		917B7921218A0B7F00425A05 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				917B7922218A0BC000425A05 /* ScrawlManager.h */,
+				917B7923218A0BC000425A05 /* ScrawlManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		91A84A212184B98900A71138 /* MementoPattern */ = {
 			isa = PBXGroup;
 			children = (
 				91A84A222184BE3D00A71138 /* MementoClassChart.graffle */,
+				917B7925218A0C1B00425A05 /* MementoModel.h */,
+				917B7926218A0C1B00425A05 /* MementoModel.m */,
+				917B7928218A0C3000425A05 /* ScrawlModel.h */,
+				917B7929218A0C3000425A05 /* ScrawlModel.m */,
 			);
 			path = MementoPattern;
 			sourceTree = "<group>";
@@ -308,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */,
+				917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
@@ -318,6 +343,7 @@
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
+				917B7927218A0C1B00425A05 /* MementoModel.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
 				91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */,
 			);
