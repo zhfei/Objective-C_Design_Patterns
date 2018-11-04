@@ -7,7 +7,20 @@
 //
 
 #import "MementoModel.h"
+#import <UIColor+Transform.h>
 
-@implementation MementoModel
+@implementation MarkMementoModel
++ (instancetype)mementoModel:(UIColor *)color size:(CGSize)size location:(CGPoint)location {
+    MarkMementoModel *model = [MarkMementoModel new];
+    model.colorHexState = [UIColor hexStringFromColor:color];
+    model.sizeState = size;
+    model.locationState = location;
+    return model;
+}
+@end
+
+
+@implementation ScrawlMementoModel
+
 
 @end
