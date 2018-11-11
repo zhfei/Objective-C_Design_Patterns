@@ -42,3 +42,26 @@
 
 @end
 ```
+当对一个没有实现NSCopying协议的对象调用copy,编译器会崩溃
+
+```
+2018-11-11 14:40:46.083468+0800 Objective-C_Design_Patterns[3689:111332] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[ZHFProtoTypeModelA copyWithZone:]: unrecognized selector sent to instance 0x6000027da5a0'
+
+```
+
+```
+2018-11-11 15:03:51.031419+0800 Objective-C_Design_Patterns[4601:124602] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[ZHFProtoTypeModelA mutableCopyWithZone:]: unrecognized selector sent to instance 0x600000b606a0'
+*
+```
+根据崩溃信息可以得出
+1.调用对象A的copy方法
+2.A内部的copy方法，会调用内部的copyWithZone:
+3.若对象内的copyWithZone：方法没有实现，就会崩溃
+==复制的目的是复制资源，而非只是复制指针==
+
+
+
+
+
+
+

@@ -8,6 +8,7 @@
 
 #import "ZHFProtoTypeVC.h"
 #import "ZHFProtoTypeModelA.h"
+#import "Vertex.h"
 
 @interface ZHFProtoTypeVC ()<NSCopying>
 
@@ -23,15 +24,21 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self testCopy];
+//    [self testCopy];
+    [self testInterfaceImplet];
 }
 
 - (void)testCopy {
     ZHFProtoTypeModelA *modelA = [ZHFProtoTypeModelA new];
     modelA.name = @"jack";
     
-    ZHFProtoTypeModelA *modelB = [modelA copy];
+    ZHFProtoTypeModelA *modelB = [modelA mutableCopy];
     NSLog(@"%@",modelB.name);
+}
+
+- (void)testInterfaceImplet {
+    Vertex *vx = [[Vertex alloc] init];
+    [vx lastChild];
 }
 
 @end
