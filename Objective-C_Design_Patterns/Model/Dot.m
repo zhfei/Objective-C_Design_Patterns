@@ -9,8 +9,7 @@
 #import "Dot.h"
 
 @implementation Dot
-@synthesize color;
-@synthesize size;
+@synthesize color,size;
 
 - (void)drawWithContext:(CGContextRef)context {
     CGFloat x = self.location.x - self.size.width*0.5;
@@ -19,5 +18,12 @@
     
     CGContextSetFillColorWithColor(context, [self.color CGColor]);
     CGContextFillRect(context, rect);
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    Dot *obj = [[[self class] alloc] initWithLocation:self.location];
+    obj.color = [UIColor colorWithCGColor:self.color.CGColor];
+    obj.size = self.size;
+    return obj;
 }
 @end

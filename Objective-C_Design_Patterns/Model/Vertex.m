@@ -11,8 +11,23 @@
 
 @implementation Vertex
 @synthesize location;
+@dynamic color,size;
+
+- (instancetype)initWithLocation:(CGPoint)location {
+    self = [super init];
+    if (self) {
+        self.location = location;
+    }
+    return self;
+}
 
 - (void)drawWithContext:(CGContextRef)context {
     CGContextAddLineToPoint(context, self.location.x, self.location.y);
 }
+
+- (id)copyWithZone:(NSZone *)zone {
+    Vertex *obj = [[[self class] alloc] initWithLocation:self.location];
+    return obj;
+}
+
 @end

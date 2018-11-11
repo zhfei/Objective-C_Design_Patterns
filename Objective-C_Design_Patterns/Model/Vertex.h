@@ -10,5 +10,5 @@
 #import "Mark.h"
 
 @interface Vertex : NSObject<Mark>
-
+- (instancetype)initWithLocation:(CGPoint)location;
 @end

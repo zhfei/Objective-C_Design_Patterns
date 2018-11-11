@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol Mark <NSObject>
+@protocol Mark <NSObject,NSCopying>
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint location;
@@ -19,6 +19,7 @@
 - (id<Mark>)childAtIndex:(int)index;
 - (id<Mark>)lastChild;
 - (NSUInteger)count;
+- (instancetype)copy;
 
 #pragma mark - 绘图
 - (void)drawWithContext:(CGContextRef)context;
