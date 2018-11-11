@@ -9,6 +9,9 @@
 #import "ZHFRootTableViewModel.h"
 
 @implementation ZHFRootTableViewModel
-
+SingletonM(ZHFRootTableViewModel)
+- (NSArray *)dataSource {
+    return @[@"原型模式"];
+}
 
 @end

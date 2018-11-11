@@ -10,7 +10,7 @@
 - 对象有许多子对象组合而成，手工创建麻烦，使用复制更好。
 
 原型模式在CocoTouch中的应用
-在<NSObject>协议中有四个关于copy方法的声明
+在NSObject协议中有四个关于copy方法的声明
 ```
 - (id)copy;
 - (id)mutableCopy;
@@ -26,4 +26,19 @@
 
 + (id)copyWithZone:(struct _NSZone *)zone OBJC_ARC_UNAVAILABLE;
 + (id)mutableCopyWithZone:(struct _NSZone *)zone OBJC_ARC_UNAVAILABLE;
+```
+
+在NSCopying和NSMutableCopying协议中对复制的方法声明
+```
+@protocol NSCopying
+
+- (id)copyWithZone:(nullable NSZone *)zone;
+
+@end
+
+@protocol NSMutableCopying
+
+- (id)mutableCopyWithZone:(nullable NSZone *)zone;
+
+@end
 ```

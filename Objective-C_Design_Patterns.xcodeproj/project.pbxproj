@@ -33,6 +33,7 @@
 		91D7CB232197F0C900BA88BF /* ZHFProtoTypeModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB222197F0C900BA88BF /* ZHFProtoTypeModelA.m */; };
 		91D7CB272197F25000BA88BF /* ZHFRootTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB262197F25000BA88BF /* ZHFRootTableVC.m */; };
 		91D7CB2A2197F2D000BA88BF /* ZHFRootTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB292197F2D000BA88BF /* ZHFRootTableViewModel.m */; };
+		91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB2C2197FFA900BA88BF /* ZHFRootCoordinater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,8 @@
 		91D7CB262197F25000BA88BF /* ZHFRootTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRootTableVC.m; sourceTree = "<group>"; };
 		91D7CB282197F2D000BA88BF /* ZHFRootTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRootTableViewModel.h; sourceTree = "<group>"; };
 		91D7CB292197F2D000BA88BF /* ZHFRootTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRootTableViewModel.m; sourceTree = "<group>"; };
+		91D7CB2B2197FFA900BA88BF /* ZHFRootCoordinater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRootCoordinater.h; sourceTree = "<group>"; };
+		91D7CB2C2197FFA900BA88BF /* ZHFRootCoordinater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRootCoordinater.m; sourceTree = "<group>"; };
 		B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Objective-C_Design_Patterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -284,6 +287,8 @@
 				91D7CB262197F25000BA88BF /* ZHFRootTableVC.m */,
 				91D7CB282197F2D000BA88BF /* ZHFRootTableViewModel.h */,
 				91D7CB292197F2D000BA88BF /* ZHFRootTableViewModel.m */,
+				91D7CB2B2197FFA900BA88BF /* ZHFRootCoordinater.h */,
+				91D7CB2C2197FFA900BA88BF /* ZHFRootCoordinater.m */,
 			);
 			path = RootVC;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				91D7CB272197F25000BA88BF /* ZHFRootTableVC.m in Sources */,
 				917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */,
 				91D7CB1D2197E9BE00BA88BF /* ZHFProtoTypeVC.m in Sources */,
+				91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,

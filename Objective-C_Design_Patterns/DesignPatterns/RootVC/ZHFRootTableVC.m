@@ -7,6 +7,9 @@
 //
 
 #import "ZHFRootTableVC.h"
+#import "ZHFRootTableViewModel.h"
+#import "ZHFRootCoordinater.h"
+#import "ZHFProtoTypeVC.h"
 
 @interface ZHFRootTableVC ()
 
@@ -22,29 +25,50 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"myCell"];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return [ZHFRootTableViewModel sharedZHFRootTableViewModel].dataSource.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text = [ZHFRootTableViewModel sharedZHFRootTableViewModel].dataSource[indexPath.row];
     
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ZHFRootCoordinater *coordinater = [[ZHFRootCoordinater alloc] initWithNav:self.navigationController];
+    switch (indexPath.row) {
+        case 0:
+        {
+            ZHFProtoTypeVC *vc = [ZHFProtoTypeVC new];
+            [coordinater pushVC:vc];
+        }
+            break;
+        case 1:
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
 
 /*
 // Override to support conditional editing of the table view.
