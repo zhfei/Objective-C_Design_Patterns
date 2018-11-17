@@ -19,6 +19,10 @@
 		916E36492163209400602088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916E36482163209400602088 /* Assets.xcassets */; };
 		916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E364A2163209400602088 /* LaunchScreen.storyboard */; };
 		916E364F2163209400602088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E364E2163209400602088 /* main.m */; };
+		9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9170E7E121A06D9800E41D8A /* FactoryPattern.md */; };
+		9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E7E721A06EE700E41D8A /* ZHFFactoryPatternVC.m */; };
+		9170E7EB21A0725100E41D8A /* test0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9170E7EA21A0725100E41D8A /* test0.png */; };
+		9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9170E7EC21A076AD00E41D8A /* factoryPattern.mdj */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
 		917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7923218A0BC000425A05 /* ScrawlManager.m */; };
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
@@ -59,6 +63,11 @@
 		916E364B2163209400602088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		916E364D2163209400602088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916E364E2163209400602088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9170E7E121A06D9800E41D8A /* FactoryPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = FactoryPattern.md; sourceTree = "<group>"; };
+		9170E7E621A06EE700E41D8A /* ZHFFactoryPatternVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFFactoryPatternVC.h; sourceTree = "<group>"; };
+		9170E7E721A06EE700E41D8A /* ZHFFactoryPatternVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFFactoryPatternVC.m; sourceTree = "<group>"; };
+		9170E7EA21A0725100E41D8A /* test0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test0.png; sourceTree = "<group>"; };
+		9170E7EC21A076AD00E41D8A /* factoryPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = factoryPattern.mdj; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
 		917B7922218A0BC000425A05 /* ScrawlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlManager.h; sourceTree = "<group>"; };
@@ -133,6 +142,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				9170E7E021A06CF300E41D8A /* 工厂模式 */,
 				91D7CB242197F22100BA88BF /* RootVC */,
 				913933CD219724A40057E33C /* 原型模式 */,
 			);
@@ -190,6 +200,7 @@
 		916E363E2163209200602088 /* Objective-C_Design_Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				9170E7E921A0722000E41D8A /* Rescues */,
 				913933CC219724840057E33C /* DesignPatterns */,
 				913933C92197232E0057E33C /* Documents */,
 				917B7921218A0B7F00425A05 /* Manager */,
@@ -211,6 +222,25 @@
 				91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */,
 			);
 			path = "Objective-C_Design_Patterns";
+			sourceTree = "<group>";
+		};
+		9170E7E021A06CF300E41D8A /* 工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9170E7EC21A076AD00E41D8A /* factoryPattern.mdj */,
+				9170E7E121A06D9800E41D8A /* FactoryPattern.md */,
+				9170E7E621A06EE700E41D8A /* ZHFFactoryPatternVC.h */,
+				9170E7E721A06EE700E41D8A /* ZHFFactoryPatternVC.m */,
+			);
+			path = "工厂模式";
+			sourceTree = "<group>";
+		};
+		9170E7E921A0722000E41D8A /* Rescues */ = {
+			isa = PBXGroup;
+			children = (
+				9170E7EA21A0725100E41D8A /* test0.png */,
+			);
+			path = Rescues;
 			sourceTree = "<group>";
 		};
 		9174038321632F9400EEC228 /* Model */ = {
@@ -352,9 +382,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
+				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
+				9170E7EB21A0725100E41D8A /* test0.png in Resources */,
 				913933CB2197235F0057E33C /* 设计模式1.md in Resources */,
 				913933CF219728B00057E33C /* ProtoType.mdj in Resources */,
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
@@ -397,6 +430,7 @@
 				91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
+				9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,

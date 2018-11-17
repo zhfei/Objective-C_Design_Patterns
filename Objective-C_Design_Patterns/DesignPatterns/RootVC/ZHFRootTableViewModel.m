@@ -11,7 +11,7 @@
 @implementation ZHFRootTableViewModel
 SingletonM(ZHFRootTableViewModel)
 - (NSArray *)dataSource {
-    return @[@"原型模式"];
+    return @[@"原型模式",@"工厂模式"];
 }
 
 @end

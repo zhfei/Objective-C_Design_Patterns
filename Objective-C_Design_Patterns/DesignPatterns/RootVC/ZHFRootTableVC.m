@@ -10,6 +10,7 @@
 #import "ZHFRootTableViewModel.h"
 #import "ZHFRootCoordinater.h"
 #import "ZHFProtoTypeVC.h"
+#import "ZHFFactoryPatternVC.h"
 
 @interface ZHFRootTableVC ()
 
@@ -60,6 +61,10 @@
         }
             break;
         case 1:
+        {
+            ZHFFactoryPatternVC *vc = [ZHFFactoryPatternVC new];
+            [coordinater pushVC:vc];
+        }
             
             break;
             
