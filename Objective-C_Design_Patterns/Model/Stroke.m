@@ -14,9 +14,7 @@
 @end
 
 @implementation Stroke
-@synthesize color;
-@synthesize location;
-@synthesize size;
+@synthesize color,location,size;
 
 - (NSMutableArray<id<Mark>> *)markArray {
     if (!_markArray) {
@@ -60,19 +58,18 @@
     CGContextStrokePath(context);
 }
 
-//@property (nonatomic, strong) UIColor *color;
-//@property (nonatomic, assign) CGSize size;
-//@property (nonatomic, assign) CGPoint location;
 
 - (id)copyWithZone:(NSZone *)zone {
-    Stroke *stroke = [Stroke new];
-    stroke.color = self.color;
+    Stroke *stroke = [[[self class] alloc] init];
+    stroke.color = [UIColor colorWithCGColor:self.color.CGColor];
     stroke.size = self.size;
     stroke.location = self.location;
-    stroke.markArray = [self.markArray mutableCopy];
+    
+    NSMutableArray *targetArrayM = [NSMutableArray arrayWithCapacity:self.markArray.count];
+    for (id<Mark> obj in self.markArray) {
+        [targetArrayM addObject:[obj copy]];
+    }
+    stroke.markArray = targetArrayM;
     return stroke;
 }
-
-
-
 @end
