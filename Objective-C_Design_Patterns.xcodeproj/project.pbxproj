@@ -23,6 +23,11 @@
 		9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E7E721A06EE700E41D8A /* ZHFFactoryPatternVC.m */; };
 		9170E7EB21A0725100E41D8A /* test0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9170E7EA21A0725100E41D8A /* test0.png */; };
 		9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9170E7EC21A076AD00E41D8A /* factoryPattern.mdj */; };
+		9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E7FB21A1B7D300E41D8A /* ZHFClothCanvasView.m */; };
+		9170E7FF21A1B7F200E41D8A /* ZHFPaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E7FE21A1B7F200E41D8A /* ZHFPaperCanvasView.m */; };
+		9170E80321A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E80221A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m */; };
+		9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E80521A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m */; };
+		9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9170E80721A1BC3000E41D8A /* CanvasViewFactory.mdj */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
 		917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7923218A0BC000425A05 /* ScrawlManager.m */; };
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
@@ -68,6 +73,17 @@
 		9170E7E721A06EE700E41D8A /* ZHFFactoryPatternVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFFactoryPatternVC.m; sourceTree = "<group>"; };
 		9170E7EA21A0725100E41D8A /* test0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test0.png; sourceTree = "<group>"; };
 		9170E7EC21A076AD00E41D8A /* factoryPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = factoryPattern.mdj; sourceTree = "<group>"; };
+		9170E7F921A1B79000E41D8A /* ZHFCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasView.h; sourceTree = "<group>"; };
+		9170E7FA21A1B7D300E41D8A /* ZHFClothCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFClothCanvasView.h; sourceTree = "<group>"; };
+		9170E7FB21A1B7D300E41D8A /* ZHFClothCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFClothCanvasView.m; sourceTree = "<group>"; };
+		9170E7FD21A1B7F200E41D8A /* ZHFPaperCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFPaperCanvasView.h; sourceTree = "<group>"; };
+		9170E7FE21A1B7F200E41D8A /* ZHFPaperCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFPaperCanvasView.m; sourceTree = "<group>"; };
+		9170E80021A1B86200E41D8A /* ZHFCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasViewGenerator.h; sourceTree = "<group>"; };
+		9170E80121A1B88900E41D8A /* ZHFClothCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFClothCanvasViewGenerator.h; sourceTree = "<group>"; };
+		9170E80221A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFClothCanvasViewGenerator.m; sourceTree = "<group>"; };
+		9170E80421A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFPaperCanvasViewGenerator.h; sourceTree = "<group>"; };
+		9170E80521A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFPaperCanvasViewGenerator.m; sourceTree = "<group>"; };
+		9170E80721A1BC3000E41D8A /* CanvasViewFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CanvasViewFactory.mdj; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
 		917B7922218A0BC000425A05 /* ScrawlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlManager.h; sourceTree = "<group>"; };
@@ -227,6 +243,7 @@
 		9170E7E021A06CF300E41D8A /* 工厂模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9170E7F821A1B75000E41D8A /* Apply */,
 				9170E7EC21A076AD00E41D8A /* factoryPattern.mdj */,
 				9170E7E121A06D9800E41D8A /* FactoryPattern.md */,
 				9170E7E621A06EE700E41D8A /* ZHFFactoryPatternVC.h */,
@@ -241,6 +258,24 @@
 				9170E7EA21A0725100E41D8A /* test0.png */,
 			);
 			path = Rescues;
+			sourceTree = "<group>";
+		};
+		9170E7F821A1B75000E41D8A /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				9170E80721A1BC3000E41D8A /* CanvasViewFactory.mdj */,
+				9170E7F921A1B79000E41D8A /* ZHFCanvasView.h */,
+				9170E7FA21A1B7D300E41D8A /* ZHFClothCanvasView.h */,
+				9170E7FB21A1B7D300E41D8A /* ZHFClothCanvasView.m */,
+				9170E7FD21A1B7F200E41D8A /* ZHFPaperCanvasView.h */,
+				9170E7FE21A1B7F200E41D8A /* ZHFPaperCanvasView.m */,
+				9170E80021A1B86200E41D8A /* ZHFCanvasViewGenerator.h */,
+				9170E80121A1B88900E41D8A /* ZHFClothCanvasViewGenerator.h */,
+				9170E80221A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m */,
+				9170E80421A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.h */,
+				9170E80521A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m */,
+			);
+			path = Apply;
 			sourceTree = "<group>";
 		};
 		9174038321632F9400EEC228 /* Model */ = {
@@ -391,6 +426,7 @@
 				913933CB2197235F0057E33C /* 设计模式1.md in Resources */,
 				913933CF219728B00057E33C /* ProtoType.mdj in Resources */,
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
+				9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,9 +470,13 @@
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
+				9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */,
+				9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
+				9170E80321A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m in Sources */,
+				9170E7FF21A1B7F200E41D8A /* ZHFPaperCanvasView.m in Sources */,
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
 				917B7927218A0C1B00425A05 /* MementoModel.m in Sources */,

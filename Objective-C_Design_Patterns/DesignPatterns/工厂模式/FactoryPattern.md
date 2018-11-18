@@ -25,7 +25,7 @@ NSNumber类定义了一系列的工厂方法：
 + (NSNumber *)numberWithUnsignedInteger:(NSUInteger)value API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 ```
 每个方法参数都有传给类工厂方法的值
-某一天想新增一种产品时，客户端代码无需修改，只需要新增一个工厂方法就好了
+某一天想新增一种产品时，客户端代码无需修改，只需要新增一个工厂方法就好了（这也是工厂模式一个比较重要的用途）
 
 而单纯使用[[NSNumber alloc] init]; 返回的是nil
 ![test0.png](/Users/zhoufei/Desktop/test0.png)
