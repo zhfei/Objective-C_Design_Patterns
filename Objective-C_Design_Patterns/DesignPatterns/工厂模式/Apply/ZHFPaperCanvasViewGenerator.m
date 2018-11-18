@@ -7,7 +7,11 @@
 //
 
 #import "ZHFPaperCanvasViewGenerator.h"
+#import "ZHFPaperCanvasView.h"
 
 @implementation ZHFPaperCanvasViewGenerator
-
++ (nonnull id<ZHFCanvasView>)canvasViewWithFrame:(CGRect)frame {
+    id<ZHFCanvasView> can = [[ZHFPaperCanvasView alloc] initWithFrame:frame];
+    return can;
+}
 @end

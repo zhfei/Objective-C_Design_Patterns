@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZHFCanvasView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZHFCanvasViewGenerator <NSObject>
-
++ (id<ZHFCanvasView>)canvasViewWithFrame:(CGRect)frame;
 @end
 
 NS_ASSUME_NONNULL_END
