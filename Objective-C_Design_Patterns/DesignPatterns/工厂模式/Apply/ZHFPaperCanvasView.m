@@ -9,7 +9,17 @@
 #import "ZHFPaperCanvasView.h"
 
 @implementation ZHFPaperCanvasView
-
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        UIImageView *bg = [[UIImageView alloc] initWithFrame:frame];
+        bg.image = [UIImage imageNamed:@"Cloth"];
+        bg.userInteractionEnabled = YES;
+        [self addSubview:bg];
+    }
+    return self;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

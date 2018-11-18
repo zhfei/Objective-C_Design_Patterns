@@ -13,6 +13,9 @@
 #import "CanvasView.h"
 #import "Stroke.h"
 #import "Vertex.h"
+#import "ZHFClothCanvasViewGenerator.h"
+
+
 
 @interface CanvasViewController ()
 @property (weak, nonatomic) IBOutlet CanvasView *canvasView;
@@ -29,6 +32,9 @@
     self.paths = @[].mutableCopy;
     [self.canvasView configMark:self.stroke];
     [self.canvasView configHistoryPaths:_paths];
+    
+//    ZHFClothCanvasView *cloth =  [ZHFClothCanvasViewGenerator canvasViewWithFrame:_canvasView.frame];
+//    [self.canvasView addSubview:cloth];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

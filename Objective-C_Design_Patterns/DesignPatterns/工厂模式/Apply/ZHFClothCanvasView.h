@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CanvasView.h"
 #import "ZHFCanvasView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZHFClothCanvasView : UIView <ZHFCanvasView>
+@interface ZHFClothCanvasView : CanvasView <ZHFCanvasView>
 
 @end
 

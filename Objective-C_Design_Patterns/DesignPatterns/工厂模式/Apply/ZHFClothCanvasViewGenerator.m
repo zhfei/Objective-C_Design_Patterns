@@ -7,7 +7,6 @@
 //
 
 #import "ZHFClothCanvasViewGenerator.h"
-#import "ZHFClothCanvasView.h"
 
 @implementation ZHFClothCanvasViewGenerator
 + (nonnull id<ZHFCanvasView>)canvasViewWithFrame:(CGRect)frame {

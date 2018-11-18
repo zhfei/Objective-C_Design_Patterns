@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ZHFCanvasViewGenerator.h"
+#import "ZHFClothCanvasView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -9,6 +9,17 @@
 #import "ZHFClothCanvasView.h"
 
 @implementation ZHFClothCanvasView
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        UIImageView *bg = [[UIImageView alloc] initWithFrame:frame];
+        bg.image = [UIImage imageNamed:@"Paper"];
+        bg.userInteractionEnabled = YES;
+        [self addSubview:bg];
+    }
+    return self;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.
