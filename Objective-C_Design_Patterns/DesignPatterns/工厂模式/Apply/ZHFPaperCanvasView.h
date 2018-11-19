@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZHFPaperCanvasView : CanvasView <ZHFCanvasView>
+@interface ZHFPaperCanvasView : ZHFCanvasView
 
 @end
 

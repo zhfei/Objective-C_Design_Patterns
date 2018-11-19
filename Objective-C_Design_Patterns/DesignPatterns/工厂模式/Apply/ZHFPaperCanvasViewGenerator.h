@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZHFPaperCanvasViewGenerator : NSObject <ZHFCanvasViewGenerator>
+@interface ZHFPaperCanvasViewGenerator : ZHFCanvasViewGenerator
 
 @end
 

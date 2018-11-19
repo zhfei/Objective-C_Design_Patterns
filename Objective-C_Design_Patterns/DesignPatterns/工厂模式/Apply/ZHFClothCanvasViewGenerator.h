@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZHFClothCanvasViewGenerator : NSObject <ZHFCanvasViewGenerator>
+@interface ZHFClothCanvasViewGenerator : ZHFCanvasViewGenerator
 
 @end
 

@@ -13,6 +13,8 @@
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
+		916AE27721A2C72F00E41F76 /* ZHFCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AE27621A2C72F00E41F76 /* ZHFCanvasView.m */; };
+		916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AE27921A2C77800E41F76 /* ZHFCanvasViewGenerator.m */; };
 		916E36412163209200602088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E36402163209200602088 /* AppDelegate.m */; };
 		916E36442163209200602088 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E36432163209200602088 /* ViewController.m */; };
 		916E36472163209200602088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916E36452163209200602088 /* Main.storyboard */; };
@@ -58,6 +60,10 @@
 		914E5E2F216659810089C1C7 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		915075C02163467A0049B5CA /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		915075C12163467A0049B5CA /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
+		916AE27521A2C72F00E41F76 /* ZHFCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasView.h; sourceTree = "<group>"; };
+		916AE27621A2C72F00E41F76 /* ZHFCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCanvasView.m; sourceTree = "<group>"; };
+		916AE27821A2C77800E41F76 /* ZHFCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasViewGenerator.h; sourceTree = "<group>"; };
+		916AE27921A2C77800E41F76 /* ZHFCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCanvasViewGenerator.m; sourceTree = "<group>"; };
 		916E363C2163209200602088 /* Objective-C_Design_Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C_Design_Patterns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		916E363F2163209200602088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		916E36402163209200602088 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,12 +79,10 @@
 		9170E7E721A06EE700E41D8A /* ZHFFactoryPatternVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFFactoryPatternVC.m; sourceTree = "<group>"; };
 		9170E7EA21A0725100E41D8A /* test0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test0.png; sourceTree = "<group>"; };
 		9170E7EC21A076AD00E41D8A /* factoryPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = factoryPattern.mdj; sourceTree = "<group>"; };
-		9170E7F921A1B79000E41D8A /* ZHFCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasView.h; sourceTree = "<group>"; };
 		9170E7FA21A1B7D300E41D8A /* ZHFClothCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFClothCanvasView.h; sourceTree = "<group>"; };
 		9170E7FB21A1B7D300E41D8A /* ZHFClothCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFClothCanvasView.m; sourceTree = "<group>"; };
 		9170E7FD21A1B7F200E41D8A /* ZHFPaperCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFPaperCanvasView.h; sourceTree = "<group>"; };
 		9170E7FE21A1B7F200E41D8A /* ZHFPaperCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFPaperCanvasView.m; sourceTree = "<group>"; };
-		9170E80021A1B86200E41D8A /* ZHFCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasViewGenerator.h; sourceTree = "<group>"; };
 		9170E80121A1B88900E41D8A /* ZHFClothCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFClothCanvasViewGenerator.h; sourceTree = "<group>"; };
 		9170E80221A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFClothCanvasViewGenerator.m; sourceTree = "<group>"; };
 		9170E80421A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFPaperCanvasViewGenerator.h; sourceTree = "<group>"; };
@@ -264,12 +268,14 @@
 			isa = PBXGroup;
 			children = (
 				9170E80721A1BC3000E41D8A /* CanvasViewFactory.mdj */,
-				9170E7F921A1B79000E41D8A /* ZHFCanvasView.h */,
+				916AE27521A2C72F00E41F76 /* ZHFCanvasView.h */,
+				916AE27621A2C72F00E41F76 /* ZHFCanvasView.m */,
 				9170E7FA21A1B7D300E41D8A /* ZHFClothCanvasView.h */,
 				9170E7FB21A1B7D300E41D8A /* ZHFClothCanvasView.m */,
 				9170E7FD21A1B7F200E41D8A /* ZHFPaperCanvasView.h */,
 				9170E7FE21A1B7F200E41D8A /* ZHFPaperCanvasView.m */,
-				9170E80021A1B86200E41D8A /* ZHFCanvasViewGenerator.h */,
+				916AE27821A2C77800E41F76 /* ZHFCanvasViewGenerator.h */,
+				916AE27921A2C77800E41F76 /* ZHFCanvasViewGenerator.m */,
 				9170E80121A1B88900E41D8A /* ZHFClothCanvasViewGenerator.h */,
 				9170E80221A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m */,
 				9170E80421A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.h */,
@@ -463,6 +469,7 @@
 				91D7CB272197F25000BA88BF /* ZHFRootTableVC.m in Sources */,
 				917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */,
 				91D7CB1D2197E9BE00BA88BF /* ZHFProtoTypeVC.m in Sources */,
+				916AE27721A2C72F00E41F76 /* ZHFCanvasView.m in Sources */,
 				91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
@@ -471,6 +478,7 @@
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
 				9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */,
+				916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */,
 				9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,

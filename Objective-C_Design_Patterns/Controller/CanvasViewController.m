@@ -14,11 +14,12 @@
 #import "Stroke.h"
 #import "Vertex.h"
 #import "ZHFClothCanvasViewGenerator.h"
+#import "ZHFPaperCanvasViewGenerator.h"
 
-
+#define ScreenSize [UIScreen mainScreen].bounds.size
 
 @interface CanvasViewController ()
-@property (weak, nonatomic) IBOutlet CanvasView *canvasView;
+@property (strong, nonatomic) CanvasView *canvasView;
 @property (strong, nonatomic) Stroke *stroke;
 @property (strong, nonatomic) NSMutableArray <id<Mark>> *paths;
 @end
@@ -30,11 +31,19 @@
     // Do any additional setup after loading the view.
     self.stroke = [Stroke new];
     self.paths = @[].mutableCopy;
+    [self loadCanvasViewWithCanvasViewGenerator:[ZHFClothCanvasViewGenerator new]];
+    
     [self.canvasView configMark:self.stroke];
     [self.canvasView configHistoryPaths:_paths];
-    
-//    ZHFClothCanvasView *cloth =  [ZHFClothCanvasViewGenerator canvasViewWithFrame:_canvasView.frame];
-//    [self.canvasView addSubview:cloth];
+}
+
+- (void)loadCanvasViewWithCanvasViewGenerator:(ZHFCanvasViewGenerator *)generator {
+    if (_canvasView) {
+        [_canvasView removeFromSuperview];
+    }
+    ZHFCanvasView *can = [generator canvasViewWithFrame:CGRectMake(0, 0, ScreenSize.width, ScreenSize.height - 100)];
+    self.canvasView = can;
+    [self.view addSubview:self.canvasView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

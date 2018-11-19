@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhh-Dq-Wal" customClass="CanvasView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jNX-s8-dhL">
                                 <rect key="frame" x="0.0" y="508" width="320" height="60"/>
                                 <subviews>
@@ -93,19 +89,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fhh-Dq-Wal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1MV-n4-ejj"/>
-                            <constraint firstItem="jNX-s8-dhL" firstAttribute="top" secondItem="fhh-Dq-Wal" secondAttribute="bottom" constant="30" id="4JY-xN-yFV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jNX-s8-dhL" secondAttribute="bottom" id="JOV-HK-9J4"/>
-                            <constraint firstItem="fhh-Dq-Wal" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zf2-V1-Jfm"/>
                             <constraint firstItem="jNX-s8-dhL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dQU-gi-88t"/>
-                            <constraint firstItem="fhh-Dq-Wal" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fUG-a0-7Po"/>
                             <constraint firstItem="jNX-s8-dhL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i4H-bY-mw1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="canvasView" destination="fhh-Dq-Wal" id="98Q-pd-KIf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
