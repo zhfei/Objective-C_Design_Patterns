@@ -14,6 +14,7 @@
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
 		9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9161839E21AAECD200681B46 /* AbstractFactory.mdj */; };
+		916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */; };
 		916AE27721A2C72F00E41F76 /* ZHFCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AE27621A2C72F00E41F76 /* ZHFCanvasView.m */; };
 		916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AE27921A2C77800E41F76 /* ZHFCanvasViewGenerator.m */; };
 		916E36412163209200602088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E36402163209200602088 /* AppDelegate.m */; };
@@ -63,6 +64,8 @@
 		915075C02163467A0049B5CA /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		915075C12163467A0049B5CA /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
 		9161839E21AAECD200681B46 /* AbstractFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.mdj; sourceTree = "<group>"; };
+		916183A121AAFDB200681B46 /* ZHFBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBrandingFactory.h; sourceTree = "<group>"; };
+		916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBrandingFactory.m; sourceTree = "<group>"; };
 		916AE27521A2C72F00E41F76 /* ZHFCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasView.h; sourceTree = "<group>"; };
 		916AE27621A2C72F00E41F76 /* ZHFCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCanvasView.m; sourceTree = "<group>"; };
 		916AE27821A2C77800E41F76 /* ZHFCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasViewGenerator.h; sourceTree = "<group>"; };
@@ -204,6 +207,15 @@
 			path = Coordinate;
 			sourceTree = "<group>";
 		};
+		916183A021AAFD5900681B46 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				916183A121AAFDB200681B46 /* ZHFBrandingFactory.h */,
+				916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */,
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
 		916E36332163209200602088 = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +350,7 @@
 		918E0EF421A3140400F4FC2B /* 抽象工程模式 */ = {
 			isa = PBXGroup;
 			children = (
+				916183A021AAFD5900681B46 /* Apply */,
 				9161839E21AAECD200681B46 /* AbstractFactory.mdj */,
 				918E0EF521A3146500F4FC2B /* AbstractFactory.md */,
 			);
@@ -480,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */,
 				91D7CB232197F0C900BA88BF /* ZHFProtoTypeModelA.m in Sources */,
 				917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */,
 				91D7CB272197F25000BA88BF /* ZHFRootTableVC.m in Sources */,
