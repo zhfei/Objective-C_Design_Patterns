@@ -13,10 +13,21 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UIImageView *bg = [[UIImageView alloc] initWithFrame:frame];
-        bg.image = [UIImage imageNamed:@"Paper"];
-        bg.userInteractionEnabled = YES;
-        [self addSubview:bg];
+//        UIImageView *bg = [[UIImageView alloc] initWithFrame:frame];
+//        bg.image = [UIImage imageNamed:@"Paper"];
+//        bg.userInteractionEnabled = YES;
+//        [self addSubview:bg];
+        
+        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Paper"]];
+        
+//        CALayer *bgLayer = [CALayer new];
+//        bgLayer.bounds = self.bounds;
+//        bgLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"Paper"].CGImage);
+//        [self.layer insertSublayer:bgLayer atIndex:0];
+        
+//        self.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"Paper"].CGImage);
+
+        
     }
     return self;
 }

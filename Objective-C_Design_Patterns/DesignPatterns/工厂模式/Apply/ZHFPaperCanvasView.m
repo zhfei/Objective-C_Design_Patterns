@@ -13,10 +13,12 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UIImageView *bg = [[UIImageView alloc] initWithFrame:frame];
-        bg.image = [UIImage imageNamed:@"Cloth"];
-        bg.userInteractionEnabled = YES;
-        [self addSubview:bg];
+//        UIImageView *bg = [[UIImageView alloc] initWithFrame:frame];
+//        bg.image = [UIImage imageNamed:@"Cloth"];
+//        bg.userInteractionEnabled = YES;
+//        [self addSubview:bg];
+        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Cloth"]];
+
     }
     return self;
 }
