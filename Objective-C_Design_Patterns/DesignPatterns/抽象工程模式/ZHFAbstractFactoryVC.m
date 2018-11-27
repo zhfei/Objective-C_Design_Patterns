@@ -27,6 +27,10 @@
     UIView *bView = [bf brandingView];
     UIButton *bBtn = [bf brandingMainButton];
     UIToolbar *bToolbar = [bf brandingToolbar];
+    
+    NSNumber *num1 = [NSNumber numberWithInt:10];
+    [num1 intValue];
+    [num1 charValue];
 }
 
 /*
