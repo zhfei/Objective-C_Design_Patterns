@@ -52,6 +52,7 @@
 		91D7CB272197F25000BA88BF /* ZHFRootTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB262197F25000BA88BF /* ZHFRootTableVC.m */; };
 		91D7CB2A2197F2D000BA88BF /* ZHFRootTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB292197F2D000BA88BF /* ZHFRootTableViewModel.m */; };
 		91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB2C2197FFA900BA88BF /* ZHFRootCoordinater.m */; };
+		91DC404321AD7B2000603387 /* ZHFAbstractFactoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DC404221AD7B2000603387 /* ZHFAbstractFactoryVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +139,8 @@
 		91D7CB292197F2D000BA88BF /* ZHFRootTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRootTableViewModel.m; sourceTree = "<group>"; };
 		91D7CB2B2197FFA900BA88BF /* ZHFRootCoordinater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRootCoordinater.h; sourceTree = "<group>"; };
 		91D7CB2C2197FFA900BA88BF /* ZHFRootCoordinater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRootCoordinater.m; sourceTree = "<group>"; };
+		91DC404121AD7B2000603387 /* ZHFAbstractFactoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAbstractFactoryVC.h; sourceTree = "<group>"; };
+		91DC404221AD7B2000603387 /* ZHFAbstractFactoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAbstractFactoryVC.m; sourceTree = "<group>"; };
 		B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Objective-C_Design_Patterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -373,6 +376,8 @@
 				916183A021AAFD5900681B46 /* Apply */,
 				9161839E21AAECD200681B46 /* AbstractFactory.mdj */,
 				918E0EF521A3146500F4FC2B /* AbstractFactory.md */,
+				91DC404121AD7B2000603387 /* ZHFAbstractFactoryVC.h */,
+				91DC404221AD7B2000603387 /* ZHFAbstractFactoryVC.m */,
 			);
 			path = "抽象工程模式";
 			sourceTree = "<group>";
@@ -527,6 +532,7 @@
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
 				9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
+				91DC404321AD7B2000603387 /* ZHFAbstractFactoryVC.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
 				9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */,
