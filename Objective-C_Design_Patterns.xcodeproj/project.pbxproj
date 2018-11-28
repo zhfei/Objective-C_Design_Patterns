@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F5F9106E46290962FF8406B /* libPods-Objective-C_Design_Patterns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
+		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
 		913933CF219728B00057E33C /* ProtoType.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 913933CE219728B00057E33C /* ProtoType.mdj */; };
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
@@ -61,6 +62,7 @@
 		7AF48F83BE7FACAC0BCF4001 /* Pods-Objective-C_Design_Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-C_Design_Patterns.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns.release.xcconfig"; sourceTree = "<group>"; };
 		911200AF218600AD007794AD /* CoordinateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateProtocol.h; sourceTree = "<group>"; };
 		911B3DD721AEDC0B009BC83D /* BuilderPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BuilderPattern.md; sourceTree = "<group>"; };
+		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
 		913933CA2197235F0057E33C /* 设计模式1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "设计模式1.md"; sourceTree = "<group>"; };
 		913933CE219728B00057E33C /* ProtoType.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProtoType.mdj; sourceTree = "<group>"; };
 		914E5E28216648120089C1C7 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		911B3DD621AEDA8C009BC83D /* 生成器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */,
 				911B3DD721AEDC0B009BC83D /* BuilderPattern.md */,
 			);
 			path = "生成器模式";
@@ -490,6 +493,7 @@
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */,
+				911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */,
 				9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */,
 				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
