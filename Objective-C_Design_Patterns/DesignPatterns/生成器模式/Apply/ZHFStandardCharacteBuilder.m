@@ -9,5 +9,29 @@
 #import "ZHFStandardCharacteBuilder.h"
 
 @implementation ZHFStandardCharacteBuilder
-
+- (instancetype)buildStrength:(CGFloat)value {
+    character_.protection *= value;
+    character_.power *= value;
+    return [super buildStrength:value];
+}
+- (instancetype)buildStamina:(CGFloat)value {
+    character_.protection *= value;
+    character_.power *= value;
+    return [super buildStamina:value];
+}
+- (instancetype)buildIntelligence:(CGFloat)value {
+    character_.protection *= value;
+    character_.power /= value;
+    return [super buildIntelligence:value];
+}
+- (instancetype)buildAgility:(CGFloat)value {
+    character_.protection *= value;
+    character_.power /= value;
+    return [super buildAgility:value];;
+}
+- (instancetype)buildAggressiveness:(CGFloat)value {
+    character_.protection /= value;
+    character_.power *= value;
+    return [super buildAggressiveness:value];
+}
 @end

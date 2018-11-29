@@ -6,11 +6,11 @@
 //  Copyright © 2018年 周飞. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ZHFCharacteBuilder.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZHFStandardCharacteBuilder : NSObject
+@interface ZHFStandardCharacteBuilder : ZHFCharacteBuilder
 
 @end
 
