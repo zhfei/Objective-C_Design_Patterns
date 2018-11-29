@@ -11,6 +11,7 @@
 		910E838421B0425F00736D3B /* ChasingGame.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 910E838321B0425F00736D3B /* ChasingGame.mdj */; };
 		910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838621B042E700736D3B /* ZHFChasingGame.m */; };
 		910E838A21B0432C00736D3B /* ZHFCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838921B0432C00736D3B /* ZHFCharacter.m */; };
+		910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838C21B043B600736D3B /* ZHFCharacteBuilder.m */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
 		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
@@ -68,6 +69,8 @@
 		910E838621B042E700736D3B /* ZHFChasingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFChasingGame.m; sourceTree = "<group>"; };
 		910E838821B0432C00736D3B /* ZHFCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCharacter.h; sourceTree = "<group>"; };
 		910E838921B0432C00736D3B /* ZHFCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCharacter.m; sourceTree = "<group>"; };
+		910E838B21B043B600736D3B /* ZHFCharacteBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCharacteBuilder.h; sourceTree = "<group>"; };
+		910E838C21B043B600736D3B /* ZHFCharacteBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCharacteBuilder.m; sourceTree = "<group>"; };
 		911200AF218600AD007794AD /* CoordinateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateProtocol.h; sourceTree = "<group>"; };
 		911B3DD721AEDC0B009BC83D /* BuilderPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BuilderPattern.md; sourceTree = "<group>"; };
 		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 				910E838621B042E700736D3B /* ZHFChasingGame.m */,
 				910E838821B0432C00736D3B /* ZHFCharacter.h */,
 				910E838921B0432C00736D3B /* ZHFCharacter.m */,
+				910E838B21B043B600736D3B /* ZHFCharacteBuilder.h */,
+				910E838C21B043B600736D3B /* ZHFCharacteBuilder.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -581,6 +586,7 @@
 				916183AF21AB09AF00681B46 /* ZHFSierraBrandingViews.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
+				910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */,
 				9170E80321A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m in Sources */,
 				9170E7FF21A1B7F200E41D8A /* ZHFPaperCanvasView.m in Sources */,
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
