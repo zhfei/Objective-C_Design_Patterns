@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F5F9106E46290962FF8406B /* libPods-Objective-C_Design_Patterns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */; };
+		910E838421B0425F00736D3B /* ChasingGame.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 910E838321B0425F00736D3B /* ChasingGame.mdj */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
 		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		032EA1AC0C304488AEA2B113 /* Pods-Objective-C_Design_Patterns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-C_Design_Patterns.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns.debug.xcconfig"; sourceTree = "<group>"; };
 		7AF48F83BE7FACAC0BCF4001 /* Pods-Objective-C_Design_Patterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-C_Design_Patterns.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns.release.xcconfig"; sourceTree = "<group>"; };
+		910E838321B0425F00736D3B /* ChasingGame.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChasingGame.mdj; sourceTree = "<group>"; };
 		911200AF218600AD007794AD /* CoordinateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateProtocol.h; sourceTree = "<group>"; };
 		911B3DD721AEDC0B009BC83D /* BuilderPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BuilderPattern.md; sourceTree = "<group>"; };
 		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
@@ -177,9 +179,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		910E838221B0425F00736D3B /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				910E838321B0425F00736D3B /* ChasingGame.mdj */,
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
 		911B3DD621AEDA8C009BC83D /* 生成器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				910E838221B0425F00736D3B /* Apply */,
 				911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */,
 				911B3DD721AEDC0B009BC83D /* BuilderPattern.md */,
 			);
@@ -494,6 +505,7 @@
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */,
 				911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */,
+				910E838421B0425F00736D3B /* ChasingGame.mdj in Resources */,
 				9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */,
 				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
