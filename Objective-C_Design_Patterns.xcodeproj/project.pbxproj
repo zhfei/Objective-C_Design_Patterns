@@ -12,6 +12,7 @@
 		910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838621B042E700736D3B /* ZHFChasingGame.m */; };
 		910E838A21B0432C00736D3B /* ZHFCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838921B0432C00736D3B /* ZHFCharacter.m */; };
 		910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838C21B043B600736D3B /* ZHFCharacteBuilder.m */; };
+		910E839021B0445700736D3B /* ZHFStandardCharacteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838F21B0445700736D3B /* ZHFStandardCharacteBuilder.m */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
 		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
@@ -71,6 +72,8 @@
 		910E838921B0432C00736D3B /* ZHFCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCharacter.m; sourceTree = "<group>"; };
 		910E838B21B043B600736D3B /* ZHFCharacteBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCharacteBuilder.h; sourceTree = "<group>"; };
 		910E838C21B043B600736D3B /* ZHFCharacteBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCharacteBuilder.m; sourceTree = "<group>"; };
+		910E838E21B0445700736D3B /* ZHFStandardCharacteBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFStandardCharacteBuilder.h; sourceTree = "<group>"; };
+		910E838F21B0445700736D3B /* ZHFStandardCharacteBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFStandardCharacteBuilder.m; sourceTree = "<group>"; };
 		911200AF218600AD007794AD /* CoordinateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateProtocol.h; sourceTree = "<group>"; };
 		911B3DD721AEDC0B009BC83D /* BuilderPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BuilderPattern.md; sourceTree = "<group>"; };
 		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				910E838921B0432C00736D3B /* ZHFCharacter.m */,
 				910E838B21B043B600736D3B /* ZHFCharacteBuilder.h */,
 				910E838C21B043B600736D3B /* ZHFCharacteBuilder.m */,
+				910E838E21B0445700736D3B /* ZHFStandardCharacteBuilder.h */,
+				910E838F21B0445700736D3B /* ZHFStandardCharacteBuilder.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -561,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910E839021B0445700736D3B /* ZHFStandardCharacteBuilder.m in Sources */,
 				916183A621AAFFAD00681B46 /* ZHFSierraBrandingFactory.m in Sources */,
 				916183AC21AB089800681B46 /* ZHFAcmeBrandingViews.m in Sources */,
 				916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */,
