@@ -44,6 +44,7 @@
 		9170E80321A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E80221A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m */; };
 		9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E80521A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m */; };
 		9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9170E80721A1BC3000E41D8A /* CanvasViewFactory.mdj */; };
+		9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9173394A21B18F82009C08A1 /* SingletonPattern.md */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
 		917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7923218A0BC000425A05 /* ScrawlManager.m */; };
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
@@ -128,6 +129,7 @@
 		9170E80421A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFPaperCanvasViewGenerator.h; sourceTree = "<group>"; };
 		9170E80521A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFPaperCanvasViewGenerator.m; sourceTree = "<group>"; };
 		9170E80721A1BC3000E41D8A /* CanvasViewFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CanvasViewFactory.mdj; sourceTree = "<group>"; };
+		9173394A21B18F82009C08A1 /* SingletonPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SingletonPattern.md; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
 		917B7922218A0BC000425A05 /* ScrawlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlManager.h; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				9173394921B18D1D009C08A1 /* 单例模式 */,
 				911B3DD621AEDA8C009BC83D /* 生成器模式 */,
 				918E0EF421A3140400F4FC2B /* 抽象工程模式 */,
 				9170E7E021A06CF300E41D8A /* 工厂模式 */,
@@ -372,6 +375,14 @@
 				9170E80521A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m */,
 			);
 			path = Apply;
+			sourceTree = "<group>";
+		};
+		9173394921B18D1D009C08A1 /* 单例模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9173394A21B18F82009C08A1 /* SingletonPattern.md */,
+			);
+			path = "单例模式";
 			sourceTree = "<group>";
 		};
 		9174038321632F9400EEC228 /* Model */ = {
@@ -528,6 +539,7 @@
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
+				9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */,
 				918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */,
 				911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */,
 				910E838421B0425F00736D3B /* ChasingGame.mdj in Resources */,

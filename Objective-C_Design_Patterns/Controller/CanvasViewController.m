@@ -59,6 +59,7 @@
     self.stroke.location = [touches.anyObject locationInView:_canvasView];
     [self.stroke removeAllMarks];
     
+    
 //    [ZHFAlertControlle showWithTitle:@"11" message:@"11" btn1Title:@"11" btn1Handle:^(UIAlertAction * _Nullable action) {
 //        NSLog(@"cool....");
 //    }];
