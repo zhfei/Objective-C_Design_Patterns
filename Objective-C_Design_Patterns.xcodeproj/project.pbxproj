@@ -51,6 +51,7 @@
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
 		917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7929218A0C3000425A05 /* ScrawlModel.m */; };
 		918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */ = {isa = PBXBuildFile; fileRef = 918E0EF521A3146500F4FC2B /* AbstractFactory.md */; };
+		9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */ = {isa = PBXBuildFile; fileRef = 9198362E21B579C400747EA5 /* Adapter适配器模式.md */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
@@ -142,6 +143,7 @@
 		917B7928218A0C3000425A05 /* ScrawlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlModel.h; sourceTree = "<group>"; };
 		917B7929218A0C3000425A05 /* ScrawlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlModel.m; sourceTree = "<group>"; };
 		918E0EF521A3146500F4FC2B /* AbstractFactory.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = AbstractFactory.md; sourceTree = "<group>"; };
+		9198362E21B579C400747EA5 /* Adapter适配器模式.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Adapter适配器模式.md"; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
 		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				9198362D21B576F900747EA5 /* 适配器模式 */,
 				9173394921B18D1D009C08A1 /* 单例模式 */,
 				911B3DD621AEDA8C009BC83D /* 生成器模式 */,
 				918E0EF421A3140400F4FC2B /* 抽象工程模式 */,
@@ -448,6 +451,14 @@
 			path = "抽象工程模式";
 			sourceTree = "<group>";
 		};
+		9198362D21B576F900747EA5 /* 适配器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9198362E21B579C400747EA5 /* Adapter适配器模式.md */,
+			);
+			path = "适配器模式";
+			sourceTree = "<group>";
+		};
 		91A84A212184B98900A71138 /* MementoPattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +556,7 @@
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */,
+				9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */,
 				918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */,
 				911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */,
 				910E838421B0425F00736D3B /* ChasingGame.mdj in Resources */,
