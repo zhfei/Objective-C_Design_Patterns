@@ -218,7 +218,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Dvs-GK-LQs">
+                                                <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Dvs-GK-LQs" customClass="ZHFCommandSlider">
                                                     <rect key="frame" x="62" y="7" width="228" height="30"/>
                                                     <connections>
                                                         <action selector="sliderChangedAction:" destination="AaH-db-mdg" eventType="valueChanged" id="l4M-n5-fEN"/>
@@ -252,7 +252,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="tB9-rz-3hC">
+                                                <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="tB9-rz-3hC" customClass="ZHFCommandSlider">
                                                     <rect key="frame" x="62" y="7" width="228" height="30"/>
                                                     <connections>
                                                         <action selector="sliderChangedAction:" destination="AaH-db-mdg" eventType="valueChanged" id="C1t-uV-0hn"/>
@@ -286,7 +286,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="gad-eD-FqQ">
+                                                <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="gad-eD-FqQ" customClass="ZHFCommandSlider">
                                                     <rect key="frame" x="62" y="7" width="228" height="30"/>
                                                     <connections>
                                                         <action selector="sliderChangedAction:" destination="AaH-db-mdg" eventType="valueChanged" id="5dB-29-N7X"/>
@@ -335,7 +335,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <slider opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-Bs-HfF">
+                                                <slider opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-Bs-HfF" customClass="ZHFCommandSlider">
                                                     <rect key="frame" x="36" y="0.0" width="242" height="45"/>
                                                     <connections>
                                                         <action selector="sliderChangedAction:" destination="AaH-db-mdg" eventType="valueChanged" id="vkd-do-MqT"/>

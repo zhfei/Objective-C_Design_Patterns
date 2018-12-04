@@ -8,6 +8,7 @@
 
 
 #import "PaletteViewController.h"
+#import "ZHFCommandSlider.h"
 
 @interface PaletteViewController ()
 @property (weak, nonatomic) IBOutlet UIView *tempColor;
@@ -57,12 +58,13 @@
 - (IBAction)back:(UIBarButtonItem *)sender {
     [self performSegueWithIdentifier:@"fromPalette" sender:nil];
 }
-- (IBAction)sliderChangedAction:(UISlider *)sender {
+- (IBAction)sliderChangedAction:(ZHFCommandSlider *)sender {
     switch (sender.tag) {
         case 1:
         case 2:
         case 3:
         {
+            [[sender command] execute];
             [self setupTempColor];
         }
             break;
