@@ -25,6 +25,7 @@
 		9153C42C21B6CC2E00C2CCB6 /* ZHFCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42B21B6CC2E00C2CCB6 /* ZHFCommand.m */; };
 		9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */; };
 		9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */; };
+		9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9153C43321B6D0EC00C2CCB6 /* AdapterApply.mdj */; };
 		9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9161839E21AAECD200681B46 /* AbstractFactory.mdj */; };
 		916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */; };
 		916183A621AAFFAD00681B46 /* ZHFSierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A521AAFFAD00681B46 /* ZHFSierraBrandingFactory.m */; };
@@ -106,6 +107,7 @@
 		9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSetStrokeColorCommand.m; sourceTree = "<group>"; };
 		9153C43021B6CCF900C2CCB6 /* ZHFCommandSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCommandSlider.h; sourceTree = "<group>"; };
 		9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCommandSlider.m; sourceTree = "<group>"; };
+		9153C43321B6D0EC00C2CCB6 /* AdapterApply.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AdapterApply.mdj; sourceTree = "<group>"; };
 		9161839E21AAECD200681B46 /* AbstractFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.mdj; sourceTree = "<group>"; };
 		916183A121AAFDB200681B46 /* ZHFBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBrandingFactory.h; sourceTree = "<group>"; };
 		916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBrandingFactory.m; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		9153C42521B6CACE00C2CCB6 /* Apply */ = {
 			isa = PBXGroup;
 			children = (
+				9153C43321B6D0EC00C2CCB6 /* AdapterApply.mdj */,
 				9153C42921B6CBD200C2CCB6 /* ZHFSetStrokeColorCommandDelegate.h */,
 				9153C42A21B6CC2E00C2CCB6 /* ZHFCommand.h */,
 				9153C42B21B6CC2E00C2CCB6 /* ZHFCommand.m */,
@@ -587,6 +590,7 @@
 			files = (
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
+				9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */,
 				9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */,

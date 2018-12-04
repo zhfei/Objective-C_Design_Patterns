@@ -12,7 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZHFSetStrokeColorCommandDelegate <NSObject>
-- (void)command:
+- (void)command:(ZHFSetStrokeColorCommand *)command didRequestColorCompenentsForRed:(CGFloat *)red green:(CGFloat *)green blue:(CGFloat *)blue;
+- (void)command:(ZHFSetStrokeColorCommand *)command didFinishedColorUpdateWithColor:(UIColor *)color;
 @end
 
 NS_ASSUME_NONNULL_END

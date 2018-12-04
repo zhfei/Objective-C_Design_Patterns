@@ -11,7 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFCommand : NSObject
+{
+    @protected
+    //私有成员变量
+}
 
+- (void)execute;
 @end
 
 NS_ASSUME_NONNULL_END
