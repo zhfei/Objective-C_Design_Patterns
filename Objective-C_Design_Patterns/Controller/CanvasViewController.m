@@ -167,6 +167,9 @@
     }
 }
 #pragma mark - Public Method
+- (void)setStrokeColor:(UIColor *)color {
+    self.stroke.color = color;
+}
 
 #pragma mark - Private Method
 - (void)image: (UIImage *) image didFinishSavingWithError: (NSError *)error contextInfo: (void *) contextInfo {

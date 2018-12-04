@@ -11,7 +11,11 @@
 #import "CoordinateProtocol.h"
 #import <Macro.h>
 
+@class CanvasViewController;
+
 @interface CoordinatingController : NSObject <CoordinateProtocol>
 SingletonH(CoordinatingController)
+
+- (CanvasViewController *)canvasViewController;
 
 @end

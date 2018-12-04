@@ -26,6 +26,7 @@
 		9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */; };
 		9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */; };
 		9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9153C43321B6D0EC00C2CCB6 /* AdapterApply.mdj */; };
+		9153C43921B6D4C600C2CCB6 /* ZHFCoordinateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */; };
 		9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9161839E21AAECD200681B46 /* AbstractFactory.mdj */; };
 		916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */; };
 		916183A621AAFFAD00681B46 /* ZHFSierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A521AAFFAD00681B46 /* ZHFSierraBrandingFactory.m */; };
@@ -108,6 +109,8 @@
 		9153C43021B6CCF900C2CCB6 /* ZHFCommandSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCommandSlider.h; sourceTree = "<group>"; };
 		9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCommandSlider.m; sourceTree = "<group>"; };
 		9153C43321B6D0EC00C2CCB6 /* AdapterApply.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AdapterApply.mdj; sourceTree = "<group>"; };
+		9153C43721B6D4C600C2CCB6 /* ZHFCoordinateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCoordinateViewController.h; sourceTree = "<group>"; };
+		9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCoordinateViewController.m; sourceTree = "<group>"; };
 		9161839E21AAECD200681B46 /* AbstractFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.mdj; sourceTree = "<group>"; };
 		916183A121AAFDB200681B46 /* ZHFBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBrandingFactory.h; sourceTree = "<group>"; };
 		916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBrandingFactory.m; sourceTree = "<group>"; };
@@ -257,6 +260,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				9153C43521B6D46700C2CCB6 /* 中介者模式 */,
 				9198362D21B576F900747EA5 /* 适配器模式 */,
 				9173394921B18D1D009C08A1 /* 单例模式 */,
 				911B3DD621AEDA8C009BC83D /* 生成器模式 */,
@@ -309,6 +313,23 @@
 				9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */,
 				9153C43021B6CCF900C2CCB6 /* ZHFCommandSlider.h */,
 				9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */,
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
+		9153C43521B6D46700C2CCB6 /* 中介者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9153C43621B6D46700C2CCB6 /* Apply */,
+			);
+			path = "中介者模式";
+			sourceTree = "<group>";
+		};
+		9153C43621B6D46700C2CCB6 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				9153C43721B6D4C600C2CCB6 /* ZHFCoordinateViewController.h */,
+				9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -649,6 +670,7 @@
 				917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */,
 				91D7CB1D2197E9BE00BA88BF /* ZHFProtoTypeVC.m in Sources */,
 				916AE27721A2C72F00E41F76 /* ZHFCanvasView.m in Sources */,
+				9153C43921B6D4C600C2CCB6 /* ZHFCoordinateViewController.m in Sources */,
 				91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				9153C42821B6CB8600C2CCB6 /* ZHFAdapterViewController.m in Sources */,

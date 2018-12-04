@@ -11,6 +11,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CanvasViewController : UIViewController
-
+- (void)setStrokeColor:(UIColor *)color;
 
 @end

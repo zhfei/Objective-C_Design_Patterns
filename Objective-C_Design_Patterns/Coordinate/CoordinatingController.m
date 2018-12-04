@@ -8,9 +8,24 @@
 
 #import "CoordinatingController.h"
 #import "RecoverViewController.h"
+#import "CanvasViewController.h"
+
+@interface CoordinatingController()
+@property (nonatomic, strong)CanvasViewController *canvasViewController ;
+@end
 
 @implementation CoordinatingController
 SingletonM(CoordinatingController)
+
+- (CanvasViewController *)canvasViewController {
+    if (!_canvasViewController) {
+        _canvasViewController = [CanvasViewController new];
+    }
+    return _canvasViewController;
+}
+
+
+#pragma mark - tools
 - (void)presentVC:(UIViewController *)targetVC {
     UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
     [root presentViewController:targetVC animated:YES completion:nil];
