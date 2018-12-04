@@ -21,6 +21,10 @@
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
+		9153C42821B6CB8600C2CCB6 /* ZHFAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */; };
+		9153C42C21B6CC2E00C2CCB6 /* ZHFCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42B21B6CC2E00C2CCB6 /* ZHFCommand.m */; };
+		9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */; };
+		9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */; };
 		9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9161839E21AAECD200681B46 /* AbstractFactory.mdj */; };
 		916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */; };
 		916183A621AAFFAD00681B46 /* ZHFSierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A521AAFFAD00681B46 /* ZHFSierraBrandingFactory.m */; };
@@ -93,6 +97,15 @@
 		914E5E2F216659810089C1C7 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		915075C02163467A0049B5CA /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		915075C12163467A0049B5CA /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
+		9153C42621B6CB8600C2CCB6 /* ZHFAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAdapterViewController.h; sourceTree = "<group>"; };
+		9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAdapterViewController.m; sourceTree = "<group>"; };
+		9153C42921B6CBD200C2CCB6 /* ZHFSetStrokeColorCommandDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSetStrokeColorCommandDelegate.h; sourceTree = "<group>"; };
+		9153C42A21B6CC2E00C2CCB6 /* ZHFCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCommand.h; sourceTree = "<group>"; };
+		9153C42B21B6CC2E00C2CCB6 /* ZHFCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCommand.m; sourceTree = "<group>"; };
+		9153C42D21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSetStrokeColorCommand.h; sourceTree = "<group>"; };
+		9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSetStrokeColorCommand.m; sourceTree = "<group>"; };
+		9153C43021B6CCF900C2CCB6 /* ZHFCommandSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCommandSlider.h; sourceTree = "<group>"; };
+		9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCommandSlider.m; sourceTree = "<group>"; };
 		9161839E21AAECD200681B46 /* AbstractFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.mdj; sourceTree = "<group>"; };
 		916183A121AAFDB200681B46 /* ZHFBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBrandingFactory.h; sourceTree = "<group>"; };
 		916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBrandingFactory.m; sourceTree = "<group>"; };
@@ -283,6 +296,20 @@
 			path = Coordinate;
 			sourceTree = "<group>";
 		};
+		9153C42521B6CACE00C2CCB6 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				9153C42921B6CBD200C2CCB6 /* ZHFSetStrokeColorCommandDelegate.h */,
+				9153C42A21B6CC2E00C2CCB6 /* ZHFCommand.h */,
+				9153C42B21B6CC2E00C2CCB6 /* ZHFCommand.m */,
+				9153C42D21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.h */,
+				9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */,
+				9153C43021B6CCF900C2CCB6 /* ZHFCommandSlider.h */,
+				9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */,
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
 		916183A021AAFD5900681B46 /* Apply */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,8 +483,11 @@
 		9198362D21B576F900747EA5 /* 适配器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9153C42521B6CACE00C2CCB6 /* Apply */,
 				9198363021B57DE300747EA5 /* Adapter.mdj */,
 				9198362E21B579C400747EA5 /* Adapter适配器模式.md */,
+				9153C42621B6CB8600C2CCB6 /* ZHFAdapterViewController.h */,
+				9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */,
 			);
 			path = "适配器模式";
 			sourceTree = "<group>";
@@ -617,9 +647,11 @@
 				916AE27721A2C72F00E41F76 /* ZHFCanvasView.m in Sources */,
 				91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
+				9153C42821B6CB8600C2CCB6 /* ZHFAdapterViewController.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
 				9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
+				9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */,
 				91DC404321AD7B2000603387 /* ZHFAbstractFactoryVC.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
@@ -636,10 +668,12 @@
 				910E839321B04EEB00736D3B /* ZHFBuilderPatternVC.m in Sources */,
 				9170E7FF21A1B7F200E41D8A /* ZHFPaperCanvasView.m in Sources */,
 				91C1B79521665E2D0070DB88 /* Vertex.m in Sources */,
+				9153C42C21B6CC2E00C2CCB6 /* ZHFCommand.m in Sources */,
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
 				917B7927218A0C1B00425A05 /* MementoModel.m in Sources */,
 				910E838A21B0432C00736D3B /* ZHFCharacter.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
+				9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */,
 				91D7CB2A2197F2D000BA88BF /* ZHFRootTableViewModel.m in Sources */,
 				916183A921AAFFE700681B46 /* ZHFAcmeBrandingFactory.m in Sources */,
 				91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */,
