@@ -8,11 +8,16 @@
 //  被适配者
 
 #import <UIKit/UIKit.h>
+#import "ZHFCommand.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFCommandSlider : UISlider
-
+{
+    @protected
+    ZHFCommand *command_;
+}
+@property (nonatomic, retain)ZHFCommand *command;
 @end
 
 NS_ASSUME_NONNULL_END

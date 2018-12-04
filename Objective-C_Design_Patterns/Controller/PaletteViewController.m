@@ -157,4 +157,15 @@
 }
 */
 
+#pragma mark - ZHFSetStrokeColorCommandDelegate
+- (void)command:(ZHFSetStrokeColorCommand *)command didRequestColorCompenentsForRed:(CGFloat *)red green:(CGFloat *)green blue:(CGFloat *)blue {
+    *red = _sliderR.value;
+    *green = _sliderG.value;
+    *blue = _sliderB.value;
+}
+
+- (void)command:(ZHFSetStrokeColorCommand *)command didFinishedColorUpdateWithColor:(UIColor *)color {
+    self.tempColor.backgroundColor = color;
+}
+
 @end

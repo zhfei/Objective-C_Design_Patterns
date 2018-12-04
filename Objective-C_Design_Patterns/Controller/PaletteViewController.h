@@ -8,7 +8,8 @@
 //  调色板控制器
 
 #import <UIKit/UIKit.h>
+#import "ZHFSetStrokeColorCommandDelegate.h"
 
-@interface PaletteViewController : UITableViewController
+@interface PaletteViewController : UITableViewController<ZHFSetStrokeColorCommandDelegate>
 
 @end
