@@ -8,6 +8,7 @@
 
 
 #import "PaletteViewController.h"
+#import <Macro.h>
 #import "ZHFCommandSlider.h"
 #import "ZHFRGBValuesProvider.h"
 
@@ -29,10 +30,12 @@
     [super viewDidLoad];
     
     ZHFRGBValuesProvider *provider = [ZHFRGBValuesProvider new];
+    WeakSelf
     [provider setBlock:^(CGFloat * _Nonnull red, CGFloat * _Nonnull green, CGFloat * _Nonnull blue) {
-        *red = _sliderR.value;
-        *green = _sliderG.value;
-        *blue = _sliderB.value;
+        StrongSelf
+        *red = self.sliderR.value;
+        *green = self.sliderG.value;
+        *blue = self.sliderB.value;
     }];
 }
 
