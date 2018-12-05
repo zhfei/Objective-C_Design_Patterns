@@ -18,6 +18,7 @@
 		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
 		913933CF219728B00057E33C /* ProtoType.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 913933CE219728B00057E33C /* ProtoType.mdj */; };
+		914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */; };
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
@@ -92,6 +93,9 @@
 		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
 		913933CA2197235F0057E33C /* 设计模式1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "设计模式1.md"; sourceTree = "<group>"; };
 		913933CE219728B00057E33C /* ProtoType.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProtoType.mdj; sourceTree = "<group>"; };
+		914CD49721B8231A00C9A8DB /* ZHFRGBValuesProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRGBValuesProviderProtocol.h; sourceTree = "<group>"; };
+		914CD49A21B8238F00C9A8DB /* ZHFRGBValuesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRGBValuesProvider.h; sourceTree = "<group>"; };
+		914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRGBValuesProvider.m; sourceTree = "<group>"; };
 		914E5E28216648120089C1C7 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
 		914E5E29216648120089C1C7 /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 		914E5E2B21664DF00089C1C7 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
@@ -282,6 +286,16 @@
 				91D7CB1C2197E9BE00BA88BF /* ZHFProtoTypeVC.m */,
 			);
 			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		914CD49621B8227900C9A8DB /* Apply2 */ = {
+			isa = PBXGroup;
+			children = (
+				914CD49721B8231A00C9A8DB /* ZHFRGBValuesProviderProtocol.h */,
+				914CD49A21B8238F00C9A8DB /* ZHFRGBValuesProvider.h */,
+				914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */,
+			);
+			path = Apply2;
 			sourceTree = "<group>";
 		};
 		914E5E2E216659650089C1C7 /* Protocols */ = {
@@ -507,6 +521,7 @@
 		9198362D21B576F900747EA5 /* 适配器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				914CD49621B8227900C9A8DB /* Apply2 */,
 				9153C42521B6CACE00C2CCB6 /* Apply */,
 				9198363021B57DE300747EA5 /* Adapter.mdj */,
 				9198362E21B579C400747EA5 /* Adapter适配器模式.md */,
@@ -687,6 +702,7 @@
 				910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				916183AF21AB09AF00681B46 /* ZHFSierraBrandingViews.m in Sources */,
+				914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
 				910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */,

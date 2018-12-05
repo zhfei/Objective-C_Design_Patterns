@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
     @protected
     ZHFCommand *command_;
 }
-@property (nonatomic, retain)ZHFCommand *command;
+@property (nonatomic, retain) IBOutlet ZHFCommand *command;
 @end
 
 NS_ASSUME_NONNULL_END

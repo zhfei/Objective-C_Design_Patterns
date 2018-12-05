@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZHFSetStrokeColorCommand : ZHFCommand
 {
     @private
-    id <ZHFSetStrokeColorCommandDelegate> delegte_;
+    __weak id <ZHFSetStrokeColorCommandDelegate> delegte_;
 }
 @property (nonatomic, weak)id<ZHFSetStrokeColorCommandDelegate> delegte;
 
