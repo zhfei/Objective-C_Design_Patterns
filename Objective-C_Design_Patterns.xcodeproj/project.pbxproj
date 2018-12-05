@@ -19,6 +19,7 @@
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
 		913933CF219728B00057E33C /* ProtoType.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 913933CE219728B00057E33C /* ProtoType.mdj */; };
 		914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */; };
+		914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914CD49D21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj */; };
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
@@ -96,6 +97,7 @@
 		914CD49721B8231A00C9A8DB /* ZHFRGBValuesProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRGBValuesProviderProtocol.h; sourceTree = "<group>"; };
 		914CD49A21B8238F00C9A8DB /* ZHFRGBValuesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRGBValuesProvider.h; sourceTree = "<group>"; };
 		914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRGBValuesProvider.m; sourceTree = "<group>"; };
+		914CD49D21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGBValuesProviderAdapter.mdj; sourceTree = "<group>"; };
 		914E5E28216648120089C1C7 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
 		914E5E29216648120089C1C7 /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 		914E5E2B21664DF00089C1C7 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 		914CD49621B8227900C9A8DB /* Apply2 */ = {
 			isa = PBXGroup;
 			children = (
+				914CD49D21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj */,
 				914CD49721B8231A00C9A8DB /* ZHFRGBValuesProviderProtocol.h */,
 				914CD49A21B8238F00C9A8DB /* ZHFRGBValuesProvider.h */,
 				914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */,
@@ -628,6 +631,7 @@
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
+				914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */,
 				9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */,
 				9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */,
 				918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */,

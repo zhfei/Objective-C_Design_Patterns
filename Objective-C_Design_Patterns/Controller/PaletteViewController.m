@@ -9,6 +9,7 @@
 
 #import "PaletteViewController.h"
 #import "ZHFCommandSlider.h"
+#import "ZHFRGBValuesProvider.h"
 
 @interface PaletteViewController ()
 @property (weak, nonatomic) IBOutlet UIView *tempColor;
@@ -26,6 +27,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    ZHFRGBValuesProvider *provider = [ZHFRGBValuesProvider new];
+    [provider setBlock:^(CGFloat * _Nonnull red, CGFloat * _Nonnull green, CGFloat * _Nonnull blue) {
+        *red = _sliderR.value;
+        *green = _sliderG.value;
+        *blue = _sliderB.value;
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

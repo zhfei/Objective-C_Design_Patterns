@@ -10,4 +10,8 @@
 
 @implementation ZHFRGBValuesProvider
 
+- (void)setBlock:(RGBValuesProviderBlock)block {
+    
+}
+
 @end

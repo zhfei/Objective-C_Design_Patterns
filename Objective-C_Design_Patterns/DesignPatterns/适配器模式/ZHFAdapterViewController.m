@@ -7,6 +7,7 @@
 //
 
 #import "ZHFAdapterViewController.h"
+#import "ZHFRGBValuesProvider.h"
 
 @interface ZHFAdapterViewController ()
 
@@ -18,6 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    ZHFRGBValuesProvider *provider = [ZHFRGBValuesProvider new];
+    [provider setBlock:^(CGFloat * _Nonnull red, CGFloat * _Nonnull green, CGFloat * _Nonnull blue) {
+        
+    }]
 }
 
 
