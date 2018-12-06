@@ -10,13 +10,13 @@
 #import "PaletteViewController.h"
 #import <Macro.h>
 #import "ZHFCommandSlider.h"
-#import "ZHFRGBValuesProvider.h"
+#import "ZHFSetStrokeColorBlockCommand.h"
 
 @interface PaletteViewController ()
 @property (weak, nonatomic) IBOutlet UIView *tempColor;
-@property (weak, nonatomic) IBOutlet UISlider *sliderR;
-@property (weak, nonatomic) IBOutlet UISlider *sliderG;
-@property (weak, nonatomic) IBOutlet UISlider *sliderB;
+@property (weak, nonatomic) IBOutlet ZHFCommandSlider *sliderR;
+@property (weak, nonatomic) IBOutlet ZHFCommandSlider *sliderG;
+@property (weak, nonatomic) IBOutlet ZHFCommandSlider *sliderB;
 
 @property (weak, nonatomic) IBOutlet UIView *smallCircle;
 @property (weak, nonatomic) IBOutlet UIView *bigCircle;
@@ -29,9 +29,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ZHFRGBValuesProvider *provider = [ZHFRGBValuesProvider new];
+    ZHFSetStrokeColorBlockCommand *blockCommand = [ZHFSetStrokeColorBlockCommand new];
+    self.sliderR.command = blockCommand;
+    self.sliderG.command = blockCommand;
+    self.sliderB.command = blockCommand;
     WeakSelf
-    [provider setBlock:^(CGFloat * _Nonnull red, CGFloat * _Nonnull green, CGFloat * _Nonnull blue) {
+    [blockCommand setProviderBlock:^(CGFloat * _Nonnull red, CGFloat * _Nonnull green, CGFloat * _Nonnull blue) {
         StrongSelf
         *red = self.sliderR.value;
         *green = self.sliderG.value;
