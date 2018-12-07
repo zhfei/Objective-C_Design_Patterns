@@ -60,6 +60,8 @@
 		9171584D21BACF59000525FC /* ZHFConsoleEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171584C21BACF59000525FC /* ZHFConsoleEmulator.m */; };
 		9171585021BAD176000525FC /* ZHFGameBoyEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171584F21BAD176000525FC /* ZHFGameBoyEmulator.m */; };
 		9171585321BAD18A000525FC /* ZHFGameGeerEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171585221BAD18A000525FC /* ZHFGameGeerEmulator.m */; };
+		9171585621BAD238000525FC /* ZHFConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171585521BAD238000525FC /* ZHFConsoleController.m */; };
+		9171585921BAD398000525FC /* ZHFTouchConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171585821BAD398000525FC /* ZHFTouchConsoleController.m */; };
 		9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9173394A21B18F82009C08A1 /* SingletonPattern.md */; };
 		9173394E21B193D9009C08A1 /* ZHFSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9173394D21B193D9009C08A1 /* ZHFSingleton.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
@@ -177,6 +179,10 @@
 		9171584F21BAD176000525FC /* ZHFGameBoyEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFGameBoyEmulator.m; sourceTree = "<group>"; };
 		9171585121BAD18A000525FC /* ZHFGameGeerEmulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFGameGeerEmulator.h; sourceTree = "<group>"; };
 		9171585221BAD18A000525FC /* ZHFGameGeerEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFGameGeerEmulator.m; sourceTree = "<group>"; };
+		9171585421BAD238000525FC /* ZHFConsoleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFConsoleController.h; sourceTree = "<group>"; };
+		9171585521BAD238000525FC /* ZHFConsoleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFConsoleController.m; sourceTree = "<group>"; };
+		9171585721BAD398000525FC /* ZHFTouchConsoleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFTouchConsoleController.h; sourceTree = "<group>"; };
+		9171585821BAD398000525FC /* ZHFTouchConsoleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFTouchConsoleController.m; sourceTree = "<group>"; };
 		9173394A21B18F82009C08A1 /* SingletonPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SingletonPattern.md; sourceTree = "<group>"; };
 		9173394C21B193D9009C08A1 /* ZHFSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSingleton.h; sourceTree = "<group>"; };
 		9173394D21B193D9009C08A1 /* ZHFSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSingleton.m; sourceTree = "<group>"; };
@@ -499,6 +505,10 @@
 				9171584F21BAD176000525FC /* ZHFGameBoyEmulator.m */,
 				9171585121BAD18A000525FC /* ZHFGameGeerEmulator.h */,
 				9171585221BAD18A000525FC /* ZHFGameGeerEmulator.m */,
+				9171585421BAD238000525FC /* ZHFConsoleController.h */,
+				9171585521BAD238000525FC /* ZHFConsoleController.m */,
+				9171585721BAD398000525FC /* ZHFTouchConsoleController.h */,
+				9171585821BAD398000525FC /* ZHFTouchConsoleController.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -767,6 +777,7 @@
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
 				910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */,
+				9171585621BAD238000525FC /* ZHFConsoleController.m in Sources */,
 				9170E80321A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m in Sources */,
 				910E839321B04EEB00736D3B /* ZHFBuilderPatternVC.m in Sources */,
 				9170E7FF21A1B7F200E41D8A /* ZHFPaperCanvasView.m in Sources */,
@@ -774,6 +785,7 @@
 				9153C42C21B6CC2E00C2CCB6 /* ZHFCommand.m in Sources */,
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
 				9171585021BAD176000525FC /* ZHFGameBoyEmulator.m in Sources */,
+				9171585921BAD398000525FC /* ZHFTouchConsoleController.m in Sources */,
 				917B7927218A0C1B00425A05 /* MementoModel.m in Sources */,
 				910E838A21B0432C00736D3B /* ZHFCharacter.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
