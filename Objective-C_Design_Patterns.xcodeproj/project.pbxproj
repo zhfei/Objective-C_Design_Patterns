@@ -55,6 +55,7 @@
 		9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9170E80721A1BC3000E41D8A /* CanvasViewFactory.mdj */; };
 		9171584221BAC196000525FC /* BridgePattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9171584121BAC196000525FC /* BridgePattern.md */; };
 		9171584421BAC485000525FC /* BridgePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9171584321BAC484000525FC /* BridgePattern.mdj */; };
+		9171584721BACE87000525FC /* EmuletorBradgePattarn.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9171584621BACE87000525FC /* EmuletorBradgePattarn.mdj */; };
 		9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9173394A21B18F82009C08A1 /* SingletonPattern.md */; };
 		9173394E21B193D9009C08A1 /* ZHFSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9173394D21B193D9009C08A1 /* ZHFSingleton.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
@@ -163,6 +164,7 @@
 		9170E80721A1BC3000E41D8A /* CanvasViewFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CanvasViewFactory.mdj; sourceTree = "<group>"; };
 		9171584121BAC196000525FC /* BridgePattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BridgePattern.md; sourceTree = "<group>"; };
 		9171584321BAC484000525FC /* BridgePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BridgePattern.mdj; sourceTree = "<group>"; };
+		9171584621BACE87000525FC /* EmuletorBradgePattarn.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmuletorBradgePattarn.mdj; sourceTree = "<group>"; };
 		9173394A21B18F82009C08A1 /* SingletonPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SingletonPattern.md; sourceTree = "<group>"; };
 		9173394C21B193D9009C08A1 /* ZHFSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSingleton.h; sourceTree = "<group>"; };
 		9173394D21B193D9009C08A1 /* ZHFSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSingleton.m; sourceTree = "<group>"; };
@@ -466,10 +468,19 @@
 		9171584021BABEF4000525FC /* 桥接模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9171584521BACB00000525FC /* Apply */,
 				9171584321BAC484000525FC /* BridgePattern.mdj */,
 				9171584121BAC196000525FC /* BridgePattern.md */,
 			);
 			path = "桥接模式";
+			sourceTree = "<group>";
+		};
+		9171584521BACB00000525FC /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				9171584621BACE87000525FC /* EmuletorBradgePattarn.mdj */,
+			);
+			path = Apply;
 			sourceTree = "<group>";
 		};
 		9173394921B18D1D009C08A1 /* 单例模式 */ = {
@@ -657,6 +668,7 @@
 				911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */,
 				910E838421B0425F00736D3B /* ChasingGame.mdj in Resources */,
 				9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */,
+				9171584721BACE87000525FC /* EmuletorBradgePattarn.mdj in Resources */,
 				9171584421BAC485000525FC /* BridgePattern.mdj in Resources */,
 				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
 				9171584221BAC196000525FC /* BridgePattern.md in Resources */,
