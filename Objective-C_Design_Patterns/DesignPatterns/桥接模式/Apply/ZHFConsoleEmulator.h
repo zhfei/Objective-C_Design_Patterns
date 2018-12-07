@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZHFConsoleCommands.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFConsoleEmulator : NSObject
+- (void)loadInstructionsForCommand:(ZHFConsoleCommand)command;
+- (void)executeInstructions;
 
 @end
 

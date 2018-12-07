@@ -10,6 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+    ZHFConsoleCommandUP,
+    ZHFConsoleCommandDown,
+    ZHFConsoleCommandLeft,
+    ZHFConsoleCommandRight,
+    ZHFConsoleCommandSelect,
+    ZHFConsoleCommandStart,
+    ZHFConsoleCommandAction1,
+    ZHFConsoleCommandAction2
+} ZHFConsoleCommand;
+
 @interface ZHFConsoleCommands : NSObject
 
 @end
