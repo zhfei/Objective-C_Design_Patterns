@@ -56,6 +56,8 @@
 		9171584221BAC196000525FC /* BridgePattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9171584121BAC196000525FC /* BridgePattern.md */; };
 		9171584421BAC485000525FC /* BridgePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9171584321BAC484000525FC /* BridgePattern.mdj */; };
 		9171584721BACE87000525FC /* EmuletorBradgePattarn.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9171584621BACE87000525FC /* EmuletorBradgePattarn.mdj */; };
+		9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171584921BACF07000525FC /* ZHFConsoleCommands.m */; };
+		9171584D21BACF59000525FC /* ZHFConsoleEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171584C21BACF59000525FC /* ZHFConsoleEmulator.m */; };
 		9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9173394A21B18F82009C08A1 /* SingletonPattern.md */; };
 		9173394E21B193D9009C08A1 /* ZHFSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9173394D21B193D9009C08A1 /* ZHFSingleton.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
@@ -165,6 +167,10 @@
 		9171584121BAC196000525FC /* BridgePattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BridgePattern.md; sourceTree = "<group>"; };
 		9171584321BAC484000525FC /* BridgePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BridgePattern.mdj; sourceTree = "<group>"; };
 		9171584621BACE87000525FC /* EmuletorBradgePattarn.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmuletorBradgePattarn.mdj; sourceTree = "<group>"; };
+		9171584821BACF07000525FC /* ZHFConsoleCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFConsoleCommands.h; sourceTree = "<group>"; };
+		9171584921BACF07000525FC /* ZHFConsoleCommands.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFConsoleCommands.m; sourceTree = "<group>"; };
+		9171584B21BACF59000525FC /* ZHFConsoleEmulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFConsoleEmulator.h; sourceTree = "<group>"; };
+		9171584C21BACF59000525FC /* ZHFConsoleEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFConsoleEmulator.m; sourceTree = "<group>"; };
 		9173394A21B18F82009C08A1 /* SingletonPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SingletonPattern.md; sourceTree = "<group>"; };
 		9173394C21B193D9009C08A1 /* ZHFSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSingleton.h; sourceTree = "<group>"; };
 		9173394D21B193D9009C08A1 /* ZHFSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSingleton.m; sourceTree = "<group>"; };
@@ -479,6 +485,10 @@
 			isa = PBXGroup;
 			children = (
 				9171584621BACE87000525FC /* EmuletorBradgePattarn.mdj */,
+				9171584821BACF07000525FC /* ZHFConsoleCommands.h */,
+				9171584921BACF07000525FC /* ZHFConsoleCommands.m */,
+				9171584B21BACF59000525FC /* ZHFConsoleEmulator.h */,
+				9171584C21BACF59000525FC /* ZHFConsoleEmulator.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -730,6 +740,7 @@
 				9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */,
+				9171584D21BACF59000525FC /* ZHFConsoleEmulator.m in Sources */,
 				91DC404321AD7B2000603387 /* ZHFAbstractFactoryVC.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
@@ -737,6 +748,7 @@
 				916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */,
 				9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */,
 				910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */,
+				9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */,
 				916183AF21AB09AF00681B46 /* ZHFSierraBrandingViews.m in Sources */,
