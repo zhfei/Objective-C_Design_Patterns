@@ -67,6 +67,10 @@
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
 		9176709D21BB7B8F00E22223 /* FacadePattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9176709C21BB7B8F00E22223 /* FacadePattern.md */; };
 		9176709F21BB833D00E22223 /* FacadePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9176709E21BB833D00E22223 /* FacadePattern.mdj */; };
+		917670A221BB8C7800E22223 /* CabDriverFacabePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 917670A121BB8C7800E22223 /* CabDriverFacabePattern.mdj */; };
+		917670A521BB8D7000E22223 /* ZHFCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670A421BB8D7000E22223 /* ZHFCar.m */; };
+		917670A821BB8E1800E22223 /* ZHFTaximeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670A721BB8E1800E22223 /* ZHFTaximeter.m */; };
+		917670AB21BB8EBB00E22223 /* ZHFCabDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670AA21BB8EBB00E22223 /* ZHFCabDriver.m */; };
 		917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7923218A0BC000425A05 /* ScrawlManager.m */; };
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
 		917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7929218A0C3000425A05 /* ScrawlModel.m */; };
@@ -192,6 +196,13 @@
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
 		9176709C21BB7B8F00E22223 /* FacadePattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = FacadePattern.md; sourceTree = "<group>"; };
 		9176709E21BB833D00E22223 /* FacadePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FacadePattern.mdj; sourceTree = "<group>"; };
+		917670A121BB8C7800E22223 /* CabDriverFacabePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CabDriverFacabePattern.mdj; sourceTree = "<group>"; };
+		917670A321BB8D7000E22223 /* ZHFCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCar.h; sourceTree = "<group>"; };
+		917670A421BB8D7000E22223 /* ZHFCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCar.m; sourceTree = "<group>"; };
+		917670A621BB8E1800E22223 /* ZHFTaximeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFTaximeter.h; sourceTree = "<group>"; };
+		917670A721BB8E1800E22223 /* ZHFTaximeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFTaximeter.m; sourceTree = "<group>"; };
+		917670A921BB8EBB00E22223 /* ZHFCabDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCabDriver.h; sourceTree = "<group>"; };
+		917670AA21BB8EBB00E22223 /* ZHFCabDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCabDriver.m; sourceTree = "<group>"; };
 		917B7922218A0BC000425A05 /* ScrawlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlManager.h; sourceTree = "<group>"; };
 		917B7923218A0BC000425A05 /* ScrawlManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlManager.m; sourceTree = "<group>"; };
 		917B7925218A0C1B00425A05 /* MementoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoModel.h; sourceTree = "<group>"; };
@@ -568,10 +579,25 @@
 		9176709B21BB75AD00E22223 /* 外观模式 */ = {
 			isa = PBXGroup;
 			children = (
+				917670A021BB895900E22223 /* Apply */,
 				9176709E21BB833D00E22223 /* FacadePattern.mdj */,
 				9176709C21BB7B8F00E22223 /* FacadePattern.md */,
 			);
 			path = "外观模式";
+			sourceTree = "<group>";
+		};
+		917670A021BB895900E22223 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				917670A121BB8C7800E22223 /* CabDriverFacabePattern.mdj */,
+				917670A321BB8D7000E22223 /* ZHFCar.h */,
+				917670A421BB8D7000E22223 /* ZHFCar.m */,
+				917670A621BB8E1800E22223 /* ZHFTaximeter.h */,
+				917670A721BB8E1800E22223 /* ZHFTaximeter.m */,
+				917670A921BB8EBB00E22223 /* ZHFCabDriver.h */,
+				917670AA21BB8EBB00E22223 /* ZHFCabDriver.m */,
+			);
+			path = Apply;
 			sourceTree = "<group>";
 		};
 		917B7921218A0B7F00425A05 /* Manager */ = {
@@ -704,6 +730,7 @@
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */,
+				917670A221BB8C7800E22223 /* CabDriverFacabePattern.mdj in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */,
 				9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */,
@@ -776,6 +803,7 @@
 				9171585321BAD18A000525FC /* ZHFGameGeerEmulator.m in Sources */,
 				9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
+				917670AB21BB8EBB00E22223 /* ZHFCabDriver.m in Sources */,
 				9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */,
 				9171584D21BACF59000525FC /* ZHFConsoleEmulator.m in Sources */,
 				91DC404321AD7B2000603387 /* ZHFAbstractFactoryVC.m in Sources */,
@@ -784,6 +812,7 @@
 				9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */,
 				916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */,
 				9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */,
+				917670A521BB8D7000E22223 /* ZHFCar.m in Sources */,
 				910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */,
 				9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
@@ -794,6 +823,7 @@
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
 				910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */,
 				9171585621BAD238000525FC /* ZHFConsoleController.m in Sources */,
+				917670A821BB8E1800E22223 /* ZHFTaximeter.m in Sources */,
 				9170E80321A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m in Sources */,
 				910E839321B04EEB00736D3B /* ZHFBuilderPatternVC.m in Sources */,
 				9170E7FF21A1B7F200E41D8A /* ZHFPaperCanvasView.m in Sources */,
