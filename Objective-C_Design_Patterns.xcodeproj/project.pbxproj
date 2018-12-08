@@ -65,6 +65,7 @@
 		9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9173394A21B18F82009C08A1 /* SingletonPattern.md */; };
 		9173394E21B193D9009C08A1 /* ZHFSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9173394D21B193D9009C08A1 /* ZHFSingleton.m */; };
 		9174038821632FC500EEC228 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9174038721632FC500EEC228 /* CanvasViewController.m */; };
+		9176709D21BB7B8F00E22223 /* FacadePattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9176709C21BB7B8F00E22223 /* FacadePattern.md */; };
 		917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7923218A0BC000425A05 /* ScrawlManager.m */; };
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
 		917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7929218A0C3000425A05 /* ScrawlModel.m */; };
@@ -188,6 +189,7 @@
 		9173394D21B193D9009C08A1 /* ZHFSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSingleton.m; sourceTree = "<group>"; };
 		9174038621632FC500EEC228 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		9174038721632FC500EEC228 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		9176709C21BB7B8F00E22223 /* FacadePattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = FacadePattern.md; sourceTree = "<group>"; };
 		917B7922218A0BC000425A05 /* ScrawlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlManager.h; sourceTree = "<group>"; };
 		917B7923218A0BC000425A05 /* ScrawlManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlManager.m; sourceTree = "<group>"; };
 		917B7925218A0C1B00425A05 /* MementoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoModel.h; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				9176709B21BB75AD00E22223 /* 外观模式 */,
 				9171584021BABEF4000525FC /* 桥接模式 */,
 				9153C43521B6D46700C2CCB6 /* 中介者模式 */,
 				9198362D21B576F900747EA5 /* 适配器模式 */,
@@ -560,6 +563,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		9176709B21BB75AD00E22223 /* 外观模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9176709C21BB7B8F00E22223 /* FacadePattern.md */,
+			);
+			path = "外观模式";
+			sourceTree = "<group>";
+		};
 		917B7921218A0B7F00425A05 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -704,6 +715,7 @@
 				9171584221BAC196000525FC /* BridgePattern.md in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
 				9170E7EB21A0725100E41D8A /* test0.png in Resources */,
+				9176709D21BB7B8F00E22223 /* FacadePattern.md in Resources */,
 				913933CB2197235F0057E33C /* 设计模式1.md in Resources */,
 				911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */,
 				913933CF219728B00057E33C /* ProtoType.mdj in Resources */,
