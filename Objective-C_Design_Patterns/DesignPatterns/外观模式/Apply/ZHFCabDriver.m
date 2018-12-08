@@ -9,5 +9,19 @@
 #import "ZHFCabDriver.h"
 
 @implementation ZHFCabDriver
-
+- (void)driveToLocation:(CGPoint)x {
+    ZHFTaximeter *tax = [ZHFTaximeter new];
+    [tax start];
+    
+    ZHFCar *car = [ZHFCar new];
+    //发车
+    [car releaseBrakes];
+    [car changeGears];
+    [car pressAccelerator];
+    
+    //到站
+    [car releaseAccelerator];
+    [car pressBrakes];
+    [tax stop];
+}
 @end

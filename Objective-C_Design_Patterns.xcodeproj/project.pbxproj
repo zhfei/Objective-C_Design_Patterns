@@ -71,6 +71,11 @@
 		917670A521BB8D7000E22223 /* ZHFCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670A421BB8D7000E22223 /* ZHFCar.m */; };
 		917670A821BB8E1800E22223 /* ZHFTaximeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670A721BB8E1800E22223 /* ZHFTaximeter.m */; };
 		917670AB21BB8EBB00E22223 /* ZHFCabDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670AA21BB8EBB00E22223 /* ZHFCabDriver.m */; };
+		917670AE21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 917670AD21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj */; };
+		917670B121BB9F9200E22223 /* ZHFScribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670B021BB9F9200E22223 /* ZHFScribble.m */; };
+		917670B421BB9FB200E22223 /* ZHFScribbleThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670B321BB9FB200E22223 /* ZHFScribbleThumbnail.m */; };
+		917670B821BB9FE700E22223 /* ZHFScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670B721BB9FE700E22223 /* ZHFScribbleManager.m */; };
+		917670BB21BBB9E500E22223 /* ZHFScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670BA21BBB9E500E22223 /* ZHFScribbleMemento.m */; };
 		917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7923218A0BC000425A05 /* ScrawlManager.m */; };
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
 		917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7929218A0C3000425A05 /* ScrawlModel.m */; };
@@ -203,6 +208,16 @@
 		917670A721BB8E1800E22223 /* ZHFTaximeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFTaximeter.m; sourceTree = "<group>"; };
 		917670A921BB8EBB00E22223 /* ZHFCabDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCabDriver.h; sourceTree = "<group>"; };
 		917670AA21BB8EBB00E22223 /* ZHFCabDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCabDriver.m; sourceTree = "<group>"; };
+		917670AD21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScribbleManager_FacabePattern.mdj; sourceTree = "<group>"; };
+		917670AF21BB9F9200E22223 /* ZHFScribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribble.h; sourceTree = "<group>"; };
+		917670B021BB9F9200E22223 /* ZHFScribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribble.m; sourceTree = "<group>"; };
+		917670B221BB9FB200E22223 /* ZHFScribbleThumbnail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribbleThumbnail.h; sourceTree = "<group>"; };
+		917670B321BB9FB200E22223 /* ZHFScribbleThumbnail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribbleThumbnail.m; sourceTree = "<group>"; };
+		917670B521BB9FCB00E22223 /* ZHFScribbleThumbnailProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribbleThumbnailProxy.h; sourceTree = "<group>"; };
+		917670B621BB9FE700E22223 /* ZHFScribbleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribbleManager.h; sourceTree = "<group>"; };
+		917670B721BB9FE700E22223 /* ZHFScribbleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribbleManager.m; sourceTree = "<group>"; };
+		917670B921BBB9E500E22223 /* ZHFScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribbleMemento.h; sourceTree = "<group>"; };
+		917670BA21BBB9E500E22223 /* ZHFScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribbleMemento.m; sourceTree = "<group>"; };
 		917B7922218A0BC000425A05 /* ScrawlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlManager.h; sourceTree = "<group>"; };
 		917B7923218A0BC000425A05 /* ScrawlManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlManager.m; sourceTree = "<group>"; };
 		917B7925218A0C1B00425A05 /* MementoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoModel.h; sourceTree = "<group>"; };
@@ -579,6 +594,7 @@
 		9176709B21BB75AD00E22223 /* 外观模式 */ = {
 			isa = PBXGroup;
 			children = (
+				917670AC21BB9B9C00E22223 /* Apply2 */,
 				917670A021BB895900E22223 /* Apply */,
 				9176709E21BB833D00E22223 /* FacadePattern.mdj */,
 				9176709C21BB7B8F00E22223 /* FacadePattern.md */,
@@ -598,6 +614,23 @@
 				917670AA21BB8EBB00E22223 /* ZHFCabDriver.m */,
 			);
 			path = Apply;
+			sourceTree = "<group>";
+		};
+		917670AC21BB9B9C00E22223 /* Apply2 */ = {
+			isa = PBXGroup;
+			children = (
+				917670AD21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj */,
+				917670AF21BB9F9200E22223 /* ZHFScribble.h */,
+				917670B021BB9F9200E22223 /* ZHFScribble.m */,
+				917670B921BBB9E500E22223 /* ZHFScribbleMemento.h */,
+				917670BA21BBB9E500E22223 /* ZHFScribbleMemento.m */,
+				917670B221BB9FB200E22223 /* ZHFScribbleThumbnail.h */,
+				917670B321BB9FB200E22223 /* ZHFScribbleThumbnail.m */,
+				917670B521BB9FCB00E22223 /* ZHFScribbleThumbnailProxy.h */,
+				917670B621BB9FE700E22223 /* ZHFScribbleManager.h */,
+				917670B721BB9FE700E22223 /* ZHFScribbleManager.m */,
+			);
+			path = Apply2;
 			sourceTree = "<group>";
 		};
 		917B7921218A0B7F00425A05 /* Manager */ = {
@@ -750,6 +783,7 @@
 				911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */,
 				913933CF219728B00057E33C /* ProtoType.mdj in Resources */,
 				9176709F21BB833D00E22223 /* FacadePattern.mdj in Resources */,
+				917670AE21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj in Resources */,
 				9198363121B57DE300747EA5 /* Adapter.mdj in Resources */,
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
 				9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */,
@@ -786,6 +820,7 @@
 			files = (
 				910E839021B0445700736D3B /* ZHFStandardCharacteBuilder.m in Sources */,
 				916183A621AAFFAD00681B46 /* ZHFSierraBrandingFactory.m in Sources */,
+				917670B821BB9FE700E22223 /* ZHFScribbleManager.m in Sources */,
 				9173394E21B193D9009C08A1 /* ZHFSingleton.m in Sources */,
 				916183AC21AB089800681B46 /* ZHFAcmeBrandingViews.m in Sources */,
 				916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */,
@@ -799,7 +834,9 @@
 				91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				9153C42821B6CB8600C2CCB6 /* ZHFAdapterViewController.m in Sources */,
+				917670B421BB9FB200E22223 /* ZHFScribbleThumbnail.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
+				917670BB21BBB9E500E22223 /* ZHFScribbleMemento.m in Sources */,
 				9171585321BAD18A000525FC /* ZHFGameGeerEmulator.m in Sources */,
 				9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
@@ -814,6 +851,7 @@
 				9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */,
 				917670A521BB8D7000E22223 /* ZHFCar.m in Sources */,
 				910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */,
+				917670B121BB9F9200E22223 /* ZHFScribble.m in Sources */,
 				9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */,
