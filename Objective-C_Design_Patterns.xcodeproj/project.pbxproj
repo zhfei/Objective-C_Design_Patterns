@@ -17,6 +17,7 @@
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
 		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
 		9122AD1D21BD6B5D00A9E3BD /* MediatorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */; };
+		9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */; };
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
 		913933CF219728B00057E33C /* ProtoType.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 913933CE219728B00057E33C /* ProtoType.mdj */; };
 		914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */; };
@@ -115,6 +116,7 @@
 		911B3DD721AEDC0B009BC83D /* BuilderPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BuilderPattern.md; sourceTree = "<group>"; };
 		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
 		9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MediatorPattern.md; sourceTree = "<group>"; };
+		9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MediatorPattern.mdj; sourceTree = "<group>"; };
 		913933CA2197235F0057E33C /* 设计模式1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "设计模式1.md"; sourceTree = "<group>"; };
 		913933CE219728B00057E33C /* ProtoType.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProtoType.mdj; sourceTree = "<group>"; };
 		914CD49721B8231A00C9A8DB /* ZHFRGBValuesProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRGBValuesProviderProtocol.h; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 			children = (
 				9153C43621B6D46700C2CCB6 /* Apply */,
 				9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */,
+				9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */,
 			);
 			path = "中介者模式";
 			sourceTree = "<group>";
@@ -766,6 +769,7 @@
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */,
+				9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */,
 				917670A221BB8C7800E22223 /* CabDriverFacabePattern.mdj in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */,
