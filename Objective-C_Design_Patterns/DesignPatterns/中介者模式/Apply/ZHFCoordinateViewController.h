@@ -29,7 +29,11 @@ SingletonH(ZHFCoordinateViewController)
 @property (nonatomic, strong, readonly) CanvasViewController *canvasViewController;
 @property (nonatomic, strong, readonly) UIViewController *activeViewController;
 
-- (void)requestViewChangeByObject:(id)object;
+
+/**
+ 直接链接IB控件的事件，来触发视图转移逻辑
+ */
+- (IBAction)requestViewChangeByObject:(id)object;
 @end
 
 NS_ASSUME_NONNULL_END
