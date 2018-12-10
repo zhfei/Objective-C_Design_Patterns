@@ -13,4 +13,5 @@
 @interface CanvasViewController : UIViewController
 - (void)setStrokeColor:(UIColor *)color;
 
+//- (void)dismissModalViewControllerAnimated:(BOOL)animated;
 @end
