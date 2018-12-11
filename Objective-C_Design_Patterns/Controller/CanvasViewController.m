@@ -10,16 +10,16 @@
 #import "RecoverViewController.h"
 #import "CoordinatingController.h"
 #import "ThumbnailViewController.h"
-#import "CanvasView.h"
 #import "Stroke.h"
 #import "Vertex.h"
 #import "ZHFClothCanvasViewGenerator.h"
 #import "ZHFPaperCanvasViewGenerator.h"
+#import "ZHFCoordinateViewController.h"
 
 #define ScreenSize [UIScreen mainScreen].bounds.size
 
 @interface CanvasViewController ()
-@property (strong, nonatomic) CanvasView *canvasView;
+
 @property (strong, nonatomic) Stroke *stroke;
 @property (strong, nonatomic) NSMutableArray <id<Mark>> *paths;
 @end
@@ -35,6 +35,7 @@
     
     [self.canvasView configMark:self.stroke];
     [self.canvasView configHistoryPaths:_paths];
+    
 }
 
 - (void)loadCanvasViewWithCanvasViewGenerator:(ZHFCanvasViewGenerator *)generator {
@@ -121,20 +122,12 @@
             break;
         case 2:
         {
-            //打开
-            UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"ThumbnailViewControllerNav"];
-            WeakSelf
-            [(ThumbnailViewController *)[(UINavigationController *)vc topViewController] setBlock:^(UIImage *image) {
-                StrongSelf
-                [self.canvasView configImage:image];
-            }];
-            [[CoordinatingController sharedCoordinatingController] presentVC:vc];
-
+            [[ZHFCoordinateViewController sharedZHFCoordinateViewController] requestViewChangeByObject:sender];
         }
             break;
         case 3:
             //设置
-            [[CoordinatingController sharedCoordinatingController] presentStoryBoardVC:@"PaletteViewControllerNav"];
+            [[ZHFCoordinateViewController sharedZHFCoordinateViewController] requestViewChangeByObject:sender];
             break;
         case 4:
             //撤销

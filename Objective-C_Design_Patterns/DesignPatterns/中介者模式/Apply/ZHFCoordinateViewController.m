@@ -7,6 +7,7 @@
 //
 
 #import "ZHFCoordinateViewController.h"
+#import "CoordinatingController.h"
 #import "PaletteViewController.h"
 
 @interface ZHFCoordinateViewController ()
@@ -20,24 +21,32 @@ SingletonM(ZHFCoordinateViewController)
 
 - (CanvasViewController *)canvasViewController {
     if (!canvasViewController_) {
-        canvasViewController_ = [CanvasViewController new];
+        canvasViewController_ = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"CanvasViewController"];
     }
     return canvasViewController_;
 }
 
-- (void)requestViewChangeByObject:(id)object {
-    if ([object isKindOfClass:[UIBarButtonItem class]]) {
-        switch ([(UIBarButtonItem *)object tag]) {
+- (IBAction)requestViewChangeByObject:(id)object {
+    if ([object isKindOfClass:[UIButton class]]) {
+        switch ([(UIButton *)object tag]) {
             case kButtonTagOpenPaletteView:
             {
-                PaletteViewController *palette = [PaletteViewController new];
+                
+                PaletteViewController *palette = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"PaletteViewControllerNav"];
                 [canvasViewController_ presentViewController:palette animated:YES completion:nil];
                 activeViewController_ = palette;
             }
                 break;
             case kButtonTagOpenThumbnailView:
             {
-                ThumbnailViewController *palette = [ThumbnailViewController new];
+                //打开
+                ThumbnailViewController *palette = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"ThumbnailViewControllerNav"];
+                WeakSelf
+                [(ThumbnailViewController *)[(UINavigationController *)palette topViewController] setBlock:^(UIImage *image) {
+                    StrongSelf
+                    [self.canvasViewController.canvasView configImage:image];
+                }];
+                
                 [canvasViewController_ presentViewController:palette animated:YES completion:nil];
                 activeViewController_ = palette;
             }

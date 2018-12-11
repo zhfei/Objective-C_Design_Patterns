@@ -20,3 +20,10 @@ ConcreteObserver的update方法内部可以获得Subject内属性，并进行处
 
 #### 在M-V-C模式中，Observer模式是其中比较重要的一环
 当数据模型的数据改动时，利用Observer模式通知C控制器，控制器会将新的数据更新到V上面。
+
+
+Cocoa Touch 框架将Observer模式进行了改写
+改写了两种模式：
+1.通知，
+2.健值观察者。
+

@@ -14,9 +14,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum : NSUInteger {
-    kButtonTagDone = 0,
-    kButtonTagOpenPaletteView,
-    kButtonTagOpenThumbnailView
+    kButtonTagDone = 100,
+    kButtonTagOpenPaletteView = 3,
+    kButtonTagOpenThumbnailView = 2
 } ButtonTag;
 
 @interface ZHFCoordinateViewController : NSObject

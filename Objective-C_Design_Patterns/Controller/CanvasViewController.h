@@ -9,8 +9,10 @@
 
 
 #import <UIKit/UIKit.h>
+#import "CanvasView.h"
 
 @interface CanvasViewController : UIViewController
+@property (strong, nonatomic) CanvasView *canvasView;
 - (void)setStrokeColor:(UIColor *)color;
 
 //- (void)dismissModalViewControllerAnimated:(BOOL)animated;
