@@ -120,15 +120,6 @@
             [self.canvasView setNeedsDisplay];
             
             break;
-        case 2:
-        {
-            [[ZHFCoordinateViewController sharedZHFCoordinateViewController] requestViewChangeByObject:sender];
-        }
-            break;
-        case 3:
-            //设置
-            [[ZHFCoordinateViewController sharedZHFCoordinateViewController] requestViewChangeByObject:sender];
-            break;
         case 4:
             //撤销
             [self.paths removeLastObject];

@@ -48,7 +48,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwI-Ou-hQy"/>
+                                            <action selector="requestViewChangeByObject:" destination="k8d-HP-nuO" eventType="touchUpInside" id="bHo-6l-lmp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWh-5v-CmZ">
@@ -58,7 +58,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71v-7E-ch6"/>
+                                            <action selector="requestViewChangeByObject:" destination="k8d-HP-nuO" eventType="touchUpInside" id="Vvy-SJ-8yi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5t-ik-EQy">
@@ -97,6 +97,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="k8d-HP-nuO" customClass="ZHFCoordinateViewController"/>
             </objects>
             <point key="canvasLocation" x="138.75" y="128.75"/>
         </scene>
