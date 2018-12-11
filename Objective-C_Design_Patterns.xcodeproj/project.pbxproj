@@ -20,6 +20,7 @@
 		9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */; };
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
 		913933CF219728B00057E33C /* ProtoType.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 913933CE219728B00057E33C /* ProtoType.mdj */; };
+		914C2E7621BFF98E002A0222 /* ObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914C2E7521BFF98E002A0222 /* ObserverPattern.mdj */; };
 		914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */; };
 		914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914CD49D21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj */; };
 		914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD4A021B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m */; };
@@ -120,6 +121,8 @@
 		9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MediatorPattern.mdj; sourceTree = "<group>"; };
 		913933CA2197235F0057E33C /* 设计模式1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "设计模式1.md"; sourceTree = "<group>"; };
 		913933CE219728B00057E33C /* ProtoType.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProtoType.mdj; sourceTree = "<group>"; };
+		914C2E7521BFF98E002A0222 /* ObserverPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObserverPattern.mdj; sourceTree = "<group>"; };
+		914C2E7721BFF9C6002A0222 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		914CD49721B8231A00C9A8DB /* ZHFRGBValuesProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRGBValuesProviderProtocol.h; sourceTree = "<group>"; };
 		914CD49A21B8238F00C9A8DB /* ZHFRGBValuesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRGBValuesProvider.h; sourceTree = "<group>"; };
 		914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRGBValuesProvider.m; sourceTree = "<group>"; };
@@ -329,6 +332,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				914C2E7421BFF63A002A0222 /* 观察者模式 */,
 				9176709B21BB75AD00E22223 /* 外观模式 */,
 				9171584021BABEF4000525FC /* 桥接模式 */,
 				9153C43521B6D46700C2CCB6 /* 中介者模式 */,
@@ -353,6 +357,15 @@
 				91D7CB1C2197E9BE00BA88BF /* ZHFProtoTypeVC.m */,
 			);
 			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		914C2E7421BFF63A002A0222 /* 观察者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				914C2E7521BFF98E002A0222 /* ObserverPattern.mdj */,
+				914C2E7721BFF9C6002A0222 /* README.md */,
+			);
+			path = "观察者模式";
 			sourceTree = "<group>";
 		};
 		914CD49621B8227900C9A8DB /* Apply2 */ = {
@@ -793,6 +806,7 @@
 				913933CB2197235F0057E33C /* 设计模式1.md in Resources */,
 				911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */,
 				913933CF219728B00057E33C /* ProtoType.mdj in Resources */,
+				914C2E7621BFF98E002A0222 /* ObserverPattern.mdj in Resources */,
 				9176709F21BB833D00E22223 /* FacadePattern.mdj in Resources */,
 				917670AE21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj in Resources */,
 				91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */,
