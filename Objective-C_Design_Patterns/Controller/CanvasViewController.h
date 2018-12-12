@@ -10,9 +10,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CanvasView.h"
+#import "ZHFScribble.h"
 
 @interface CanvasViewController : UIViewController
-@property (strong, nonatomic) CanvasView *canvasView;
+@property (nonatomic, strong) CanvasView *canvasView;
+@property (nonatomic, strong) ZHFScribble *scribble;
+@property (nonatomic, assign) CGPoint *startPoint;
+@property (nonatomic, strong) UIColor *strokeColor;
 - (void)setStrokeColor:(UIColor *)color;
 
 //- (void)dismissModalViewControllerAnimated:(BOOL)animated;

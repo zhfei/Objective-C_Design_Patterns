@@ -96,6 +96,13 @@
 
 #pragma mark - Getter, Setter
 
+- (void)setScribble:(ZHFScribble *)scribble {
+    if (_scribble != scribble) {
+        _scribble = scribble;
+        [_scribble addObserver:self forKeyPath:@"mark" options:NSKeyValueObservingOptionNew context:nil];
+    }
+}
+
 #pragma mark - Event
 - (IBAction)tapAction:(UIButton *)sender {
     switch (sender.tag) {
@@ -150,6 +157,14 @@
         NSLog(@"fromThumbnail.....");
     }
 }
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+    if ([keyPath isEqualToString:@"mark"]) {
+        
+    }
+}
+
 #pragma mark - Public Method
 - (void)setStrokeColor:(UIColor *)color {
     self.stroke.color = color;
