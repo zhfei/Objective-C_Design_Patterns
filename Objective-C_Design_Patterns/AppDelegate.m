@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZHFCoordinateViewController.h"
+#import <DoraemonManager.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+#ifdef DEBUG
+    [[DoraemonManager shareInstance] addH5DoorBlock:^(NSString *h5Url) {
+        //使用自己的H5容器打开这个链接
+    }];
+    
+    [[DoraemonManager shareInstance] install];
+#endif
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [ZHFCoordinateViewController sharedZHFCoordinateViewController].canvasViewController;

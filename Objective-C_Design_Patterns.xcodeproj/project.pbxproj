@@ -88,6 +88,7 @@
 		91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
+		91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFF5B921C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
@@ -242,6 +243,8 @@
 		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
 		91A84A222184BE3D00A71138 /* MementoClassChart.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = MementoClassChart.graffle; sourceTree = "<group>"; };
 		91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CanvasViewControllerObserverPattern.mdj; sourceTree = "<group>"; };
+		91BFF5B821C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFDoraemonEnvPlugin.h; sourceTree = "<group>"; };
+		91BFF5B921C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFDoraemonEnvPlugin.m; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		91C1B79321665E2D0070DB88 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -475,6 +478,7 @@
 		916E363E2163209200602088 /* Objective-C_Design_Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				91BFF5B721C0E66D0067D1D4 /* Doraemon面板自定义模块 */,
 				9170E7E921A0722000E41D8A /* Rescues */,
 				913933CC219724840057E33C /* DesignPatterns */,
 				913933C92197232E0057E33C /* Documents */,
@@ -712,6 +716,15 @@
 			path = Apply;
 			sourceTree = "<group>";
 		};
+		91BFF5B721C0E66D0067D1D4 /* Doraemon面板自定义模块 */ = {
+			isa = PBXGroup;
+			children = (
+				91BFF5B821C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.h */,
+				91BFF5B921C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m */,
+			);
+			path = "Doraemon面板自定义模块";
+			sourceTree = "<group>";
+		};
 		91D7CB202197F09600BA88BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -745,6 +758,7 @@
 				916E36382163209200602088 /* Sources */,
 				916E36392163209200602088 /* Frameworks */,
 				916E363A2163209200602088 /* Resources */,
+				51BAA1151644C8883F4969BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -849,6 +863,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		51BAA1151644C8883F4969BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -890,6 +926,7 @@
 				917670A521BB8D7000E22223 /* ZHFCar.m in Sources */,
 				910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */,
 				917670B121BB9F9200E22223 /* ZHFScribble.m in Sources */,
+				91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */,
 				9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */,
