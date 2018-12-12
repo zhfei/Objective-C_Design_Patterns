@@ -15,7 +15,8 @@
 @interface CanvasViewController : UIViewController
 @property (nonatomic, strong) CanvasView *canvasView;
 @property (nonatomic, strong) ZHFScribble *scribble;
-@property (nonatomic, assign) CGPoint *startPoint;
+@property (nonatomic, assign) CGPoint startPoint;
+@property (nonatomic, assign) CGSize strokeSize;
 @property (nonatomic, strong) UIColor *strokeColor;
 - (void)setStrokeColor:(UIColor *)color;
 

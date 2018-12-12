@@ -12,6 +12,7 @@
 #import "ThumbnailViewController.h"
 #import "Stroke.h"
 #import "Vertex.h"
+#import "Dot.h"
 #import "ZHFClothCanvasViewGenerator.h"
 #import "ZHFPaperCanvasViewGenerator.h"
 #import "ZHFCoordinateViewController.h"
@@ -36,6 +37,9 @@
     [self.canvasView configMark:self.stroke];
     [self.canvasView configHistoryPaths:_paths];
     
+    self.strokeSize = CGSizeMake(2, 2);
+    self.strokeColor = [UIColor blackColor];
+    self.scribble = [[ZHFScribble alloc] init];
 }
 
 - (void)loadCanvasViewWithCanvasViewGenerator:(ZHFCanvasViewGenerator *)generator {
@@ -54,11 +58,11 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touchesBegan---------:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
-    self.stroke.color = [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1];
-    self.stroke.size = CGSizeMake([GlobalConfig sharedGlobalConfig].lineWidth, 0);
-    self.stroke.location = [touches.anyObject locationInView:_canvasView];
-    [self.stroke removeAllMarks];
+//    NSLog(@"touchesBegan---------:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+//    self.stroke.color = [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1];
+//    self.stroke.size = CGSizeMake([GlobalConfig sharedGlobalConfig].lineWidth, 0);
+//    self.stroke.location = [touches.anyObject locationInView:_canvasView];
+//    [self.stroke removeAllMarks];
     
     
 //    [ZHFAlertControlle showWithTitle:@"11" message:@"11" btn1Title:@"11" btn1Handle:^(UIAlertAction * _Nullable action) {
@@ -66,32 +70,59 @@
 //    }];
 //    [ZHFProgressHUD popupMessage:@"test.."];
     
-    ZHFRequestParameter *para = [ZHFRequestParameter new];
-    para.apiString = @"ZF_initData.zip";
+//    ZHFRequestParameter *para = [ZHFRequestParameter new];
+//    para.apiString = @"ZF_initData.zip";
 //    [ZHFNetworking asyncWithParameter:para success:^(NSURLSessionDataTask *task, id  _Nullable responseObject) {
 //
 //    } failure:^(NSURLSessionDataTask * _Nullable task, NSError *error) {
 //
 //    }];
-    [ZHFNetworking downloadTaskWithWithParameters:para progress:^(NSProgress *downloadProgress) {
-        
-    } completionHandler:^(NSURLResponse *response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        
-    }];
+//    [ZHFNetworking downloadTaskWithWithParameters:para progress:^(NSProgress *downloadProgress) {
+//
+//    } completionHandler:^(NSURLResponse *response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+//
+//    }];
+    
+    _startPoint = [[touches anyObject] locationInView:_canvasView];
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touchesMoved:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
-    Vertex *ver = [Vertex new];
-    ver.location = [touches.anyObject locationInView:_canvasView];
-    [self.stroke addMark:ver];
-    [self.canvasView setNeedsDisplay];
+//    NSLog(@"touchesMoved:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+//    Vertex *ver = [Vertex new];
+//    ver.location = [touches.anyObject locationInView:_canvasView];
+//    [self.stroke addMark:ver];
+//    [self.canvasView setNeedsDisplay];
+    CGPoint lastPaint = [[touches anyObject] previousLocationInView:_canvasView];
+    if (CGPointEqualToPoint(_startPoint, lastPaint)) {
+        id <Mark> strok = [Stroke new];
+        [strok setColor:_strokeColor];
+        [strok setSize:_strokeSize];
+        [strok setLocation:_startPoint];
+        [_scribble addMark:strok shouldAddToParentMark:NO];
+    }
+    
+    CGPoint thisPoint = [[touches anyObject] locationInView:_canvasView];
+    Vertex *vt = [[Vertex alloc] initWithLocation:thisPoint];
+    [_scribble addMark:vt shouldAddToParentMark:YES];
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touchesEnded********:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
-    [self.paths addObject:[self.stroke copyWithZone:nil]];
-    
+//    NSLog(@"touchesEnded********:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
+//    [self.paths addObject:[self.stroke copyWithZone:nil]];
+    CGPoint lastPoint = [[touches anyObject] previousLocationInView:_canvasView];
+    CGPoint thisPoint = [[touches anyObject] locationInView:_canvasView];
+
+    if (CGPointEqualToPoint(lastPoint, thisPoint)) {
+        Dot *dt = [[Dot alloc] initWithLocation:thisPoint];
+        [dt setSize:_strokeSize];
+        [dt setColor:_strokeColor];
+        [_scribble addMark:dt shouldAddToParentMark:NO];
+    }
+    _startPoint = CGPointZero;
+}
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    _startPoint = CGPointZero;
 }
 
 #pragma mark - Getter, Setter
@@ -99,7 +130,8 @@
 - (void)setScribble:(ZHFScribble *)scribble {
     if (_scribble != scribble) {
         _scribble = scribble;
-        [_scribble addObserver:self forKeyPath:@"mark" options:NSKeyValueObservingOptionNew context:nil];
+        //NSKeyValueObservingOptionInitial 添加观察者时，就触发一次
+        [_scribble addObserver:self forKeyPath:@"mark" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionInitial context:nil];
     }
 }
 
@@ -160,8 +192,10 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     
-    if ([keyPath isEqualToString:@"mark"]) {
-        
+    if ([object isKindOfClass:[ZHFScribble class]]&&[keyPath isEqualToString:@"mark"]) {
+        id <Mark> mark = [change objectForKey:NSKeyValueChangeNewKey];
+        [_canvasView configMark:mark];
+        [_canvasView setNeedsDisplay];
     }
 }
 
