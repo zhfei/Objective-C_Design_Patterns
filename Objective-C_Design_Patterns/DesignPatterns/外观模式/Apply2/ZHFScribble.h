@@ -8,10 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "ZHFScribbleMemento.h"
+#import "Mark.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFScribble : NSObject
+{
+    @private
+    id <Mark> parentMark_;
+}
+- (void)addMark:(id <Mark>)mark shouldAddToParentMark:(BOOL)shouldAddToParentMark;
+- (void)removeMark:(id <Mark>)mark;
+
 - (ZHFScribbleMemento *)scribbleMemento;
 @end
 
