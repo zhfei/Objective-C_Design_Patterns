@@ -87,6 +87,7 @@
 		9198363121B57DE300747EA5 /* Adapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9198363021B57DE300747EA5 /* Adapter.mdj */; };
 		91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
+		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
@@ -240,6 +241,7 @@
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
 		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
 		91A84A222184BE3D00A71138 /* MementoClassChart.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = MementoClassChart.graffle; sourceTree = "<group>"; };
+		91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CanvasViewControllerObserverPattern.mdj; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		91C1B79321665E2D0070DB88 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 		914C2E7421BFF63A002A0222 /* 观察者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				91BFF5B421C0DB940067D1D4 /* Apply */,
 				914C2E7521BFF98E002A0222 /* ObserverPattern.mdj */,
 				914C2E7721BFF9C6002A0222 /* README.md */,
 			);
@@ -701,6 +704,14 @@
 			path = MementoPattern;
 			sourceTree = "<group>";
 		};
+		91BFF5B421C0DB940067D1D4 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */,
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
 		91D7CB202197F09600BA88BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -799,6 +810,7 @@
 				9171584721BACE87000525FC /* EmuletorBradgePattarn.mdj in Resources */,
 				9171584421BAC485000525FC /* BridgePattern.mdj in Resources */,
 				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
+				91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */,
 				9171584221BAC196000525FC /* BridgePattern.md in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
 				9170E7EB21A0725100E41D8A /* test0.png in Resources */,
