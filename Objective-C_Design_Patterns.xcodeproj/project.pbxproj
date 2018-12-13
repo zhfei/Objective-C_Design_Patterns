@@ -25,6 +25,8 @@
 		914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914CD49D21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj */; };
 		914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD4A021B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m */; };
 		914D88C421C2A30C008971BE /* CompositePattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 914D88C321C2A30C008971BE /* CompositePattern.md */; };
+		914D88C621C2A860008971BE /* CompositPatternDemo1.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914D88C521C2A860008971BE /* CompositPatternDemo1.mdj */; };
+		914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914D88C721C2AA6C008971BE /* ComponentPattern.mdj */; };
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
@@ -133,6 +135,8 @@
 		914CD49F21B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSetStrokeColorBlockCommand.h; sourceTree = "<group>"; };
 		914CD4A021B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSetStrokeColorBlockCommand.m; sourceTree = "<group>"; };
 		914D88C321C2A30C008971BE /* CompositePattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CompositePattern.md; sourceTree = "<group>"; };
+		914D88C521C2A860008971BE /* CompositPatternDemo1.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CompositPatternDemo1.mdj; sourceTree = "<group>"; };
+		914D88C721C2AA6C008971BE /* ComponentPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ComponentPattern.mdj; sourceTree = "<group>"; };
 		914E5E28216648120089C1C7 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
 		914E5E29216648120089C1C7 /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 		914E5E2B21664DF00089C1C7 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
@@ -393,6 +397,8 @@
 		914D88C221C2A236008971BE /* 组合模式 */ = {
 			isa = PBXGroup;
 			children = (
+				914D88C721C2AA6C008971BE /* ComponentPattern.mdj */,
+				914D88C521C2A860008971BE /* CompositPatternDemo1.mdj */,
 				914D88C321C2A30C008971BE /* CompositePattern.md */,
 			);
 			path = "组合模式";
@@ -819,6 +825,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
+				914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */,
 				9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */,
@@ -843,6 +850,7 @@
 				914D88C421C2A30C008971BE /* CompositePattern.md in Resources */,
 				913933CB2197235F0057E33C /* 设计模式1.md in Resources */,
 				911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */,
+				914D88C621C2A860008971BE /* CompositPatternDemo1.mdj in Resources */,
 				913933CF219728B00057E33C /* ProtoType.mdj in Resources */,
 				914C2E7621BFF98E002A0222 /* ObserverPattern.mdj in Resources */,
 				9176709F21BB833D00E22223 /* FacadePattern.mdj in Resources */,
