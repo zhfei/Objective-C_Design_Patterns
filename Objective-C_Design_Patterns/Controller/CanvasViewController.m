@@ -37,7 +37,7 @@
     [self.canvasView configMark:self.stroke];
     [self.canvasView configHistoryPaths:_paths];
     
-    self.strokeSize = CGSizeMake(2, 2);
+    self.strokeSize = CGSizeMake(10, 10);
     self.strokeColor = [UIColor blackColor];
     self.scribble = [[ZHFScribble alloc] init];
 }

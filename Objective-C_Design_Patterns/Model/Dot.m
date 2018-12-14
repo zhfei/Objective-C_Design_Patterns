@@ -17,7 +17,7 @@
     CGRect rect = CGRectMake(x, y, self.size.width, self.size.height);
     
     CGContextSetFillColorWithColor(context, [self.color CGColor]);
-    CGContextFillRect(context, rect);
+    CGContextFillEllipseInRect(context, rect);
 }
 
 - (id)copyWithZone:(NSZone *)zone {
