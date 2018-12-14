@@ -26,4 +26,5 @@
     obj.size = self.size;
     return obj;
 }
+
 @end

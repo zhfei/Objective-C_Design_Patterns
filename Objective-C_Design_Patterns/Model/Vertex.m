@@ -30,4 +30,18 @@
     return obj;
 }
 
+#pragma mark - 属性操作
+- (UIColor *)color{return nil;}
+- (void)setColor:(UIColor *)color{}
+- (CGSize)size{return CGSizeZero;}
+- (void)setSize:(CGSize)size{}
+
+#pragma mark - Mark操作
+- (void)addMark:(id<Mark>)mark {}
+- (void)removeMark:(id<Mark>)mark {}
+- (void)removeAllMarks {}
+- (id<Mark>)childAtIndex:(int)index {return nil;}
+- (id<Mark>)lastChild {return nil;}
+- (NSUInteger)count {return 0;}
+
 @end

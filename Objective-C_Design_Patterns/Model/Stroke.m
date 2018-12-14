@@ -16,37 +16,6 @@
 @implementation Stroke
 @synthesize color,location,size;
 
-- (NSMutableArray<id<Mark>> *)markArray {
-    if (!_markArray) {
-        _markArray = @[].mutableCopy;
-    }
-    return _markArray;
-}
-
-- (void)addMark:(id<Mark>)mark {
-    [self.markArray addObject:mark];
-}
-
-- (void)removeMark:(id<Mark>)mark {
-    [self.markArray removeObject:mark];
-}
-
-- (void)removeAllMarks {
-    [self.markArray removeAllObjects];
-}
-
-- (id<Mark>)childAtIndex:(int)index {
-    return self.markArray[index];
-}
-
-- (id<Mark>)lastChild {
-    return self.markArray.lastObject;
-}
-
-- (NSUInteger)count {
-    return self.markArray.count;
-}
-
 - (void)drawWithContext:(CGContextRef)context {
     CGContextMoveToPoint(context, self.location.x, self.location.y);
     for (id<Mark> mark in self.markArray) {
@@ -72,4 +41,58 @@
     stroke.markArray = targetArrayM;
     return stroke;
 }
+
+#pragma mark - 属性操作
+- (void)setLocation:(CGPoint)location {}
+- (CGPoint)location {
+    if (_markArray.count) {
+        return [[_markArray firstObject] location];
+    } else {
+        return CGPointZero;
+    }
+}
+
+
+#pragma mark - Mark操作
+- (NSMutableArray<id<Mark>> *)markArray {
+    if (!_markArray) {
+        _markArray = @[].mutableCopy;
+    }
+    return _markArray;
+}
+
+- (void)addMark:(id<Mark>)mark {
+    [self.markArray addObject:mark];
+}
+
+- (void)removeMark:(id<Mark>)mark {
+    //在当前节点中，就从当前节点删除，不在当前节点，就深度查找子节点
+    if ([_markArray containsObject:mark]) {
+        [self.markArray removeObject:mark];
+    } else {
+        [_markArray makeObjectsPerformSelector:@selector(removeMark:) withObject:mark];
+    }
+}
+
+- (void)removeAllMarks {
+    [self.markArray removeAllObjects];
+}
+
+- (id<Mark>)childAtIndex:(int)index {
+    if (self.markArray.count == 0) {
+        return nil;
+    } else {
+        return self.markArray[index];
+    }
+}
+
+- (id<Mark>)lastChild {
+    return self.markArray.lastObject;
+}
+
+- (NSUInteger)count {
+    return self.markArray.count;
+}
+
+
 @end
