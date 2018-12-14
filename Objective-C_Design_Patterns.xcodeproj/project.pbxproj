@@ -103,6 +103,9 @@
 		91D7CB2A2197F2D000BA88BF /* ZHFRootTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB292197F2D000BA88BF /* ZHFRootTableViewModel.m */; };
 		91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB2C2197FFA900BA88BF /* ZHFRootCoordinater.m */; };
 		91DC404321AD7B2000603387 /* ZHFAbstractFactoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DC404221AD7B2000603387 /* ZHFAbstractFactoryVC.m */; };
+		91E442BD21C403F3004F9318 /* IteratorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 91E442BC21C403F3004F9318 /* IteratorPattern.md */; };
+		91E442BF21C4065C004F9318 /* ListIterator.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91E442BE21C4065C004F9318 /* ListIterator.mdj */; };
+		91E442C121C40815004F9318 /* AggregateIteratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -272,6 +275,9 @@
 		91D7CB2C2197FFA900BA88BF /* ZHFRootCoordinater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFRootCoordinater.m; sourceTree = "<group>"; };
 		91DC404121AD7B2000603387 /* ZHFAbstractFactoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAbstractFactoryVC.h; sourceTree = "<group>"; };
 		91DC404221AD7B2000603387 /* ZHFAbstractFactoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAbstractFactoryVC.m; sourceTree = "<group>"; };
+		91E442BC21C403F3004F9318 /* IteratorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IteratorPattern.md; sourceTree = "<group>"; };
+		91E442BE21C4065C004F9318 /* ListIterator.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListIterator.mdj; sourceTree = "<group>"; };
+		91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AggregateIteratorPattern.mdj; sourceTree = "<group>"; };
 		B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Objective-C_Design_Patterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -343,6 +349,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				91E442BB21C403AA004F9318 /* 迭代器模式 */,
 				914D88C221C2A236008971BE /* 组合模式 */,
 				914C2E7421BFF63A002A0222 /* 观察者模式 */,
 				9176709B21BB75AD00E22223 /* 外观模式 */,
@@ -764,6 +771,16 @@
 			path = RootVC;
 			sourceTree = "<group>";
 		};
+		91E442BB21C403AA004F9318 /* 迭代器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */,
+				91E442BE21C4065C004F9318 /* ListIterator.mdj */,
+				91E442BC21C403F3004F9318 /* IteratorPattern.md */,
+			);
+			path = "迭代器模式";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -825,6 +842,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
+				91E442BD21C403F3004F9318 /* IteratorPattern.md in Resources */,
 				914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */,
@@ -859,6 +877,8 @@
 				9198363121B57DE300747EA5 /* Adapter.mdj in Resources */,
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
 				9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */,
+				91E442C121C40815004F9318 /* AggregateIteratorPattern.mdj in Resources */,
+				91E442BF21C4065C004F9318 /* ListIterator.mdj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
