@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
     @private
     NSMutableArray *stack_;
 }
+- (instancetype)initWithMark:(id<Mark>)mark;
 
 - (NSArray *)allObject;
 - (id)nextObject;

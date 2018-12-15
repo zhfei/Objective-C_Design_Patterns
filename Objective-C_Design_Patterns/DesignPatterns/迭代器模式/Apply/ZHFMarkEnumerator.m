@@ -9,7 +9,6 @@
 #import "ZHFMarkEnumerator.h"
 
 @interface ZHFMarkEnumerator ()
-- (instancetype)initWithMark:(id<Mark>)mark;
 - (void)traverseAndBuildStackWithMark:(id<Mark>)mark;
 @end
 

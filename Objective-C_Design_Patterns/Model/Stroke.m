@@ -8,6 +8,7 @@
 
 #import "Stroke.h"
 #import "Mark.h"
+#import "ZHFMarkEnumerator.h"
 
 @interface Stroke()
 @property (nonatomic, strong) NSMutableArray<id<Mark>> *markArray;
@@ -94,5 +95,9 @@
     return self.markArray.count;
 }
 
+#pragma mark - 迭代器
+- (NSEnumerator *)enumerator {
+    return [[ZHFMarkEnumerator alloc] initWithMark:self];
+}
 
 @end
