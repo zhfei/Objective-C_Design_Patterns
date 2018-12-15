@@ -20,6 +20,8 @@
 - (id<Mark>)lastChild;
 - (NSUInteger)count;
 - (instancetype)copy;
+//迭代器
+- (NSEnumerator *)enumerator;
 
 #pragma mark - 绘图
 - (void)drawWithContext:(CGContextRef)context;

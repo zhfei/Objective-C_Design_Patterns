@@ -107,6 +107,7 @@
 		91E442BD21C403F3004F9318 /* IteratorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 91E442BC21C403F3004F9318 /* IteratorPattern.md */; };
 		91E442BF21C4065C004F9318 /* ListIterator.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91E442BE21C4065C004F9318 /* ListIterator.mdj */; };
 		91E442C121C40815004F9318 /* AggregateIteratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */; };
+		91FE53C821C538CE009B4B0A /* ZHFMarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FE53C721C538CE009B4B0A /* ZHFMarkEnumerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -280,6 +281,8 @@
 		91E442BC21C403F3004F9318 /* IteratorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IteratorPattern.md; sourceTree = "<group>"; };
 		91E442BE21C4065C004F9318 /* ListIterator.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListIterator.mdj; sourceTree = "<group>"; };
 		91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AggregateIteratorPattern.mdj; sourceTree = "<group>"; };
+		91FE53C621C538CE009B4B0A /* ZHFMarkEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFMarkEnumerator.h; sourceTree = "<group>"; };
+		91FE53C721C538CE009B4B0A /* ZHFMarkEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFMarkEnumerator.m; sourceTree = "<group>"; };
 		B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Objective-C_Design_Patterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -344,6 +347,8 @@
 			isa = PBXGroup;
 			children = (
 				911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */,
+				91FE53C621C538CE009B4B0A /* ZHFMarkEnumerator.h */,
+				91FE53C721C538CE009B4B0A /* ZHFMarkEnumerator.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -803,7 +808,7 @@
 				916E36382163209200602088 /* Sources */,
 				916E36392163209200602088 /* Frameworks */,
 				916E363A2163209200602088 /* Resources */,
-				51BAA1151644C8883F4969BD /* [CP] Copy Pods Resources */,
+				855ACF219CE100EBFD1C96BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -915,18 +920,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		51BAA1151644C8883F4969BD /* [CP] Copy Pods Resources */ = {
+		855ACF219CE100EBFD1C96BA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/BottomComponentLib/BottomComponentLib.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BottomComponentLib.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -997,6 +1006,7 @@
 				910E838A21B0432C00736D3B /* ZHFCharacter.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
 				9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */,
+				91FE53C821C538CE009B4B0A /* ZHFMarkEnumerator.m in Sources */,
 				91D7CB2A2197F2D000BA88BF /* ZHFRootTableViewModel.m in Sources */,
 				916183A921AAFFE700681B46 /* ZHFAcmeBrandingFactory.m in Sources */,
 				91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */,
