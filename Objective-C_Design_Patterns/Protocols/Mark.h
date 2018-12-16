@@ -22,6 +22,8 @@
 - (instancetype)copy;
 //迭代器
 - (NSEnumerator *)enumerator;
+//内部迭代器
+- (void)enumerateMarksUsingBlock:(void (^) (id <Mark> mark, BOOL *stop))block;
 
 #pragma mark - 绘图
 - (void)drawWithContext:(CGContextRef)context;

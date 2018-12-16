@@ -100,4 +100,16 @@
     return [[ZHFMarkEnumerator alloc] initWithMark:self];
 }
 
+- (void)enumerateMarksUsingBlock:(void (^)(id<Mark>, BOOL *stop))block {
+    NSEnumerator *enumerator = [self enumerator];
+    id <Mark> mark;
+    BOOL *stop = NO;
+    for (id <Mark> mark in enumerator) {
+        block(mark, &stop);
+        if (stop) {
+            break;
+        }
+    }
+}
+
 @end
