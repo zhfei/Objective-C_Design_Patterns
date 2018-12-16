@@ -16,6 +16,7 @@
 		910E839321B04EEB00736D3B /* ZHFBuilderPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E839221B04EEB00736D3B /* ZHFBuilderPatternVC.m */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
 		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
+		911C999C21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911C999B21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj */; };
 		911FD42721C536C300DCA64F /* MarkEnumeratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */; };
 		9122AD1D21BD6B5D00A9E3BD /* MediatorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */; };
 		9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */; };
@@ -127,6 +128,7 @@
 		911200AF218600AD007794AD /* CoordinateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateProtocol.h; sourceTree = "<group>"; };
 		911B3DD721AEDC0B009BC83D /* BuilderPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BuilderPattern.md; sourceTree = "<group>"; };
 		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
+		911C999B21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = innerEnumteratorPattern.mdj; sourceTree = "<group>"; };
 		911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarkEnumeratorPattern.mdj; sourceTree = "<group>"; };
 		9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MediatorPattern.md; sourceTree = "<group>"; };
 		9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MediatorPattern.mdj; sourceTree = "<group>"; };
@@ -341,6 +343,14 @@
 				910E839221B04EEB00736D3B /* ZHFBuilderPatternVC.m */,
 			);
 			path = "生成器模式";
+			sourceTree = "<group>";
+		};
+		911C999A21C6A0BA00CF3C3A /* Apply2 */ = {
+			isa = PBXGroup;
+			children = (
+				911C999B21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj */,
+			);
+			path = Apply2;
 			sourceTree = "<group>";
 		};
 		911FD42521C4F19700DCA64F /* Apply */ = {
@@ -789,6 +799,7 @@
 		91E442BB21C403AA004F9318 /* 迭代器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				911C999A21C6A0BA00CF3C3A /* Apply2 */,
 				911FD42521C4F19700DCA64F /* Apply */,
 				91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */,
 				91E442BE21C4065C004F9318 /* ListIterator.mdj */,
@@ -893,6 +904,7 @@
 				91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */,
 				9198363121B57DE300747EA5 /* Adapter.mdj in Resources */,
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
+				911C999C21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj in Resources */,
 				9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */,
 				91E442C121C40815004F9318 /* AggregateIteratorPattern.mdj in Resources */,
 				91E442BF21C4065C004F9318 /* ListIterator.mdj in Resources */,
