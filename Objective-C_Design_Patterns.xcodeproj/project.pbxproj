@@ -18,6 +18,7 @@
 		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
 		911C999C21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911C999B21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj */; };
 		911C999F21C6A9E200CF3C3A /* VisitorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911C999E21C6A9E200CF3C3A /* VisitorPattern.md */; };
+		911C99A121C6AD1E00CF3C3A /* VisitorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911C99A021C6AD1E00CF3C3A /* VisitorPattern.mdj */; };
 		911FD42721C536C300DCA64F /* MarkEnumeratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */; };
 		9122AD1D21BD6B5D00A9E3BD /* MediatorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */; };
 		9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */; };
@@ -131,6 +132,7 @@
 		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
 		911C999B21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = innerEnumteratorPattern.mdj; sourceTree = "<group>"; };
 		911C999E21C6A9E200CF3C3A /* VisitorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = VisitorPattern.md; sourceTree = "<group>"; };
+		911C99A021C6AD1E00CF3C3A /* VisitorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VisitorPattern.mdj; sourceTree = "<group>"; };
 		911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarkEnumeratorPattern.mdj; sourceTree = "<group>"; };
 		9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MediatorPattern.md; sourceTree = "<group>"; };
 		9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MediatorPattern.mdj; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 		911C999D21C6A9AF00CF3C3A /* 访问者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				911C99A021C6AD1E00CF3C3A /* VisitorPattern.mdj */,
 				911C999E21C6A9E200CF3C3A /* VisitorPattern.md */,
 			);
 			path = "访问者模式";
@@ -902,6 +905,7 @@
 				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
 				91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */,
 				9171584221BAC196000525FC /* BridgePattern.md in Resources */,
+				911C99A121C6AD1E00CF3C3A /* VisitorPattern.mdj in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
 				9170E7EB21A0725100E41D8A /* test0.png in Resources */,
 				9176709D21BB7B8F00E22223 /* FacadePattern.md in Resources */,
