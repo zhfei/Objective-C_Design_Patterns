@@ -7,6 +7,7 @@
 //
 
 #import "CanvasView.h"
+#import "ZHFMarkRenderer.h"
 
 @interface CanvasView()
 @property (nonatomic, strong) id<Mark> mark;
@@ -37,11 +38,14 @@
     }
     
     CGContextRef context = UIGraphicsGetCurrentContext();
-    for (id mark in self.historyPaths) {
-        [mark drawWithContext:context];
-    }
+//    for (id mark in self.historyPaths) {
+//        [mark drawWithContext:context];
+//    }
+//
+//    [_mark drawWithContext:context];
     
-    [_mark drawWithContext:context];
+    ZHFMarkRenderer *renderer = [[ZHFMarkRenderer alloc] initWithCGContext:context];
+    [_mark acceptMarkVisitor:renderer];
     
 //    CGContextSetLineWidth(context, [GlobalConfig sharedGlobalConfig].lineWidth);
 //    CGContextSetStrokeColorWithColor(context, [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1].CGColor);
