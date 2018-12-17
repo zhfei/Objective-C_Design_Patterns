@@ -41,6 +41,7 @@
 		9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9153C43321B6D0EC00C2CCB6 /* AdapterApply.mdj */; };
 		9153C43921B6D4C600C2CCB6 /* ZHFCoordinateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */; };
 		915DD91F21C7E3CD00B79361 /* MarkVisitorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 915DD91E21C7E3CD00B79361 /* MarkVisitorPattern.mdj */; };
+		915DD92321C7ECAC00B79361 /* ZHFMarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 915DD92221C7ECAC00B79361 /* ZHFMarkRenderer.m */; };
 		9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9161839E21AAECD200681B46 /* AbstractFactory.mdj */; };
 		916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */; };
 		916183A621AAFFAD00681B46 /* ZHFSierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A521AAFFAD00681B46 /* ZHFSierraBrandingFactory.m */; };
@@ -170,6 +171,9 @@
 		9153C43721B6D4C600C2CCB6 /* ZHFCoordinateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCoordinateViewController.h; sourceTree = "<group>"; };
 		9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCoordinateViewController.m; sourceTree = "<group>"; };
 		915DD91E21C7E3CD00B79361 /* MarkVisitorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarkVisitorPattern.mdj; sourceTree = "<group>"; };
+		915DD92021C7EC7C00B79361 /* ZHFMarkVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFMarkVisitor.h; sourceTree = "<group>"; };
+		915DD92121C7ECAC00B79361 /* ZHFMarkRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFMarkRenderer.h; sourceTree = "<group>"; };
+		915DD92221C7ECAC00B79361 /* ZHFMarkRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFMarkRenderer.m; sourceTree = "<group>"; };
 		9161839E21AAECD200681B46 /* AbstractFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.mdj; sourceTree = "<group>"; };
 		916183A121AAFDB200681B46 /* ZHFBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBrandingFactory.h; sourceTree = "<group>"; };
 		916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBrandingFactory.m; sourceTree = "<group>"; };
@@ -510,6 +514,9 @@
 			isa = PBXGroup;
 			children = (
 				915DD91E21C7E3CD00B79361 /* MarkVisitorPattern.mdj */,
+				915DD92021C7EC7C00B79361 /* ZHFMarkVisitor.h */,
+				915DD92121C7ECAC00B79361 /* ZHFMarkRenderer.h */,
+				915DD92221C7ECAC00B79361 /* ZHFMarkRenderer.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -974,6 +981,7 @@
 				916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */,
 				91D7CB232197F0C900BA88BF /* ZHFProtoTypeModelA.m in Sources */,
 				917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */,
+				915DD92321C7ECAC00B79361 /* ZHFMarkRenderer.m in Sources */,
 				91D7CB272197F25000BA88BF /* ZHFRootTableVC.m in Sources */,
 				917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */,
 				91D7CB1D2197E9BE00BA88BF /* ZHFProtoTypeVC.m in Sources */,
