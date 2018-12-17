@@ -42,6 +42,7 @@
 		9153C43921B6D4C600C2CCB6 /* ZHFCoordinateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */; };
 		915DD91F21C7E3CD00B79361 /* MarkVisitorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 915DD91E21C7E3CD00B79361 /* MarkVisitorPattern.mdj */; };
 		915DD92321C7ECAC00B79361 /* ZHFMarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 915DD92221C7ECAC00B79361 /* ZHFMarkRenderer.m */; };
+		915DD92621C7FEDE00B79361 /* ComponetPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 915DD92521C7FEDE00B79361 /* ComponetPattern.md */; };
 		9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9161839E21AAECD200681B46 /* AbstractFactory.mdj */; };
 		916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */; };
 		916183A621AAFFAD00681B46 /* ZHFSierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A521AAFFAD00681B46 /* ZHFSierraBrandingFactory.m */; };
@@ -174,6 +175,7 @@
 		915DD92021C7EC7C00B79361 /* ZHFMarkVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFMarkVisitor.h; sourceTree = "<group>"; };
 		915DD92121C7ECAC00B79361 /* ZHFMarkRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFMarkRenderer.h; sourceTree = "<group>"; };
 		915DD92221C7ECAC00B79361 /* ZHFMarkRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFMarkRenderer.m; sourceTree = "<group>"; };
+		915DD92521C7FEDE00B79361 /* ComponetPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ComponetPattern.md; sourceTree = "<group>"; };
 		9161839E21AAECD200681B46 /* AbstractFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.mdj; sourceTree = "<group>"; };
 		916183A121AAFDB200681B46 /* ZHFBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBrandingFactory.h; sourceTree = "<group>"; };
 		916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBrandingFactory.m; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				915DD92421C7FEAC00B79361 /* 装饰器模式 */,
 				911C999D21C6A9AF00CF3C3A /* 访问者模式 */,
 				91E442BB21C403AA004F9318 /* 迭代器模式 */,
 				914D88C221C2A236008971BE /* 组合模式 */,
@@ -519,6 +522,14 @@
 				915DD92221C7ECAC00B79361 /* ZHFMarkRenderer.m */,
 			);
 			path = Apply;
+			sourceTree = "<group>";
+		};
+		915DD92421C7FEAC00B79361 /* 装饰器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				915DD92521C7FEDE00B79361 /* ComponetPattern.md */,
+			);
+			path = "装饰器模式";
 			sourceTree = "<group>";
 		};
 		916183A021AAFD5900681B46 /* Apply */ = {
@@ -927,6 +938,7 @@
 				916E36472163209200602088 /* Main.storyboard in Resources */,
 				9170E7EB21A0725100E41D8A /* test0.png in Resources */,
 				9176709D21BB7B8F00E22223 /* FacadePattern.md in Resources */,
+				915DD92621C7FEDE00B79361 /* ComponetPattern.md in Resources */,
 				914D88C421C2A30C008971BE /* CompositePattern.md in Resources */,
 				913933CB2197235F0057E33C /* 设计模式1.md in Resources */,
 				911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */,
