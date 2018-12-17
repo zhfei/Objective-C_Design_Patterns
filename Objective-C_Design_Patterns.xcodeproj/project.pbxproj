@@ -40,6 +40,7 @@
 		9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C43121B6CCF900C2CCB6 /* ZHFCommandSlider.m */; };
 		9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9153C43321B6D0EC00C2CCB6 /* AdapterApply.mdj */; };
 		9153C43921B6D4C600C2CCB6 /* ZHFCoordinateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */; };
+		915DD91F21C7E3CD00B79361 /* MarkVisitorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 915DD91E21C7E3CD00B79361 /* MarkVisitorPattern.mdj */; };
 		9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9161839E21AAECD200681B46 /* AbstractFactory.mdj */; };
 		916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */; };
 		916183A621AAFFAD00681B46 /* ZHFSierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A521AAFFAD00681B46 /* ZHFSierraBrandingFactory.m */; };
@@ -168,6 +169,7 @@
 		9153C43321B6D0EC00C2CCB6 /* AdapterApply.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AdapterApply.mdj; sourceTree = "<group>"; };
 		9153C43721B6D4C600C2CCB6 /* ZHFCoordinateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCoordinateViewController.h; sourceTree = "<group>"; };
 		9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCoordinateViewController.m; sourceTree = "<group>"; };
+		915DD91E21C7E3CD00B79361 /* MarkVisitorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarkVisitorPattern.mdj; sourceTree = "<group>"; };
 		9161839E21AAECD200681B46 /* AbstractFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.mdj; sourceTree = "<group>"; };
 		916183A121AAFDB200681B46 /* ZHFBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBrandingFactory.h; sourceTree = "<group>"; };
 		916183A221AAFDB200681B46 /* ZHFBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBrandingFactory.m; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 		911C999D21C6A9AF00CF3C3A /* 访问者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				915DD91D21C7E3BA00B79361 /* Apply */,
 				911C99A021C6AD1E00CF3C3A /* VisitorPattern.mdj */,
 				911C999E21C6A9E200CF3C3A /* VisitorPattern.md */,
 			);
@@ -499,6 +502,14 @@
 				91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */,
 				9153C43721B6D4C600C2CCB6 /* ZHFCoordinateViewController.h */,
 				9153C43821B6D4C600C2CCB6 /* ZHFCoordinateViewController.m */,
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
+		915DD91D21C7E3BA00B79361 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				915DD91E21C7E3CD00B79361 /* MarkVisitorPattern.mdj */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -833,7 +844,6 @@
 				916E36382163209200602088 /* Sources */,
 				916E36392163209200602088 /* Frameworks */,
 				916E363A2163209200602088 /* Resources */,
-				855ACF219CE100EBFD1C96BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -887,6 +897,7 @@
 				914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */,
+				915DD91F21C7E3CD00B79361 /* MarkVisitorPattern.mdj in Resources */,
 				9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */,
 				917670A221BB8C7800E22223 /* CabDriverFacabePattern.mdj in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
@@ -946,28 +957,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		855ACF219CE100EBFD1C96BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
