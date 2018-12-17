@@ -16,6 +16,12 @@
 
 @implementation Stroke
 @synthesize color,location,size;
+- (void)acceptMarkVisitor:(id<ZHFMarkVisitor>)visitor {
+    [self enumerateMarksUsingBlock:^(id<Mark> mark, BOOL *stop) {
+        [mark acceptMarkVisitor:visitor];
+    }];
+    [visitor visitStroke:self];
+}
 
 - (void)drawWithContext:(CGContextRef)context {
     CGContextMoveToPoint(context, self.location.x, self.location.y);

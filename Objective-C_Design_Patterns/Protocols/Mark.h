@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ZHFMarkVisitor.h"
 
 @protocol Mark <NSObject,NSCopying>
 @property (nonatomic, strong) UIColor *color;
@@ -25,7 +26,12 @@
 //内部迭代器
 - (void)enumerateMarksUsingBlock:(void (^) (id <Mark> mark, BOOL *stop))block;
 
+//访问者模式
+- (void)acceptMarkVisitor:(id <ZHFMarkVisitor>)visitor;
+
 #pragma mark - 绘图
 - (void)drawWithContext:(CGContextRef)context;
+
+
 
 @end

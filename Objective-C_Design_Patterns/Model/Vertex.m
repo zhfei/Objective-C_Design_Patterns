@@ -12,6 +12,9 @@
 @implementation Vertex
 @synthesize location;
 @dynamic color,size;
+- (void)acceptMarkVisitor:(id<ZHFMarkVisitor>)visitor {
+    [visitor visitVertex:self];
+}
 
 - (instancetype)initWithLocation:(CGPoint)location {
     self = [super init];

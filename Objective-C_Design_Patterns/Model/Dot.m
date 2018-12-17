@@ -10,6 +10,9 @@
 
 @implementation Dot
 @synthesize color,size;
+- (void)acceptMarkVisitor:(id<ZHFMarkVisitor>)visitor {
+    [visitor visitDot:self];
+}
 
 - (void)drawWithContext:(CGContextRef)context {
     CGFloat x = self.location.x - self.size.width*0.5;
