@@ -9,7 +9,16 @@
 #import "ZHFImageTransformFilter.h"
 
 @implementation ZHFImageTransformFilter
+@synthesize transform = transform_;
+- (instancetype)initWithImageComponent:(id<ZHFImageComponent>)component
+                             transform:(CGAffineTransform)transform {
+    if (self = [super initWithImageComponent:component]) {
+        transform_ = transform;
+    }
+    return self;
+}
 - (void)apply {
-    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextConcatCTM(context, transform_);
 }
 @end

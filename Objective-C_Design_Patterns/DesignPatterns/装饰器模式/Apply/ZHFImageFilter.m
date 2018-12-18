@@ -10,6 +10,13 @@
 
 @implementation ZHFImageFilter
 @synthesize component = component_;
+- (instancetype)initWithImageComponent:(id<ZHFImageComponent>)component {
+    if (self = [super init]) {
+        self.component = component;
+    }
+    return self;
+}
+
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     if ([NSStringFromSelector(aSelector) hasPrefix:@"draw"]) {
         [self apply];

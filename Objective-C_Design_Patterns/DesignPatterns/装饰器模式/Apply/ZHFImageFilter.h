@@ -11,12 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZHFImageFilter : NSObject
+@interface ZHFImageFilter : NSObject <ZHFImageComponent>
 {
     @private
     id<ZHFImageComponent> component_;
 }
 @property (nonatomic, strong) id<ZHFImageComponent> component;
+- (instancetype)initWithImageComponent:(id<ZHFImageComponent>)component;
 - (void)apply;
 - (id)forwardingTargetForSelector:(SEL)aSelector;
 @end

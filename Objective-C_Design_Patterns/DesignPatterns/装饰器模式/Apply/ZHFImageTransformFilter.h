@@ -11,6 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFImageTransformFilter : ZHFImageFilter
+{
+    @private
+    CGAffineTransform transform_;
+}
+@property (nonatomic, assign) CGAffineTransform transform_;
+- (instancetype)initWithImageComponent:(id<ZHFImageComponent>)component
+                             transform:(CGAffineTransform)transform;
 
 @end
 

@@ -10,6 +10,8 @@
 
 @implementation ZHFImageShadowFilter
 - (void)apply {
-    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGSize size = CGSizeMake(-25, 10);
+    CGContextSetShadow(context, size, 20.0);
 }
 @end
