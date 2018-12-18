@@ -35,6 +35,10 @@
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
 		9150E20F21C937B2000229B5 /* DecoratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9150E20E21C937B2000229B5 /* DecoratorPattern.mdj */; };
+		9150E21421C9457C000229B5 /* UIImage+ZHFImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150E21321C9457C000229B5 /* UIImage+ZHFImageComponent.m */; };
+		9150E21721C9460C000229B5 /* ZHFImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150E21621C9460C000229B5 /* ZHFImageFilter.m */; };
+		9150E21A21C94862000229B5 /* ZHFImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150E21921C94862000229B5 /* ZHFImageTransformFilter.m */; };
+		9150E21D21C9488D000229B5 /* ZHFImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150E21C21C9488D000229B5 /* ZHFImageShadowFilter.m */; };
 		9153C42821B6CB8600C2CCB6 /* ZHFAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */; };
 		9153C42C21B6CC2E00C2CCB6 /* ZHFCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42B21B6CC2E00C2CCB6 /* ZHFCommand.m */; };
 		9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */; };
@@ -161,6 +165,15 @@
 		915075C02163467A0049B5CA /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		915075C12163467A0049B5CA /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
 		9150E20E21C937B2000229B5 /* DecoratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DecoratorPattern.mdj; sourceTree = "<group>"; };
+		9150E21121C944DB000229B5 /* ZHFImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFImageComponent.h; sourceTree = "<group>"; };
+		9150E21221C9457C000229B5 /* UIImage+ZHFImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHFImageComponent.h"; sourceTree = "<group>"; };
+		9150E21321C9457C000229B5 /* UIImage+ZHFImageComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHFImageComponent.m"; sourceTree = "<group>"; };
+		9150E21521C9460C000229B5 /* ZHFImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFImageFilter.h; sourceTree = "<group>"; };
+		9150E21621C9460C000229B5 /* ZHFImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFImageFilter.m; sourceTree = "<group>"; };
+		9150E21821C94862000229B5 /* ZHFImageTransformFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFImageTransformFilter.h; sourceTree = "<group>"; };
+		9150E21921C94862000229B5 /* ZHFImageTransformFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFImageTransformFilter.m; sourceTree = "<group>"; };
+		9150E21B21C9488D000229B5 /* ZHFImageShadowFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFImageShadowFilter.h; sourceTree = "<group>"; };
+		9150E21C21C9488D000229B5 /* ZHFImageShadowFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFImageShadowFilter.m; sourceTree = "<group>"; };
 		9153C42621B6CB8600C2CCB6 /* ZHFAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAdapterViewController.h; sourceTree = "<group>"; };
 		9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAdapterViewController.m; sourceTree = "<group>"; };
 		9153C42921B6CBD200C2CCB6 /* ZHFSetStrokeColorCommandDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSetStrokeColorCommandDelegate.h; sourceTree = "<group>"; };
@@ -480,6 +493,22 @@
 			path = Coordinate;
 			sourceTree = "<group>";
 		};
+		9150E21021C94493000229B5 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				9150E21121C944DB000229B5 /* ZHFImageComponent.h */,
+				9150E21221C9457C000229B5 /* UIImage+ZHFImageComponent.h */,
+				9150E21321C9457C000229B5 /* UIImage+ZHFImageComponent.m */,
+				9150E21521C9460C000229B5 /* ZHFImageFilter.h */,
+				9150E21621C9460C000229B5 /* ZHFImageFilter.m */,
+				9150E21821C94862000229B5 /* ZHFImageTransformFilter.h */,
+				9150E21921C94862000229B5 /* ZHFImageTransformFilter.m */,
+				9150E21B21C9488D000229B5 /* ZHFImageShadowFilter.h */,
+				9150E21C21C9488D000229B5 /* ZHFImageShadowFilter.m */,
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
 		9153C42521B6CACE00C2CCB6 /* Apply */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +558,7 @@
 		915DD92421C7FEAC00B79361 /* 装饰器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9150E21021C94493000229B5 /* Apply */,
 				9150E20E21C937B2000229B5 /* DecoratorPattern.mdj */,
 				915DD92521C7FEDE00B79361 /* ComponetPattern.md */,
 			);
@@ -995,6 +1025,7 @@
 				9173394E21B193D9009C08A1 /* ZHFSingleton.m in Sources */,
 				916183AC21AB089800681B46 /* ZHFAcmeBrandingViews.m in Sources */,
 				916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */,
+				9150E21D21C9488D000229B5 /* ZHFImageShadowFilter.m in Sources */,
 				91D7CB232197F0C900BA88BF /* ZHFProtoTypeModelA.m in Sources */,
 				917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */,
 				915DD92321C7ECAC00B79361 /* ZHFMarkRenderer.m in Sources */,
@@ -1015,8 +1046,10 @@
 				917670AB21BB8EBB00E22223 /* ZHFCabDriver.m in Sources */,
 				9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */,
 				9171584D21BACF59000525FC /* ZHFConsoleEmulator.m in Sources */,
+				9150E21A21C94862000229B5 /* ZHFImageTransformFilter.m in Sources */,
 				91DC404321AD7B2000603387 /* ZHFAbstractFactoryVC.m in Sources */,
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
+				9150E21721C9460C000229B5 /* ZHFImageFilter.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
 				9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */,
 				916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */,
@@ -1032,6 +1065,7 @@
 				914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
+				9150E21421C9457C000229B5 /* UIImage+ZHFImageComponent.m in Sources */,
 				910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */,
 				9171585621BAD238000525FC /* ZHFConsoleController.m in Sources */,
 				917670A821BB8E1800E22223 /* ZHFTaximeter.m in Sources */,
