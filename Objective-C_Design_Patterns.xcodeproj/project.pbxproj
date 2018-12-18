@@ -34,6 +34,7 @@
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
+		9150E20F21C937B2000229B5 /* DecoratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9150E20E21C937B2000229B5 /* DecoratorPattern.mdj */; };
 		9153C42821B6CB8600C2CCB6 /* ZHFAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */; };
 		9153C42C21B6CC2E00C2CCB6 /* ZHFCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42B21B6CC2E00C2CCB6 /* ZHFCommand.m */; };
 		9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */; };
@@ -159,6 +160,7 @@
 		914E5E2F216659810089C1C7 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		915075C02163467A0049B5CA /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		915075C12163467A0049B5CA /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
+		9150E20E21C937B2000229B5 /* DecoratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DecoratorPattern.mdj; sourceTree = "<group>"; };
 		9153C42621B6CB8600C2CCB6 /* ZHFAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAdapterViewController.h; sourceTree = "<group>"; };
 		9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAdapterViewController.m; sourceTree = "<group>"; };
 		9153C42921B6CBD200C2CCB6 /* ZHFSetStrokeColorCommandDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSetStrokeColorCommandDelegate.h; sourceTree = "<group>"; };
@@ -527,6 +529,7 @@
 		915DD92421C7FEAC00B79361 /* 装饰器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9150E20E21C937B2000229B5 /* DecoratorPattern.mdj */,
 				915DD92521C7FEDE00B79361 /* ComponetPattern.md */,
 			);
 			path = "装饰器模式";
@@ -948,6 +951,7 @@
 				9176709F21BB833D00E22223 /* FacadePattern.mdj in Resources */,
 				917670AE21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj in Resources */,
 				91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */,
+				9150E20F21C937B2000229B5 /* DecoratorPattern.mdj in Resources */,
 				9198363121B57DE300747EA5 /* Adapter.mdj in Resources */,
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
 				911C999C21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj in Resources */,
