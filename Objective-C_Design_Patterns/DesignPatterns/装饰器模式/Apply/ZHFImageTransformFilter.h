@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
     @private
     CGAffineTransform transform_;
 }
-@property (nonatomic, assign) CGAffineTransform transform_;
+@property (nonatomic, assign) CGAffineTransform transform;
 - (instancetype)initWithImageComponent:(id<ZHFImageComponent>)component
                              transform:(CGAffineTransform)transform;
 

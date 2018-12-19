@@ -95,6 +95,8 @@
 		917670B421BB9FB200E22223 /* ZHFScribbleThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670B321BB9FB200E22223 /* ZHFScribbleThumbnail.m */; };
 		917670B821BB9FE700E22223 /* ZHFScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670B721BB9FE700E22223 /* ZHFScribbleManager.m */; };
 		917670BB21BBB9E500E22223 /* ZHFScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 917670BA21BBB9E500E22223 /* ZHFScribbleMemento.m */; };
+		9177789621CA8EFB00E2897B /* ZHFDecoratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9177789521CA8EFB00E2897B /* ZHFDecoratorViewController.m */; };
+		9177789921CA923D00E2897B /* ZHFDecoratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9177789821CA923D00E2897B /* ZHFDecoratorView.m */; };
 		917B7924218A0BC000425A05 /* ScrawlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7923218A0BC000425A05 /* ScrawlManager.m */; };
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
 		917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7929218A0C3000425A05 /* ScrawlModel.m */; };
@@ -271,6 +273,10 @@
 		917670B721BB9FE700E22223 /* ZHFScribbleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribbleManager.m; sourceTree = "<group>"; };
 		917670B921BBB9E500E22223 /* ZHFScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribbleMemento.h; sourceTree = "<group>"; };
 		917670BA21BBB9E500E22223 /* ZHFScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribbleMemento.m; sourceTree = "<group>"; };
+		9177789421CA8EFB00E2897B /* ZHFDecoratorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFDecoratorViewController.h; sourceTree = "<group>"; };
+		9177789521CA8EFB00E2897B /* ZHFDecoratorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFDecoratorViewController.m; sourceTree = "<group>"; };
+		9177789721CA923D00E2897B /* ZHFDecoratorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFDecoratorView.h; sourceTree = "<group>"; };
+		9177789821CA923D00E2897B /* ZHFDecoratorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFDecoratorView.m; sourceTree = "<group>"; };
 		917B7922218A0BC000425A05 /* ScrawlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlManager.h; sourceTree = "<group>"; };
 		917B7923218A0BC000425A05 /* ScrawlManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlManager.m; sourceTree = "<group>"; };
 		917B7925218A0C1B00425A05 /* MementoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoModel.h; sourceTree = "<group>"; };
@@ -508,6 +514,10 @@
 				9150E21921C94862000229B5 /* ZHFImageTransformFilter.m */,
 				9150E21B21C9488D000229B5 /* ZHFImageShadowFilter.h */,
 				9150E21C21C9488D000229B5 /* ZHFImageShadowFilter.m */,
+				9177789421CA8EFB00E2897B /* ZHFDecoratorViewController.h */,
+				9177789521CA8EFB00E2897B /* ZHFDecoratorViewController.m */,
+				9177789721CA923D00E2897B /* ZHFDecoratorView.h */,
+				9177789821CA923D00E2897B /* ZHFDecoratorView.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -1082,12 +1092,14 @@
 				9171585021BAD176000525FC /* ZHFGameBoyEmulator.m in Sources */,
 				9171585921BAD398000525FC /* ZHFTouchConsoleController.m in Sources */,
 				917B7927218A0C1B00425A05 /* MementoModel.m in Sources */,
+				9177789921CA923D00E2897B /* ZHFDecoratorView.m in Sources */,
 				910E838A21B0432C00736D3B /* ZHFCharacter.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
 				9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */,
 				91FE53C821C538CE009B4B0A /* ZHFMarkEnumerator.m in Sources */,
 				91D7CB2A2197F2D000BA88BF /* ZHFRootTableViewModel.m in Sources */,
 				916183A921AAFFE700681B46 /* ZHFAcmeBrandingFactory.m in Sources */,
+				9177789621CA8EFB00E2897B /* ZHFDecoratorViewController.m in Sources */,
 				91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
