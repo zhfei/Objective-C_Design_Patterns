@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFDecoratorView : UIView
+@property (nonatomic, strong) UIImage *image;
 
 @end
 

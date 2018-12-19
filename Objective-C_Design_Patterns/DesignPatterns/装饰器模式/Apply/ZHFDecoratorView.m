@@ -9,13 +9,13 @@
 #import "ZHFDecoratorView.h"
 
 @implementation ZHFDecoratorView
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)setImage:(UIImage *)image {
+    _image = image;
+    [self setNeedsDisplay];
 }
-*/
+
+- (void)drawRect:(CGRect)rect {
+    [_image drawInRect:CGRectMake(100, 200, _image.size.width, _image.size.height)];
+}
 
 @end

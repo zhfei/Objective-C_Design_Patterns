@@ -7,12 +7,13 @@
 //
 
 #import "ZHFDecoratorViewController.h"
-#import "UIImage+ZHFImageComponent.h"
-//#import "ZHFImageTransformFilter.h"
-//#import "ZHFImageShadowFilter.m"
+#import "ZHFImageTransformFilter.h"
+#import "ZHFImageShadowFilter.h"
+#import "ZHFDecoratorView.h"
 
 @interface ZHFDecoratorViewController ()
-
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) ZHFDecoratorView *decV;
 @end
 
 @implementation ZHFDecoratorViewController
@@ -21,15 +22,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIImage *image = [UIImage imageNamed:@"dog"];
-    
+    self.image = [UIImage imageNamed:@"peiqi"];
+
+    self.decV = [[ZHFDecoratorView alloc] initWithFrame:self.view.bounds];
+    self.decV.backgroundColor = UIColor.whiteColor;
+    [self.view addSubview:self.decV];
+    [self.decV setImage:_image];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     CGAffineTransform rotate = CGAffineTransformMakeRotation(-M_PI/4.0);
-    CGAffineTransform translate = CGAffineTransformMakeTranslation(-image.size.width/2, -image.size.height/8.0);
+    CGAffineTransform translate = CGAffineTransformMakeTranslation(-self.image.size.width/8.0, -self.image.size.height/8.0);
     CGAffineTransform finalTransform = CGAffineTransformConcat(rotate, translate);
     
-//    id<ZHFImageComponent> transFilter = [[ZHFImageTransformFilter alloc] initWithImageComponent:image transform:finalTransform];
-//
-//    id<ZHFImageComponent> shodow = [[ZHFImageShadowFilter alloc] initWithImageComponent:image];
+    id<ZHFImageComponent> transFilter = [[ZHFImageTransformFilter alloc] initWithImageComponent:self.image transform:finalTransform];
+    id<ZHFImageComponent> shodow = [[ZHFImageShadowFilter alloc] initWithImageComponent:transFilter];
+
+    [self.decV setImage:shodow];
 }
 
 /*

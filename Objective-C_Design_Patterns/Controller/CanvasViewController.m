@@ -16,6 +16,7 @@
 #import "ZHFClothCanvasViewGenerator.h"
 #import "ZHFPaperCanvasViewGenerator.h"
 #import "ZHFCoordinateViewController.h"
+#import "ZHFDecoratorViewController.h"
 
 #define ScreenSize [UIScreen mainScreen].bounds.size
 
@@ -40,6 +41,8 @@
     self.strokeSize = CGSizeMake(10, 10);
     self.strokeColor = [UIColor blackColor];
     self.scribble = [[ZHFScribble alloc] init];
+    
+
 }
 
 - (void)loadCanvasViewWithCanvasViewGenerator:(ZHFCanvasViewGenerator *)generator {
@@ -168,9 +171,12 @@
         case 5:
             //恢复
         {
-            UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"RecoverViewController"];
-            [(RecoverViewController *)vc setImg:[UIImage screenshotInView:self.canvasView]];
-            [[CoordinatingController sharedCoordinatingController] presentVC:vc];
+//            UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"RecoverViewController"];
+//            [(RecoverViewController *)vc setImg:[UIImage screenshotInView:self.canvasView]];
+            
+            ZHFDecoratorViewController *decVC = [[ZHFDecoratorViewController alloc] init];
+            
+            [[CoordinatingController sharedCoordinatingController] presentVC:decVC];
         }
             break;
             
