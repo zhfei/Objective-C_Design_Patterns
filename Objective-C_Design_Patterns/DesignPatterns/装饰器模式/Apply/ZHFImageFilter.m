@@ -21,6 +21,7 @@
     if ([NSStringFromSelector(aSelector) hasPrefix:@"draw"]) {
         [self apply];
     }
+    //使用消息转发给另一个对象处理，来实现任务处理链条，非常巧妙！！！
     return component_;
 }
 
