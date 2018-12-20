@@ -10,6 +10,8 @@
 #import "ZHFImageTransformFilter.h"
 #import "ZHFImageShadowFilter.h"
 #import "ZHFDecoratorView.h"
+#import "UIImage+ZHFTransform.h"
+#import "UIImage+ZHFShadow.h"
 
 @interface ZHFDecoratorViewController ()
 @property (nonatomic, strong) UIImage *image;
@@ -35,9 +37,13 @@
     CGAffineTransform translate = CGAffineTransformMakeTranslation(-self.image.size.width/8.0, -self.image.size.height/8.0);
     CGAffineTransform finalTransform = CGAffineTransformConcat(rotate, translate);
     
-    id<ZHFImageComponent> transFilter = [[ZHFImageTransformFilter alloc] initWithImageComponent:self.image transform:finalTransform];
-    id<ZHFImageComponent> shodow = [[ZHFImageShadowFilter alloc] initWithImageComponent:transFilter];
+//    id<ZHFImageComponent> transFilter = [[ZHFImageTransformFilter alloc] initWithImageComponent:self.image transform:finalTransform];
+//    id<ZHFImageComponent> shodow = [[ZHFImageShadowFilter alloc] initWithImageComponent:transFilter];
 
+    UIImage *tranf = [self.image imageWithTransform:finalTransform];
+    
+    UIImage *shodow = [tranf imageWithDropShadow];
+    
     [self.decV setImage:shodow];
 }
 
