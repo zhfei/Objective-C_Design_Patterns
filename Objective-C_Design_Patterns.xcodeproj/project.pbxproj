@@ -109,6 +109,7 @@
 		9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */ = {isa = PBXBuildFile; fileRef = 9198362E21B579C400747EA5 /* Adapter适配器模式.md */; };
 		9198363121B57DE300747EA5 /* Adapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9198363021B57DE300747EA5 /* Adapter.mdj */; };
 		919C82BC21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 919C82BB21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj */; };
+		919C82BE21CFC54900C6FB05 /* ChainOfResponsibilityPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 919C82BD21CFC54900C6FB05 /* ChainOfResponsibilityPattern.md */; };
 		91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
@@ -301,6 +302,7 @@
 		9198362E21B579C400747EA5 /* Adapter适配器模式.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Adapter适配器模式.md"; sourceTree = "<group>"; };
 		9198363021B57DE300747EA5 /* Adapter.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.mdj; sourceTree = "<group>"; };
 		919C82BB21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChainOfResponsibilityPattern.mdj; sourceTree = "<group>"; };
+		919C82BD21CFC54900C6FB05 /* ChainOfResponsibilityPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ChainOfResponsibilityPattern.md; sourceTree = "<group>"; };
 		91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoordinatingController.mdj; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
@@ -870,6 +872,7 @@
 			isa = PBXGroup;
 			children = (
 				919C82BB21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj */,
+				919C82BD21CFC54900C6FB05 /* ChainOfResponsibilityPattern.md */,
 			);
 			path = "责任链模式";
 			sourceTree = "<group>";
@@ -997,6 +1000,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919C82BE21CFC54900C6FB05 /* ChainOfResponsibilityPattern.md in Resources */,
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
 				91E442BD21C403F3004F9318 /* IteratorPattern.md in Resources */,
 				914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */,
