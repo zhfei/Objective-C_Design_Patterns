@@ -8,7 +8,6 @@
 
 #import "ZHFAttackHandler.h"
 
-
 @implementation ZHFAttackHandler
 @synthesize nextAttackHandler = nextAttackHandler_;
 

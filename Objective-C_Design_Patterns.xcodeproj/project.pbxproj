@@ -22,6 +22,7 @@
 		911FD42721C536C300DCA64F /* MarkEnumeratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */; };
 		9122AD1D21BD6B5D00A9E3BD /* MediatorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */; };
 		9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */; };
+		9138D78521CFE3DF00758753 /* ZHFLightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138D78421CFE3DF00758753 /* ZHFLightningAttack.m */; };
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
 		913933CF219728B00057E33C /* ProtoType.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 913933CE219728B00057E33C /* ProtoType.mdj */; };
 		913DC4C921CBEFB500BC2079 /* UIImage+ZHFShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 913DC4C821CBEFB500BC2079 /* UIImage+ZHFShadow.m */; };
@@ -119,6 +120,7 @@
 		919C82D521CFDBB100C6FB05 /* ZHFCrystalShield.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C82D421CFDBB100C6FB05 /* ZHFCrystalShield.m */; };
 		919C82D821CFDC3000C6FB05 /* ZHFMagicFireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C82D721CFDC3000C6FB05 /* ZHFMagicFireAttack.m */; };
 		919C82DB21CFDCCA00C6FB05 /* ZHFAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C82DA21CFDCCA00C6FB05 /* ZHFAvatar.m */; };
+		919C82DE21CFDDCE00C6FB05 /* ZHFAttackGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C82DD21CFDDCE00C6FB05 /* ZHFAttackGameVC.m */; };
 		91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
@@ -163,6 +165,8 @@
 		911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarkEnumeratorPattern.mdj; sourceTree = "<group>"; };
 		9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MediatorPattern.md; sourceTree = "<group>"; };
 		9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MediatorPattern.mdj; sourceTree = "<group>"; };
+		9138D78321CFE3DF00758753 /* ZHFLightningAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFLightningAttack.h; sourceTree = "<group>"; };
+		9138D78421CFE3DF00758753 /* ZHFLightningAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFLightningAttack.m; sourceTree = "<group>"; };
 		913933CA2197235F0057E33C /* 设计模式1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "设计模式1.md"; sourceTree = "<group>"; };
 		913933CE219728B00057E33C /* ProtoType.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProtoType.mdj; sourceTree = "<group>"; };
 		913DC4C721CBEFB500BC2079 /* UIImage+ZHFShadow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHFShadow.h"; sourceTree = "<group>"; };
@@ -328,6 +332,8 @@
 		919C82D721CFDC3000C6FB05 /* ZHFMagicFireAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFMagicFireAttack.m; sourceTree = "<group>"; };
 		919C82D921CFDCCA00C6FB05 /* ZHFAvatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAvatar.h; sourceTree = "<group>"; };
 		919C82DA21CFDCCA00C6FB05 /* ZHFAvatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAvatar.m; sourceTree = "<group>"; };
+		919C82DC21CFDDCE00C6FB05 /* ZHFAttackGameVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAttackGameVC.h; sourceTree = "<group>"; };
+		919C82DD21CFDDCE00C6FB05 /* ZHFAttackGameVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAttackGameVC.m; sourceTree = "<group>"; };
 		91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoordinatingController.mdj; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
@@ -916,12 +922,16 @@
 				919C82D121CFD94900C6FB05 /* ZHFSwordArmorAttack.m */,
 				919C82D621CFDC3000C6FB05 /* ZHFMagicFireAttack.h */,
 				919C82D721CFDC3000C6FB05 /* ZHFMagicFireAttack.m */,
+				9138D78321CFE3DF00758753 /* ZHFLightningAttack.h */,
+				9138D78421CFE3DF00758753 /* ZHFLightningAttack.m */,
 				919C82CD21CFD8DE00C6FB05 /* ZHFMetalArmor.h */,
 				919C82CE21CFD8DE00C6FB05 /* ZHFMetalArmor.m */,
 				919C82D321CFDBB100C6FB05 /* ZHFCrystalShield.h */,
 				919C82D421CFDBB100C6FB05 /* ZHFCrystalShield.m */,
 				919C82D921CFDCCA00C6FB05 /* ZHFAvatar.h */,
 				919C82DA21CFDCCA00C6FB05 /* ZHFAvatar.m */,
+				919C82DC21CFDDCE00C6FB05 /* ZHFAttackGameVC.h */,
+				919C82DD21CFDDCE00C6FB05 /* ZHFAttackGameVC.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -1202,6 +1212,7 @@
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */,
 				916183AF21AB09AF00681B46 /* ZHFSierraBrandingViews.m in Sources */,
+				919C82DE21CFDDCE00C6FB05 /* ZHFAttackGameVC.m in Sources */,
 				919C82D221CFD94900C6FB05 /* ZHFSwordArmorAttack.m in Sources */,
 				914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
@@ -1220,6 +1231,7 @@
 				916E36412163209200602088 /* AppDelegate.m in Sources */,
 				9171585021BAD176000525FC /* ZHFGameBoyEmulator.m in Sources */,
 				919C82D821CFDC3000C6FB05 /* ZHFMagicFireAttack.m in Sources */,
+				9138D78521CFE3DF00758753 /* ZHFLightningAttack.m in Sources */,
 				919C82D521CFDBB100C6FB05 /* ZHFCrystalShield.m in Sources */,
 				9171585921BAD398000525FC /* ZHFTouchConsoleController.m in Sources */,
 				917B7927218A0C1B00425A05 /* MementoModel.m in Sources */,
