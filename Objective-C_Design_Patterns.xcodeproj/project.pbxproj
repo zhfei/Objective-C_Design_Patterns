@@ -108,6 +108,7 @@
 		918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */ = {isa = PBXBuildFile; fileRef = 918E0EF521A3146500F4FC2B /* AbstractFactory.md */; };
 		9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */ = {isa = PBXBuildFile; fileRef = 9198362E21B579C400747EA5 /* Adapter适配器模式.md */; };
 		9198363121B57DE300747EA5 /* Adapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9198363021B57DE300747EA5 /* Adapter.mdj */; };
+		919C82BC21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 919C82BB21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj */; };
 		91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
@@ -299,6 +300,7 @@
 		918E0EF521A3146500F4FC2B /* AbstractFactory.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = AbstractFactory.md; sourceTree = "<group>"; };
 		9198362E21B579C400747EA5 /* Adapter适配器模式.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Adapter适配器模式.md"; sourceTree = "<group>"; };
 		9198363021B57DE300747EA5 /* Adapter.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.mdj; sourceTree = "<group>"; };
+		919C82BB21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChainOfResponsibilityPattern.mdj; sourceTree = "<group>"; };
 		91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoordinatingController.mdj; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				919C82BA21CFC1B800C6FB05 /* 责任链模式 */,
 				915DD92421C7FEAC00B79361 /* 装饰器模式 */,
 				911C999D21C6A9AF00CF3C3A /* 访问者模式 */,
 				91E442BB21C403AA004F9318 /* 迭代器模式 */,
@@ -863,6 +866,14 @@
 			path = "适配器模式";
 			sourceTree = "<group>";
 		};
+		919C82BA21CFC1B800C6FB05 /* 责任链模式 */ = {
+			isa = PBXGroup;
+			children = (
+				919C82BB21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj */,
+			);
+			path = "责任链模式";
+			sourceTree = "<group>";
+		};
 		91A84A212184B98900A71138 /* MementoPattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -937,6 +948,7 @@
 				916E36382163209200602088 /* Sources */,
 				916E36392163209200602088 /* Frameworks */,
 				916E363A2163209200602088 /* Resources */,
+				14106E6B9FEE33D973911510 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -999,6 +1011,7 @@
 				9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */,
 				9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */,
 				911C999F21C6A9E200CF3C3A /* VisitorPattern.md in Resources */,
+				919C82BC21CFC34400C6FB05 /* ChainOfResponsibilityPattern.mdj in Resources */,
 				9150E21F21C94D98000229B5 /* ImageFilterDecorator.mdj in Resources */,
 				918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */,
 				911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */,
@@ -1039,6 +1052,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		14106E6B9FEE33D973911510 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		48A0ED1D54E68162ADD70103 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
