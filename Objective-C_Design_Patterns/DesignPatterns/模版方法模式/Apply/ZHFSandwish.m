@@ -26,14 +26,17 @@
 #pragma mark - Details will be handled by subclass
 - (void)prepareBread {
     //子类实现
+    [NSException raise:NSInternalInconsistencyException format:@"You must override%@in a subclass",NSStringFromSelector(_cmd)];
 }
 
 - (void)addMeat {
     //子类实现
+    [NSException raise:NSInternalInconsistencyException format:@"You must override%@in a subclass",NSStringFromSelector(_cmd)];
 }
 
 - (void)addCondiments {
     //子类实现
+    [NSException raise:NSInternalInconsistencyException format:@"You must override%@in a subclass",NSStringFromSelector(_cmd)];
 }
 
 @end
