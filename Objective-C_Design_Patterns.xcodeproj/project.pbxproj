@@ -139,6 +139,8 @@
 		91E442BD21C403F3004F9318 /* IteratorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 91E442BC21C403F3004F9318 /* IteratorPattern.md */; };
 		91E442BF21C4065C004F9318 /* ListIterator.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91E442BE21C4065C004F9318 /* ListIterator.mdj */; };
 		91E442C121C40815004F9318 /* AggregateIteratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */; };
+		91F4077321D1261700E31958 /* TemplateMethodPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91F4077221D1261700E31958 /* TemplateMethodPattern.mdj */; };
+		91F4077521D1263100E31958 /* TemplateMethodPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 91F4077421D1263100E31958 /* TemplateMethodPattern.md */; };
 		91FE53C821C538CE009B4B0A /* ZHFMarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FE53C721C538CE009B4B0A /* ZHFMarkEnumerator.m */; };
 /* End PBXBuildFile section */
 
@@ -366,6 +368,8 @@
 		91E442BC21C403F3004F9318 /* IteratorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IteratorPattern.md; sourceTree = "<group>"; };
 		91E442BE21C4065C004F9318 /* ListIterator.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ListIterator.mdj; sourceTree = "<group>"; };
 		91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AggregateIteratorPattern.mdj; sourceTree = "<group>"; };
+		91F4077221D1261700E31958 /* TemplateMethodPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TemplateMethodPattern.mdj; sourceTree = "<group>"; };
+		91F4077421D1263100E31958 /* TemplateMethodPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TemplateMethodPattern.md; sourceTree = "<group>"; };
 		91FE53C621C538CE009B4B0A /* ZHFMarkEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFMarkEnumerator.h; sourceTree = "<group>"; };
 		91FE53C721C538CE009B4B0A /* ZHFMarkEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFMarkEnumerator.m; sourceTree = "<group>"; };
 		B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Objective-C_Design_Patterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -467,6 +471,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				91F4077121D124F100E31958 /* 模版方法模式 */,
 				919C82BA21CFC1B800C6FB05 /* 责任链模式 */,
 				915DD92421C7FEAC00B79361 /* 装饰器模式 */,
 				911C999D21C6A9AF00CF3C3A /* 访问者模式 */,
@@ -999,6 +1004,15 @@
 			path = "迭代器模式";
 			sourceTree = "<group>";
 		};
+		91F4077121D124F100E31958 /* 模版方法模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91F4077221D1261700E31958 /* TemplateMethodPattern.mdj */,
+				91F4077421D1263100E31958 /* TemplateMethodPattern.md */,
+			);
+			path = "模版方法模式";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1069,6 +1083,7 @@
 				919C82C121CFD1FD00C6FB05 /* ChainOfResponsibility_Attack_Pattern.mdj in Resources */,
 				9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */,
 				917670A221BB8C7800E22223 /* CabDriverFacabePattern.mdj in Resources */,
+				91F4077521D1263100E31958 /* TemplateMethodPattern.md in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */,
 				9152021A21CBE9E000BB5B96 /* CategoryImageDecotatorPattern.mdj in Resources */,
@@ -1084,6 +1099,7 @@
 				9161839F21AAECD200681B46 /* AbstractFactory.mdj in Resources */,
 				9122AD1D21BD6B5D00A9E3BD /* MediatorPattern.md in Resources */,
 				9171584721BACE87000525FC /* EmuletorBradgePattarn.mdj in Resources */,
+				91F4077321D1261700E31958 /* TemplateMethodPattern.mdj in Resources */,
 				911FD42721C536C300DCA64F /* MarkEnumeratorPattern.mdj in Resources */,
 				9171584421BAC485000525FC /* BridgePattern.mdj in Resources */,
 				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
