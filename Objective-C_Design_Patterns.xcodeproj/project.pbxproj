@@ -141,6 +141,9 @@
 		91E442C121C40815004F9318 /* AggregateIteratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */; };
 		91F4077321D1261700E31958 /* TemplateMethodPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91F4077221D1261700E31958 /* TemplateMethodPattern.mdj */; };
 		91F4077521D1263100E31958 /* TemplateMethodPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 91F4077421D1263100E31958 /* TemplateMethodPattern.md */; };
+		91F4077821D12D0300E31958 /* SandwichTemplateMethodPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91F4077721D12D0300E31958 /* SandwichTemplateMethodPattern.mdj */; };
+		91F4077B21D12D2C00E31958 /* ZHFSandwish.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4077A21D12D2C00E31958 /* ZHFSandwish.m */; };
+		91F4077E21D12F5500E31958 /* ZHFReubenSandwish.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4077D21D12F5500E31958 /* ZHFReubenSandwish.m */; };
 		91FE53C821C538CE009B4B0A /* ZHFMarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FE53C721C538CE009B4B0A /* ZHFMarkEnumerator.m */; };
 /* End PBXBuildFile section */
 
@@ -370,6 +373,11 @@
 		91E442C021C40815004F9318 /* AggregateIteratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AggregateIteratorPattern.mdj; sourceTree = "<group>"; };
 		91F4077221D1261700E31958 /* TemplateMethodPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TemplateMethodPattern.mdj; sourceTree = "<group>"; };
 		91F4077421D1263100E31958 /* TemplateMethodPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TemplateMethodPattern.md; sourceTree = "<group>"; };
+		91F4077721D12D0300E31958 /* SandwichTemplateMethodPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SandwichTemplateMethodPattern.mdj; sourceTree = "<group>"; };
+		91F4077921D12D2C00E31958 /* ZHFSandwish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSandwish.h; sourceTree = "<group>"; };
+		91F4077A21D12D2C00E31958 /* ZHFSandwish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSandwish.m; sourceTree = "<group>"; };
+		91F4077C21D12F5500E31958 /* ZHFReubenSandwish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFReubenSandwish.h; sourceTree = "<group>"; };
+		91F4077D21D12F5500E31958 /* ZHFReubenSandwish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFReubenSandwish.m; sourceTree = "<group>"; };
 		91FE53C621C538CE009B4B0A /* ZHFMarkEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFMarkEnumerator.h; sourceTree = "<group>"; };
 		91FE53C721C538CE009B4B0A /* ZHFMarkEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFMarkEnumerator.m; sourceTree = "<group>"; };
 		B1D9EB4201DA1379C3F5B058 /* libPods-Objective-C_Design_Patterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Objective-C_Design_Patterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1007,10 +1015,23 @@
 		91F4077121D124F100E31958 /* 模版方法模式 */ = {
 			isa = PBXGroup;
 			children = (
+				91F4077621D12B5900E31958 /* Apply */,
 				91F4077221D1261700E31958 /* TemplateMethodPattern.mdj */,
 				91F4077421D1263100E31958 /* TemplateMethodPattern.md */,
 			);
 			path = "模版方法模式";
+			sourceTree = "<group>";
+		};
+		91F4077621D12B5900E31958 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				91F4077721D12D0300E31958 /* SandwichTemplateMethodPattern.mdj */,
+				91F4077921D12D2C00E31958 /* ZHFSandwish.h */,
+				91F4077A21D12D2C00E31958 /* ZHFSandwish.m */,
+				91F4077C21D12F5500E31958 /* ZHFReubenSandwish.h */,
+				91F4077D21D12F5500E31958 /* ZHFReubenSandwish.m */,
+			);
+			path = Apply;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1125,6 +1146,7 @@
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
 				911C999C21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj in Resources */,
 				9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */,
+				91F4077821D12D0300E31958 /* SandwichTemplateMethodPattern.mdj in Resources */,
 				91E442C121C40815004F9318 /* AggregateIteratorPattern.mdj in Resources */,
 				91E442BF21C4065C004F9318 /* ListIterator.mdj in Resources */,
 			);
@@ -1223,6 +1245,7 @@
 				917670A521BB8D7000E22223 /* ZHFCar.m in Sources */,
 				910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */,
 				917670B121BB9F9200E22223 /* ZHFScribble.m in Sources */,
+				91F4077B21D12D2C00E31958 /* ZHFSandwish.m in Sources */,
 				91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */,
 				9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
@@ -1257,6 +1280,7 @@
 				9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */,
 				91FE53C821C538CE009B4B0A /* ZHFMarkEnumerator.m in Sources */,
 				91D7CB2A2197F2D000BA88BF /* ZHFRootTableViewModel.m in Sources */,
+				91F4077E21D12F5500E31958 /* ZHFReubenSandwish.m in Sources */,
 				916183A921AAFFE700681B46 /* ZHFAcmeBrandingFactory.m in Sources */,
 				9177789621CA8EFB00E2897B /* ZHFDecoratorViewController.m in Sources */,
 				91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */,
