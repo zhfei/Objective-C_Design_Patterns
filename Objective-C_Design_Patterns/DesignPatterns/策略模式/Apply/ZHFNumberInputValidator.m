@@ -9,5 +9,16 @@
 #import "ZHFNumberInputValidator.h"
 
 @implementation ZHFNumberInputValidator
-
+- (BOOL)validateInput:(UITextField *)input error:(NSError * _Nullable __autoreleasing *)error {
+    //输入数据是0-9
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^[0-9]*$" options:NSRegularExpressionCaseInsensitive error:error];
+    
+    NSUInteger num = [regex numberOfMatchesInString:input.text options:NSMatchingAnchored range:NSMakeRange(0, [input.text length])];
+    
+    if (num == 0) {
+        
+    }
+    
+    return YES;
+}
 @end

@@ -10,6 +10,7 @@
 
 @implementation ZHFInputValidator
 - (BOOL)validateInput:(UITextField *)input error:(NSError **)error {
+     //触发自己代码块的异常NSException,再用@try @catch去捕捉异常，非常消耗资源，故不用
     if (error) {
         *error = nil;
     }
