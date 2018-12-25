@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)putBreadOnPlate;
 - (void)addMeat;
 - (void)addCondiments;
+//添加钩子方法，供子类需要时实现
+- (void)extraStep;
 - (void)serve;
 @end
 

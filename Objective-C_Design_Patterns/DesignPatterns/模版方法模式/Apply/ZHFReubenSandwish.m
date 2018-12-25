@@ -20,6 +20,9 @@
     [self addThousandIslandDressing];
     [self addSwissCheese];
 }
+- (void)extraStep {
+    [self grillIt];
+}
 
 #pragma mark -
 #pragma mark - ZHFReubenSandwish 鲁宾三明治特有操作
@@ -37,6 +40,9 @@
 }
 - (void)addSwissCheese {
     //特有的操作
+}
+- (void)grillIt {
+    //交付客人之前烤一下
 }
 
 @end

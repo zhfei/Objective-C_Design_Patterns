@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)prepareBread;
 - (void)addMeat;
 - (void)addCondiments;
+- (void)extraStep;
 
 //鲁宾三明治特有操作
 - (void)cutRyeBread;
@@ -21,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addSauerkraut;
 - (void)addThousandIslandDressing;
 - (void)addSwissCheese;
+- (void)grillIt;
 
 @end
 

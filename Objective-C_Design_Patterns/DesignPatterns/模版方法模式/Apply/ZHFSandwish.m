@@ -14,12 +14,17 @@
     [self putBreadOnPlate];
     [self addMeat];
     [self addCondiments];
+    [self extraStep];
     [self serve];
 }
 
 - (void)putBreadOnPlate {
     //公共方法
     //做任何三明治都需要先放到盘中上
+}
+
+- (void)extraStep {
+    //子类选择实现
 }
 
 #pragma mark -
