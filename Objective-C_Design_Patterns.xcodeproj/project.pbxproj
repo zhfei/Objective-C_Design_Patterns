@@ -14,6 +14,8 @@
 		910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838C21B043B600736D3B /* ZHFCharacteBuilder.m */; };
 		910E839021B0445700736D3B /* ZHFStandardCharacteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838F21B0445700736D3B /* ZHFStandardCharacteBuilder.m */; };
 		910E839321B04EEB00736D3B /* ZHFBuilderPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E839221B04EEB00736D3B /* ZHFBuilderPatternVC.m */; };
+		911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E021D3D522000DD669 /* ZHFStrategyViewController.m */; };
+		911976E321D3D522000DD669 /* ZHFStrategyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
 		911B3DDA21AEDDB2009BC83D /* BuilderPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */; };
 		911C999C21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911C999B21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj */; };
@@ -35,6 +37,7 @@
 		914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914D88C721C2AA6C008971BE /* ComponentPattern.mdj */; };
 		914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E29216648120089C1C7 /* ThumbnailViewController.m */; };
 		914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E5E2C21664DF00089C1C7 /* PaletteViewController.m */; };
+		914FF90B21D3D1EB00AE29F5 /* ZHFCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 914FF90A21D3D1EB00AE29F5 /* ZHFCustomTextField.m */; };
 		915075C22163467A0049B5CA /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915075C12163467A0049B5CA /* CoordinatingController.m */; };
 		9150E20F21C937B2000229B5 /* DecoratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9150E20E21C937B2000229B5 /* DecoratorPattern.mdj */; };
 		9150E21421C9457C000229B5 /* UIImage+ZHFImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150E21321C9457C000229B5 /* UIImage+ZHFImageComponent.m */; };
@@ -48,7 +51,6 @@
 		9152022021CBEE0700BB5B96 /* UIImage+ZHFTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152021F21CBEE0700BB5B96 /* UIImage+ZHFTransform.m */; };
 		9152311921D277FC002E97A1 /* StrategyPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9152311821D277FC002E97A1 /* StrategyPattern.md */; };
 		9152311B21D27AD3002E97A1 /* StrategyPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9152311A21D27AD3002E97A1 /* StrategyPattern.mdj */; };
-		9152311F21D27F9D002E97A1 /* ZHFCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152311E21D27F9D002E97A1 /* ZHFCustomTextField.m */; };
 		9152312221D27FD0002E97A1 /* ZHFInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152312121D27FD0002E97A1 /* ZHFInputValidator.m */; };
 		9152312521D2804E002E97A1 /* ZHFNumberInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152312421D2804E002E97A1 /* ZHFNumberInputValidator.m */; };
 		9152312821D28066002E97A1 /* ZHFAlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152312721D28066002E97A1 /* ZHFAlphaInputValidator.m */; };
@@ -169,6 +171,9 @@
 		910E839121B04EEB00736D3B /* ZHFBuilderPatternVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBuilderPatternVC.h; sourceTree = "<group>"; };
 		910E839221B04EEB00736D3B /* ZHFBuilderPatternVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBuilderPatternVC.m; sourceTree = "<group>"; };
 		911200AF218600AD007794AD /* CoordinateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateProtocol.h; sourceTree = "<group>"; };
+		911976DF21D3D522000DD669 /* ZHFStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFStrategyViewController.h; sourceTree = "<group>"; };
+		911976E021D3D522000DD669 /* ZHFStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFStrategyViewController.m; sourceTree = "<group>"; };
+		911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHFStrategyViewController.xib; sourceTree = "<group>"; };
 		911B3DD721AEDC0B009BC83D /* BuilderPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BuilderPattern.md; sourceTree = "<group>"; };
 		911B3DD921AEDDB2009BC83D /* BuilderPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuilderPattern.mdj; sourceTree = "<group>"; };
 		911C999B21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = innerEnumteratorPattern.mdj; sourceTree = "<group>"; };
@@ -199,6 +204,8 @@
 		914E5E2B21664DF00089C1C7 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
 		914E5E2C21664DF00089C1C7 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
 		914E5E2F216659810089C1C7 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		914FF90921D3D1EB00AE29F5 /* ZHFCustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCustomTextField.h; sourceTree = "<group>"; };
+		914FF90A21D3D1EB00AE29F5 /* ZHFCustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCustomTextField.m; sourceTree = "<group>"; };
 		915075C02163467A0049B5CA /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		915075C12163467A0049B5CA /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
 		9150E20E21C937B2000229B5 /* DecoratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DecoratorPattern.mdj; sourceTree = "<group>"; };
@@ -220,8 +227,6 @@
 		9152021F21CBEE0700BB5B96 /* UIImage+ZHFTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHFTransform.m"; sourceTree = "<group>"; };
 		9152311821D277FC002E97A1 /* StrategyPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = StrategyPattern.md; sourceTree = "<group>"; };
 		9152311A21D27AD3002E97A1 /* StrategyPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StrategyPattern.mdj; sourceTree = "<group>"; };
-		9152311D21D27F9D002E97A1 /* ZHFCustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCustomTextField.h; sourceTree = "<group>"; };
-		9152311E21D27F9D002E97A1 /* ZHFCustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCustomTextField.m; sourceTree = "<group>"; };
 		9152312021D27FD0002E97A1 /* ZHFInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFInputValidator.h; sourceTree = "<group>"; };
 		9152312121D27FD0002E97A1 /* ZHFInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFInputValidator.m; sourceTree = "<group>"; };
 		9152312321D2804E002E97A1 /* ZHFNumberInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFNumberInputValidator.h; sourceTree = "<group>"; };
@@ -632,14 +637,17 @@
 		9152311C21D27F7C002E97A1 /* Apply */ = {
 			isa = PBXGroup;
 			children = (
-				9152311D21D27F9D002E97A1 /* ZHFCustomTextField.h */,
-				9152311E21D27F9D002E97A1 /* ZHFCustomTextField.m */,
 				9152312021D27FD0002E97A1 /* ZHFInputValidator.h */,
 				9152312121D27FD0002E97A1 /* ZHFInputValidator.m */,
 				9152312321D2804E002E97A1 /* ZHFNumberInputValidator.h */,
 				9152312421D2804E002E97A1 /* ZHFNumberInputValidator.m */,
 				9152312621D28066002E97A1 /* ZHFAlphaInputValidator.h */,
 				9152312721D28066002E97A1 /* ZHFAlphaInputValidator.m */,
+				914FF90921D3D1EB00AE29F5 /* ZHFCustomTextField.h */,
+				914FF90A21D3D1EB00AE29F5 /* ZHFCustomTextField.m */,
+				911976DF21D3D522000DD669 /* ZHFStrategyViewController.h */,
+				911976E021D3D522000DD669 /* ZHFStrategyViewController.m */,
+				911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -1181,6 +1189,7 @@
 				9152021821CBE73800BB5B96 /* CategoryDecoratorPattern.mdj in Resources */,
 				9176709D21BB7B8F00E22223 /* FacadePattern.md in Resources */,
 				915DD92621C7FEDE00B79361 /* ComponetPattern.md in Resources */,
+				911976E321D3D522000DD669 /* ZHFStrategyViewController.xib in Resources */,
 				914D88C421C2A30C008971BE /* CompositePattern.md in Resources */,
 				913933CB2197235F0057E33C /* 设计模式1.md in Resources */,
 				911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */,
@@ -1299,11 +1308,12 @@
 				91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */,
 				9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
+				911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */,
+				914FF90B21D3D1EB00AE29F5 /* ZHFCustomTextField.m in Sources */,
 				914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */,
 				916183AF21AB09AF00681B46 /* ZHFSierraBrandingViews.m in Sources */,
 				919C82DE21CFDDCE00C6FB05 /* ZHFAttackGameVC.m in Sources */,
 				919C82D221CFD94900C6FB05 /* ZHFSwordArmorAttack.m in Sources */,
-				9152311F21D27F9D002E97A1 /* ZHFCustomTextField.m in Sources */,
 				914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */,
 				916E364F2163209400602088 /* main.m in Sources */,
 				915075C22163467A0049B5CA /* CoordinatingController.m in Sources */,
