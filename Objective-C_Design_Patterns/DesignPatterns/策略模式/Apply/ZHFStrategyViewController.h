@@ -14,11 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFStrategyViewController : UIViewController
-{
-    @private
-    ZHFCustomTextField *numTextField_;
-    ZHFCustomTextField *alphaTextField_;
-}
+
 @property (nonatomic, weak) IBOutlet ZHFCustomTextField *numTextField;
 @property (nonatomic, weak) IBOutlet ZHFCustomTextField *alphaTextField;
 

@@ -13,8 +13,6 @@
 @end
 
 @implementation ZHFStrategyViewController
-@synthesize numTextField = numTextField_;
-@synthesize alphaTextField = alphaTextField_;
 
 
 - (void)viewDidLoad {
