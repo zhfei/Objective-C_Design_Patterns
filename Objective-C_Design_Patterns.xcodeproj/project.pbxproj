@@ -140,6 +140,7 @@
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
 		91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79A2166680C0070DB88 /* CanvasView.m */; };
+		91D6E84D21DA0B2900193164 /* ZHFInvocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */; };
 		91D7CB1D2197E9BE00BA88BF /* ZHFProtoTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB1C2197E9BE00BA88BF /* ZHFProtoTypeVC.m */; };
 		91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */ = {isa = PBXBuildFile; fileRef = 91D7CB1E2197EB1900BA88BF /* ProtoTypeNote.md */; };
 		91D7CB232197F0C900BA88BF /* ZHFProtoTypeModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB222197F0C900BA88BF /* ZHFProtoTypeModelA.m */; };
@@ -383,6 +384,8 @@
 		91C1B79721665EC70070DB88 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		91C1B7992166680C0070DB88 /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		91C1B79A2166680C0070DB88 /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		91D6E84B21DA0B2900193164 /* ZHFInvocationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFInvocationVC.h; sourceTree = "<group>"; };
+		91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFInvocationVC.m; sourceTree = "<group>"; };
 		91D7CB1B2197E9BE00BA88BF /* ZHFProtoTypeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFProtoTypeVC.h; sourceTree = "<group>"; };
 		91D7CB1C2197E9BE00BA88BF /* ZHFProtoTypeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFProtoTypeVC.m; sourceTree = "<group>"; };
 		91D7CB1E2197EB1900BA88BF /* ProtoTypeNote.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ProtoTypeNote.md; sourceTree = "<group>"; };
@@ -952,6 +955,8 @@
 			isa = PBXGroup;
 			children = (
 				91797E3021D91807001816EF /* InvocationCommandPattern.mdj */,
+				91D6E84B21DA0B2900193164 /* ZHFInvocationVC.h */,
+				91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */,
 			);
 			path = Invocation;
 			sourceTree = "<group>";
@@ -1323,6 +1328,7 @@
 				9150E21721C9460C000229B5 /* ZHFImageFilter.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
 				9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */,
+				91D6E84D21DA0B2900193164 /* ZHFInvocationVC.m in Sources */,
 				916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */,
 				9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */,
 				917670A521BB8D7000E22223 /* ZHFCar.m in Sources */,
