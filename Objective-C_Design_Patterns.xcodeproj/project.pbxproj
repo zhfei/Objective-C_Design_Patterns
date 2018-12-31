@@ -141,6 +141,7 @@
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
 		91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79A2166680C0070DB88 /* CanvasView.m */; };
 		91D6E84D21DA0B2900193164 /* ZHFInvocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */; };
+		91D6E85121DA22F800193164 /* ZHFUndoMangerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D6E85021DA22F800193164 /* ZHFUndoMangerVC.m */; };
 		91D7CB1D2197E9BE00BA88BF /* ZHFProtoTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB1C2197E9BE00BA88BF /* ZHFProtoTypeVC.m */; };
 		91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */ = {isa = PBXBuildFile; fileRef = 91D7CB1E2197EB1900BA88BF /* ProtoTypeNote.md */; };
 		91D7CB232197F0C900BA88BF /* ZHFProtoTypeModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB222197F0C900BA88BF /* ZHFProtoTypeModelA.m */; };
@@ -386,6 +387,8 @@
 		91C1B79A2166680C0070DB88 /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		91D6E84B21DA0B2900193164 /* ZHFInvocationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFInvocationVC.h; sourceTree = "<group>"; };
 		91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFInvocationVC.m; sourceTree = "<group>"; };
+		91D6E84F21DA22F800193164 /* ZHFUndoMangerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFUndoMangerVC.h; sourceTree = "<group>"; };
+		91D6E85021DA22F800193164 /* ZHFUndoMangerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFUndoMangerVC.m; sourceTree = "<group>"; };
 		91D7CB1B2197E9BE00BA88BF /* ZHFProtoTypeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFProtoTypeVC.h; sourceTree = "<group>"; };
 		91D7CB1C2197E9BE00BA88BF /* ZHFProtoTypeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFProtoTypeVC.m; sourceTree = "<group>"; };
 		91D7CB1E2197EB1900BA88BF /* ProtoTypeNote.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ProtoTypeNote.md; sourceTree = "<group>"; };
@@ -494,6 +497,7 @@
 		911E828E21D7C1AD00847926 /* 命令模式 */ = {
 			isa = PBXGroup;
 			children = (
+				91D6E84E21DA22C200193164 /* undoManger */,
 				91797E2F21D91690001816EF /* Invocation */,
 				911E829121D7CA7100847926 /* CommandPattern.mdj */,
 				911E828F21D7C1DB00847926 /* CommandPattern.md */,
@@ -1061,6 +1065,15 @@
 			path = "Doraemon面板自定义模块";
 			sourceTree = "<group>";
 		};
+		91D6E84E21DA22C200193164 /* undoManger */ = {
+			isa = PBXGroup;
+			children = (
+				91D6E84F21DA22F800193164 /* ZHFUndoMangerVC.h */,
+				91D6E85021DA22F800193164 /* ZHFUndoMangerVC.m */,
+			);
+			path = undoManger;
+			sourceTree = "<group>";
+		};
 		91D7CB202197F09600BA88BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -1330,6 +1343,7 @@
 				9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */,
 				91D6E84D21DA0B2900193164 /* ZHFInvocationVC.m in Sources */,
 				916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */,
+				91D6E85121DA22F800193164 /* ZHFUndoMangerVC.m in Sources */,
 				9170E80621A1B89C00E41D8A /* ZHFPaperCanvasViewGenerator.m in Sources */,
 				917670A521BB8D7000E22223 /* ZHFCar.m in Sources */,
 				910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */,

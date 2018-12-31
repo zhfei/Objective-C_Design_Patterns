@@ -17,5 +17,24 @@
 与其重复发明轮子，不如复用Cocoa Touch框架中现成的东西。命令模式是框架收录的模式之一。
 NSInvocation, NSUndoManager是框架中这个模式的典型应用。
 
+NSInvocation:
 NSInvocation是对调用的一个通用层抽象 ,创建NSInvocation对象时，需要以NSMethodSignature的形式，提供所有必要的信息。
 NSMethodSignature对象包含方法调用的所有参数和返回值类型。
+
+NSUndoManager:
+NSUndoManager是通用的撤销栈管理类，功能强大，几乎满足各种应用设计。
+NSUndoManager的主要设计思想和功能为：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
