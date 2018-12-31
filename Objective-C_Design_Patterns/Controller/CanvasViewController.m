@@ -21,7 +21,7 @@
 #define ScreenSize [UIScreen mainScreen].bounds.size
 
 @interface CanvasViewController ()
-
+//@property (strong, nonatomic) NSUndoManager *undoManager;
 @property (strong, nonatomic) Stroke *stroke;
 @property (strong, nonatomic) NSMutableArray <id<Mark>> *paths;
 @end
@@ -31,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    self.undoManager = [NSUndoManager new];
     self.stroke = [Stroke new];
     self.paths = @[].mutableCopy;
     [self loadCanvasViewWithCanvasViewGenerator:[ZHFClothCanvasViewGenerator new]];
@@ -41,8 +42,6 @@
     self.strokeSize = CGSizeMake(10, 10);
     self.strokeColor = [UIColor blackColor];
     self.scribble = [[ZHFScribble alloc] init];
-    
-
 }
 
 - (void)loadCanvasViewWithCanvasViewGenerator:(ZHFCanvasViewGenerator *)generator {
@@ -101,7 +100,17 @@
         [strok setColor:_strokeColor];
         [strok setSize:_strokeSize];
         [strok setLocation:_startPoint];
-        [_scribble addMark:strok shouldAddToParentMark:NO];
+//        [_scribble addMark:strok shouldAddToParentMark:NO];
+        
+        
+        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+        [drawInvocation setArgument:&strok atIndex:2];
+        
+        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+        [undrawInvocation setArgument:&strok atIndex:2];
+        
+        //执行带有撤销命令的绘图命令
+        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
     }
     
     CGPoint thisPoint = [[touches anyObject] locationInView:_canvasView];
@@ -119,7 +128,17 @@
         Dot *dt = [[Dot alloc] initWithLocation:thisPoint];
         [dt setSize:_strokeSize];
         [dt setColor:_strokeColor];
-        [_scribble addMark:dt shouldAddToParentMark:NO];
+//        [_scribble addMark:dt shouldAddToParentMark:NO];
+        
+        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+        [drawInvocation setArgument:&dt atIndex:2];
+        
+        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+        [undrawInvocation setArgument:&dt atIndex:2];
+        
+        //执行带有撤销命令的绘图命令
+        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
+
     }
     _startPoint = CGPointZero;
 }
@@ -221,6 +240,42 @@
     NSLog(@"%@",msg);
 }
 
+
+//生成绘图和撤销绘图的操作
+- (NSInvocation *)drawScribbleInvocation {
+    NSMethodSignature *exeMethodSignature = [_scribble methodSignatureForSelector:@selector(addMark:shouldAddToParentMark:)];
+    
+    NSInvocation *drawInvocation = [NSInvocation invocationWithMethodSignature:exeMethodSignature];
+    [drawInvocation setTarget:_scribble];
+    [drawInvocation setSelector:@selector(addMark:shouldAddToParentMark:)];
+    BOOL addToParentMark = NO;
+    [drawInvocation setArgument:&addToParentMark atIndex:3];
+    return drawInvocation;
+}
+
+- (NSInvocation *)undrawScribbleInvocation {
+    NSMethodSignature *unexeMethodSignature = [_scribble methodSignatureForSelector:@selector(removeMark:)];
+    
+    NSInvocation *undrawInvocation = [NSInvocation invocationWithMethodSignature:unexeMethodSignature];
+    [undrawInvocation setTarget:_scribble];
+    [undrawInvocation setSelector:@selector(removeMark:)];
+
+    return undrawInvocation;
+}
+
+// Draw Scribble Command Methods
+- (void)executeInvocation:(NSInvocation *)invocation withUndoInvocation:(NSInvocation *)undoInvocation {
+    [invocation retainArguments];
+    [[self.undoManager prepareWithInvocationTarget:self]
+     unexecuteInvocation:undoInvocation withRedoInvocation:invocation];
+    [invocation invoke];
+}
+
+- (void)unexecuteInvocation:(NSInvocation *)invocation withRedoInvocation:(NSInvocation *)redoInvocation {
+    [[self.undoManager prepareWithInvocationTarget:self]
+     executeInvocation:redoInvocation withUndoInvocation:invocation];
+    [invocation invoke];
+}
 
 
 #pragma mark - Delegate
