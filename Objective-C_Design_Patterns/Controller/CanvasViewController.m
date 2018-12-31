@@ -183,9 +183,11 @@
             break;
         case 4:
             //撤销
-            [self.paths removeLastObject];
-            [self.stroke removeAllMarks];
-            [self.canvasView setNeedsDisplay];
+//            [self.paths removeLastObject];
+//            [self.stroke removeAllMarks];
+//            [self.canvasView setNeedsDisplay];
+
+            [self.undoManager undo];
             break;
         case 5:
             //恢复
