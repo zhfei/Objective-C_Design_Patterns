@@ -18,7 +18,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.undoManager = [NSUndoManager new];
     [self.undoManager registerUndoWithTarget:self handler:^(id  _Nonnull target) {
         NSLog(@"栈0");
     }];

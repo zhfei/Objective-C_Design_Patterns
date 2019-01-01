@@ -14,6 +14,7 @@
 		910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838C21B043B600736D3B /* ZHFCharacteBuilder.m */; };
 		910E839021B0445700736D3B /* ZHFStandardCharacteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838F21B0445700736D3B /* ZHFStandardCharacteBuilder.m */; };
 		910E839321B04EEB00736D3B /* ZHFBuilderPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E839221B04EEB00736D3B /* ZHFBuilderPatternVC.m */; };
+		9114DD0E21DBAB3500876B4E /* CustomCommand.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9114DD0D21DBAB3500876B4E /* CustomCommand.mdj */; };
 		911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E021D3D522000DD669 /* ZHFStrategyViewController.m */; };
 		911976E321D3D522000DD669 /* ZHFStrategyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
@@ -176,6 +177,7 @@
 		910E839121B04EEB00736D3B /* ZHFBuilderPatternVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFBuilderPatternVC.h; sourceTree = "<group>"; };
 		910E839221B04EEB00736D3B /* ZHFBuilderPatternVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBuilderPatternVC.m; sourceTree = "<group>"; };
 		911200AF218600AD007794AD /* CoordinateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateProtocol.h; sourceTree = "<group>"; };
+		9114DD0D21DBAB3500876B4E /* CustomCommand.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomCommand.mdj; sourceTree = "<group>"; };
 		911976DF21D3D522000DD669 /* ZHFStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFStrategyViewController.h; sourceTree = "<group>"; };
 		911976E021D3D522000DD669 /* ZHFStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFStrategyViewController.m; sourceTree = "<group>"; };
 		911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHFStrategyViewController.xib; sourceTree = "<group>"; };
@@ -464,6 +466,14 @@
 			path = Apply;
 			sourceTree = "<group>";
 		};
+		9114DD0C21DBA8D000876B4E /* CustomUndoManger */ = {
+			isa = PBXGroup;
+			children = (
+				9114DD0D21DBAB3500876B4E /* CustomCommand.mdj */,
+			);
+			path = CustomUndoManger;
+			sourceTree = "<group>";
+		};
 		911B3DD621AEDA8C009BC83D /* 生成器模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,6 +507,7 @@
 		911E828E21D7C1AD00847926 /* 命令模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9114DD0C21DBA8D000876B4E /* CustomUndoManger */,
 				91D6E84E21DA22C200193164 /* undoManger */,
 				91797E2F21D91690001816EF /* Invocation */,
 				911E829121D7CA7100847926 /* CommandPattern.mdj */,
@@ -1204,6 +1215,7 @@
 				919C82C121CFD1FD00C6FB05 /* ChainOfResponsibility_Attack_Pattern.mdj in Resources */,
 				9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */,
 				917670A221BB8C7800E22223 /* CabDriverFacabePattern.mdj in Resources */,
+				9114DD0E21DBAB3500876B4E /* CustomCommand.mdj in Resources */,
 				91F4077521D1263100E31958 /* TemplateMethodPattern.md in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */,
