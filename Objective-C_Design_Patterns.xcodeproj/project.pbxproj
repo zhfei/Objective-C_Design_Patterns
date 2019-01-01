@@ -15,6 +15,8 @@
 		910E839021B0445700736D3B /* ZHFStandardCharacteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E838F21B0445700736D3B /* ZHFStandardCharacteBuilder.m */; };
 		910E839321B04EEB00736D3B /* ZHFBuilderPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 910E839221B04EEB00736D3B /* ZHFBuilderPatternVC.m */; };
 		9114DD0E21DBAB3500876B4E /* CustomCommand.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9114DD0D21DBAB3500876B4E /* CustomCommand.mdj */; };
+		9114DD1121DBABBB00876B4E /* ZHFCustomCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114DD1021DBABBB00876B4E /* ZHFCustomCommand.m */; };
+		9114DD1421DBAD6E00876B4E /* ZHFDrawScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114DD1321DBAD6E00876B4E /* ZHFDrawScribbleCommand.m */; };
 		911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E021D3D522000DD669 /* ZHFStrategyViewController.m */; };
 		911976E321D3D522000DD669 /* ZHFStrategyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
@@ -178,6 +180,10 @@
 		910E839221B04EEB00736D3B /* ZHFBuilderPatternVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFBuilderPatternVC.m; sourceTree = "<group>"; };
 		911200AF218600AD007794AD /* CoordinateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateProtocol.h; sourceTree = "<group>"; };
 		9114DD0D21DBAB3500876B4E /* CustomCommand.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomCommand.mdj; sourceTree = "<group>"; };
+		9114DD0F21DBABBB00876B4E /* ZHFCustomCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCustomCommand.h; sourceTree = "<group>"; };
+		9114DD1021DBABBB00876B4E /* ZHFCustomCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCustomCommand.m; sourceTree = "<group>"; };
+		9114DD1221DBAD6E00876B4E /* ZHFDrawScribbleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFDrawScribbleCommand.h; sourceTree = "<group>"; };
+		9114DD1321DBAD6E00876B4E /* ZHFDrawScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFDrawScribbleCommand.m; sourceTree = "<group>"; };
 		911976DF21D3D522000DD669 /* ZHFStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFStrategyViewController.h; sourceTree = "<group>"; };
 		911976E021D3D522000DD669 /* ZHFStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFStrategyViewController.m; sourceTree = "<group>"; };
 		911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHFStrategyViewController.xib; sourceTree = "<group>"; };
@@ -470,6 +476,10 @@
 			isa = PBXGroup;
 			children = (
 				9114DD0D21DBAB3500876B4E /* CustomCommand.mdj */,
+				9114DD0F21DBABBB00876B4E /* ZHFCustomCommand.h */,
+				9114DD1021DBABBB00876B4E /* ZHFCustomCommand.m */,
+				9114DD1221DBAD6E00876B4E /* ZHFDrawScribbleCommand.h */,
+				9114DD1321DBAD6E00876B4E /* ZHFDrawScribbleCommand.m */,
 			);
 			path = CustomUndoManger;
 			sourceTree = "<group>";
@@ -1344,6 +1354,7 @@
 				916E36442163209200602088 /* ViewController.m in Sources */,
 				9152021D21CBEB3600BB5B96 /* UIImage+ZHFBaseFilter.m in Sources */,
 				919C82CC21CFD7FA00C6FB05 /* ZHFAttack.m in Sources */,
+				9114DD1421DBAD6E00876B4E /* ZHFDrawScribbleCommand.m in Sources */,
 				917670AB21BB8EBB00E22223 /* ZHFCabDriver.m in Sources */,
 				9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */,
 				9171584D21BACF59000525FC /* ZHFConsoleEmulator.m in Sources */,
@@ -1395,6 +1406,7 @@
 				9171585921BAD398000525FC /* ZHFTouchConsoleController.m in Sources */,
 				917B7927218A0C1B00425A05 /* MementoModel.m in Sources */,
 				9177789921CA923D00E2897B /* ZHFDecoratorView.m in Sources */,
+				9114DD1121DBABBB00876B4E /* ZHFCustomCommand.m in Sources */,
 				910E838A21B0432C00736D3B /* ZHFCharacter.m in Sources */,
 				914E5E2A216648120089C1C7 /* ThumbnailViewController.m in Sources */,
 				9153C43221B6CCF900C2CCB6 /* ZHFCommandSlider.m in Sources */,
