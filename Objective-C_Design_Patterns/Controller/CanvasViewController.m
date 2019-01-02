@@ -313,6 +313,13 @@ NSInteger levesOfUndo = 20;
     [redoStack_ push:command];
 }
 
+- (void)redoCommand {
+    ZHFCustomCommand *command = [redoStack_ pop];
+    [command execute];
+    
+    [undoStack_ push:command];
+}
+
 
 
 #pragma mark - Delegate
