@@ -17,11 +17,16 @@
 #import "ZHFPaperCanvasViewGenerator.h"
 #import "ZHFCoordinateViewController.h"
 #import "ZHFDecoratorViewController.h"
+#import "ZHFCustomCommand.h"
+#import "NSMutableArray+Stack.h"
 
 #define ScreenSize [UIScreen mainScreen].bounds.size
+NSInteger levesOfUndo = 20;
 
 @interface CanvasViewController ()
-//@property (strong, nonatomic) NSUndoManager *undoManager;
+{
+    NSMutableArray *undoStack_;
+}
 @property (strong, nonatomic) Stroke *stroke;
 @property (strong, nonatomic) NSMutableArray <id<Mark>> *paths;
 @end
@@ -278,6 +283,25 @@
      executeInvocation:redoInvocation withUndoInvocation:invocation];
     [invocation invoke];
 }
+
+// Draw Scribble CustomCommand Methods
+- (void)executeCommand:(ZHFCustomCommand *)command prepareForUndo:(BOOL)prepareForUndo {
+    if (prepareForUndo) {
+        //懒加载undoStack_
+        if (undoStack_ == nil) {
+            undoStack_ = @[].mutableCopy;
+        }
+        //如果栈满了，就丢弃最后一个
+        if ([undoStack_ count] ==  levesOfUndo) {
+            [undoStack_ dropBottom];
+        }
+        //把命令压入栈
+        [undoStack_ push:command];
+    }
+    
+    [command execute];
+}
+
 
 
 #pragma mark - Delegate
