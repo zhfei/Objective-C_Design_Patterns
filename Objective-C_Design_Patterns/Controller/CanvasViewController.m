@@ -26,6 +26,7 @@ NSInteger levesOfUndo = 20;
 @interface CanvasViewController ()
 {
     NSMutableArray *undoStack_;
+    NSMutableArray *redoStack_;
 }
 @property (strong, nonatomic) Stroke *stroke;
 @property (strong, nonatomic) NSMutableArray <id<Mark>> *paths;
@@ -300,6 +301,16 @@ NSInteger levesOfUndo = 20;
     }
     
     [command execute];
+}
+
+- (void)undoCommand {
+    ZHFCustomCommand *command = [undoStack_ pop];
+    [command undo];
+    
+    if (redoStack_ == nil) {
+        redoStack_ = @[].mutableCopy;
+    }
+    [redoStack_ push:command];
 }
 
 
