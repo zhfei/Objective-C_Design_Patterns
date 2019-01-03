@@ -19,6 +19,7 @@
 #import "ZHFDecoratorViewController.h"
 #import "ZHFCustomCommand.h"
 #import "NSMutableArray+Stack.h"
+#import "ZHFDrawScribbleCommand.h"
 
 #define ScreenSize [UIScreen mainScreen].bounds.size
 NSInteger levesOfUndo = 20;
@@ -109,14 +110,21 @@ NSInteger levesOfUndo = 20;
 //        [_scribble addMark:strok shouldAddToParentMark:NO];
         
         
-        NSInvocation *drawInvocation = [self drawScribbleInvocation];
-        [drawInvocation setArgument:&strok atIndex:2];
+//        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+//        [drawInvocation setArgument:&strok atIndex:2];
+//
+//        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+//        [undrawInvocation setArgument:&strok atIndex:2];
+//
+//        //执行带有撤销命令的绘图命令
+//        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
         
-        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
-        [undrawInvocation setArgument:&strok atIndex:2];
-        
-        //执行带有撤销命令的绘图命令
-        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:_scribble,ScribbleObjectUserInfoKey,
+                                  strok,MarkObjectUserInfoKey,[NSNumber numberWithBool:NO]
+                                  ,AddToPreviousMarkUserInfoKey, nil];
+        ZHFDrawScribbleCommand *command = [ZHFDrawScribbleCommand new];
+        command.userInfo = userInfo;
+        [self executeCommand:command prepareForUndo:YES];
     }
     
     CGPoint thisPoint = [[touches anyObject] locationInView:_canvasView];
@@ -136,14 +144,21 @@ NSInteger levesOfUndo = 20;
         [dt setColor:_strokeColor];
 //        [_scribble addMark:dt shouldAddToParentMark:NO];
         
-        NSInvocation *drawInvocation = [self drawScribbleInvocation];
-        [drawInvocation setArgument:&dt atIndex:2];
+//        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+//        [drawInvocation setArgument:&dt atIndex:2];
+//
+//        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+//        [undrawInvocation setArgument:&dt atIndex:2];
+//
+//        //执行带有撤销命令的绘图命令
+//        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
         
-        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
-        [undrawInvocation setArgument:&dt atIndex:2];
-        
-        //执行带有撤销命令的绘图命令
-        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:_scribble,ScribbleObjectUserInfoKey,
+                                  dt,MarkObjectUserInfoKey,[NSNumber numberWithBool:NO]
+                                  ,AddToPreviousMarkUserInfoKey, nil];
+        ZHFDrawScribbleCommand *command = [ZHFDrawScribbleCommand new];
+        command.userInfo = userInfo;
+        [self executeCommand:command prepareForUndo:YES];
 
     }
     _startPoint = CGPointZero;
@@ -193,7 +208,8 @@ NSInteger levesOfUndo = 20;
 //            [self.stroke removeAllMarks];
 //            [self.canvasView setNeedsDisplay];
 
-            [self.undoManager undo];
+//            [self.undoManager undo];
+            [self undoCommand];
             break;
         case 5:
             //恢复
@@ -201,9 +217,10 @@ NSInteger levesOfUndo = 20;
 //            UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"RecoverViewController"];
 //            [(RecoverViewController *)vc setImg:[UIImage screenshotInView:self.canvasView]];
             
-            ZHFDecoratorViewController *decVC = [[ZHFDecoratorViewController alloc] init];
-            
-            [[CoordinatingController sharedCoordinatingController] presentVC:decVC];
+//            ZHFDecoratorViewController *decVC = [[ZHFDecoratorViewController alloc] init];
+//
+//            [[CoordinatingController sharedCoordinatingController] presentVC:decVC];
+            [self redoCommand];
         }
             break;
             

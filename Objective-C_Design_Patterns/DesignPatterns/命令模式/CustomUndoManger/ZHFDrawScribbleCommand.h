@@ -9,6 +9,10 @@
 #import "ZHFCustomCommand.h"
 #import "ZHFScribble.h"
 
+extern NSString *const ScribbleObjectUserInfoKey;
+extern NSString *const MarkObjectUserInfoKey;
+extern NSString *const AddToPreviousMarkUserInfoKey;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFDrawScribbleCommand : ZHFCustomCommand
