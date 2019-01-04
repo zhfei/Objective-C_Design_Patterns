@@ -17,6 +17,7 @@
 		9114DD0E21DBAB3500876B4E /* CustomCommand.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9114DD0D21DBAB3500876B4E /* CustomCommand.mdj */; };
 		9114DD1121DBABBB00876B4E /* ZHFCustomCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114DD1021DBABBB00876B4E /* ZHFCustomCommand.m */; };
 		9114DD1421DBAD6E00876B4E /* ZHFDrawScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114DD1321DBAD6E00876B4E /* ZHFDrawScribbleCommand.m */; };
+		9115F2DD21DFB02F00FD7975 /* FlyweightFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9115F2DC21DFB02F00FD7975 /* FlyweightFactory.mdj */; };
 		911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E021D3D522000DD669 /* ZHFStrategyViewController.m */; };
 		911976E321D3D522000DD669 /* ZHFStrategyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
@@ -184,6 +185,7 @@
 		9114DD1021DBABBB00876B4E /* ZHFCustomCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCustomCommand.m; sourceTree = "<group>"; };
 		9114DD1221DBAD6E00876B4E /* ZHFDrawScribbleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFDrawScribbleCommand.h; sourceTree = "<group>"; };
 		9114DD1321DBAD6E00876B4E /* ZHFDrawScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFDrawScribbleCommand.m; sourceTree = "<group>"; };
+		9115F2DC21DFB02F00FD7975 /* FlyweightFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FlyweightFactory.mdj; sourceTree = "<group>"; };
 		911976DF21D3D522000DD669 /* ZHFStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFStrategyViewController.h; sourceTree = "<group>"; };
 		911976E021D3D522000DD669 /* ZHFStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFStrategyViewController.m; sourceTree = "<group>"; };
 		911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHFStrategyViewController.xib; sourceTree = "<group>"; };
@@ -484,6 +486,14 @@
 			path = CustomUndoManger;
 			sourceTree = "<group>";
 		};
+		9115F2DB21DFADF100FD7975 /* 享元模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9115F2DC21DFB02F00FD7975 /* FlyweightFactory.mdj */,
+			);
+			path = "享元模式";
+			sourceTree = "<group>";
+		};
 		911B3DD621AEDA8C009BC83D /* 生成器模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +557,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				9115F2DB21DFADF100FD7975 /* 享元模式 */,
 				911E828E21D7C1AD00847926 /* 命令模式 */,
 				9152311721D277BB002E97A1 /* 策略模式 */,
 				91F4077121D124F100E31958 /* 模版方法模式 */,
@@ -1245,6 +1256,7 @@
 				9171584721BACE87000525FC /* EmuletorBradgePattarn.mdj in Resources */,
 				91F4077321D1261700E31958 /* TemplateMethodPattern.mdj in Resources */,
 				911FD42721C536C300DCA64F /* MarkEnumeratorPattern.mdj in Resources */,
+				9115F2DD21DFB02F00FD7975 /* FlyweightFactory.mdj in Resources */,
 				9171584421BAC485000525FC /* BridgePattern.mdj in Resources */,
 				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
 				91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */,
