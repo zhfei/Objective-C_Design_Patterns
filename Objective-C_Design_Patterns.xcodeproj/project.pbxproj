@@ -20,6 +20,8 @@
 		9115F2DD21DFB02F00FD7975 /* FlyweightFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9115F2DC21DFB02F00FD7975 /* FlyweightFactory.mdj */; };
 		9115F2DF21DFB20800FD7975 /* FlyweightPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9115F2DE21DFB20800FD7975 /* FlyweightPattern.md */; };
 		9115F2E221DFB55600FD7975 /* FlowerFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9115F2E121DFB55600FD7975 /* FlowerFactory.mdj */; };
+		9115F2E821DFB5FF00FD7975 /* ZHFFlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9115F2E721DFB5FF00FD7975 /* ZHFFlowerView.m */; };
+		9115F2EB21DFB67800FD7975 /* ZHFFlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9115F2EA21DFB67800FD7975 /* ZHFFlowerFactory.m */; };
 		911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E021D3D522000DD669 /* ZHFStrategyViewController.m */; };
 		911976E321D3D522000DD669 /* ZHFStrategyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
@@ -190,6 +192,10 @@
 		9115F2DC21DFB02F00FD7975 /* FlyweightFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FlyweightFactory.mdj; sourceTree = "<group>"; };
 		9115F2DE21DFB20800FD7975 /* FlyweightPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FlyweightPattern.md; sourceTree = "<group>"; };
 		9115F2E121DFB55600FD7975 /* FlowerFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FlowerFactory.mdj; sourceTree = "<group>"; };
+		9115F2E621DFB5FF00FD7975 /* ZHFFlowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFFlowerView.h; sourceTree = "<group>"; };
+		9115F2E721DFB5FF00FD7975 /* ZHFFlowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFFlowerView.m; sourceTree = "<group>"; };
+		9115F2E921DFB67800FD7975 /* ZHFFlowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFFlowerFactory.h; sourceTree = "<group>"; };
+		9115F2EA21DFB67800FD7975 /* ZHFFlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFFlowerFactory.m; sourceTree = "<group>"; };
 		911976DF21D3D522000DD669 /* ZHFStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFStrategyViewController.h; sourceTree = "<group>"; };
 		911976E021D3D522000DD669 /* ZHFStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFStrategyViewController.m; sourceTree = "<group>"; };
 		911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHFStrategyViewController.xib; sourceTree = "<group>"; };
@@ -504,6 +510,10 @@
 			isa = PBXGroup;
 			children = (
 				9115F2E121DFB55600FD7975 /* FlowerFactory.mdj */,
+				9115F2E621DFB5FF00FD7975 /* ZHFFlowerView.h */,
+				9115F2E721DFB5FF00FD7975 /* ZHFFlowerView.m */,
+				9115F2E921DFB67800FD7975 /* ZHFFlowerFactory.h */,
+				9115F2EA21DFB67800FD7975 /* ZHFFlowerFactory.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -1384,6 +1394,7 @@
 				919C82CC21CFD7FA00C6FB05 /* ZHFAttack.m in Sources */,
 				9114DD1421DBAD6E00876B4E /* ZHFDrawScribbleCommand.m in Sources */,
 				917670AB21BB8EBB00E22223 /* ZHFCabDriver.m in Sources */,
+				9115F2E821DFB5FF00FD7975 /* ZHFFlowerView.m in Sources */,
 				9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */,
 				9171584D21BACF59000525FC /* ZHFConsoleEmulator.m in Sources */,
 				9150E21A21C94862000229B5 /* ZHFImageTransformFilter.m in Sources */,
@@ -1417,6 +1428,7 @@
 				910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */,
 				9171585621BAD238000525FC /* ZHFConsoleController.m in Sources */,
 				917670A821BB8E1800E22223 /* ZHFTaximeter.m in Sources */,
+				9115F2EB21DFB67800FD7975 /* ZHFFlowerFactory.m in Sources */,
 				9170E80321A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m in Sources */,
 				919C82CF21CFD8DE00C6FB05 /* ZHFMetalArmor.m in Sources */,
 				910E839321B04EEB00736D3B /* ZHFBuilderPatternVC.m in Sources */,
