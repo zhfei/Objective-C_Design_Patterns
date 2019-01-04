@@ -19,6 +19,7 @@
 		9114DD1421DBAD6E00876B4E /* ZHFDrawScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114DD1321DBAD6E00876B4E /* ZHFDrawScribbleCommand.m */; };
 		9115F2DD21DFB02F00FD7975 /* FlyweightFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9115F2DC21DFB02F00FD7975 /* FlyweightFactory.mdj */; };
 		9115F2DF21DFB20800FD7975 /* FlyweightPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9115F2DE21DFB20800FD7975 /* FlyweightPattern.md */; };
+		9115F2E221DFB55600FD7975 /* FlowerFactory.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9115F2E121DFB55600FD7975 /* FlowerFactory.mdj */; };
 		911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E021D3D522000DD669 /* ZHFStrategyViewController.m */; };
 		911976E321D3D522000DD669 /* ZHFStrategyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */; };
 		911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911B3DD721AEDC0B009BC83D /* BuilderPattern.md */; };
@@ -188,6 +189,7 @@
 		9114DD1321DBAD6E00876B4E /* ZHFDrawScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFDrawScribbleCommand.m; sourceTree = "<group>"; };
 		9115F2DC21DFB02F00FD7975 /* FlyweightFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FlyweightFactory.mdj; sourceTree = "<group>"; };
 		9115F2DE21DFB20800FD7975 /* FlyweightPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FlyweightPattern.md; sourceTree = "<group>"; };
+		9115F2E121DFB55600FD7975 /* FlowerFactory.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FlowerFactory.mdj; sourceTree = "<group>"; };
 		911976DF21D3D522000DD669 /* ZHFStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFStrategyViewController.h; sourceTree = "<group>"; };
 		911976E021D3D522000DD669 /* ZHFStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFStrategyViewController.m; sourceTree = "<group>"; };
 		911976E121D3D522000DD669 /* ZHFStrategyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHFStrategyViewController.xib; sourceTree = "<group>"; };
@@ -491,10 +493,19 @@
 		9115F2DB21DFADF100FD7975 /* 享元模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9115F2E021DFB42F00FD7975 /* Apply */,
 				9115F2DC21DFB02F00FD7975 /* FlyweightFactory.mdj */,
 				9115F2DE21DFB20800FD7975 /* FlyweightPattern.md */,
 			);
 			path = "享元模式";
+			sourceTree = "<group>";
+		};
+		9115F2E021DFB42F00FD7975 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				9115F2E121DFB55600FD7975 /* FlowerFactory.mdj */,
+			);
+			path = Apply;
 			sourceTree = "<group>";
 		};
 		911B3DD621AEDA8C009BC83D /* 生成器模式 */ = {
@@ -1238,6 +1249,7 @@
 				915DD91F21C7E3CD00B79361 /* MarkVisitorPattern.mdj in Resources */,
 				919C82C121CFD1FD00C6FB05 /* ChainOfResponsibility_Attack_Pattern.mdj in Resources */,
 				9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */,
+				9115F2E221DFB55600FD7975 /* FlowerFactory.mdj in Resources */,
 				917670A221BB8C7800E22223 /* CabDriverFacabePattern.mdj in Resources */,
 				9114DD0E21DBAB3500876B4E /* CustomCommand.mdj in Resources */,
 				91F4077521D1263100E31958 /* TemplateMethodPattern.md in Resources */,
