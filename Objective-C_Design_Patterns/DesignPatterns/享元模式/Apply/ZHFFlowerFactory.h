@@ -7,15 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef NS_ENUM(NSInteger,ZHFFlowerViewType) {
-    ZHFFlowerViewTypeAnemone = 0,
-};
+#import <Macro.h>
+typedef enum : NSUInteger {
+    ZHFFlowerViewTypeAnemone,
+    ZHFFlowerViewTypeCosmos,
+    ZHFFlowerViewTypeGerberas,
+    ZHFFlowerViewTypeHellyhock,
+    ZHFFlowerViewTypeJasmine,
+    ZHFFlowerViewTypeZinnia,
+    ZHFFlowerViewTypeTotalNums,
+} ZHFFlowerViewType;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFFlowerFactory : NSObject
-+ (UIView *)flowerViewWithType:(ZHFFlowerViewType)type;
+{
+    @private
+    NSMutableDictionary *pool_;
+}
+SingletonH(ZHFFlowerFactory)
+- (UIView *)flowerViewWithType:(ZHFFlowerViewType)type;
 @end
 
 NS_ASSUME_NONNULL_END

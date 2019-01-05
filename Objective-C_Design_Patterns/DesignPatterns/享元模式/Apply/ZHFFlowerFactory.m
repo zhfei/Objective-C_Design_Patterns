@@ -7,9 +7,44 @@
 //
 
 #import "ZHFFlowerFactory.h"
+#import "ZHFFlowerView.h"
 
 @implementation ZHFFlowerFactory
-+ (UIView *)flowerViewWithType:(ZHFFlowerViewType)type {
-    return nil;
+SingletonM(ZHFFlowerFactory)
+- (UIView *)flowerViewWithType:(ZHFFlowerViewType)type {
+    if (pool_ == nil) {
+        pool_ = @{}.mutableCopy;
+    }
+    
+    ZHFFlowerView *flower = [pool_ objectForKey:@(type)];
+    if (flower == nil) {
+        NSString *imageName = @"";
+        switch (type) {
+            case ZHFFlowerViewTypeAnemone:
+                imageName = @"flower1";
+                break;
+            case ZHFFlowerViewTypeCosmos:
+                imageName = @"flower2";
+                break;
+            case ZHFFlowerViewTypeGerberas:
+                imageName = @"flower3";
+                break;
+            case ZHFFlowerViewTypeHellyhock:
+                imageName = @"flower4";
+                break;
+            case ZHFFlowerViewTypeJasmine:
+                imageName = @"flower5";
+                break;
+            case ZHFFlowerViewTypeZinnia:
+                imageName = @"flower6";
+                break;
+            default:
+                imageName = @"flower6";
+                break;
+        }
+        flower = [[ZHFFlowerView alloc] initWithImage:[UIImage imageNamed:imageName]];
+        [pool_ setObject:flower forKey:@(type)];
+    }
+    return flower;
 }
 @end
