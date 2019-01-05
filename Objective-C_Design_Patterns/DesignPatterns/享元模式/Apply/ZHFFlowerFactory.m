@@ -9,14 +9,21 @@
 #import "ZHFFlowerFactory.h"
 #import "ZHFFlowerView.h"
 
+@interface ZHFFlowerFactory ()
+@property (nonatomic, strong) NSMutableDictionary *pool;
+@end
+
 @implementation ZHFFlowerFactory
 SingletonM(ZHFFlowerFactory)
-- (UIView *)flowerViewWithType:(ZHFFlowerViewType)type {
-    if (pool_ == nil) {
-        pool_ = @{}.mutableCopy;
+- (NSMutableDictionary *)pool {
+    if (_pool == nil) {
+        _pool = [NSMutableDictionary dictionary];
     }
-    
-    ZHFFlowerView *flower = [pool_ objectForKey:@(type)];
+    return _pool;
+}
+
+- (UIView *)flowerViewWithType:(ZHFFlowerViewType)type {
+    ZHFFlowerView *flower = [self.pool objectForKey:@(type)];
     if (flower == nil) {
         NSString *imageName = @"";
         switch (type) {
@@ -39,11 +46,15 @@ SingletonM(ZHFFlowerFactory)
                 imageName = @"flower6";
                 break;
             default:
+                NSLog(@"error.....%d",type);
                 imageName = @"flower6";
                 break;
         }
         flower = [[ZHFFlowerView alloc] initWithImage:[UIImage imageNamed:imageName]];
-        [pool_ setObject:flower forKey:@(type)];
+        [self.pool setObject:flower forKey:@(type)];
+        NSLog(@"创建对象类型:%d----flower:%@",type,flower);
+    } else {
+        NSLog(@"获取对象类型:%d----flower:%@",type,flower);
     }
     return flower;
 }

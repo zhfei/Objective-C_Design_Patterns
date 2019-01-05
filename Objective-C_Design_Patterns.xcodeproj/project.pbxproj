@@ -38,6 +38,8 @@
 		913933CB2197235F0057E33C /* 设计模式1.md in Resources */ = {isa = PBXBuildFile; fileRef = 913933CA2197235F0057E33C /* 设计模式1.md */; };
 		913933CF219728B00057E33C /* ProtoType.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 913933CE219728B00057E33C /* ProtoType.mdj */; };
 		913DC4C921CBEFB500BC2079 /* UIImage+ZHFShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 913DC4C821CBEFB500BC2079 /* UIImage+ZHFShadow.m */; };
+		9145AAB421E0A1F400A54706 /* ZHFFlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145AAB321E0A1F400A54706 /* ZHFFlowerViewController.m */; };
+		9145AAB721E0A9EE00A54706 /* ZHFFlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145AAB621E0A9EE00A54706 /* ZHFFlyweightView.m */; };
 		914C2E7621BFF98E002A0222 /* ObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914C2E7521BFF98E002A0222 /* ObserverPattern.mdj */; };
 		914CD49C21B8238F00C9A8DB /* ZHFRGBValuesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */; };
 		914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 914CD49D21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj */; };
@@ -141,6 +143,7 @@
 		919C82DB21CFDCCA00C6FB05 /* ZHFAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C82DA21CFDCCA00C6FB05 /* ZHFAvatar.m */; };
 		919C82DE21CFDDCE00C6FB05 /* ZHFAttackGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C82DD21CFDDCE00C6FB05 /* ZHFAttackGameVC.m */; };
 		91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */; };
+		91A5503421E0BF5800F855B7 /* ExtrFlowerStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A5503321E0BF5800F855B7 /* ExtrFlowerStateModel.m */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
 		91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFF5B921C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m */; };
@@ -215,6 +218,10 @@
 		913933CE219728B00057E33C /* ProtoType.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProtoType.mdj; sourceTree = "<group>"; };
 		913DC4C721CBEFB500BC2079 /* UIImage+ZHFShadow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHFShadow.h"; sourceTree = "<group>"; };
 		913DC4C821CBEFB500BC2079 /* UIImage+ZHFShadow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHFShadow.m"; sourceTree = "<group>"; };
+		9145AAB221E0A1F400A54706 /* ZHFFlowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFFlowerViewController.h; sourceTree = "<group>"; };
+		9145AAB321E0A1F400A54706 /* ZHFFlowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFFlowerViewController.m; sourceTree = "<group>"; };
+		9145AAB521E0A9EE00A54706 /* ZHFFlyweightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFFlyweightView.h; sourceTree = "<group>"; };
+		9145AAB621E0A9EE00A54706 /* ZHFFlyweightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFFlyweightView.m; sourceTree = "<group>"; };
 		914C2E7521BFF98E002A0222 /* ObserverPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObserverPattern.mdj; sourceTree = "<group>"; };
 		914C2E7721BFF9C6002A0222 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		914CD49721B8231A00C9A8DB /* ZHFRGBValuesProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFRGBValuesProviderProtocol.h; sourceTree = "<group>"; };
@@ -390,6 +397,8 @@
 		919C82DC21CFDDCE00C6FB05 /* ZHFAttackGameVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAttackGameVC.h; sourceTree = "<group>"; };
 		919C82DD21CFDDCE00C6FB05 /* ZHFAttackGameVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAttackGameVC.m; sourceTree = "<group>"; };
 		91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoordinatingController.mdj; sourceTree = "<group>"; };
+		91A5503221E0BF5800F855B7 /* ExtrFlowerStateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtrFlowerStateModel.h; sourceTree = "<group>"; };
+		91A5503321E0BF5800F855B7 /* ExtrFlowerStateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtrFlowerStateModel.m; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
 		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
@@ -514,6 +523,12 @@
 				9115F2E721DFB5FF00FD7975 /* ZHFFlowerView.m */,
 				9115F2E921DFB67800FD7975 /* ZHFFlowerFactory.h */,
 				9115F2EA21DFB67800FD7975 /* ZHFFlowerFactory.m */,
+				9145AAB221E0A1F400A54706 /* ZHFFlowerViewController.h */,
+				9145AAB321E0A1F400A54706 /* ZHFFlowerViewController.m */,
+				9145AAB521E0A9EE00A54706 /* ZHFFlyweightView.h */,
+				9145AAB621E0A9EE00A54706 /* ZHFFlyweightView.m */,
+				91A5503221E0BF5800F855B7 /* ExtrFlowerStateModel.h */,
+				91A5503321E0BF5800F855B7 /* ExtrFlowerStateModel.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -1411,9 +1426,11 @@
 				910E838721B042E700736D3B /* ZHFChasingGame.m in Sources */,
 				917670B121BB9F9200E22223 /* ZHFScribble.m in Sources */,
 				91F4077B21D12D2C00E31958 /* ZHFSandwish.m in Sources */,
+				91A5503421E0BF5800F855B7 /* ExtrFlowerStateModel.m in Sources */,
 				91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */,
 				9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
+				9145AAB421E0A1F400A54706 /* ZHFFlowerViewController.m in Sources */,
 				911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */,
 				914FF90B21D3D1EB00AE29F5 /* ZHFCustomTextField.m in Sources */,
 				914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */,
@@ -1428,6 +1445,7 @@
 				910E838D21B043B600736D3B /* ZHFCharacteBuilder.m in Sources */,
 				9171585621BAD238000525FC /* ZHFConsoleController.m in Sources */,
 				917670A821BB8E1800E22223 /* ZHFTaximeter.m in Sources */,
+				9145AAB721E0A9EE00A54706 /* ZHFFlyweightView.m in Sources */,
 				9115F2EB21DFB67800FD7975 /* ZHFFlowerFactory.m in Sources */,
 				9170E80321A1B88900E41D8A /* ZHFClothCanvasViewGenerator.m in Sources */,
 				919C82CF21CFD8DE00C6FB05 /* ZHFMetalArmor.m in Sources */,

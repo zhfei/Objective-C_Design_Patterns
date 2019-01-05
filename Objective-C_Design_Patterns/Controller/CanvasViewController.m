@@ -20,6 +20,7 @@
 #import "ZHFCustomCommand.h"
 #import "NSMutableArray+Stack.h"
 #import "ZHFDrawScribbleCommand.h"
+#import "ZHFFlowerViewController.h"
 
 #define ScreenSize [UIScreen mainScreen].bounds.size
 NSInteger levesOfUndo = 20;
@@ -183,10 +184,16 @@ NSInteger levesOfUndo = 20;
     switch (sender.tag) {
         case 0:
             //删除
-            [self.stroke removeAllMarks];
-            [self.paths removeAllObjects];
-            [self.canvasView configImage:nil];
-            [self.canvasView setNeedsDisplay];
+//            [self.stroke removeAllMarks];
+//            [self.paths removeAllObjects];
+//            [self.canvasView configImage:nil];
+//            [self.canvasView setNeedsDisplay];
+            
+        {
+            ZHFFlowerViewController *fvc = [[ZHFFlowerViewController alloc] init];
+            [self presentViewController:fvc animated:YES completion:nil];
+        }
+            
             break;
         case 1:
             //保存
