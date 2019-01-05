@@ -144,6 +144,7 @@
 		919C82DE21CFDDCE00C6FB05 /* ZHFAttackGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C82DD21CFDDCE00C6FB05 /* ZHFAttackGameVC.m */; };
 		91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */; };
 		91A5503421E0BF5800F855B7 /* ExtrFlowerStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A5503321E0BF5800F855B7 /* ExtrFlowerStateModel.m */; };
+		91A5503721E0C52900F855B7 /* DelegatePattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 91A5503621E0C52900F855B7 /* DelegatePattern.md */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
 		91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFF5B921C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m */; };
@@ -399,6 +400,7 @@
 		91A1153D21BEB4CF0077BEA6 /* CoordinatingController.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoordinatingController.mdj; sourceTree = "<group>"; };
 		91A5503221E0BF5800F855B7 /* ExtrFlowerStateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtrFlowerStateModel.h; sourceTree = "<group>"; };
 		91A5503321E0BF5800F855B7 /* ExtrFlowerStateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtrFlowerStateModel.m; sourceTree = "<group>"; };
+		91A5503621E0C52900F855B7 /* DelegatePattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DelegatePattern.md; sourceTree = "<group>"; };
 		91A6EC2C2168C57B002CC2B7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
 		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
@@ -596,6 +598,7 @@
 		913933CC219724840057E33C /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				91A5503521E0C50700F855B7 /* 代理模式 */,
 				9115F2DB21DFADF100FD7975 /* 享元模式 */,
 				911E828E21D7C1AD00847926 /* 命令模式 */,
 				9152311721D277BB002E97A1 /* 策略模式 */,
@@ -1107,6 +1110,14 @@
 			path = Apply;
 			sourceTree = "<group>";
 		};
+		91A5503521E0C50700F855B7 /* 代理模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91A5503621E0C52900F855B7 /* DelegatePattern.md */,
+			);
+			path = "代理模式";
+			sourceTree = "<group>";
+		};
 		91A84A212184B98900A71138 /* MementoPattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -1317,6 +1328,7 @@
 				914C2E7621BFF98E002A0222 /* ObserverPattern.mdj in Resources */,
 				9176709F21BB833D00E22223 /* FacadePattern.mdj in Resources */,
 				917670AE21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj in Resources */,
+				91A5503721E0C52900F855B7 /* DelegatePattern.md in Resources */,
 				91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */,
 				91797E3121D91807001816EF /* InvocationCommandPattern.mdj in Resources */,
 				9150E20F21C937B2000229B5 /* DecoratorPattern.mdj in Resources */,
