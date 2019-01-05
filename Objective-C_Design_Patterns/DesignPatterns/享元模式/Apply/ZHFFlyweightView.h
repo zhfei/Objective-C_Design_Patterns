@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+//由于C结构体不在引用计数内存管理策略内，导致了僵尸对象访问，待解决。
 typedef struct {
     UIView *flowerView;
     CGRect area;
