@@ -129,6 +129,8 @@
 		917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7929218A0C3000425A05 /* ScrawlModel.m */; };
 		918BD18721E220B200C918EC /* DelegatePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 918BD18621E220B200C918EC /* DelegatePattern.mdj */; };
 		918BD18921E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 918BD18821E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj */; };
+		918BD18C21E237A800C918EC /* ZHFScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 918BD18B21E237A800C918EC /* ZHFScribbleThumbnailView.m */; };
+		918BD18F21E2385600C918EC /* ZHFScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 918BD18E21E2385600C918EC /* ZHFScribbleThumbnailViewImageProxy.m */; };
 		918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */ = {isa = PBXBuildFile; fileRef = 918E0EF521A3146500F4FC2B /* AbstractFactory.md */; };
 		9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */ = {isa = PBXBuildFile; fileRef = 9198362E21B579C400747EA5 /* Adapter适配器模式.md */; };
 		9198363121B57DE300747EA5 /* Adapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9198363021B57DE300747EA5 /* Adapter.mdj */; };
@@ -378,6 +380,10 @@
 		917B7929218A0C3000425A05 /* ScrawlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlModel.m; sourceTree = "<group>"; };
 		918BD18621E220B200C918EC /* DelegatePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DelegatePattern.mdj; sourceTree = "<group>"; };
 		918BD18821E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScribbleThumbnailDelegatePattern.mdj; sourceTree = "<group>"; };
+		918BD18A21E237A800C918EC /* ZHFScribbleThumbnailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribbleThumbnailView.h; sourceTree = "<group>"; };
+		918BD18B21E237A800C918EC /* ZHFScribbleThumbnailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribbleThumbnailView.m; sourceTree = "<group>"; };
+		918BD18D21E2385600C918EC /* ZHFScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		918BD18E21E2385600C918EC /* ZHFScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
 		918E0EF521A3146500F4FC2B /* AbstractFactory.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = AbstractFactory.md; sourceTree = "<group>"; };
 		9198362E21B579C400747EA5 /* Adapter适配器模式.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Adapter适配器模式.md"; sourceTree = "<group>"; };
 		9198363021B57DE300747EA5 /* Adapter.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.mdj; sourceTree = "<group>"; };
@@ -1120,6 +1126,10 @@
 				918BD18821E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj */,
 				918BD18621E220B200C918EC /* DelegatePattern.mdj */,
 				91A5503621E0C52900F855B7 /* DelegatePattern.md */,
+				918BD18A21E237A800C918EC /* ZHFScribbleThumbnailView.h */,
+				918BD18B21E237A800C918EC /* ZHFScribbleThumbnailView.m */,
+				918BD18D21E2385600C918EC /* ZHFScribbleThumbnailViewImageProxy.h */,
+				918BD18E21E2385600C918EC /* ZHFScribbleThumbnailViewImageProxy.m */,
 			);
 			path = "代理模式";
 			sourceTree = "<group>";
@@ -1403,6 +1413,7 @@
 				917670B821BB9FE700E22223 /* ZHFScribbleManager.m in Sources */,
 				9152022021CBEE0700BB5B96 /* UIImage+ZHFTransform.m in Sources */,
 				9173394E21B193D9009C08A1 /* ZHFSingleton.m in Sources */,
+				918BD18C21E237A800C918EC /* ZHFScribbleThumbnailView.m in Sources */,
 				916183AC21AB089800681B46 /* ZHFAcmeBrandingViews.m in Sources */,
 				916183A321AAFDB200681B46 /* ZHFBrandingFactory.m in Sources */,
 				9150E21D21C9488D000229B5 /* ZHFImageShadowFilter.m in Sources */,
@@ -1437,6 +1448,7 @@
 				914E5E2D21664DF00089C1C7 /* PaletteViewController.m in Sources */,
 				9150E21721C9460C000229B5 /* ZHFImageFilter.m in Sources */,
 				91C1B79821665EC70070DB88 /* Dot.m in Sources */,
+				918BD18F21E2385600C918EC /* ZHFScribbleThumbnailViewImageProxy.m in Sources */,
 				9170E7FC21A1B7D300E41D8A /* ZHFClothCanvasView.m in Sources */,
 				91D6E84D21DA0B2900193164 /* ZHFInvocationVC.m in Sources */,
 				916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */,
