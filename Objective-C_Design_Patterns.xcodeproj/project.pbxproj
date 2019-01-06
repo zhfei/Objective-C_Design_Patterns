@@ -128,6 +128,7 @@
 		917B7927218A0C1B00425A05 /* MementoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7926218A0C1B00425A05 /* MementoModel.m */; };
 		917B792A218A0C3000425A05 /* ScrawlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B7929218A0C3000425A05 /* ScrawlModel.m */; };
 		918BD18721E220B200C918EC /* DelegatePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 918BD18621E220B200C918EC /* DelegatePattern.mdj */; };
+		918BD18921E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 918BD18821E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj */; };
 		918E0EF621A3146500F4FC2B /* AbstractFactory.md in Resources */ = {isa = PBXBuildFile; fileRef = 918E0EF521A3146500F4FC2B /* AbstractFactory.md */; };
 		9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */ = {isa = PBXBuildFile; fileRef = 9198362E21B579C400747EA5 /* Adapter适配器模式.md */; };
 		9198363121B57DE300747EA5 /* Adapter.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9198363021B57DE300747EA5 /* Adapter.mdj */; };
@@ -376,6 +377,7 @@
 		917B7928218A0C3000425A05 /* ScrawlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrawlModel.h; sourceTree = "<group>"; };
 		917B7929218A0C3000425A05 /* ScrawlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrawlModel.m; sourceTree = "<group>"; };
 		918BD18621E220B200C918EC /* DelegatePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DelegatePattern.mdj; sourceTree = "<group>"; };
+		918BD18821E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScribbleThumbnailDelegatePattern.mdj; sourceTree = "<group>"; };
 		918E0EF521A3146500F4FC2B /* AbstractFactory.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = AbstractFactory.md; sourceTree = "<group>"; };
 		9198362E21B579C400747EA5 /* Adapter适配器模式.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Adapter适配器模式.md"; sourceTree = "<group>"; };
 		9198363021B57DE300747EA5 /* Adapter.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.mdj; sourceTree = "<group>"; };
@@ -1115,6 +1117,7 @@
 		91A5503521E0C50700F855B7 /* 代理模式 */ = {
 			isa = PBXGroup;
 			children = (
+				918BD18821E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj */,
 				918BD18621E220B200C918EC /* DelegatePattern.mdj */,
 				91A5503621E0C52900F855B7 /* DelegatePattern.md */,
 			);
@@ -1281,6 +1284,7 @@
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
 				9152311B21D27AD3002E97A1 /* StrategyPattern.mdj in Resources */,
 				9152311921D277FC002E97A1 /* StrategyPattern.md in Resources */,
+				918BD18921E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj in Resources */,
 				91E442BD21C403F3004F9318 /* IteratorPattern.md in Resources */,
 				914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
