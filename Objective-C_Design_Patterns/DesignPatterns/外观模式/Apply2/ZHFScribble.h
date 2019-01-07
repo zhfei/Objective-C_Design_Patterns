@@ -16,11 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 {
     @private
     id <Mark> parentMark_;
+    id <Mark> incrementMark_;
 }
 - (void)addMark:(id <Mark>)mark shouldAddToParentMark:(BOOL)shouldAddToParentMark;
 - (void)removeMark:(id <Mark>)mark;
 
+#pragma mark - 备忘录方法
+- (id)initWithMemento:(ZHFScribbleMemento *)aMemento;
++ (ZHFScribble *)scribbleWithMemento:(ZHFScribbleMemento *)aMemento;
 - (ZHFScribbleMemento *)scribbleMemento;
+- (ZHFScribbleMemento *)scribbleMementoWithCompleteSnapshot:(BOOL)hasCompleteSnapshot;
+- (void)attachStateFromMemento:(ZHFScribbleMemento *)aMemento;
 @end
 
 NS_ASSUME_NONNULL_END
