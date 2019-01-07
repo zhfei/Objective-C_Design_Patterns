@@ -161,6 +161,8 @@
 		91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79A2166680C0070DB88 /* CanvasView.m */; };
 		91C531E521E3A2DA003401AE /* MementoSquence.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91C531E421E3A2DA003401AE /* MementoSquence.mdj */; };
 		91C531E721E3A67F003401AE /* ScribbleMemento.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91C531E621E3A67F003401AE /* ScribbleMemento.mdj */; };
+		91C531EA21E3A87F003401AE /* ZHFScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C531E921E3A87F003401AE /* ZHFScribbleMemento.m */; };
+		91C531ED21E3A9DB003401AE /* ZHFScribbleMemento+Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C531EC21E3A9DB003401AE /* ZHFScribbleMemento+Friend.m */; };
 		91D6E84D21DA0B2900193164 /* ZHFInvocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */; };
 		91D6E85121DA22F800193164 /* ZHFUndoMangerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D6E85021DA22F800193164 /* ZHFUndoMangerVC.m */; };
 		91D7CB1D2197E9BE00BA88BF /* ZHFProtoTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB1C2197E9BE00BA88BF /* ZHFProtoTypeVC.m */; };
@@ -436,6 +438,10 @@
 		91C1B79A2166680C0070DB88 /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		91C531E421E3A2DA003401AE /* MementoSquence.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MementoSquence.mdj; sourceTree = "<group>"; };
 		91C531E621E3A67F003401AE /* ScribbleMemento.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScribbleMemento.mdj; sourceTree = "<group>"; };
+		91C531E821E3A87F003401AE /* ZHFScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFScribbleMemento.h; sourceTree = "<group>"; };
+		91C531E921E3A87F003401AE /* ZHFScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFScribbleMemento.m; sourceTree = "<group>"; };
+		91C531EB21E3A9DB003401AE /* ZHFScribbleMemento+Friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHFScribbleMemento+Friend.h"; sourceTree = "<group>"; };
+		91C531EC21E3A9DB003401AE /* ZHFScribbleMemento+Friend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZHFScribbleMemento+Friend.m"; sourceTree = "<group>"; };
 		91D6E84B21DA0B2900193164 /* ZHFInvocationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFInvocationVC.h; sourceTree = "<group>"; };
 		91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFInvocationVC.m; sourceTree = "<group>"; };
 		91D6E84F21DA22F800193164 /* ZHFUndoMangerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFUndoMangerVC.h; sourceTree = "<group>"; };
@@ -1190,6 +1196,10 @@
 			children = (
 				91C531E621E3A67F003401AE /* ScribbleMemento.mdj */,
 				91C531E421E3A2DA003401AE /* MementoSquence.mdj */,
+				91C531E821E3A87F003401AE /* ZHFScribbleMemento.h */,
+				91C531E921E3A87F003401AE /* ZHFScribbleMemento.m */,
+				91C531EB21E3A9DB003401AE /* ZHFScribbleMemento+Friend.h */,
+				91C531EC21E3A9DB003401AE /* ZHFScribbleMemento+Friend.m */,
 			);
 			path = Apply;
 			sourceTree = "<group>";
@@ -1469,6 +1479,7 @@
 				917670B421BB9FB200E22223 /* ZHFScribbleThumbnail.m in Sources */,
 				91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */,
 				917670BB21BBB9E500E22223 /* ZHFScribbleMemento.m in Sources */,
+				91C531EA21E3A87F003401AE /* ZHFScribbleMemento.m in Sources */,
 				9171585321BAD18A000525FC /* ZHFGameGeerEmulator.m in Sources */,
 				9170E7E821A06EE700E41D8A /* ZHFFactoryPatternVC.m in Sources */,
 				916E36442163209200602088 /* ViewController.m in Sources */,
@@ -1501,6 +1512,7 @@
 				9145AAB421E0A1F400A54706 /* ZHFFlowerViewController.m in Sources */,
 				911976E221D3D522000DD669 /* ZHFStrategyViewController.m in Sources */,
 				914FF90B21D3D1EB00AE29F5 /* ZHFCustomTextField.m in Sources */,
+				91C531ED21E3A9DB003401AE /* ZHFScribbleMemento+Friend.m in Sources */,
 				914CD4A121B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m in Sources */,
 				916183AF21AB09AF00681B46 /* ZHFSierraBrandingViews.m in Sources */,
 				919C82DE21CFDDCE00C6FB05 /* ZHFAttackGameVC.m in Sources */,
