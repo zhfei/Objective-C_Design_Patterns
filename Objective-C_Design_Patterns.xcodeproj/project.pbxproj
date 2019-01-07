@@ -32,6 +32,7 @@
 		911E829021D7C1DB00847926 /* CommandPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 911E828F21D7C1DB00847926 /* CommandPattern.md */; };
 		911E829221D7CA7100847926 /* CommandPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911E829121D7CA7100847926 /* CommandPattern.mdj */; };
 		911FD42721C536C300DCA64F /* MarkEnumeratorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */; };
+		912165A121E3251A009461B8 /* 设计模式.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 912165A021E3251A009461B8 /* 设计模式.xmind */; };
 		9122AD1D21BD6B5D00A9E3BD /* MediatorPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */; };
 		9122AD1F21BD6F1A00A9E3BD /* MediatorPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */; };
 		9138D78521CFE3DF00758753 /* ZHFLightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138D78421CFE3DF00758753 /* ZHFLightningAttack.m */; };
@@ -217,6 +218,7 @@
 		911E828F21D7C1DB00847926 /* CommandPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CommandPattern.md; sourceTree = "<group>"; };
 		911E829121D7CA7100847926 /* CommandPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CommandPattern.mdj; sourceTree = "<group>"; };
 		911FD42621C536C300DCA64F /* MarkEnumeratorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarkEnumeratorPattern.mdj; sourceTree = "<group>"; };
+		912165A021E3251A009461B8 /* 设计模式.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "设计模式.xmind"; sourceTree = "<group>"; };
 		9122AD1C21BD6B5D00A9E3BD /* MediatorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MediatorPattern.md; sourceTree = "<group>"; };
 		9122AD1E21BD6F1A00A9E3BD /* MediatorPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MediatorPattern.mdj; sourceTree = "<group>"; };
 		9138D78321CFE3DF00758753 /* ZHFLightningAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFLightningAttack.h; sourceTree = "<group>"; };
@@ -604,6 +606,7 @@
 		913933C92197232E0057E33C /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				912165A021E3251A009461B8 /* 设计模式.xmind */,
 				913933CA2197235F0057E33C /* 设计模式1.md */,
 			);
 			path = Documents;
@@ -1321,6 +1324,7 @@
 				918BD19221E24F8900C918EC /* MementoPattern.md in Resources */,
 				917670A221BB8C7800E22223 /* CabDriverFacabePattern.mdj in Resources */,
 				9114DD0E21DBAB3500876B4E /* CustomCommand.mdj in Resources */,
+				912165A121E3251A009461B8 /* 设计模式.xmind in Resources */,
 				91F4077521D1263100E31958 /* TemplateMethodPattern.md in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */,
