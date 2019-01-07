@@ -159,6 +159,7 @@
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
 		91C1B79B2166680C0070DB88 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79A2166680C0070DB88 /* CanvasView.m */; };
+		91C531E221E391FA003401AE /* MementoSquence.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91C531E121E391FA003401AE /* MementoSquence.mdj */; };
 		91D6E84D21DA0B2900193164 /* ZHFInvocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */; };
 		91D6E85121DA22F800193164 /* ZHFUndoMangerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D6E85021DA22F800193164 /* ZHFUndoMangerVC.m */; };
 		91D7CB1D2197E9BE00BA88BF /* ZHFProtoTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7CB1C2197E9BE00BA88BF /* ZHFProtoTypeVC.m */; };
@@ -432,6 +433,7 @@
 		91C1B79721665EC70070DB88 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		91C1B7992166680C0070DB88 /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		91C1B79A2166680C0070DB88 /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		91C531E121E391FA003401AE /* MementoSquence.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MementoSquence.mdj; sourceTree = "<group>"; };
 		91D6E84B21DA0B2900193164 /* ZHFInvocationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFInvocationVC.h; sourceTree = "<group>"; };
 		91D6E84C21DA0B2900193164 /* ZHFInvocationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFInvocationVC.m; sourceTree = "<group>"; };
 		91D6E84F21DA22F800193164 /* ZHFUndoMangerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFUndoMangerVC.h; sourceTree = "<group>"; };
@@ -1069,6 +1071,7 @@
 		918BD19021E24DBC00C918EC /* 备忘录模式 */ = {
 			isa = PBXGroup;
 			children = (
+				91C531E121E391FA003401AE /* MementoSquence.mdj */,
 				918BD19321E2555500C918EC /* MementoPattern.mdj */,
 				918BD19121E24F8900C918EC /* MementoPattern.md */,
 			);
@@ -1367,6 +1370,7 @@
 				9176709F21BB833D00E22223 /* FacadePattern.mdj in Resources */,
 				917670AE21BB9F3D00E22223 /* ScribbleManager_FacabePattern.mdj in Resources */,
 				91A5503721E0C52900F855B7 /* DelegatePattern.md in Resources */,
+				91C531E221E391FA003401AE /* MementoSquence.mdj in Resources */,
 				91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */,
 				91797E3121D91807001816EF /* InvocationCommandPattern.mdj in Resources */,
 				9150E20F21C937B2000229B5 /* DecoratorPattern.mdj in Resources */,
