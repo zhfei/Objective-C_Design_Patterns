@@ -209,6 +209,8 @@ NSInteger levesOfUndo = 20;
             [self.paths removeAllObjects];
             [self.canvasView setNeedsDisplay];
             
+            [[ZHFScribbleManager sharedZHFScribbleManager] saveScribble:self.scribble thumbnail:nil];
+            
             break;
         case 4:
             //撤销

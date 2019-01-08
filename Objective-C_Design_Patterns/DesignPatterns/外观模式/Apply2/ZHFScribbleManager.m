@@ -42,6 +42,12 @@ SingletonM(ZHFScribbleManager)
     return scribble;
 }
 
+//TODO: 等待填充
+- (NSInteger)numberOfScribbles {
+    return 1;
+}
+
+
 #pragma mark - private method
 - (NSString *)scribbleDataPath {
     NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
