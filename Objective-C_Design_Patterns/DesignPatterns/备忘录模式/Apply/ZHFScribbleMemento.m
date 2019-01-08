@@ -37,6 +37,7 @@
 - (instancetype)initWithMark:(id<Mark>)aMark {
     if (self = [super init]) {
         self.mark = aMark;
+
     }
     return self;
 }

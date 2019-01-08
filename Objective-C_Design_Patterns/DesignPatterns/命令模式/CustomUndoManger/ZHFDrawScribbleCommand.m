@@ -19,7 +19,7 @@ NSString *const AddToPreviousMarkUserInfoKey = @"AddToPreviousMarkUserInfoKey";
     scribble_ = [userInfo_ objectForKey:ScribbleObjectUserInfoKey];
     mark_ = [userInfo_ objectForKey:MarkObjectUserInfoKey];
     shouldAddToPreviousMark_ = [(NSNumber *)[userInfo_ objectForKey:AddToPreviousMarkUserInfoKey] boolValue];
-    [scribble_ addMark:mark_ shouldAddToParentMark:shouldAddToPreviousMark_];
+    [scribble_ addMark:mark_ shouldAddToPreviousMark:shouldAddToPreviousMark_];
 }
 - (void)undo {
     [scribble_ removeMark:mark_];

@@ -7,8 +7,10 @@
 //
 
 #import "ZHFScribbleManager.h"
+#import <BottomComponentLib/FileManager.h>
 
 @implementation ZHFScribbleManager
+SingletonM(ZHFScribbleManager)
 - (void)saveScribble:(ZHFScribble *)scrbble thumbnail:(UIImage *)image {
     //为当前存储的涂鸦数据和截图获取新的索引值
     NSInteger newIndex = [self numberOfScribbles] + 1;
@@ -29,11 +31,21 @@
     
 }
 
+- (ZHFScribble *)scribbleAtIndex:(NSInteger)index {
+    //根据索引值生成涂鸦数据名和截图名
+    NSString *scribbleDataName = [NSString stringWithFormat:@"data_%d",index];
+    NSString *memPath = [[self scribbleDataPath] stringByAppendingPathComponent:scribbleDataName];
+
+    NSData *mementoData = [FileManager readObjetFromPath:memPath];
+    ZHFScribbleMemento *memento = [ZHFScribbleMemento mementoWithData:mementoData];
+    ZHFScribble *scribble = [ZHFScribble scribbleWithMemento:memento];
+    return scribble;
+}
+
 #pragma mark - private method
 - (NSString *)scribbleDataPath {
     NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
    NSString *path = [documentDir stringByAppendingPathComponent:@"ScribbleData"];
-
     return path;
 }
 

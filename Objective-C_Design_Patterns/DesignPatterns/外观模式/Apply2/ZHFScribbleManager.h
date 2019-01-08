@@ -10,10 +10,12 @@
 #import "ZHFScribble.h"
 #import "ZHFScribbleThumbnail.h"
 #import "ZHFScribbleThumbnailProxy.h"
+#import <BottomComponentLib/Macro.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHFScribbleManager : NSObject
+SingletonH(ZHFScribbleManager)
 /**
  保存涂鸦数据，涂鸦截图到本地
 

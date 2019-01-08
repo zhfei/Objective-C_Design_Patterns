@@ -47,4 +47,18 @@
 - (id<Mark>)lastChild {return nil;}
 - (NSUInteger)count {return 0;}
 
+#pragma mark - NSCoding操作
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super init]) {
+        self.location = [[aDecoder decodeObjectForKey:@"location"] CGPointValue];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    NSValue *value = [NSValue valueWithCGPoint:self.location];
+    [aCoder encodeObject:value forKey:@"location"];
+}
+
+
 @end

@@ -118,4 +118,25 @@
     }
 }
 
+#pragma mark - NSCoding操作
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super init]) {
+        self.location = [[aDecoder decodeObjectForKey:@"location"] CGPointValue];
+        self.size = [[aDecoder decodeObjectForKey:@"size"] CGSizeValue];
+        self.color = [aDecoder decodeObjectForKey:@"color"];
+        self.markArray = [aDecoder decodeObjectForKey:@"markArray"];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    NSValue *size = [NSValue valueWithCGSize:self.size];
+    [aCoder encodeObject:size forKey:@"size"];
+    [aCoder encodeObject:self.color forKey:@"color"];
+    NSValue *value = [NSValue valueWithCGPoint:self.location];
+    [aCoder encodeObject:value forKey:@"location"];
+    [aCoder encodeObject:self.markArray forKey:@"markArray"];
+}
+
+
 @end

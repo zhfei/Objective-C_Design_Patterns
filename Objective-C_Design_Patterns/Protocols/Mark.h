@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "ZHFMarkVisitor.h"
 
-@protocol Mark <NSObject,NSCopying>
+@protocol Mark <NSObject,NSCopying,NSCoding>
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint location;

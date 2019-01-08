@@ -21,6 +21,7 @@
 #import "NSMutableArray+Stack.h"
 #import "ZHFDrawScribbleCommand.h"
 #import "ZHFFlowerViewController.h"
+#import "ZHFScribbleManager.h"
 
 #define ScreenSize [UIScreen mainScreen].bounds.size
 NSInteger levesOfUndo = 20;
@@ -108,7 +109,7 @@ NSInteger levesOfUndo = 20;
         [strok setColor:_strokeColor];
         [strok setSize:_strokeSize];
         [strok setLocation:_startPoint];
-//        [_scribble addMark:strok shouldAddToParentMark:NO];
+//        [_scribble addMark:strok shouldAddToPreviousMark:NO];
         
         
 //        NSInvocation *drawInvocation = [self drawScribbleInvocation];
@@ -130,7 +131,7 @@ NSInteger levesOfUndo = 20;
     
     CGPoint thisPoint = [[touches anyObject] locationInView:_canvasView];
     Vertex *vt = [[Vertex alloc] initWithLocation:thisPoint];
-    [_scribble addMark:vt shouldAddToParentMark:YES];
+    [_scribble addMark:vt shouldAddToPreviousMark:YES];
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -143,7 +144,7 @@ NSInteger levesOfUndo = 20;
         Dot *dt = [[Dot alloc] initWithLocation:thisPoint];
         [dt setSize:_strokeSize];
         [dt setColor:_strokeColor];
-//        [_scribble addMark:dt shouldAddToParentMark:NO];
+//        [_scribble addMark:dt shouldAddToPreviousMark:NO];
         
 //        NSInvocation *drawInvocation = [self drawScribbleInvocation];
 //        [drawInvocation setArgument:&dt atIndex:2];
@@ -275,11 +276,11 @@ NSInteger levesOfUndo = 20;
 
 //生成绘图和撤销绘图的操作
 - (NSInvocation *)drawScribbleInvocation {
-    NSMethodSignature *exeMethodSignature = [_scribble methodSignatureForSelector:@selector(addMark:shouldAddToParentMark:)];
+    NSMethodSignature *exeMethodSignature = [_scribble methodSignatureForSelector:@selector(addMark:shouldAddToPreviousMark:)];
     
     NSInvocation *drawInvocation = [NSInvocation invocationWithMethodSignature:exeMethodSignature];
     [drawInvocation setTarget:_scribble];
-    [drawInvocation setSelector:@selector(addMark:shouldAddToParentMark:)];
+    [drawInvocation setSelector:@selector(addMark:shouldAddToPreviousMark:)];
     BOOL addToParentMark = NO;
     [drawInvocation setArgument:&addToParentMark atIndex:3];
     return drawInvocation;

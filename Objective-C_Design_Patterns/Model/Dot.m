@@ -30,4 +30,20 @@
     return obj;
 }
 
+#pragma mark - NSCoding操作
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        self.size = [[aDecoder decodeObjectForKey:@"size"] CGSizeValue];
+        self.color = [aDecoder decodeObjectForKey:@"color"];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [super encodeWithCoder:aCoder];
+    NSValue *size = [NSValue valueWithCGSize:self.size];
+    [aCoder encodeObject:size forKey:@"size"];
+    [aCoder encodeObject:self.color forKey:@"color"];
+}
+
 @end

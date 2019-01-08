@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
     id <Mark> parentMark_;
     id <Mark> incrementMark_;
 }
-- (void)addMark:(id <Mark>)mark shouldAddToParentMark:(BOOL)shouldAddToParentMark;
+- (void)addMark:(id <Mark>)mark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark;
 - (void)removeMark:(id <Mark>)mark;
 
 #pragma mark - 备忘录方法
