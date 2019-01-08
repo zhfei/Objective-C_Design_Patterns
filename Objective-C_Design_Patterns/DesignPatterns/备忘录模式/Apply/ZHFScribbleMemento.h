@@ -16,8 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
     id<Mark> mark_;
     BOOL hasCompleteSnapshot_;
 }
+@property (nonatomic, assign) BOOL hasCompleteSnapshot;
+
 + (ZHFScribbleMemento *)mementoWithData:(NSData *)data;
 - (NSData *)data;
+
+- (id<Mark>)mark;
 @end
 
 NS_ASSUME_NONNULL_END

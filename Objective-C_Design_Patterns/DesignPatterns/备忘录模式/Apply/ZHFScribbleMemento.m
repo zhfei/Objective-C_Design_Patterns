@@ -11,7 +11,6 @@
 
 @interface ZHFScribbleMemento ()
 @property (nonatomic, copy) id<Mark> mark;
-@property (nonatomic, assign) BOOL hasCompleteSnapshot;
 @end
 
 @implementation ZHFScribbleMemento
@@ -27,6 +26,11 @@
     id<Mark> retoredMark = (id<Mark>)[NSKeyedUnarchiver unarchiveObjectWithData:data];
     ZHFScribbleMemento *memento = [[ZHFScribbleMemento alloc] initWithMark:retoredMark];
     return memento;
+}
+
+
+- (id<Mark>)mark {
+    return self.mark;
 }
 
 #pragma mark - private method

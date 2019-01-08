@@ -8,6 +8,7 @@
 
 #import "ZHFScribble.h"
 #import "Stroke.h"
+#import "ZHFScribbleMemento+Friend.h"
 
 @interface ZHFScribble()
 @property (nonatomic, strong) id <Mark> mark;
@@ -27,31 +28,78 @@
 #pragma mark -
 #pragma mark - mark method for manager
 
-- (void)addMark:(id<Mark>)mark shouldAddToParentMark:(BOOL)shouldAddToParentMark {
+- (void)addMark:(id<Mark>)aMark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark {
     //手动调用kvo
     [self willChangeValueForKey:@"mark"];
-    
-    if (shouldAddToParentMark) {
-        [[parentMark_ lastChild] addMark:mark];
+    //是否添加到上一个节点上，作为上一个聚合体的一部分。
+    if (shouldAddToPreviousMark) {
+        [[parentMark_ lastChild] addMark:aMark];
     } else {
-        [parentMark_ addMark:mark];
+        [parentMark_ addMark:aMark];
+        incrementMark_ = aMark;
     }
     //手动调用kvo
     [self didChangeValueForKey:@"mark"];
 }
 
-- (void)removeMark:(id<Mark>)mark {
-    if (parentMark_ == mark) {
+- (void)removeMark:(id<Mark>)aMark {
+    if (parentMark_ == aMark) {
         return;
     }
     
     [self willChangeValueForKey:@"mark"];
-    [parentMark_ removeMark:mark];
+    [parentMark_ removeMark:aMark];
+    if (aMark == incrementMark_) {
+        incrementMark_ = nil;
+    }
     //手动调用kvo
     [self didChangeValueForKey:@"mark"];
 }
 
-- (ZHFScribbleMemento *)scribbleMemento {
-    return [ZHFScribbleMemento new];
+
+#pragma mark - 备忘录方法
+- (id)initWithMemento:(ZHFScribbleMemento *)aMemento {
+    if (self = [super init]) {
+        if ([aMemento hasCompleteSnapshot]) {
+            [self setMark:[aMemento mark]];
+        } else {
+            //如果备忘录中只有一个增量mark，那么就需要创建容纳它的父节点
+            parentMark_ = [Stroke new];
+            [self attachStateFromMemento:aMemento];
+        }
+    }
+    return self;
 }
++ (ZHFScribble *)scribbleWithMemento:(ZHFScribbleMemento *)aMemento {
+    ZHFScribble *scribble = [[ZHFScribble alloc] initWithMemento:aMemento];
+    return scribble;
+}
+
+- (ZHFScribbleMemento *)scribbleMemento {
+    return [self scribbleMementoWithCompleteSnapshot:YES];
+}
+
+- (ZHFScribbleMemento *)scribbleMementoWithCompleteSnapshot:(BOOL)hasCompleteSnapshot {
+    id <Mark> mementoMark = incrementMark_;
+    
+    //如果是完全快照，就是使用根节点
+    if (hasCompleteSnapshot) {
+        mementoMark = parentMark_;
+    } else if ( mementoMark == nil ){
+        return nil;
+    }
+    
+    ZHFScribbleMemento *scribbleMemento = [[ZHFScribbleMemento alloc] initWithMark:mementoMark];
+    [scribbleMemento setHasCompleteSnapshot:hasCompleteSnapshot];
+    return scribbleMemento;
+}
+
+- (void)attachStateFromMemento:(ZHFScribbleMemento *)aMemento {
+    //把来自备忘录中的状态，添加到根节点
+    [self addMark:[aMemento mark] shouldAddToPreviousMark:NO];
+}
+
+
+
+
 @end
