@@ -22,13 +22,12 @@ SingletonM(ZHFScribbleManager)
     ZHFScribbleMemento *mem = [scrbble scribbleMemento];
     NSData *mementoData = [mem data];
     NSString *memPath = [[self scribbleDataPath] stringByAppendingPathComponent:scribbleDataName];
-    [mementoData writeToFile:memPath atomically:YES];
+    [FileManager saveObjet:mementoData toPath:memPath];
     
     //把缩略图保存到文件系统
     NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation(image)];
     NSString *scribbleThumbnailPath = [[self scribbleDataPath] stringByAppendingPathComponent:scribbleThumbnailName];
-    [imageData writeToFile:scribbleThumbnailPath atomically:YES];
-    
+    [FileManager saveObjet:imageData toPath:memPath];
 }
 
 - (ZHFScribble *)scribbleAtIndex:(NSInteger)index {
@@ -44,7 +43,8 @@ SingletonM(ZHFScribbleManager)
 
 //TODO: 等待填充
 - (NSInteger)numberOfScribbles {
-    return 1;
+    NSArray *objs = [FileManager readObjetsFromPath:[self scribbleDataPath]];
+    return [objs count];
 }
 
 
