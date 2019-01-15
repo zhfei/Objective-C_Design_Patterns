@@ -1110,7 +1110,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFoI7x1L39kjzM="
 							},
-							"name": "state"
+							"name": "state",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -1177,7 +1178,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFoI71gAn+kbFc="
 							},
-							"name": "state"
+							"name": "state",
+							"type": ""
 						}
 					],
 					"operations": [
