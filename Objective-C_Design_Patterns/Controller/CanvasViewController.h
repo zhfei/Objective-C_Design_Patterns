@@ -18,7 +18,6 @@
 @property (nonatomic, assign) CGPoint startPoint;
 @property (nonatomic, assign) CGSize strokeSize;
 @property (nonatomic, strong) UIColor *strokeColor;
-- (void)setStrokeColor:(UIColor *)color;
 
 //- (void)dismissModalViewControllerAnimated:(BOOL)animated;
 @end

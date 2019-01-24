@@ -11,17 +11,22 @@
 #import "CanvasViewController.h"
 
 @interface CoordinatingController()
-@property (nonatomic, strong)CanvasViewController *canvasViewController ;
+@property (nonatomic, strong)CanvasViewController *canvasVC;
 @end
 
 @implementation CoordinatingController
 SingletonM(CoordinatingController)
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.canvasVC = [CanvasViewController new];
+    }
+    return self;
+}
 
 - (CanvasViewController *)canvasViewController {
-    if (!_canvasViewController) {
-        _canvasViewController = [CanvasViewController new];
-    }
-    return _canvasViewController;
+    return self.canvasVC;
 }
 
 

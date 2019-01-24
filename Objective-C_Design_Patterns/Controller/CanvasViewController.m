@@ -31,25 +31,20 @@ NSInteger levesOfUndo = 20;
     NSMutableArray *undoStack_;
     NSMutableArray *redoStack_;
 }
-@property (strong, nonatomic) Stroke *stroke;
-@property (strong, nonatomic) NSMutableArray <id<Mark>> *paths;
+
 @end
 
 @implementation CanvasViewController
+@synthesize strokeColor = _strokeColor;
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.undoManager = [NSUndoManager new];
-    self.stroke = [Stroke new];
-    self.paths = @[].mutableCopy;
+
     [self loadCanvasViewWithCanvasViewGenerator:[ZHFClothCanvasViewGenerator new]];
-    
-    [self.canvasView configMark:self.stroke];
-    [self.canvasView configHistoryPaths:_paths];
-    
+
     self.strokeSize = CGSizeMake(10, 10);
-    self.strokeColor = [UIColor blackColor];
+    self.strokeColor = [UIColor blueColor];
     self.scribble = [[ZHFScribble alloc] init];
 }
 
@@ -64,8 +59,7 @@ NSInteger levesOfUndo = 20;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.stroke.color = [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1];
-    self.stroke.size = CGSizeMake([GlobalConfig sharedGlobalConfig].lineWidth, 0);
+
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -98,17 +92,13 @@ NSInteger levesOfUndo = 20;
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    NSLog(@"touchesMoved:%@",NSStringFromCGPoint([touches.anyObject locationInView:_canvasView]));
-//    Vertex *ver = [Vertex new];
-//    ver.location = [touches.anyObject locationInView:_canvasView];
-//    [self.stroke addMark:ver];
-//    [self.canvasView setNeedsDisplay];
     CGPoint lastPaint = [[touches anyObject] previousLocationInView:_canvasView];
     if (CGPointEqualToPoint(_startPoint, lastPaint)) {
         id <Mark> strok = [Stroke new];
-        [strok setColor:_strokeColor];
-        [strok setSize:_strokeSize];
+        [strok setColor:self.strokeColor];
+        [strok setSize:self.strokeSize];
         [strok setLocation:_startPoint];
+        NSLog(@"move---self.strokeColor:%@",self.strokeColor);
 //        [_scribble addMark:strok shouldAddToPreviousMark:NO];
         
         
@@ -142,8 +132,9 @@ NSInteger levesOfUndo = 20;
 
     if (CGPointEqualToPoint(lastPoint, thisPoint)) {
         Dot *dt = [[Dot alloc] initWithLocation:thisPoint];
-        [dt setSize:_strokeSize];
-        [dt setColor:_strokeColor];
+        [dt setSize:self.strokeSize];
+        [dt setColor:self.strokeColor];
+        NSLog(@"end---self.strokeColor:%@",self.strokeColor);
 //        [_scribble addMark:dt shouldAddToPreviousMark:NO];
         
         NSInvocation *drawInvocation = [self drawScribbleInvocation];
@@ -192,16 +183,16 @@ NSInteger levesOfUndo = 20;
             break;
         case 1:
             //保存
-            UIImageWriteToSavedPhotosAlbum([UIImage screenshotInView:self.canvasView], self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
-            
-            self.stroke.color = [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1];
-            self.stroke.size = CGSizeMake([GlobalConfig sharedGlobalConfig].lineWidth, 0);
-            self.stroke.location = CGPointZero;
-            [self.stroke removeAllMarks];
-            
-            [self.canvasView configImage:nil];
-            [self.paths removeAllObjects];
-            [self.canvasView setNeedsDisplay];
+//            UIImageWriteToSavedPhotosAlbum([UIImage screenshotInView:self.canvasView], self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+//
+//            self.stroke.color = [UIColor colorWithHexString:[GlobalConfig sharedGlobalConfig].lineColorHex alpha:1];
+//            self.stroke.size = CGSizeMake([GlobalConfig sharedGlobalConfig].lineWidth, 0);
+//            self.stroke.location = CGPointZero;
+//            [self.stroke removeAllMarks];
+//
+//            [self.canvasView configImage:nil];
+//            [self.paths removeAllObjects];
+//            [self.canvasView setNeedsDisplay];
             
             [[ZHFScribbleManager sharedZHFScribbleManager] saveScribble:self.scribble thumbnail:nil];
             
@@ -245,8 +236,15 @@ NSInteger levesOfUndo = 20;
 }
 
 #pragma mark - Public Method
-- (void)setStrokeColor:(UIColor *)color {
-    self.stroke.color = color;
+- (void)setStrokeColor:(UIColor *)strokeColor {
+    _strokeColor = nil;
+    _strokeColor = strokeColor;
+    NSLog(@"setter_strokeColor:%@",_strokeColor);
+}
+
+- (UIColor *)strokeColor {
+    NSLog(@"get_strokeColor:%@",_strokeColor);
+    return _strokeColor;
 }
 
 #pragma mark - Private Method

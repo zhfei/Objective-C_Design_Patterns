@@ -7,7 +7,7 @@
 //
 
 #import "ZHFSetStrokeColorBlockCommand.h"
-#import "CoordinatingController.h"
+#import "ZHFCoordinateViewController.h"
 #import "CanvasViewController.h"
 
 @implementation ZHFSetStrokeColorBlockCommand
@@ -22,8 +22,8 @@
         providerBlock_(&red,&green,&blue);
     }
     
-    UIColor *color = [UIColor colorWithRed:red green:green blue:blue alpha:1];
-    CanvasViewController *ca = [CoordinatingController sharedCoordinatingController];
+    UIColor *color = [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:1];
+    CanvasViewController *ca = [[ZHFCoordinateViewController sharedZHFCoordinateViewController] canvasViewController];
     [ca setStrokeColor:color];
 }
 @end
