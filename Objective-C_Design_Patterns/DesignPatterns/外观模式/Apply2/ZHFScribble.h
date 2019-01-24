@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 - (void)addMark:(id <Mark>)mark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark;
 - (void)removeMark:(id <Mark>)mark;
+- (void)removeAllMarks;
 
 #pragma mark - 备忘录方法
 - (id)initWithMemento:(ZHFScribbleMemento *)aMemento;

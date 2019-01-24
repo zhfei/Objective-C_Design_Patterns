@@ -56,6 +56,16 @@
     [self didChangeValueForKey:@"mark"];
 }
 
+- (void)removeAllMarks {
+    [self willChangeValueForKey:@"mark"];
+    
+    [parentMark_ removeAllMarks];
+    incrementMark_ = nil;
+    
+    //手动调用kvo
+    [self didChangeValueForKey:@"mark"];
+}
+
 
 #pragma mark - 备忘录方法
 - (id)initWithMemento:(ZHFScribbleMemento *)aMemento {

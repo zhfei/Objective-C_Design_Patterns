@@ -112,21 +112,21 @@ NSInteger levesOfUndo = 20;
 //        [_scribble addMark:strok shouldAddToPreviousMark:NO];
         
         
-//        NSInvocation *drawInvocation = [self drawScribbleInvocation];
-//        [drawInvocation setArgument:&strok atIndex:2];
-//
-//        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
-//        [undrawInvocation setArgument:&strok atIndex:2];
-//
-//        //执行带有撤销命令的绘图命令
-//        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
+        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+        [drawInvocation setArgument:&strok atIndex:2];
+
+        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+        [undrawInvocation setArgument:&strok atIndex:2];
+
+        //执行带有撤销命令的绘图命令
+        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
         
-        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:_scribble,ScribbleObjectUserInfoKey,
-                                  strok,MarkObjectUserInfoKey,[NSNumber numberWithBool:NO]
-                                  ,AddToPreviousMarkUserInfoKey, nil];
-        ZHFDrawScribbleCommand *command = [ZHFDrawScribbleCommand new];
-        command.userInfo = userInfo;
-        [self executeCommand:command prepareForUndo:YES];
+//        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:_scribble,ScribbleObjectUserInfoKey,
+//                                  strok,MarkObjectUserInfoKey,[NSNumber numberWithBool:NO]
+//                                  ,AddToPreviousMarkUserInfoKey, nil];
+//        ZHFDrawScribbleCommand *command = [ZHFDrawScribbleCommand new];
+//        command.userInfo = userInfo;
+//        [self executeCommand:command prepareForUndo:YES];
     }
     
     CGPoint thisPoint = [[touches anyObject] locationInView:_canvasView];
@@ -146,21 +146,21 @@ NSInteger levesOfUndo = 20;
         [dt setColor:_strokeColor];
 //        [_scribble addMark:dt shouldAddToPreviousMark:NO];
         
-//        NSInvocation *drawInvocation = [self drawScribbleInvocation];
-//        [drawInvocation setArgument:&dt atIndex:2];
-//
-//        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
-//        [undrawInvocation setArgument:&dt atIndex:2];
-//
-//        //执行带有撤销命令的绘图命令
-//        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
+        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+        [drawInvocation setArgument:&dt atIndex:2];
+
+        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+        [undrawInvocation setArgument:&dt atIndex:2];
+
+        //执行带有撤销命令的绘图命令
+        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
         
-        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:_scribble,ScribbleObjectUserInfoKey,
-                                  dt,MarkObjectUserInfoKey,[NSNumber numberWithBool:NO]
-                                  ,AddToPreviousMarkUserInfoKey, nil];
-        ZHFDrawScribbleCommand *command = [ZHFDrawScribbleCommand new];
-        command.userInfo = userInfo;
-        [self executeCommand:command prepareForUndo:YES];
+//        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:_scribble,ScribbleObjectUserInfoKey,
+//                                  dt,MarkObjectUserInfoKey,[NSNumber numberWithBool:NO]
+//                                  ,AddToPreviousMarkUserInfoKey, nil];
+//        ZHFDrawScribbleCommand *command = [ZHFDrawScribbleCommand new];
+//        command.userInfo = userInfo;
+//        [self executeCommand:command prepareForUndo:YES];
 
     }
     _startPoint = CGPointZero;
@@ -185,13 +185,8 @@ NSInteger levesOfUndo = 20;
     switch (sender.tag) {
         case 0:
             //删除
-//            [self.stroke removeAllMarks];
-//            [self.paths removeAllObjects];
-//            [self.canvasView configImage:nil];
-//            [self.canvasView setNeedsDisplay];
-            
         {
-
+            [_scribble removeAllMarks];
         }
             
             break;
@@ -213,13 +208,14 @@ NSInteger levesOfUndo = 20;
             break;
         case 4:
             //撤销
-//            [self.undoManager undo];
-            [self undoCommand];
+            [self.undoManager undo];
+//            [self undoCommand];
             break;
         case 5:
             //恢复
         {
-            [self redoCommand];
+            [self.undoManager redo];
+//            [self redoCommand];
         }
             break;
             
