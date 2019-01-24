@@ -153,7 +153,6 @@
 		91A5503721E0C52900F855B7 /* DelegatePattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 91A5503621E0C52900F855B7 /* DelegatePattern.md */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
 		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
-		91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFF5B921C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
 		91C1B79821665EC70070DB88 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79721665EC70070DB88 /* Dot.m */; };
@@ -423,8 +422,6 @@
 		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
 		91A84A222184BE3D00A71138 /* MementoClassChart.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = MementoClassChart.graffle; sourceTree = "<group>"; };
 		91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CanvasViewControllerObserverPattern.mdj; sourceTree = "<group>"; };
-		91BFF5B821C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFDoraemonEnvPlugin.h; sourceTree = "<group>"; };
-		91BFF5B921C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFDoraemonEnvPlugin.m; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		91C1B79321665E2D0070DB88 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
@@ -870,7 +867,6 @@
 		916E363E2163209200602088 /* Objective-C_Design_Patterns */ = {
 			isa = PBXGroup;
 			children = (
-				91BFF5B721C0E66D0067D1D4 /* Doraemon面板自定义模块 */,
 				9170E7E921A0722000E41D8A /* Rescues */,
 				913933CC219724840057E33C /* DesignPatterns */,
 				913933C92197232E0057E33C /* Documents */,
@@ -1177,15 +1173,6 @@
 			path = Apply;
 			sourceTree = "<group>";
 		};
-		91BFF5B721C0E66D0067D1D4 /* Doraemon面板自定义模块 */ = {
-			isa = PBXGroup;
-			children = (
-				91BFF5B821C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.h */,
-				91BFF5B921C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m */,
-			);
-			path = "Doraemon面板自定义模块";
-			sourceTree = "<group>";
-		};
 		91C531E321E3A2DA003401AE /* Apply */ = {
 			isa = PBXGroup;
 			children = (
@@ -1277,7 +1264,6 @@
 				916E36382163209200602088 /* Sources */,
 				916E36392163209200602088 /* Frameworks */,
 				916E363A2163209200602088 /* Resources */,
-				14106E6B9FEE33D973911510 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1405,24 +1391,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14106E6B9FEE33D973911510 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		48A0ED1D54E68162ADD70103 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1500,7 +1468,6 @@
 				917670B121BB9F9200E22223 /* ZHFScribble.m in Sources */,
 				91F4077B21D12D2C00E31958 /* ZHFSandwish.m in Sources */,
 				91A5503421E0BF5800F855B7 /* ExtrFlowerStateModel.m in Sources */,
-				91BFF5BA21C0E69F0067D1D4 /* ZHFDoraemonEnvPlugin.m in Sources */,
 				9171584A21BACF07000525FC /* ZHFConsoleCommands.m in Sources */,
 				91C1B78F21665A660070DB88 /* Stroke.m in Sources */,
 				9145AAB421E0A1F400A54706 /* ZHFFlowerViewController.m in Sources */,

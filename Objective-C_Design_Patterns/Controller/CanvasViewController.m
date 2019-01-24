@@ -191,8 +191,7 @@ NSInteger levesOfUndo = 20;
 //            [self.canvasView setNeedsDisplay];
             
         {
-            ZHFFlowerViewController *fvc = [[ZHFFlowerViewController alloc] init];
-            [self presentViewController:fvc animated:YES completion:nil];
+
         }
             
             break;
@@ -214,22 +213,12 @@ NSInteger levesOfUndo = 20;
             break;
         case 4:
             //撤销
-//            [self.paths removeLastObject];
-//            [self.stroke removeAllMarks];
-//            [self.canvasView setNeedsDisplay];
-
 //            [self.undoManager undo];
             [self undoCommand];
             break;
         case 5:
             //恢复
         {
-//            UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"RecoverViewController"];
-//            [(RecoverViewController *)vc setImg:[UIImage screenshotInView:self.canvasView]];
-            
-//            ZHFDecoratorViewController *decVC = [[ZHFDecoratorViewController alloc] init];
-//
-//            [[CoordinatingController sharedCoordinatingController] presentVC:decVC];
             [self redoCommand];
         }
             break;
@@ -347,7 +336,20 @@ NSInteger levesOfUndo = 20;
     [undoStack_ push:command];
 }
 
+//装饰器模式试例入口
+- (void)decoratePattern {
+    UIViewController *vc = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"RecoverViewController"];
+    [(RecoverViewController *)vc setImg:[UIImage screenshotInView:self.canvasView]];
+    ZHFDecoratorViewController *decVC = [[ZHFDecoratorViewController alloc] init];
+    [[CoordinatingController sharedCoordinatingController] presentVC:decVC];
 
+}
+
+//享元模式试例入口
+- (void)flyweightPattern {
+    ZHFFlowerViewController *fvc = [[ZHFFlowerViewController alloc] init];
+    [self presentViewController:fvc animated:YES completion:nil];
+}
 
 #pragma mark - Delegate
 
