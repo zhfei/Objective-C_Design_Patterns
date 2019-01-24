@@ -67,6 +67,7 @@
 		9152312221D27FD0002E97A1 /* ZHFInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152312121D27FD0002E97A1 /* ZHFInputValidator.m */; };
 		9152312521D2804E002E97A1 /* ZHFNumberInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152312421D2804E002E97A1 /* ZHFNumberInputValidator.m */; };
 		9152312821D28066002E97A1 /* ZHFAlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152312721D28066002E97A1 /* ZHFAlphaInputValidator.m */; };
+		9152402421FA12A90004624B /* ZHFSetStrokeWidthBlockCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152402321FA12A90004624B /* ZHFSetStrokeWidthBlockCommand.m */; };
 		9153C42821B6CB8600C2CCB6 /* ZHFAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */; };
 		9153C42C21B6CC2E00C2CCB6 /* ZHFCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42B21B6CC2E00C2CCB6 /* ZHFCommand.m */; };
 		9153C42F21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C42E21B6CC4800C2CCB6 /* ZHFSetStrokeColorCommand.m */; };
@@ -278,6 +279,8 @@
 		9152312421D2804E002E97A1 /* ZHFNumberInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFNumberInputValidator.m; sourceTree = "<group>"; };
 		9152312621D28066002E97A1 /* ZHFAlphaInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAlphaInputValidator.h; sourceTree = "<group>"; };
 		9152312721D28066002E97A1 /* ZHFAlphaInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAlphaInputValidator.m; sourceTree = "<group>"; };
+		9152402221FA12A90004624B /* ZHFSetStrokeWidthBlockCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSetStrokeWidthBlockCommand.h; sourceTree = "<group>"; };
+		9152402321FA12A90004624B /* ZHFSetStrokeWidthBlockCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSetStrokeWidthBlockCommand.m; sourceTree = "<group>"; };
 		9153C42621B6CB8600C2CCB6 /* ZHFAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFAdapterViewController.h; sourceTree = "<group>"; };
 		9153C42721B6CB8600C2CCB6 /* ZHFAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAdapterViewController.m; sourceTree = "<group>"; };
 		9153C42921B6CBD200C2CCB6 /* ZHFSetStrokeColorCommandDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSetStrokeColorCommandDelegate.h; sourceTree = "<group>"; };
@@ -676,6 +679,8 @@
 				914CD49B21B8238F00C9A8DB /* ZHFRGBValuesProvider.m */,
 				914CD49F21B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.h */,
 				914CD4A021B8290000C9A8DB /* ZHFSetStrokeColorBlockCommand.m */,
+				9152402221FA12A90004624B /* ZHFSetStrokeWidthBlockCommand.h */,
+				9152402321FA12A90004624B /* ZHFSetStrokeWidthBlockCommand.m */,
 			);
 			path = Apply2;
 			sourceTree = "<group>";
@@ -1436,6 +1441,7 @@
 				916AE27721A2C72F00E41F76 /* ZHFCanvasView.m in Sources */,
 				9152312821D28066002E97A1 /* ZHFAlphaInputValidator.m in Sources */,
 				9153C43921B6D4C600C2CCB6 /* ZHFCoordinateViewController.m in Sources */,
+				9152402421FA12A90004624B /* ZHFSetStrokeWidthBlockCommand.m in Sources */,
 				91D7CB2D2197FFA900BA88BF /* ZHFRootCoordinater.m in Sources */,
 				9174038821632FC500EEC228 /* CanvasViewController.m in Sources */,
 				9153C42821B6CB8600C2CCB6 /* ZHFAdapterViewController.m in Sources */,

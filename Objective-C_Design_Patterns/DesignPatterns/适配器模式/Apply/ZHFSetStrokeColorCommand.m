@@ -7,7 +7,7 @@
 //
 
 #import "ZHFSetStrokeColorCommand.h"
-#import "CoordinatingController.h"
+#import "ZHFCoordinateViewController.h"
 #import "CanvasViewController.h"
 
 @implementation ZHFSetStrokeColorCommand
@@ -28,7 +28,7 @@
         [delegte_ command:self didFinishedColorUpdateWithColor:color];
     }
     
-    CanvasViewController *ca = [CoordinatingController sharedCoordinatingController];
+    CanvasViewController *ca = [[ZHFCoordinateViewController sharedZHFCoordinateViewController] canvasViewController];
     [ca setStrokeColor:color];
 }
 @end

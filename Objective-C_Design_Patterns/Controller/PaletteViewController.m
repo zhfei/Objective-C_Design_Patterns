@@ -11,12 +11,14 @@
 #import <Macro.h>
 #import "ZHFCommandSlider.h"
 #import "ZHFSetStrokeColorBlockCommand.h"
+#import "ZHFSetStrokeWidthBlockCommand.h"
 
 @interface PaletteViewController ()
 @property (weak, nonatomic) IBOutlet UIView *tempColor;
 @property (weak, nonatomic) IBOutlet ZHFCommandSlider *sliderR;
 @property (weak, nonatomic) IBOutlet ZHFCommandSlider *sliderG;
 @property (weak, nonatomic) IBOutlet ZHFCommandSlider *sliderB;
+@property (weak, nonatomic) IBOutlet ZHFCommandSlider *sliderW;
 
 @property (weak, nonatomic) IBOutlet UIView *smallCircle;
 @property (weak, nonatomic) IBOutlet UIView *bigCircle;
@@ -40,6 +42,13 @@
         *green = self.sliderG.value;
         *blue = self.sliderB.value;
     }];
+
+    
+    ZHFSetStrokeWidthBlockCommand *blockWidthCommand = [ZHFSetStrokeWidthBlockCommand new];
+    self.sliderW.command = blockWidthCommand;
+    [blockWidthCommand setProviderBlock:^(CGFloat * _Nonnull width) {
+        *width = self.sliderW.value;
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -48,6 +57,7 @@
     _sliderR.value = rgbValue.r;
     _sliderG.value = rgbValue.g;
     _sliderB.value = rgbValue.b;
+    _sliderW.value = [GlobalConfig sharedGlobalConfig].lineWidth;
     
     UIColor *temp = [UIColor colorWithRed:_sliderR.value/255.0 green:_sliderG.value/255.0 blue:_sliderB.value/255.0 alpha:1];
     self.tempColor.backgroundColor = temp;
@@ -77,18 +87,16 @@
         case 1:
         case 2:
         case 3:
-        {
             [[sender command] execute];
-            [self setupTempColor];
-        }
             break;
         case 4:
-            [GlobalConfig sharedGlobalConfig].lineWidth = sender.value;
+            [[sender command] execute];
             break;
             
         default:
             break;
     }
+    [self setupTempColor];
 }
 
 
@@ -100,6 +108,7 @@
     [(CAShapeLayer *)self.bigCircle.layer.sublayers[0] setFillColor:temp.CGColor];
     
     [GlobalConfig sharedGlobalConfig].lineColorHex = [UIColor hexStringFromColor:temp];
+    [GlobalConfig sharedGlobalConfig].lineWidth = self.sliderW.value;
 }
 
 #pragma mark - Table view data source

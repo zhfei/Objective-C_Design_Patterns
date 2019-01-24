@@ -391,6 +391,7 @@
                         <outlet property="sliderB" destination="gad-eD-FqQ" id="FpP-77-HVu"/>
                         <outlet property="sliderG" destination="tB9-rz-3hC" id="1K8-qB-jYx"/>
                         <outlet property="sliderR" destination="Dvs-GK-LQs" id="HyN-qz-lIQ"/>
+                        <outlet property="sliderW" destination="m4n-Bs-HfF" id="AXA-Yh-ypJ"/>
                         <outlet property="smallCircle" destination="nG4-GJ-OsH" id="jCN-jE-uNr"/>
                         <outlet property="tempColor" destination="8Lm-5D-3IM" id="SOC-t2-J3a"/>
                         <segue destination="ZMO-bT-adu" kind="unwind" identifier="fromPalette" unwindAction="ViewController1UnwindSegue:" id="RvI-jM-XJk"/>

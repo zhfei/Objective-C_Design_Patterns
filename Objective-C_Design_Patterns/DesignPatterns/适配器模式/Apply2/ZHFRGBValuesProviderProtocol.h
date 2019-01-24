@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^RGBValuesProviderBlock)(CGFloat *red, CGFloat *green, CGFloat *blue);
+typedef void(^LineWidthValuesProviderBlock)(CGFloat *width);
 @protocol ZHFRGBValuesProviderProtocol <NSObject>
 
 @end

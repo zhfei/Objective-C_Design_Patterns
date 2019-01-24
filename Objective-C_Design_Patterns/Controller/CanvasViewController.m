@@ -43,8 +43,8 @@ NSInteger levesOfUndo = 20;
 
     [self loadCanvasViewWithCanvasViewGenerator:[ZHFClothCanvasViewGenerator new]];
 
-    self.strokeSize = CGSizeMake(10, 10);
-    self.strokeColor = [UIColor blueColor];
+    self.strokeSize = CGSizeMake(2, 2);
+    self.strokeColor = [UIColor blackColor];
     self.scribble = [[ZHFScribble alloc] init];
 }
 
