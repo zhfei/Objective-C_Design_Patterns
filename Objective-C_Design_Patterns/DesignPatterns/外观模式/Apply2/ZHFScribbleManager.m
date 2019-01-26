@@ -21,13 +21,13 @@ SingletonM(ZHFScribbleManager)
     //从涂鸦获得备忘录，然后存储到本地
     ZHFScribbleMemento *mem = [scrbble scribbleMemento];
     NSData *mementoData = [mem data];
-    NSString *memPath = [[self scribbleDataPath] stringByAppendingPathComponent:scribbleDataName];
-    [FileManager saveObjet:mementoData toPath:memPath];
+    NSString *memPath = [NSString stringWithFormat:@"%@/%@.modelData",[self scribbleDataPath],scribbleDataName];
+    [FileManager saveData:mementoData toPath:memPath];
     
     //把缩略图保存到文件系统
     NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation(image)];
-    NSString *scribbleThumbnailPath = [[self scribbleDataPath] stringByAppendingPathComponent:scribbleThumbnailName];
-    [FileManager saveObjet:imageData toPath:memPath];
+    NSString *scribbleThumbnailPath = [NSString stringWithFormat:@"%@/%@.imageData",[self scribbleDataPath],scribbleThumbnailName];
+    [FileManager saveData:imageData toPath:memPath];
 }
 
 - (ZHFScribble *)scribbleAtIndex:(NSInteger)index {
@@ -43,8 +43,19 @@ SingletonM(ZHFScribbleManager)
 
 //TODO: 等待填充
 - (NSInteger)numberOfScribbles {
-    NSArray *objs = [FileManager readObjetsFromPath:[self scribbleDataPath]];
-    return [objs count];
+//    NSArray *objs = [FileManager readObjetsFromPath:[self scribbleDataPath]];
+//    NSPredicate *predice =[NSPredicate predicateWithFormat:@"SELF CONTAINS[cd] 'data_'"];
+//    NSArray *result = [objs filteredArrayUsingPredicate:predice];
+//
+//    NSPredicate *predice2 =[NSPredicate predicateWithFormat:@"@max"];
+//    NSArray *result2 = [result filteredArrayUsingPredicate:predice2];
+//
+//    NSString *res = [result2 lastObject];
+//    NSInteger index = [res rangeOfString:@"_"].location;
+//    NSString *subStr = [res substringWithRange:NSMakeRange(index+1, 1)];
+//
+//    return [subStr integerValue];
+    return 2;
 }
 
 
