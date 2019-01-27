@@ -14,6 +14,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^CompleteBlock)(NSArray *pictures);
+
 @interface ZHFScribbleManager : NSObject
 SingletonH(ZHFScribbleManager)
 /**
@@ -27,6 +29,7 @@ SingletonH(ZHFScribbleManager)
 - (NSInteger)numberOfScribbles;
 - (ZHFScribble *)scribbleAtIndex:(NSInteger)index;
 - (ZHFScribbleThumbnail *)scribbleThumbnailAtIndex:(NSInteger)index;
+- (void)thumbnails:(CompleteBlock)block;
 @end
 
 NS_ASSUME_NONNULL_END

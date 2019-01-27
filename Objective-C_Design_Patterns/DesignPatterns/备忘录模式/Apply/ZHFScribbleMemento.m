@@ -30,7 +30,7 @@
 
 
 - (id<Mark>)mark {
-    return self.mark;
+    return mark_;
 }
 
 #pragma mark - private method

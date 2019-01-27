@@ -197,6 +197,7 @@ NSInteger levesOfUndo = 20;
         {
             UIImage *thumbnailImage = [UIImage screenshotInView:self.canvasView];
             [[ZHFScribbleManager sharedZHFScribbleManager] saveScribble:self.scribble thumbnail:thumbnailImage];
+            [_scribble removeAllMarks];
         }
             break;
         case 4:

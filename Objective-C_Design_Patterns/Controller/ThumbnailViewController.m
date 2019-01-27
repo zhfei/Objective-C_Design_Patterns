@@ -8,6 +8,7 @@
 
 #import "ThumbnailViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "ZHFScribbleManager.h"
 
 @interface ThumbnailViewController ()
 @property (nonatomic, strong) NSMutableArray *groupArrays;
@@ -23,7 +24,9 @@ static NSString * const reuseIdentifier = @"Cell";
     
     self.dataSource = @[].mutableCopy;
     
-    [self testRun];
+//    [self testRun];
+    
+    [self setupData];
 }
 
 - (NSMutableArray *)groupArrays {
@@ -113,15 +116,16 @@ static NSString * const reuseIdentifier = @"Cell";
                                      usingBlock:listGroupBlock failureBlock:failureBlock];
     });
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupData {
+    [[ZHFScribbleManager sharedZHFScribbleManager] thumbnails:^(NSArray * _Nonnull pictures) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.dataSource = [NSMutableArray arrayWithArray:pictures];
+            [self.collectionView reloadData];
+        });
+    }];
 }
-*/
+
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -151,7 +155,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.block) {
-        self.block(self.dataSource[indexPath.row]);
+        self.block(indexPath.row);
     }
     [self back:nil];
 }

@@ -9,6 +9,7 @@
 #import "ZHFCoordinateViewController.h"
 #import "CoordinatingController.h"
 #import "PaletteViewController.h"
+#import "ZHFScribbleManager.h"
 
 @interface ZHFCoordinateViewController ()
 
@@ -42,9 +43,11 @@ SingletonM(ZHFCoordinateViewController)
                 //打开
                 ThumbnailViewController *palette = [[CoordinatingController sharedCoordinatingController] storyBoardVC:@"ThumbnailViewControllerNav"];
                 WeakSelf
-                [(ThumbnailViewController *)[(UINavigationController *)palette topViewController] setBlock:^(UIImage *image) {
+                [(ThumbnailViewController *)[(UINavigationController *)palette topViewController] setBlock:^(NSInteger index) {
                     StrongSelf
-                    [self.canvasViewController.canvasView configImage:image];
+                    
+                    ZHFScribble *scribble = [[ZHFScribbleManager sharedZHFScribbleManager] scribbleAtIndex:index];
+                    [self.canvasViewController setScribble:scribble];
                 }];
                 
                 [canvasViewController_ presentViewController:palette animated:YES completion:nil];

@@ -51,11 +51,24 @@ SingletonM(ZHFScribbleManager)
     //根据索引值生成涂鸦数据名和截图名
     NSString *scribbleDataName = [NSString stringWithFormat:@"data_%d",index];
     NSString *memPath = [NSString stringWithFormat:@"%@/%@.modelData",kScribbleModelPath,scribbleDataName];
-    
-    NSData *mementoData = [FileManager readObjetFromPath:memPath];
+    NSData *mementoData = [NSData dataWithContentsOfFile:memPath];
     ZHFScribbleMemento *memento = [ZHFScribbleMemento mementoWithData:mementoData];
     ZHFScribble *scribble = [ZHFScribble scribbleWithMemento:memento];
     return scribble;
+}
+
+- (void)thumbnails:(CompleteBlock)block {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSArray *objs = [FileManager readObjetsFromPath:kScribbleThumbnailPath];
+        NSInteger count = [objs count];
+        NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:count];
+        [objs enumerateObjectsUsingBlock:^(NSString  *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSString *imagePath = [NSString stringWithFormat:@"%@/%@",kScribbleThumbnailPath,obj];
+            UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+            [arrayM addObject:image];
+        }];
+        block(arrayM);
+    });
 }
 
 //TODO: 等待填充

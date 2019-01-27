@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^CompletBlock)(UIImage *image);
+typedef void(^CompletBlock)(NSInteger index);
 
 @interface ThumbnailViewController : UICollectionViewController
 @property (nonatomic, copy)CompletBlock block;
