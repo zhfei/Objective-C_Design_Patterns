@@ -44,7 +44,7 @@ SingletonM(ZHFScribbleManager)
     //把缩略图保存到文件系统
     NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation(image)];
     NSString *scribbleThumbnailPath = [NSString stringWithFormat:@"%@/%@.imageData",kScribbleThumbnailPath,scribbleThumbnailName];
-    [FileManager saveData:imageData toPath:memPath];
+    [FileManager saveData:imageData toPath:scribbleThumbnailPath];
 }
 
 - (ZHFScribble *)scribbleAtIndex:(NSInteger)index {

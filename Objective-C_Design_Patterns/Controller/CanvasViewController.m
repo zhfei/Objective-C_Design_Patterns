@@ -22,6 +22,7 @@
 #import "ZHFDrawScribbleCommand.h"
 #import "ZHFFlowerViewController.h"
 #import "ZHFScribbleManager.h"
+#import <UIImage+Custom.h>
 
 #define ScreenSize [UIScreen mainScreen].bounds.size
 NSInteger levesOfUndo = 20;
@@ -193,9 +194,10 @@ NSInteger levesOfUndo = 20;
 //            [self.canvasView configImage:nil];
 //            [self.paths removeAllObjects];
 //            [self.canvasView setNeedsDisplay];
-            
-            [[ZHFScribbleManager sharedZHFScribbleManager] saveScribble:self.scribble thumbnail:nil];
-            
+        {
+            UIImage *thumbnailImage = [UIImage screenshotInView:self.canvasView];
+            [[ZHFScribbleManager sharedZHFScribbleManager] saveScribble:self.scribble thumbnail:thumbnailImage];
+        }
             break;
         case 4:
             //撤销
