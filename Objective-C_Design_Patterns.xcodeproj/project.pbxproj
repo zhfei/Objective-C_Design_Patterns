@@ -640,7 +640,7 @@
 				9198362D21B576F900747EA5 /* 适配器模式 */,
 				9173394921B18D1D009C08A1 /* 单例模式 */,
 				911B3DD621AEDA8C009BC83D /* 生成器模式 */,
-				918E0EF421A3140400F4FC2B /* 抽象工程模式 */,
+				918E0EF421A3140400F4FC2B /* 抽象工厂模式 */,
 				9170E7E021A06CF300E41D8A /* 工厂模式 */,
 				91D7CB242197F22100BA88BF /* RootVC */,
 				913933CD219724A40057E33C /* 原型模式 */,
@@ -1082,7 +1082,7 @@
 			path = "备忘录模式";
 			sourceTree = "<group>";
 		};
-		918E0EF421A3140400F4FC2B /* 抽象工程模式 */ = {
+		918E0EF421A3140400F4FC2B /* 抽象工厂模式 */ = {
 			isa = PBXGroup;
 			children = (
 				916183A021AAFD5900681B46 /* Apply */,
@@ -1091,7 +1091,7 @@
 				91DC404121AD7B2000603387 /* ZHFAbstractFactoryVC.h */,
 				91DC404221AD7B2000603387 /* ZHFAbstractFactoryVC.m */,
 			);
-			path = "抽象工程模式";
+			path = "抽象工厂模式";
 			sourceTree = "<group>";
 		};
 		9198362D21B576F900747EA5 /* 适配器模式 */ = {
