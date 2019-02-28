@@ -153,6 +153,14 @@
 		91A5503421E0BF5800F855B7 /* ExtrFlowerStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A5503321E0BF5800F855B7 /* ExtrFlowerStateModel.m */; };
 		91A5503721E0C52900F855B7 /* DelegatePattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 91A5503621E0C52900F855B7 /* DelegatePattern.md */; };
 		91A84A202184A9C600A71138 /* RecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A84A1F2184A9C600A71138 /* RecoverViewController.m */; };
+		91B2764F22283C1C002EFB74 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B2764722283C1C002EFB74 /* 4.png */; };
+		91B2765022283C1C002EFB74 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B2764822283C1C002EFB74 /* 1.png */; };
+		91B2765122283C1C002EFB74 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B2764922283C1C002EFB74 /* 5.png */; };
+		91B2765222283C1C002EFB74 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B2764A22283C1C002EFB74 /* 7.png */; };
+		91B2765322283C1C002EFB74 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B2764B22283C1C002EFB74 /* 8.png */; };
+		91B2765422283C1C002EFB74 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B2764C22283C1C002EFB74 /* 6.png */; };
+		91B2765522283C1C002EFB74 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B2764D22283C1C002EFB74 /* 2.png */; };
+		91B2765622283C1C002EFB74 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B2764E22283C1C002EFB74 /* 3.png */; };
 		91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */ = {isa = PBXBuildFile; fileRef = 91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */; };
 		91C1B78F21665A660070DB88 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B78E21665A660070DB88 /* Stroke.m */; };
 		91C1B79521665E2D0070DB88 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C1B79421665E2D0070DB88 /* Vertex.m */; };
@@ -424,6 +432,14 @@
 		91A84A1E2184A9C600A71138 /* RecoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverViewController.h; sourceTree = "<group>"; };
 		91A84A1F2184A9C600A71138 /* RecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverViewController.m; sourceTree = "<group>"; };
 		91A84A222184BE3D00A71138 /* MementoClassChart.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = MementoClassChart.graffle; sourceTree = "<group>"; };
+		91B2764722283C1C002EFB74 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		91B2764822283C1C002EFB74 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		91B2764922283C1C002EFB74 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		91B2764A22283C1C002EFB74 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		91B2764B22283C1C002EFB74 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		91B2764C22283C1C002EFB74 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		91B2764D22283C1C002EFB74 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		91B2764E22283C1C002EFB74 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		91BFF5B521C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CanvasViewControllerObserverPattern.mdj; sourceTree = "<group>"; };
 		91C1B78D21665A660070DB88 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		91C1B78E21665A660070DB88 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
@@ -911,6 +927,14 @@
 		9170E7E921A0722000E41D8A /* Rescues */ = {
 			isa = PBXGroup;
 			children = (
+				91B2764822283C1C002EFB74 /* 1.png */,
+				91B2764D22283C1C002EFB74 /* 2.png */,
+				91B2764E22283C1C002EFB74 /* 3.png */,
+				91B2764722283C1C002EFB74 /* 4.png */,
+				91B2764922283C1C002EFB74 /* 5.png */,
+				91B2764C22283C1C002EFB74 /* 6.png */,
+				91B2764A22283C1C002EFB74 /* 7.png */,
+				91B2764B22283C1C002EFB74 /* 8.png */,
 				9170E7EA21A0725100E41D8A /* test0.png */,
 			);
 			path = Rescues;
@@ -1323,6 +1347,7 @@
 				9152311921D277FC002E97A1 /* StrategyPattern.md in Resources */,
 				918BD18921E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj in Resources */,
 				91E442BD21C403F3004F9318 /* IteratorPattern.md in Resources */,
+				91B2765422283C1C002EFB74 /* 6.png in Resources */,
 				914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
 				918BD19421E2555500C918EC /* MementoPattern.mdj in Resources */,
@@ -1338,6 +1363,7 @@
 				91F4077521D1263100E31958 /* TemplateMethodPattern.md in Resources */,
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */,
+				91B2765122283C1C002EFB74 /* 5.png in Resources */,
 				9152021A21CBE9E000BB5B96 /* CategoryImageDecotatorPattern.mdj in Resources */,
 				9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */,
 				919C82C321CFD22000C6FB05 /* ChainOfResponsibility_Attack_Pattern.md in Resources */,
@@ -1354,9 +1380,11 @@
 				9171584721BACE87000525FC /* EmuletorBradgePattarn.mdj in Resources */,
 				918BD18721E220B200C918EC /* DelegatePattern.mdj in Resources */,
 				91F4077321D1261700E31958 /* TemplateMethodPattern.mdj in Resources */,
+				91B2765622283C1C002EFB74 /* 3.png in Resources */,
 				911FD42721C536C300DCA64F /* MarkEnumeratorPattern.mdj in Resources */,
 				9115F2DD21DFB02F00FD7975 /* FlyweightFactory.mdj in Resources */,
 				91C531E721E3A67F003401AE /* ScribbleMemento.mdj in Resources */,
+				91B2765522283C1C002EFB74 /* 2.png in Resources */,
 				9171584421BAC485000525FC /* BridgePattern.mdj in Resources */,
 				9170E7ED21A076AD00E41D8A /* factoryPattern.mdj in Resources */,
 				9115F2DF21DFB20800FD7975 /* FlyweightPattern.md in Resources */,
@@ -1364,6 +1392,7 @@
 				9171584221BAC196000525FC /* BridgePattern.md in Resources */,
 				911C99A121C6AD1E00CF3C3A /* VisitorPattern.mdj in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
+				91B2765322283C1C002EFB74 /* 8.png in Resources */,
 				9170E7EB21A0725100E41D8A /* test0.png in Resources */,
 				9152021821CBE73800BB5B96 /* CategoryDecoratorPattern.mdj in Resources */,
 				9176709D21BB7B8F00E22223 /* FacadePattern.md in Resources */,
@@ -1371,6 +1400,7 @@
 				911976E321D3D522000DD669 /* ZHFStrategyViewController.xib in Resources */,
 				914D88C421C2A30C008971BE /* CompositePattern.md in Resources */,
 				913933CB2197235F0057E33C /* 设计模式1.md in Resources */,
+				91B2765022283C1C002EFB74 /* 1.png in Resources */,
 				911B3DD821AEDC0B009BC83D /* BuilderPattern.md in Resources */,
 				914D88C621C2A860008971BE /* CompositPatternDemo1.mdj in Resources */,
 				913933CF219728B00057E33C /* ProtoType.mdj in Resources */,
@@ -1381,8 +1411,10 @@
 				91C531E521E3A2DA003401AE /* MementoSquence.mdj in Resources */,
 				91A1153E21BEB4CF0077BEA6 /* CoordinatingController.mdj in Resources */,
 				91797E3121D91807001816EF /* InvocationCommandPattern.mdj in Resources */,
+				91B2765222283C1C002EFB74 /* 7.png in Resources */,
 				9150E20F21C937B2000229B5 /* DecoratorPattern.mdj in Resources */,
 				9198363121B57DE300747EA5 /* Adapter.mdj in Resources */,
+				91B2764F22283C1C002EFB74 /* 4.png in Resources */,
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
 				911C999C21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj in Resources */,
 				9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */,

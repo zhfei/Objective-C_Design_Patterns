@@ -1,6 +1,17 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1
+        },
+        "cap-insets" : {
+          "right" : 150,
+          "left" : 149
+        }
+      },
       "idiom" : "universal",
       "filename" : "flower5.png",
       "scale" : "1x"
