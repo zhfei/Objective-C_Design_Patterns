@@ -83,6 +83,12 @@
 		916183A921AAFFE700681B46 /* ZHFAcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183A821AAFFE700681B46 /* ZHFAcmeBrandingFactory.m */; };
 		916183AC21AB089800681B46 /* ZHFAcmeBrandingViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183AB21AB089800681B46 /* ZHFAcmeBrandingViews.m */; };
 		916183AF21AB09AF00681B46 /* ZHFSierraBrandingViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 916183AE21AB09AF00681B46 /* ZHFSierraBrandingViews.m */; };
+		91651E552240C695008F818F /* SingleResponsibilityPrinciple.md in Resources */ = {isa = PBXBuildFile; fileRef = 91651E542240C695008F818F /* SingleResponsibilityPrinciple.md */; };
+		91651E572240C8DD008F818F /* InterfaceSeparatePrinciple.md in Resources */ = {isa = PBXBuildFile; fileRef = 91651E562240C8DD008F818F /* InterfaceSeparatePrinciple.md */; };
+		91651E592240CC0E008F818F /* DimitPrinciple.md in Resources */ = {isa = PBXBuildFile; fileRef = 91651E582240CC0E008F818F /* DimitPrinciple.md */; };
+		91651E5B2240CD76008F818F /* LiskovSubstitutionPrinciple.md in Resources */ = {isa = PBXBuildFile; fileRef = 91651E5A2240CD76008F818F /* LiskovSubstitutionPrinciple.md */; };
+		91651E5D2240CFB5008F818F /* DependenceInversionPrinciple.md in Resources */ = {isa = PBXBuildFile; fileRef = 91651E5C2240CFB5008F818F /* DependenceInversionPrinciple.md */; };
+		91651E5F2240D480008F818F /* Open-ClosedPrinciple.md in Resources */ = {isa = PBXBuildFile; fileRef = 91651E5E2240D480008F818F /* Open-ClosedPrinciple.md */; };
 		916AE27721A2C72F00E41F76 /* ZHFCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AE27621A2C72F00E41F76 /* ZHFCanvasView.m */; };
 		916AE27A21A2C77800E41F76 /* ZHFCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AE27921A2C77800E41F76 /* ZHFCanvasViewGenerator.m */; };
 		916E36412163209200602088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E36402163209200602088 /* AppDelegate.m */; };
@@ -317,6 +323,12 @@
 		916183AB21AB089800681B46 /* ZHFAcmeBrandingViews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFAcmeBrandingViews.m; sourceTree = "<group>"; };
 		916183AD21AB09AF00681B46 /* ZHFSierraBrandingViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFSierraBrandingViews.h; sourceTree = "<group>"; };
 		916183AE21AB09AF00681B46 /* ZHFSierraBrandingViews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFSierraBrandingViews.m; sourceTree = "<group>"; };
+		91651E542240C695008F818F /* SingleResponsibilityPrinciple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SingleResponsibilityPrinciple.md; sourceTree = "<group>"; };
+		91651E562240C8DD008F818F /* InterfaceSeparatePrinciple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = InterfaceSeparatePrinciple.md; sourceTree = "<group>"; };
+		91651E582240CC0E008F818F /* DimitPrinciple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DimitPrinciple.md; sourceTree = "<group>"; };
+		91651E5A2240CD76008F818F /* LiskovSubstitutionPrinciple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LiskovSubstitutionPrinciple.md; sourceTree = "<group>"; };
+		91651E5C2240CFB5008F818F /* DependenceInversionPrinciple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DependenceInversionPrinciple.md; sourceTree = "<group>"; };
+		91651E5E2240D480008F818F /* Open-ClosedPrinciple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Open-ClosedPrinciple.md"; sourceTree = "<group>"; };
 		916AE27521A2C72F00E41F76 /* ZHFCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasView.h; sourceTree = "<group>"; };
 		916AE27621A2C72F00E41F76 /* ZHFCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFCanvasView.m; sourceTree = "<group>"; };
 		916AE27821A2C77800E41F76 /* ZHFCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFCanvasViewGenerator.h; sourceTree = "<group>"; };
@@ -867,6 +879,67 @@
 			path = Apply;
 			sourceTree = "<group>";
 		};
+		91651E4C2240C2BD008F818F /* 设计原则 */ = {
+			isa = PBXGroup;
+			children = (
+				91651E4E2240C3FB008F818F /* 责任单一原则 */,
+				91651E512240C3FB008F818F /* 接口隔离原则 */,
+				91651E4D2240C3FB008F818F /* 迪米特法则 */,
+				91651E532240C4AE008F818F /* 里氏替换原则 */,
+				91651E502240C3FB008F818F /* 依赖倒置原则 */,
+				91651E4F2240C3FB008F818F /* 开闭原则 */,
+			);
+			path = "设计原则";
+			sourceTree = "<group>";
+		};
+		91651E4D2240C3FB008F818F /* 迪米特法则 */ = {
+			isa = PBXGroup;
+			children = (
+				91651E582240CC0E008F818F /* DimitPrinciple.md */,
+			);
+			path = "迪米特法则";
+			sourceTree = "<group>";
+		};
+		91651E4E2240C3FB008F818F /* 责任单一原则 */ = {
+			isa = PBXGroup;
+			children = (
+				91651E542240C695008F818F /* SingleResponsibilityPrinciple.md */,
+			);
+			path = "责任单一原则";
+			sourceTree = "<group>";
+		};
+		91651E4F2240C3FB008F818F /* 开闭原则 */ = {
+			isa = PBXGroup;
+			children = (
+				91651E5E2240D480008F818F /* Open-ClosedPrinciple.md */,
+			);
+			path = "开闭原则";
+			sourceTree = "<group>";
+		};
+		91651E502240C3FB008F818F /* 依赖倒置原则 */ = {
+			isa = PBXGroup;
+			children = (
+				91651E5C2240CFB5008F818F /* DependenceInversionPrinciple.md */,
+			);
+			path = "依赖倒置原则";
+			sourceTree = "<group>";
+		};
+		91651E512240C3FB008F818F /* 接口隔离原则 */ = {
+			isa = PBXGroup;
+			children = (
+				91651E562240C8DD008F818F /* InterfaceSeparatePrinciple.md */,
+			);
+			path = "接口隔离原则";
+			sourceTree = "<group>";
+		};
+		91651E532240C4AE008F818F /* 里氏替换原则 */ = {
+			isa = PBXGroup;
+			children = (
+				91651E5A2240CD76008F818F /* LiskovSubstitutionPrinciple.md */,
+			);
+			path = "里氏替换原则";
+			sourceTree = "<group>";
+		};
 		916E36332163209200602088 = {
 			isa = PBXGroup;
 			children = (
@@ -888,6 +961,7 @@
 		916E363E2163209200602088 /* Objective-C_Design_Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				91651E4C2240C2BD008F818F /* 设计原则 */,
 				9170E7E921A0722000E41D8A /* Rescues */,
 				913933CC219724840057E33C /* DesignPatterns */,
 				913933C92197232E0057E33C /* Documents */,
@@ -1344,12 +1418,14 @@
 				919C82BE21CFC54900C6FB05 /* ChainOfResponsibilityPattern.md in Resources */,
 				9170E7E221A06D9800E41D8A /* FactoryPattern.md in Resources */,
 				9152311B21D27AD3002E97A1 /* StrategyPattern.mdj in Resources */,
+				91651E5F2240D480008F818F /* Open-ClosedPrinciple.md in Resources */,
 				9152311921D277FC002E97A1 /* StrategyPattern.md in Resources */,
 				918BD18921E227A600C918EC /* ScribbleThumbnailDelegatePattern.mdj in Resources */,
 				91E442BD21C403F3004F9318 /* IteratorPattern.md in Resources */,
 				91B2765422283C1C002EFB74 /* 6.png in Resources */,
 				914D88C821C2AA6C008971BE /* ComponentPattern.mdj in Resources */,
 				916E364C2163209400602088 /* LaunchScreen.storyboard in Resources */,
+				91651E572240C8DD008F818F /* InterfaceSeparatePrinciple.md in Resources */,
 				918BD19421E2555500C918EC /* MementoPattern.mdj in Resources */,
 				9153C43421B6D0EC00C2CCB6 /* AdapterApply.mdj in Resources */,
 				915DD91F21C7E3CD00B79361 /* MarkVisitorPattern.mdj in Resources */,
@@ -1364,9 +1440,11 @@
 				916E36492163209400602088 /* Assets.xcassets in Resources */,
 				914CD49E21B826FF00C9A8DB /* RGBValuesProviderAdapter.mdj in Resources */,
 				91B2765122283C1C002EFB74 /* 5.png in Resources */,
+				91651E5D2240CFB5008F818F /* DependenceInversionPrinciple.md in Resources */,
 				9152021A21CBE9E000BB5B96 /* CategoryImageDecotatorPattern.mdj in Resources */,
 				9173394B21B18F82009C08A1 /* SingletonPattern.md in Resources */,
 				919C82C321CFD22000C6FB05 /* ChainOfResponsibility_Attack_Pattern.md in Resources */,
+				91651E5B2240CD76008F818F /* LiskovSubstitutionPrinciple.md in Resources */,
 				9198362F21B579C400747EA5 /* Adapter适配器模式.md in Resources */,
 				911C999F21C6A9E200CF3C3A /* VisitorPattern.md in Resources */,
 				911E829221D7CA7100847926 /* CommandPattern.mdj in Resources */,
@@ -1391,6 +1469,7 @@
 				91BFF5B621C0DBAE0067D1D4 /* CanvasViewControllerObserverPattern.mdj in Resources */,
 				9171584221BAC196000525FC /* BridgePattern.md in Resources */,
 				911C99A121C6AD1E00CF3C3A /* VisitorPattern.mdj in Resources */,
+				91651E552240C695008F818F /* SingleResponsibilityPrinciple.md in Resources */,
 				916E36472163209200602088 /* Main.storyboard in Resources */,
 				91B2765322283C1C002EFB74 /* 8.png in Resources */,
 				9170E7EB21A0725100E41D8A /* test0.png in Resources */,
@@ -1416,6 +1495,7 @@
 				9198363121B57DE300747EA5 /* Adapter.mdj in Resources */,
 				91B2764F22283C1C002EFB74 /* 4.png in Resources */,
 				91D7CB1F2197EB1900BA88BF /* ProtoTypeNote.md in Resources */,
+				91651E592240CC0E008F818F /* DimitPrinciple.md in Resources */,
 				911C999C21C6A0D700CF3C3A /* innerEnumteratorPattern.mdj in Resources */,
 				9170E80821A1BC3000E41D8A /* CanvasViewFactory.mdj in Resources */,
 				91F4077821D12D0300E31958 /* SandwichTemplateMethodPattern.mdj in Resources */,
