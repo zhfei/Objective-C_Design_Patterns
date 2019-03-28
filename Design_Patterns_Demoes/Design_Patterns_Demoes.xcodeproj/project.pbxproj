@@ -14,6 +14,7 @@
 		91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC9190224CE11D00477101 /* LaunchScreen.storyboard */; };
 		91BC9195224CE11E00477101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9194224CE11E00477101 /* main.m */; };
 		91BC919F224CE11E00477101 /* Design_Patterns_DemoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC919E224CE11E00477101 /* Design_Patterns_DemoesTests.m */; };
+		91BC91AD224CE23300477101 /* DPSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC91AC224CE23300477101 /* DPSingleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		91BC919A224CE11E00477101 /* Design_Patterns_DemoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Design_Patterns_DemoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC919E224CE11E00477101 /* Design_Patterns_DemoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Design_Patterns_DemoesTests.m; sourceTree = "<group>"; };
 		91BC91A0224CE11E00477101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91BC91AB224CE23300477101 /* DPSingleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSingleViewController.h; sourceTree = "<group>"; };
+		91BC91AC224CE23300477101 /* DPSingleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSingleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		91BC9184224CE11C00477101 /* Design_Patterns_Demoes */ = {
 			isa = PBXGroup;
 			children = (
+				91BC91A9224CE1B700477101 /* 对象创建型 */,
 				91BC9185224CE11C00477101 /* AppDelegate.h */,
 				91BC9186224CE11D00477101 /* AppDelegate.m */,
 				91BC9188224CE11D00477101 /* ViewController.h */,
@@ -101,6 +105,23 @@
 				91BC91A0224CE11E00477101 /* Info.plist */,
 			);
 			path = Design_Patterns_DemoesTests;
+			sourceTree = "<group>";
+		};
+		91BC91A9224CE1B700477101 /* 对象创建型 */ = {
+			isa = PBXGroup;
+			children = (
+				91BC91AA224CE1EF00477101 /* 单例模式 */,
+			);
+			path = "对象创建型";
+			sourceTree = "<group>";
+		};
+		91BC91AA224CE1EF00477101 /* 单例模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91BC91AB224CE23300477101 /* DPSingleViewController.h */,
+				91BC91AC224CE23300477101 /* DPSingleViewController.m */,
+			);
+			path = "单例模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BC91AD224CE23300477101 /* DPSingleViewController.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
