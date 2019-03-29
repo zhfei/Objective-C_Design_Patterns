@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */; };
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
+		911308D2224E6F2B003CD7CB /* DPMainTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308D1224E6F2B003CD7CB /* DPMainTableVC.m */; };
+		911308D5224E6FA2003CD7CB /* DPMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308D4224E6FA2003CD7CB /* DPMainTableViewModel.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -34,6 +36,10 @@
 		911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPrototypeViewController.m; sourceTree = "<group>"; };
 		911308CC224E6C19003CD7CB /* DPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBaseViewController.h; sourceTree = "<group>"; };
 		911308CD224E6C19003CD7CB /* DPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBaseViewController.m; sourceTree = "<group>"; };
+		911308D0224E6F2B003CD7CB /* DPMainTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMainTableVC.h; sourceTree = "<group>"; };
+		911308D1224E6F2B003CD7CB /* DPMainTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMainTableVC.m; sourceTree = "<group>"; };
+		911308D3224E6FA2003CD7CB /* DPMainTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMainTableViewModel.h; sourceTree = "<group>"; };
+		911308D4224E6FA2003CD7CB /* DPMainTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMainTableViewModel.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +93,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		911308CF224E6EFC003CD7CB /* VCMainStructure */ = {
+			isa = PBXGroup;
+			children = (
+				911308D0224E6F2B003CD7CB /* DPMainTableVC.h */,
+				911308D1224E6F2B003CD7CB /* DPMainTableVC.m */,
+				911308D3224E6FA2003CD7CB /* DPMainTableViewModel.h */,
+				911308D4224E6FA2003CD7CB /* DPMainTableViewModel.m */,
+			);
+			path = VCMainStructure;
+			sourceTree = "<group>";
+		};
 		91BC9179224CE11C00477101 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +125,7 @@
 		91BC9184224CE11C00477101 /* Design_Patterns_Demoes */ = {
 			isa = PBXGroup;
 			children = (
+				911308CF224E6EFC003CD7CB /* VCMainStructure */,
 				911308CB224E6C03003CD7CB /* Base */,
 				91BC91A9224CE1B700477101 /* 对象创建型 */,
 				91BC9185224CE11C00477101 /* AppDelegate.h */,
@@ -255,6 +273,8 @@
 				911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
+				911308D2224E6F2B003CD7CB /* DPMainTableVC.m in Sources */,
+				911308D5224E6FA2003CD7CB /* DPMainTableViewModel.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
