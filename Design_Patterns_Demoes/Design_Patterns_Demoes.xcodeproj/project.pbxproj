@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		911308C8224E6A45003CD7CB /* DPPrototypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPrototypeViewController.h; sourceTree = "<group>"; };
+		911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPrototypeViewController.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		911308C7224E6A02003CD7CB /* 原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+				911308C8224E6A45003CD7CB /* DPPrototypeViewController.h */,
+				911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */,
+			);
+			path = "原型模式";
+			sourceTree = "<group>";
+		};
 		91BC9179224CE11C00477101 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		91BC91A9224CE1B700477101 /* 对象创建型 */ = {
 			isa = PBXGroup;
 			children = (
+				911308C7224E6A02003CD7CB /* 原型模式 */,
 				91BC91AA224CE1EF00477101 /* 单例模式 */,
 			);
 			path = "对象创建型";
@@ -225,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91BC91AD224CE23300477101 /* DPSingleViewController.m in Sources */,
+				911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
