@@ -6,11 +6,11 @@
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DPBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPSingleViewController : UIViewController
+@interface DPSingleViewController : DPBaseViewController
 
 @end
 
