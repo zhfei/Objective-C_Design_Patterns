@@ -11,6 +11,8 @@
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
 		911308D2224E6F2B003CD7CB /* DPMainTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308D1224E6F2B003CD7CB /* DPMainTableVC.m */; };
 		911308D5224E6FA2003CD7CB /* DPMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308D4224E6FA2003CD7CB /* DPMainTableViewModel.m */; };
+		912B42B3224F4607005A3DD8 /* DPSubTitleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B42B2224F4607005A3DD8 /* DPSubTitleTableVC.m */; };
+		912B42B6224F4657005A3DD8 /* DPSubTitleTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B42B5224F4657005A3DD8 /* DPSubTitleTableViewModel.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -40,6 +42,10 @@
 		911308D1224E6F2B003CD7CB /* DPMainTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMainTableVC.m; sourceTree = "<group>"; };
 		911308D3224E6FA2003CD7CB /* DPMainTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMainTableViewModel.h; sourceTree = "<group>"; };
 		911308D4224E6FA2003CD7CB /* DPMainTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMainTableViewModel.m; sourceTree = "<group>"; };
+		912B42B1224F4607005A3DD8 /* DPSubTitleTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableVC.h; sourceTree = "<group>"; };
+		912B42B2224F4607005A3DD8 /* DPSubTitleTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableVC.m; sourceTree = "<group>"; };
+		912B42B4224F4657005A3DD8 /* DPSubTitleTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableViewModel.h; sourceTree = "<group>"; };
+		912B42B5224F4657005A3DD8 /* DPSubTitleTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableViewModel.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +106,10 @@
 				911308D1224E6F2B003CD7CB /* DPMainTableVC.m */,
 				911308D3224E6FA2003CD7CB /* DPMainTableViewModel.h */,
 				911308D4224E6FA2003CD7CB /* DPMainTableViewModel.m */,
+				912B42B1224F4607005A3DD8 /* DPSubTitleTableVC.h */,
+				912B42B2224F4607005A3DD8 /* DPSubTitleTableVC.m */,
+				912B42B4224F4657005A3DD8 /* DPSubTitleTableViewModel.h */,
+				912B42B5224F4657005A3DD8 /* DPSubTitleTableViewModel.m */,
 			);
 			path = VCMainStructure;
 			sourceTree = "<group>";
@@ -272,10 +282,12 @@
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
 				911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
+				912B42B3224F4607005A3DD8 /* DPSubTitleTableVC.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
 				911308D2224E6F2B003CD7CB /* DPMainTableVC.m in Sources */,
 				911308D5224E6FA2003CD7CB /* DPMainTableViewModel.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
+				912B42B6224F4657005A3DD8 /* DPSubTitleTableViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

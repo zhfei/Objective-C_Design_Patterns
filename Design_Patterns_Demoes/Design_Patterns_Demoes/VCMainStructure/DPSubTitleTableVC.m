@@ -1,22 +1,23 @@
 //
-//  DPMainTableVC.m
+//  DPSubTitleTableVC.m
 //  Design_Patterns_Demoes
 //
-//  Created by 周飞 on 2019/3/29.
+//  Created by 周飞 on 2019/3/30.
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
-#import "DPMainTableVC.h"
-#import "DPMainTableViewModel.h"
 #import "DPSubTitleTableVC.h"
+#import "DPSubTitleTableViewModel.h"
 
 static NSString *cellID =@"myCell";
 
-@interface DPMainTableVC ()
+
+@interface DPSubTitleTableVC ()
 @property (nonatomic, strong) NSArray *dataSource;
+
 @end
 
-@implementation DPMainTableVC
+@implementation DPSubTitleTableVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,22 +28,25 @@ static NSString *cellID =@"myCell";
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.dataSource = mainDataSource();
+    self.dataSource = createTypeDataSource();
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     
     [self.tableView setRowHeight:50];
 }
 
 #pragma mark - Table view data source
+
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0.01;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete implementation, return the number of rows
     return self.dataSource.count;
 }
 
@@ -53,34 +57,6 @@ static NSString *cellID =@"myCell";
     cell.textLabel.text = self.dataSource[indexPath.row];
     
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    switch (indexPath.row) {
-        case 0:
-        {
-            DPSubTitleTableVC *subTable = [DPSubTitleTableVC new];
-            [self.navigationController pushViewController:subTable animated:YES];
-
-        }
-            break;
-        case 1:
-        {
-            
-        }
-            break;
-        case 2:
-        {
-            
-        }
-            break;
-            
-        default:
-            break;
-    }
-   
 }
 
 
