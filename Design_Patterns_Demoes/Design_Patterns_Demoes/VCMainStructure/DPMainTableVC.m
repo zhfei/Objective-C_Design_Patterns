@@ -8,7 +8,7 @@
 
 #import "DPMainTableVC.h"
 #import "DPMainTableViewModel.h"
-#import "DPSubTitleTableVC.h"
+#import "DPSubTitleTableVCFactory.h"
 
 static NSString *cellID =@"myCell";
 
@@ -61,7 +61,7 @@ static NSString *cellID =@"myCell";
     switch (indexPath.row) {
         case 0:
         {
-            DPSubTitleTableVC *subTable = [DPSubTitleTableVC new];
+            DPSubTitleTableVC *subTable = [DPSubTitleTableVCFactory subTitleTableVC:DPSubTitleTableCreateType];
             [self.navigationController pushViewController:subTable animated:YES];
 
         }

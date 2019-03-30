@@ -7,7 +7,7 @@
 //
 
 #import "DPSubTitleTableVC.h"
-#import "DPSubTitleTableViewModel.h"
+
 
 static NSString *cellID =@"myCell";
 
@@ -19,6 +19,15 @@ static NSString *cellID =@"myCell";
 
 @implementation DPSubTitleTableVC
 
+- (instancetype)initWithDataSource:(NSArray *)dataSource
+{
+    self = [super init];
+    if (self) {
+        self.dataSource = dataSource;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -27,8 +36,7 @@ static NSString *cellID =@"myCell";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.dataSource = createTypeDataSource();
+
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     
     [self.tableView setRowHeight:50];

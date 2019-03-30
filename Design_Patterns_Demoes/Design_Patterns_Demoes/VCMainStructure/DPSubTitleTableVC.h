@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPSubTitleTableVC : UITableViewController
-
+- (instancetype)initWithDataSource:(NSArray *)dataSource;
 @end
 
 NS_ASSUME_NONNULL_END

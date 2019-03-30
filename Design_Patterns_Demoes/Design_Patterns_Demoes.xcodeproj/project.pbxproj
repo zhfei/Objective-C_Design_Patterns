@@ -13,6 +13,7 @@
 		911308D5224E6FA2003CD7CB /* DPMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308D4224E6FA2003CD7CB /* DPMainTableViewModel.m */; };
 		912B42B3224F4607005A3DD8 /* DPSubTitleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B42B2224F4607005A3DD8 /* DPSubTitleTableVC.m */; };
 		912B42B6224F4657005A3DD8 /* DPSubTitleTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B42B5224F4657005A3DD8 /* DPSubTitleTableViewModel.m */; };
+		912B42B9224F48FC005A3DD8 /* DPSubTitleTableVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 912B42B8224F48FC005A3DD8 /* DPSubTitleTableVCFactory.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -46,6 +47,8 @@
 		912B42B2224F4607005A3DD8 /* DPSubTitleTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableVC.m; sourceTree = "<group>"; };
 		912B42B4224F4657005A3DD8 /* DPSubTitleTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableViewModel.h; sourceTree = "<group>"; };
 		912B42B5224F4657005A3DD8 /* DPSubTitleTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableViewModel.m; sourceTree = "<group>"; };
+		912B42B7224F48FC005A3DD8 /* DPSubTitleTableVCFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableVCFactory.h; sourceTree = "<group>"; };
+		912B42B8224F48FC005A3DD8 /* DPSubTitleTableVCFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableVCFactory.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				912B42B2224F4607005A3DD8 /* DPSubTitleTableVC.m */,
 				912B42B4224F4657005A3DD8 /* DPSubTitleTableViewModel.h */,
 				912B42B5224F4657005A3DD8 /* DPSubTitleTableViewModel.m */,
+				912B42B7224F48FC005A3DD8 /* DPSubTitleTableVCFactory.h */,
+				912B42B8224F48FC005A3DD8 /* DPSubTitleTableVCFactory.m */,
 			);
 			path = VCMainStructure;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912B42B9224F48FC005A3DD8 /* DPSubTitleTableVCFactory.m in Sources */,
 				91BC91AD224CE23300477101 /* DPSingleViewController.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
 				911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */,
