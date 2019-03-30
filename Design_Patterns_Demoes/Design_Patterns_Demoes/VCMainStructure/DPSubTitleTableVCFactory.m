@@ -24,7 +24,7 @@
         default:
             break;
     }
-    DPSubTitleTableVC *subTable = [[DPSubTitleTableVC alloc] initWithDataSource:dataSource];
+    DPSubTitleTableVC *subTable = [[DPSubTitleTableVC alloc] initWithDataSource:dataSource type:type];
 
     return subTable;
 }

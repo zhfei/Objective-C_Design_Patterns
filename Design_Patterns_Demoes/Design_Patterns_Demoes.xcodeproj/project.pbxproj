@@ -49,6 +49,7 @@
 		912B42B5224F4657005A3DD8 /* DPSubTitleTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableViewModel.m; sourceTree = "<group>"; };
 		912B42B7224F48FC005A3DD8 /* DPSubTitleTableVCFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableVCFactory.h; sourceTree = "<group>"; };
 		912B42B8224F48FC005A3DD8 /* DPSubTitleTableVCFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableVCFactory.m; sourceTree = "<group>"; };
+		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				912B42B5224F4657005A3DD8 /* DPSubTitleTableViewModel.m */,
 				912B42B7224F48FC005A3DD8 /* DPSubTitleTableVCFactory.h */,
 				912B42B8224F48FC005A3DD8 /* DPSubTitleTableVCFactory.m */,
+				912B42BA224F4CDC005A3DD8 /* DPMacro.h */,
 			);
 			path = VCMainStructure;
 			sourceTree = "<group>";

@@ -7,23 +7,25 @@
 //
 
 #import "DPSubTitleTableVC.h"
-
+#import "DPPrototypeViewController.h"
+#import "DPMacro.h"
 
 static NSString *cellID =@"myCell";
 
 
 @interface DPSubTitleTableVC ()
 @property (nonatomic, strong) NSArray *dataSource;
-
+@property (nonatomic, assign) DPSubTitleTableType type;
 @end
 
 @implementation DPSubTitleTableVC
 
-- (instancetype)initWithDataSource:(NSArray *)dataSource
+- (instancetype)initWithDataSource:(NSArray *)dataSource type:(DPSubTitleTableType)type
 {
     self = [super init];
     if (self) {
         self.dataSource = dataSource;
+        self.type = type;
     }
     return self;
 }
@@ -67,6 +69,33 @@ static NSString *cellID =@"myCell";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    switch (self.type) {
+        case DPSubTitleTableCreateType:
+        {
+            DPPrototypeViewController *subTable = [DPPrototypeViewController new];
+            [self.navigationController pushViewController:subTable animated:YES];
+            
+        }
+            break;
+        case 1:
+        {
+            
+        }
+            break;
+        case 2:
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -8,12 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "DPSubTitleTableVC.h"
+#import "DPMacro.h"
 
-//单个类型枚举
-typedef NS_ENUM(NSInteger,DPSubTitleTableType) {
-    DPSubTitleTableCreateType = 0,
-    DPSubTitleTableNone
-};
 
 
 NS_ASSUME_NONNULL_BEGIN
