@@ -14,6 +14,9 @@
 		91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EE022510EF70001F593 /* DPSubTitleTableViewModel.m */; };
 		91819EE922510EF70001F593 /* DPSubTitleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EE222510EF70001F593 /* DPSubTitleTableVC.m */; };
 		91819EEA22510EF70001F593 /* DPSubTitleTableVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EE322510EF70001F593 /* DPSubTitleTableVCFactory.m */; };
+		91819EEF225112690001F593 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EEE225112690001F593 /* Stroke.m */; };
+		91819EF2225112AA0001F593 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EF1225112AA0001F593 /* Vertex.m */; };
+		91819EF5225112BD0001F593 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EF4225112BD0001F593 /* Dot.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -50,6 +53,13 @@
 		91819EE322510EF70001F593 /* DPSubTitleTableVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableVCFactory.m; sourceTree = "<group>"; };
 		91819EE422510EF70001F593 /* DPSubTitleTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableViewModel.h; sourceTree = "<group>"; };
 		91819EE522510EF70001F593 /* DPSubTitleTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableVC.h; sourceTree = "<group>"; };
+		91819EEC225111DC0001F593 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		91819EED225112690001F593 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		91819EEE225112690001F593 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		91819EF0225112AA0001F593 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		91819EF1225112AA0001F593 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		91819EF3225112BD0001F593 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		91819EF4225112BD0001F593 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +98,7 @@
 		911308C7224E6A02003CD7CB /* 原型模式 */ = {
 			isa = PBXGroup;
 			children = (
+				91819EEB225111BB0001F593 /* Models */,
 				911308C8224E6A45003CD7CB /* DPPrototypeViewController.h */,
 				911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */,
 			);
@@ -135,6 +146,20 @@
 				91819EE522510EF70001F593 /* DPSubTitleTableVC.h */,
 			);
 			path = SubTable;
+			sourceTree = "<group>";
+		};
+		91819EEB225111BB0001F593 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91819EEC225111DC0001F593 /* Mark.h */,
+				91819EED225112690001F593 /* Stroke.h */,
+				91819EEE225112690001F593 /* Stroke.m */,
+				91819EF0225112AA0001F593 /* Vertex.h */,
+				91819EF1225112AA0001F593 /* Vertex.m */,
+				91819EF3225112BD0001F593 /* Dot.h */,
+				91819EF4225112BD0001F593 /* Dot.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		91BC9179224CE11C00477101 = {
@@ -306,12 +331,15 @@
 				91819EE922510EF70001F593 /* DPSubTitleTableVC.m in Sources */,
 				91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
+				91819EF5225112BD0001F593 /* Dot.m in Sources */,
 				911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
 				91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */,
+				91819EF2225112AA0001F593 /* Vertex.m in Sources */,
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
+				91819EEF225112690001F593 /* Stroke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
