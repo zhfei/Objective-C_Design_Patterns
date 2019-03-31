@@ -9,5 +9,6 @@
 #import "Dot.h"
 
 @implementation Dot
+@synthesize color = _color, size = _size;
 
 @end

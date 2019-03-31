@@ -9,5 +9,7 @@
 #import "Vertex.h"
 
 @implementation Vertex
+@synthesize location = _location;
+@dynamic color,size;
 
 @end
