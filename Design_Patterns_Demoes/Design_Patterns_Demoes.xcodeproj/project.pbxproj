@@ -17,6 +17,7 @@
 		91819EEF225112690001F593 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EEE225112690001F593 /* Stroke.m */; };
 		91819EF2225112AA0001F593 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EF1225112AA0001F593 /* Vertex.m */; };
 		91819EF5225112BD0001F593 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EF4225112BD0001F593 /* Dot.m */; };
+		918E15312251E89400973DC1 /* Mark_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 918E15302251E89400973DC1 /* Mark_0.png */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		91819EF1225112AA0001F593 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		91819EF3225112BD0001F593 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		91819EF4225112BD0001F593 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		918E15302251E89400973DC1 /* Mark_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mark_0.png; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		911308C7224E6A02003CD7CB /* 原型模式 */ = {
 			isa = PBXGroup;
 			children = (
+				918E152F2251E83500973DC1 /* umls */,
 				91819EEB225111BB0001F593 /* Models */,
 				911308C8224E6A45003CD7CB /* DPPrototypeViewController.h */,
 				911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */,
@@ -160,6 +163,14 @@
 				91819EF4225112BD0001F593 /* Dot.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		918E152F2251E83500973DC1 /* umls */ = {
+			isa = PBXGroup;
+			children = (
+				918E15302251E89400973DC1 /* Mark_0.png */,
+			);
+			path = umls;
 			sourceTree = "<group>";
 		};
 		91BC9179224CE11C00477101 = {
@@ -309,6 +320,7 @@
 				91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */,
 				91BC918F224CE11D00477101 /* Assets.xcassets in Resources */,
 				91BC918D224CE11D00477101 /* Main.storyboard in Resources */,
+				918E15312251E89400973DC1 /* Mark_0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
