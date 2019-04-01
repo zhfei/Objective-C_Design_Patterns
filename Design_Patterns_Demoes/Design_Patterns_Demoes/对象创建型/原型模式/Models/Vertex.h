@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Vertex : NSObject <Mark>
-
+- (instancetype)initWithLocation:(CGPoint)location ;
 @end
 
 NS_ASSUME_NONNULL_END

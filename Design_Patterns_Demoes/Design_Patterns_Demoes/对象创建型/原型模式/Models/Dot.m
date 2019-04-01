@@ -11,4 +11,11 @@
 @implementation Dot
 @synthesize color = _color, size = _size;
 
+- (id)copyWithZone:(NSZone *)zone {
+    Dot *dot = [[[self class] alloc] initWithLocation:self.location];
+    dot.size = self.size;
+    dot.color = [UIColor colorWithCGColor:[self.color CGColor]];
+    return dot;
+}
+
 @end

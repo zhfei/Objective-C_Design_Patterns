@@ -41,5 +41,18 @@
 }
 
 #pragma mark - Private Method
+- (id)copyWithZone:(NSZone *)zone {
+    Stroke *stroke = [[[self class] alloc] init];
+    stroke.color = [UIColor colorWithCGColor:[self.color CGColor]];
+    stroke.size = self.size;
+    
+    NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:[self.marksArray count]];
+    for (id<Mark> mark in self.marksArray) {
+        [arrayM addObject:[mark copy]];
+    }
+    stroke.marksArray = arrayM;
+    
+    return stroke;
+}
 
 @end

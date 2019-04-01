@@ -12,4 +12,17 @@
 @synthesize location = _location;
 @dynamic color,size;
 
+- (instancetype)initWithLocation:(CGPoint)location {
+    self = [super init];
+    if (self) {
+        _location = location;
+    }
+    return self;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    Vertex *ver = [[[self class] alloc] initWithLocation:self.location];
+    return ver;
+}
+
 @end

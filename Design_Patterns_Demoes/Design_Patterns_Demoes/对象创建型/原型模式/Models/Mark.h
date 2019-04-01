@@ -12,13 +12,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol Mark <NSObject>
+@protocol Mark <NSObject,NSCopying>
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGPoint location;
 
 - (void)addMark:(id<Mark>)mark;
 - (void)removeMark:(id<Mark>)mark;
+- (id<Mark>)copy;
 @end
 
 NS_ASSUME_NONNULL_END
