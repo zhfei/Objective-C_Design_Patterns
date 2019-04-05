@@ -13,11 +13,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPScribble : NSObject
-{
-@private
-    id <Mark> parentMark_;
-    id <Mark> incrementMark_;
-}
+/**
+ 添加新痕迹到画板
+
+ @param mark 绘画元素(Stroke/Vertex/Dot)
+ @param shouldAddToPreviousMark 是否新建一个独立的节点组合（常用的节点组合为Stroke, Dot）
+ */
 - (void)addMark:(id <Mark>)mark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark;
 - (void)removeMark:(id <Mark>)mark;
 - (void)removeAllMarks;

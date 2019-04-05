@@ -10,6 +10,11 @@
 #import "Stroke.h"
 
 @interface DPScribble()
+{
+@private
+    id <Mark> parentMark_;
+    id <Mark> incrementMark_;
+}
 @property (nonatomic, strong) id <Mark> mark;
 @end
 
