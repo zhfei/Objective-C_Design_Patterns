@@ -17,11 +17,12 @@
 @synthesize color = _color, size = _size;
 #pragma mark - Life Cycle
 
-
 #pragma mark - Getter, Setter
 - (CGPoint)location {
     return [self.marksArray.firstObject location];
 }
+
+- (void)setLocation:(CGPoint)location {}
 
 - (NSMutableArray *)marksArray {
     if (!_marksArray) {
@@ -64,6 +65,19 @@
     stroke.marksArray = arrayM;
 
     return stroke;
+}
+
+- (void)drawWithContext:(CGContextRef)context {
+    CGContextMoveToPoint(context, self.location.x, self.location.y);
+    
+    [self.marksArray enumerateObjectsUsingBlock:^(id<Mark>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj drawWithContext:context];
+    }];
+    
+    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
+    CGContextSetLineWidth(context, self.size.width);
+    CGContextSetLineCap(context, kCGLineCapRound);
+    CGContextStrokePath(context);
 }
 
 @end

@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Scribble : NSObject
+@interface DPScribble : NSObject
 {
 @private
     id <Mark> parentMark_;

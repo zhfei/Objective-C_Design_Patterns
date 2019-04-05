@@ -31,4 +31,8 @@
     return ver;
 }
 
+- (void)drawWithContext:(CGContextRef)context {
+    CGContextAddLineToPoint(context, self.location.x, self.location.y);
+}
+
 @end

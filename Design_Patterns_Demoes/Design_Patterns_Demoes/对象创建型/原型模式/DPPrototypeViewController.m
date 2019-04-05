@@ -10,25 +10,28 @@
 #import "Stroke.h"
 #import "Vertex.h"
 #import "Dot.h"
-#import "Scribble.h"
+#import "DPScribble.h"
+#import "DPCanvasView.h"
+
 
 @interface DPPrototypeViewController ()
-@property (nonatomic, strong) Scribble *scribble;
+@property (nonatomic, strong) DPScribble *scribble;
 @property (nonatomic, assign) CGSize strokeSize;
 @property (nonatomic, strong) UIColor *strokeColor;
 @property (nonatomic, assign) CGPoint startPoint;
 //画板View
-@property (nonatomic, strong) UIView *targetView;
+@property (nonatomic, strong) DPCanvasView *targetView;
 @end
 
 @implementation DPPrototypeViewController
-
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.targetView = self.view;
-    self.scribble = [Scribble new];
+    [self addUI];
+    [self setupUI];
+    [self setupLayout];
+    [self setupData];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -66,5 +69,54 @@
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     _startPoint = CGPointZero;
 }
+
+#pragma mark - Getter, Setter
+- (DPCanvasView *)targetView {
+    if (!_targetView) {
+        DPCanvasView *targetView = [[DPCanvasView alloc] initWithFrame:CGRectInset(self.view.frame, 40, 100)];
+        targetView.backgroundColor = [UIColor lightGrayColor];
+        _targetView = targetView;
+    }
+    return _targetView;
+}
+
+#pragma mark - Event
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+    if ([object isKindOfClass:[DPScribble class]]&&[keyPath isEqualToString:@"mark"]) {
+        id <Mark> mark = [change objectForKey:NSKeyValueChangeNewKey];
+        //将痕迹渲染到画板上
+        NSLog(@"--mark--: %@",mark);
+        [self.targetView setMark:mark];
+    }
+}
+
+#pragma mark - Public Method
+
+#pragma mark - Private Method
+- (void)addUI {
+    
+}
+
+- (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:self.targetView];
+    self.title = @"手指滑两下看看";
+}
+
+- (void)setupLayout {
+    
+}
+
+- (void)setupData {
+    self.scribble = [DPScribble new];
+    [self.scribble addObserver:self forKeyPath:@"mark" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+}
+#pragma mark - Delegate
+
+#pragma mark - NSCopying
+
+#pragma mark - NSObject
 
 @end

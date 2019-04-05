@@ -6,20 +6,22 @@
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
-#import "Scribble.h"
+#import "DPScribble.h"
 #import "Stroke.h"
 
-@interface Scribble()
+@interface DPScribble()
 @property (nonatomic, strong) id <Mark> mark;
 @end
 
-@implementation Scribble
+@implementation DPScribble
 @synthesize mark = parentMark_;
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         parentMark_ = [Stroke new];
+        [parentMark_ setColor:[UIColor blackColor]];
+        [parentMark_ setSize:CGSizeMake(5, 5)];
     }
     return self;
 }
@@ -31,7 +33,7 @@
     //手动调用kvo
     [self willChangeValueForKey:@"mark"];
     //是否添加到上一个节点上，作为上一个聚合体的一部分。
-    if (shouldAddToPreviousMark) {
+    if (shouldAddToPreviousMark && [parentMark_ lastChild]) {
         [[parentMark_ lastChild] addMark:aMark];
     } else {
         [parentMark_ addMark:aMark];

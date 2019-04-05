@@ -17,12 +17,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGPoint location;
 
+#pragma mark - 基本方法
 - (void)addMark:(id<Mark>)mark;
 - (void)removeMark:(id<Mark>)mark;
 - (void)removeAllMarks;
 - (id<Mark>)childAtIndex:(int)index;
 - (id<Mark>)lastChild;
+
+#pragma mark - 原型模式
 - (id<Mark>)copy;
+
+#pragma mark - draw
+- (void)drawWithContext:(CGContextRef)context;
 @end
 
 NS_ASSUME_NONNULL_END

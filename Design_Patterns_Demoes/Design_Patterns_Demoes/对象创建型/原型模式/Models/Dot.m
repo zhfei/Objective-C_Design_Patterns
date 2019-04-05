@@ -24,4 +24,9 @@
     return dot;
 }
 
+- (void)drawWithContext:(CGContextRef)context {
+    CGContextAddEllipseInRect(context, (CGRect){self.location,self.size});
+    CGContextSetFillColorWithColor(context, self.color.CGColor);
+}
+
 @end

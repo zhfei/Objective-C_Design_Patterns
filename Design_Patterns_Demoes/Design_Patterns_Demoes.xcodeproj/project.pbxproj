@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */; };
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
-		9166AB5E2256EEDE004C6F29 /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB5D2256EEDE004C6F29 /* Scribble.m */; };
+		9166AB5E2256EEDE004C6F29 /* DPScribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB5D2256EEDE004C6F29 /* DPScribble.m */; };
+		9166AB612256F725004C6F29 /* DPCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB602256F725004C6F29 /* DPCanvasView.m */; };
 		91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EDC22510EF70001F593 /* DPMainTableVC.m */; };
 		91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EDD22510EF70001F593 /* DPMainTableViewModel.m */; };
 		91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EE022510EF70001F593 /* DPSubTitleTableViewModel.m */; };
@@ -44,8 +45,10 @@
 		911308CC224E6C19003CD7CB /* DPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBaseViewController.h; sourceTree = "<group>"; };
 		911308CD224E6C19003CD7CB /* DPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBaseViewController.m; sourceTree = "<group>"; };
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
-		9166AB5C2256EEDE004C6F29 /* Scribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
-		9166AB5D2256EEDE004C6F29 /* Scribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
+		9166AB5C2256EEDE004C6F29 /* DPScribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPScribble.h; sourceTree = "<group>"; };
+		9166AB5D2256EEDE004C6F29 /* DPScribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPScribble.m; sourceTree = "<group>"; };
+		9166AB5F2256F725004C6F29 /* DPCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCanvasView.h; sourceTree = "<group>"; };
+		9166AB602256F725004C6F29 /* DPCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCanvasView.m; sourceTree = "<group>"; };
 		91819EDB22510EF70001F593 /* DPMainTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMainTableViewModel.h; sourceTree = "<group>"; };
 		91819EDC22510EF70001F593 /* DPMainTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMainTableVC.m; sourceTree = "<group>"; };
 		91819EDD22510EF70001F593 /* DPMainTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMainTableViewModel.m; sourceTree = "<group>"; };
@@ -104,8 +107,10 @@
 				91819EEB225111BB0001F593 /* Models */,
 				911308C8224E6A45003CD7CB /* DPPrototypeViewController.h */,
 				911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */,
-				9166AB5C2256EEDE004C6F29 /* Scribble.h */,
-				9166AB5D2256EEDE004C6F29 /* Scribble.m */,
+				9166AB5C2256EEDE004C6F29 /* DPScribble.h */,
+				9166AB5D2256EEDE004C6F29 /* DPScribble.m */,
+				9166AB5F2256F725004C6F29 /* DPCanvasView.h */,
+				9166AB602256F725004C6F29 /* DPCanvasView.m */,
 			);
 			path = "原型模式";
 			sourceTree = "<group>";
@@ -335,8 +340,9 @@
 				91BC91AD224CE23300477101 /* DPSingleViewController.m in Sources */,
 				91819EE922510EF70001F593 /* DPSubTitleTableVC.m in Sources */,
 				91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */,
+				9166AB612256F725004C6F29 /* DPCanvasView.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
-				9166AB5E2256EEDE004C6F29 /* Scribble.m in Sources */,
+				9166AB5E2256EEDE004C6F29 /* DPScribble.m in Sources */,
 				91819EF5225112BD0001F593 /* Dot.m in Sources */,
 				911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
