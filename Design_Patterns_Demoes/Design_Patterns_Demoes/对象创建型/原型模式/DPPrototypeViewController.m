@@ -45,6 +45,8 @@
         [strok setColor:self.strokeColor];
         [strok setSize:self.strokeSize];
         [strok setLocation:_startPoint];
+        
+        [_scribble addMark:strok shouldAddToPreviousMark:NO];
     }
     
     CGPoint thisPoint = [[touches anyObject] locationInView:_targetView];
@@ -60,10 +62,10 @@
         Dot *dt = [[Dot alloc] initWithLocation:thisPoint];
         [dt setSize:self.strokeSize];
         [dt setColor:self.strokeColor];
+        
+        [_scribble addMark:dt shouldAddToPreviousMark:NO];
     }
     _startPoint = CGPointZero;
-    
-    
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -110,6 +112,9 @@
 }
 
 - (void)setupData {
+    self.strokeColor = [UIColor blackColor];
+    self.strokeSize = CGSizeMake(5, 5);
+    
     self.scribble = [DPScribble new];
     [self.scribble addObserver:self forKeyPath:@"mark" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
 }
