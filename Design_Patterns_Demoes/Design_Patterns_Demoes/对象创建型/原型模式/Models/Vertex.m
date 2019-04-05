@@ -20,6 +20,12 @@
     return self;
 }
 
+- (void)addMark:(id<Mark>)mark {}
+- (void)removeMark:(id<Mark>)mark {}
+- (void)removeAllMarks {}
+- (id<Mark>)childAtIndex:(int)index {return nil;}
+- (id<Mark>)lastChild {return nil;}
+
 - (id)copyWithZone:(NSZone *)zone {
     Vertex *ver = [[[self class] alloc] initWithLocation:self.location];
     return ver;

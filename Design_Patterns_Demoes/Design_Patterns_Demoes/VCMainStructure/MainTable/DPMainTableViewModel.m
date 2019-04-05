@@ -11,7 +11,7 @@
 @implementation DPMainTableViewModel
 
 NSArray *mainDataSource() {
-    NSArray *source = @[@"对象创建型",@"对象去耦型",@"抽象集合型",
+    NSArray *source = @[@"对象创建型（5种）",@"对象去耦型",@"抽象集合型",
                         @"性能与对象访问型",@"对象状态型",@"行为扩展型",
                         @"算法封装型",@"接口适配型"];
     return source;
