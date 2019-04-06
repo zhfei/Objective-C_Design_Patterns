@@ -12,6 +12,7 @@
 		9152BB962258FB83004F0749 /* DPCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BB942258FB83004F0749 /* DPCanvasView.m */; };
 		9152BB992258FBD0004F0749 /* DPPaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BB982258FBD0004F0749 /* DPPaperCanvasView.m */; };
 		9152BB9C2258FBEB004F0749 /* DPClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BB9B2258FBEB004F0749 /* DPClothCanvasView.m */; };
+		9152BBA22258FC86004F0749 /* DPFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBA12258FC86004F0749 /* DPFactoryViewController.m */; };
 		9166AB5E2256EEDE004C6F29 /* DPScribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB5D2256EEDE004C6F29 /* DPScribble.m */; };
 		91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EDC22510EF70001F593 /* DPMainTableVC.m */; };
 		91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EDD22510EF70001F593 /* DPMainTableViewModel.m */; };
@@ -53,6 +54,8 @@
 		9152BB982258FBD0004F0749 /* DPPaperCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPaperCanvasView.m; sourceTree = "<group>"; };
 		9152BB9A2258FBEB004F0749 /* DPClothCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPClothCanvasView.h; sourceTree = "<group>"; };
 		9152BB9B2258FBEB004F0749 /* DPClothCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPClothCanvasView.m; sourceTree = "<group>"; };
+		9152BBA02258FC86004F0749 /* DPFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFactoryViewController.h; sourceTree = "<group>"; };
+		9152BBA12258FC86004F0749 /* DPFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFactoryViewController.m; sourceTree = "<group>"; };
 		9166AB5C2256EEDE004C6F29 /* DPScribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPScribble.h; sourceTree = "<group>"; };
 		9166AB5D2256EEDE004C6F29 /* DPScribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPScribble.m; sourceTree = "<group>"; };
 		91819EDB22510EF70001F593 /* DPMainTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMainTableViewModel.h; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				9152BB932258FB34004F0749 /* Models */,
+				9152BBA02258FC86004F0749 /* DPFactoryViewController.h */,
+				9152BBA12258FC86004F0749 /* DPFactoryViewController.m */,
 			);
 			path = "工厂方法模式";
 			sourceTree = "<group>";
@@ -173,12 +178,12 @@
 		91819EDF22510EF70001F593 /* SubTable */ = {
 			isa = PBXGroup;
 			children = (
-				91819EE022510EF70001F593 /* DPSubTitleTableViewModel.m */,
 				91819EE122510EF70001F593 /* DPSubTitleTableVCFactory.h */,
-				91819EE222510EF70001F593 /* DPSubTitleTableVC.m */,
 				91819EE322510EF70001F593 /* DPSubTitleTableVCFactory.m */,
 				91819EE422510EF70001F593 /* DPSubTitleTableViewModel.h */,
+				91819EE022510EF70001F593 /* DPSubTitleTableViewModel.m */,
 				91819EE522510EF70001F593 /* DPSubTitleTableVC.h */,
+				91819EE222510EF70001F593 /* DPSubTitleTableVC.m */,
 			);
 			path = SubTable;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				9152BB992258FBD0004F0749 /* DPPaperCanvasView.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
 				9166AB5E2256EEDE004C6F29 /* DPScribble.m in Sources */,
+				9152BBA22258FC86004F0749 /* DPFactoryViewController.m in Sources */,
 				91819EF5225112BD0001F593 /* Dot.m in Sources */,
 				911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,

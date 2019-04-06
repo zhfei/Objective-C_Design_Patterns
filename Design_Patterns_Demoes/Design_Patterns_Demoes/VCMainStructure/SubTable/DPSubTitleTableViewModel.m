@@ -11,8 +11,8 @@
 @implementation DPSubTitleTableViewModel
 
 NSArray *createTypeDataSource() {
-    NSArray *source = @[@"单例模式",@"原型模式",@"工厂模式",
-                        @"抽象工厂模式",@"享元模式"];
+    NSArray *source = @[@"原型模式",@"工厂方法模式",
+                        @"抽象工厂模式",@"生成器模式",@"单例模式"];
     return source;
 
 }

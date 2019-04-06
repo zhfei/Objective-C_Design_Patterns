@@ -9,6 +9,7 @@
 #import "DPSubTitleTableVC.h"
 #import "DPPrototypeViewController.h"
 #import "DPMacro.h"
+#import "DPFactoryViewController.h"
 
 static NSString *cellID =@"myCell";
 
@@ -75,14 +76,30 @@ static NSString *cellID =@"myCell";
     switch (self.type) {
         case DPSubTitleTableCreateType:
         {
-            DPPrototypeViewController *subTable = [DPPrototypeViewController new];
-            [self.navigationController pushViewController:subTable animated:YES];
+            switch (indexPath.row) {
+                case 0:
+                {
+                    DPPrototypeViewController *subTable = [DPPrototypeViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                case 1:
+                {
+                    DPFactoryViewController *factory = [DPFactoryViewController new];
+                    [self.navigationController pushViewController:factory animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+
             
         }
             break;
         case 1:
         {
-            
+
         }
             break;
         case 2:
