@@ -9,6 +9,12 @@
 #import "DPClothCanvasView.h"
 
 @implementation DPClothCanvasView
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        //添加Cloth类型纹理
+    }
+    return self;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

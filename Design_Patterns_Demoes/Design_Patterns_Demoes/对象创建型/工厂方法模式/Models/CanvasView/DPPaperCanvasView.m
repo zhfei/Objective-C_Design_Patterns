@@ -9,6 +9,12 @@
 #import "DPPaperCanvasView.h"
 
 @implementation DPPaperCanvasView
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        //添加Paper类型纹理
+    }
+    return self;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

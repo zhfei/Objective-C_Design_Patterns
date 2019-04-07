@@ -14,6 +14,8 @@
 		9152BBAA225A43E9004F0749 /* DPPaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBA7225A43E9004F0749 /* DPPaperCanvasView.m */; };
 		9152BBAD225A4417004F0749 /* DPCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBAC225A4417004F0749 /* DPCanvasViewGenerator.m */; };
 		9152BBB0225A45E4004F0749 /* DPCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBAF225A45E4004F0749 /* DPCanvasView.m */; };
+		9152BBB3225A46C1004F0749 /* DPPaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBB2225A46C1004F0749 /* DPPaperCanvasViewGenerator.m */; };
+		9152BBB6225A4870004F0749 /* DPClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBB5225A4870004F0749 /* DPClothCanvasViewGenerator.m */; };
 		9166AB5E2256EEDE004C6F29 /* DPScribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB5D2256EEDE004C6F29 /* DPScribble.m */; };
 		91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EDC22510EF70001F593 /* DPMainTableVC.m */; };
 		91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EDD22510EF70001F593 /* DPMainTableViewModel.m */; };
@@ -59,6 +61,10 @@
 		9152BBAC225A4417004F0749 /* DPCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCanvasViewGenerator.m; sourceTree = "<group>"; };
 		9152BBAE225A45E4004F0749 /* DPCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCanvasView.h; sourceTree = "<group>"; };
 		9152BBAF225A45E4004F0749 /* DPCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCanvasView.m; sourceTree = "<group>"; };
+		9152BBB1225A46C1004F0749 /* DPPaperCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPaperCanvasViewGenerator.h; sourceTree = "<group>"; };
+		9152BBB2225A46C1004F0749 /* DPPaperCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPaperCanvasViewGenerator.m; sourceTree = "<group>"; };
+		9152BBB4225A4870004F0749 /* DPClothCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPClothCanvasViewGenerator.h; sourceTree = "<group>"; };
+		9152BBB5225A4870004F0749 /* DPClothCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPClothCanvasViewGenerator.m; sourceTree = "<group>"; };
 		9166AB5C2256EEDE004C6F29 /* DPScribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPScribble.h; sourceTree = "<group>"; };
 		9166AB5D2256EEDE004C6F29 /* DPScribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPScribble.m; sourceTree = "<group>"; };
 		91819EDB22510EF70001F593 /* DPMainTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMainTableViewModel.h; sourceTree = "<group>"; };
@@ -168,9 +174,9 @@
 		9152BBA3225A43E9004F0749 /* CanvasView */ = {
 			isa = PBXGroup;
 			children = (
+				9152BBA6225A43E9004F0749 /* DPClothCanvasView.h */,
 				9152BBA4225A43E9004F0749 /* DPClothCanvasView.m */,
 				9152BBA5225A43E9004F0749 /* DPPaperCanvasView.h */,
-				9152BBA6225A43E9004F0749 /* DPClothCanvasView.h */,
 				9152BBA7225A43E9004F0749 /* DPPaperCanvasView.m */,
 			);
 			path = CanvasView;
@@ -181,6 +187,10 @@
 			children = (
 				9152BBAB225A4417004F0749 /* DPCanvasViewGenerator.h */,
 				9152BBAC225A4417004F0749 /* DPCanvasViewGenerator.m */,
+				9152BBB1225A46C1004F0749 /* DPPaperCanvasViewGenerator.h */,
+				9152BBB2225A46C1004F0749 /* DPPaperCanvasViewGenerator.m */,
+				9152BBB4225A4870004F0749 /* DPClothCanvasViewGenerator.h */,
+				9152BBB5225A4870004F0749 /* DPClothCanvasViewGenerator.m */,
 			);
 			path = CanvasViewGenerator;
 			sourceTree = "<group>";
@@ -392,7 +402,9 @@
 				91819EEA22510EF70001F593 /* DPSubTitleTableVCFactory.m in Sources */,
 				91BC91AD224CE23300477101 /* DPSingleViewController.m in Sources */,
 				9152BBB0225A45E4004F0749 /* DPCanvasView.m in Sources */,
+				9152BBB6225A4870004F0749 /* DPClothCanvasViewGenerator.m in Sources */,
 				91819EE922510EF70001F593 /* DPSubTitleTableVC.m in Sources */,
+				9152BBB3225A46C1004F0749 /* DPPaperCanvasViewGenerator.m in Sources */,
 				91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */,
 				9152BBA9225A43E9004F0749 /* DPClothCanvasView.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
