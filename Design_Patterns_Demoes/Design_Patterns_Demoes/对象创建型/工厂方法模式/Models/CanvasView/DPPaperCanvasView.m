@@ -8,12 +8,30 @@
 
 #import "DPPaperCanvasView.h"
 
+@interface DPPaperCanvasView ()
+@property (nonatomic, strong) UILabel *title;
+@end
+
 @implementation DPPaperCanvasView
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         //添加Paper类型纹理
+        [self addSubview:self.title];
+        [self.title setFrame:frame];
     }
     return self;
+}
+
+- (UILabel *)title {
+    if (!_title) {
+        UILabel *label = [UILabel new];
+        label.text = @"布料画板";
+        label.textColor = [UIColor whiteColor];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.font = [UIFont systemFontOfSize:16];
+        _title = label;
+    }
+    return _title;
 }
 
 /*
