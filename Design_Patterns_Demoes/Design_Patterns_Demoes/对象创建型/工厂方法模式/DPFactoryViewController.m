@@ -7,9 +7,12 @@
 //
 
 #import "DPFactoryViewController.h"
+#import "DPCanvasView.h"
+
+
 
 @interface DPFactoryViewController ()
-
+@property (nonatomic, strong) DPCanvasView *canvasView;
 @end
 
 @implementation DPFactoryViewController
@@ -29,6 +32,16 @@
 #pragma mark - Event
 
 #pragma mark - Public Method
+- (void)loadCanvasViewWithGenerator:(DPCanvasViewGenerator *)gener {
+    CGRect rect = self.view.frame;
+    DPCanvasView *cv = [gener canvasViewWithFrame:rect];
+    if (self.canvasView.superview) {
+        [self.canvasView removeFromSuperview];
+    }
+    self.canvasView = cv;
+    [self.view addSubview:cv];
+    
+}
 
 #pragma mark - Private Method
 
@@ -40,6 +53,7 @@
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"工厂方法模式";
+    [self loadCanvasViewWithGenerator:[[DPCanvasViewGenerator alloc] init]];
 }
 
 - (void)setupLayout {
