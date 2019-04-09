@@ -10,7 +10,7 @@
 
 @implementation DPFruit
 - (NSString *)fruitName {
-    return @"抽象水果";
+    return [self.origin stringByAppendingString:@"抽象水果"];
 }
 
 @end

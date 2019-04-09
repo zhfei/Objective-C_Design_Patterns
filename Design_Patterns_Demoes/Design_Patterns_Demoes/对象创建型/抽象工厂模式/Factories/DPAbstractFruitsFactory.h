@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPApple.h"
-#import "DPOrange.h"
+#import "DPFruit.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPAbstractFruitsFactory : NSObject
-
+- (DPFruit *)pruductApple;
+- (DPFruit *)pruductOrange;
 
 @end
 

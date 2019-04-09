@@ -9,5 +9,10 @@
 #import "DPAbstractFruitsFactory.h"
 
 @implementation DPAbstractFruitsFactory
-
+- (DPFruit *)pruductApple {
+    return [DPFruit new];
+}
+- (DPFruit *)pruductOrange {
+    return [DPFruit new];
+}
 @end

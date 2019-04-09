@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPFruit : NSObject
+@property (nonatomic, copy) NSString *origin;//产地
 - (NSString *)fruitName;
 @end
 
