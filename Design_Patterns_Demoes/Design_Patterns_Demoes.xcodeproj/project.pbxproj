@@ -33,6 +33,7 @@
 		91BC9195224CE11E00477101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9194224CE11E00477101 /* main.m */; };
 		91BC919F224CE11E00477101 /* Design_Patterns_DemoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC919E224CE11E00477101 /* Design_Patterns_DemoesTests.m */; };
 		91BC91AD224CE23300477101 /* DPSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC91AC224CE23300477101 /* DPSingleViewController.m */; };
+		91C67B5E225CF36700994E6E /* DPAbstractFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C67B5D225CF36700994E6E /* DPAbstractFactoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		91BC91A0224CE11E00477101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91BC91AB224CE23300477101 /* DPSingleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSingleViewController.h; sourceTree = "<group>"; };
 		91BC91AC224CE23300477101 /* DPSingleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSingleViewController.m; sourceTree = "<group>"; };
+		91C67B5C225CF36700994E6E /* DPAbstractFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAbstractFactoryViewController.h; sourceTree = "<group>"; };
+		91C67B5D225CF36700994E6E /* DPAbstractFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAbstractFactoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +285,7 @@
 		91BC91A9224CE1B700477101 /* 对象创建型 */ = {
 			isa = PBXGroup;
 			children = (
+				91C67B5B225CF32300994E6E /* 抽象工厂模式 */,
 				9152BB922258F26B004F0749 /* 工厂方法模式 */,
 				911308C7224E6A02003CD7CB /* 原型模式 */,
 				91BC91AA224CE1EF00477101 /* 单例模式 */,
@@ -296,6 +300,15 @@
 				91BC91AC224CE23300477101 /* DPSingleViewController.m */,
 			);
 			path = "单例模式";
+			sourceTree = "<group>";
+		};
+		91C67B5B225CF32300994E6E /* 抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91C67B5C225CF36700994E6E /* DPAbstractFactoryViewController.h */,
+				91C67B5D225CF36700994E6E /* DPAbstractFactoryViewController.m */,
+			);
+			path = "抽象工厂模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +431,7 @@
 				9152BBAA225A43E9004F0749 /* DPPaperCanvasView.m in Sources */,
 				91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */,
 				91819EF2225112AA0001F593 /* Vertex.m in Sources */,
+				91C67B5E225CF36700994E6E /* DPAbstractFactoryViewController.m in Sources */,
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
 				91819EEF225112690001F593 /* Stroke.m in Sources */,
