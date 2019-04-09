@@ -7,26 +7,62 @@
 //
 
 #import "DPAbstractFactoryViewController.h"
+#import "DPSouthFruitsFactory.h"
+#import "DPNorthFruitsFactory.h"
 
 @interface DPAbstractFactoryViewController ()
 
 @end
 
 @implementation DPAbstractFactoryViewController
-
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self addUI];
+    [self setupUI];
+    [self setupLayout];
+    [self setupData];
 }
 
-/*
-#pragma mark - Navigation
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    DPAbstractFruitsFactory *abSouthFac = [DPSouthFruitsFactory new];
+    DPAbstractFruitsFactory *abNorthFac = [DPNorthFruitsFactory new];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
 }
-*/
+
+#pragma mark - Getter, Setter
+
+#pragma mark - Event
+
+#pragma mark - Public Method
+
+#pragma mark - Private Method
+
+
+- (void)addUI {
+    
+}
+
+- (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)setupLayout {
+    
+}
+
+- (void)setupData {
+    
+}
+
+
+
+#pragma mark - Delegate
+
+#pragma mark - NSCopying
+
+#pragma mark - NSObject
 
 @end
