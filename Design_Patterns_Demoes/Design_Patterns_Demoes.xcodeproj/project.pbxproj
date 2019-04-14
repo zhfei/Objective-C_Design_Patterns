@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */; };
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
+		9126751222638FC3000E482A /* DPSingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9126751122638FC3000E482A /* DPSingleObject.m */; };
 		9152BBA22258FC86004F0749 /* DPFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBA12258FC86004F0749 /* DPFactoryViewController.m */; };
 		9152BBA9225A43E9004F0749 /* DPClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBA4225A43E9004F0749 /* DPClothCanvasView.m */; };
 		9152BBAA225A43E9004F0749 /* DPPaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9152BBA7225A43E9004F0749 /* DPPaperCanvasView.m */; };
@@ -57,6 +58,8 @@
 		911308C9224E6A45003CD7CB /* DPPrototypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPrototypeViewController.m; sourceTree = "<group>"; };
 		911308CC224E6C19003CD7CB /* DPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBaseViewController.h; sourceTree = "<group>"; };
 		911308CD224E6C19003CD7CB /* DPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBaseViewController.m; sourceTree = "<group>"; };
+		9126751022638FC3000E482A /* DPSingleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSingleObject.h; sourceTree = "<group>"; };
+		9126751122638FC3000E482A /* DPSingleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSingleObject.m; sourceTree = "<group>"; };
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
 		9152BBA02258FC86004F0749 /* DPFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFactoryViewController.h; sourceTree = "<group>"; };
 		9152BBA12258FC86004F0749 /* DPFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFactoryViewController.m; sourceTree = "<group>"; };
@@ -316,6 +319,8 @@
 			children = (
 				91BC91AB224CE23300477101 /* DPSingleViewController.h */,
 				91BC91AC224CE23300477101 /* DPSingleViewController.m */,
+				9126751022638FC3000E482A /* DPSingleObject.h */,
+				9126751122638FC3000E482A /* DPSingleObject.m */,
 			);
 			path = "单例模式";
 			sourceTree = "<group>";
@@ -486,6 +491,7 @@
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
 				91C67B75225CF57300994E6E /* DPNorthFruitsFactory.m in Sources */,
+				9126751222638FC3000E482A /* DPSingleObject.m in Sources */,
 				91819EEF225112690001F593 /* Stroke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
