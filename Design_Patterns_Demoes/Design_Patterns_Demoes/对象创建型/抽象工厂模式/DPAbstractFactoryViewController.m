@@ -11,7 +11,7 @@
 #import "DPNorthFruitsFactory.h"
 
 @interface DPAbstractFactoryViewController ()
-
+@property (nonatomic, strong) UILabel *contextLabel;
 @end
 
 @implementation DPAbstractFactoryViewController
@@ -33,7 +33,21 @@
 }
 
 #pragma mark - Getter, Setter
-
+- (UILabel *)contextLabel {
+    if (!_contextLabel) {
+        UILabel *label = [UILabel new];
+        label.text = @"抽象工厂模式";
+        label.textColor = [UIColor blueColor];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.font = [UIFont systemFontOfSize:16];
+        
+        CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
+        CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
+        label.frame = CGRectMake(0, 100, widthS, heightS-200);
+        _contextLabel = label;
+    }
+    return _contextLabel;
+}
 #pragma mark - Event
 
 #pragma mark - Public Method
@@ -42,7 +56,7 @@
 
 
 - (void)addUI {
-    
+    [self.view addSubview:self.contextLabel];
 }
 
 - (void)setupUI {
