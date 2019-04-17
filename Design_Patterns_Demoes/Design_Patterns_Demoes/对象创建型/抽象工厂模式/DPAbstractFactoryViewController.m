@@ -9,6 +9,7 @@
 #import "DPAbstractFactoryViewController.h"
 #import "DPSouthFruitsFactory.h"
 #import "DPNorthFruitsFactory.h"
+#import "DPAbstractFruitsFactory.h"
 
 @interface DPAbstractFactoryViewController ()
 @property (nonatomic, strong) UILabel *contextLabel;
@@ -26,10 +27,9 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    DPAbstractFruitsFactory *abSouthFac = [DPSouthFruitsFactory new];
-    DPAbstractFruitsFactory *abNorthFac = [DPNorthFruitsFactory new];
+    DPAbstractFruitsFactory *factory = [DPAbstractFruitsFactory factory];
 
-    
+    NSLog(@"factory:%@",factory);
 }
 
 #pragma mark - Getter, Setter
