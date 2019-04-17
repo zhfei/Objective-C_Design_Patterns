@@ -9,5 +9,7 @@
 #import "DPApple.h"
 
 @implementation DPApple
-
+- (NSString *)fruitName {
+    return @"苹果";
+}
 @end

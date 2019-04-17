@@ -7,8 +7,18 @@
 //
 
 #import "DPAbstractFruitsFactory.h"
+#import "DPSouthFruitsFactory.h"
+#import "DPNorthFruitsFactory.h"
 
 @implementation DPAbstractFruitsFactory
++ (instancetype)factory {
+#ifdef USE_SOUTH
+    return [DPSouthFruitsFactory new];
+#elif USE_NORTH
+    return [DPNorthFruitsFactory new];
+#endif
+}
+
 - (DPApple *)pruductApple {
     //DPApple对应一个继承链
     return [DPApple new];

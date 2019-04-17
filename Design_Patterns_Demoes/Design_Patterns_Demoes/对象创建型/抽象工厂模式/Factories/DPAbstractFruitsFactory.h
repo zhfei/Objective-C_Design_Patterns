@@ -11,10 +11,14 @@
 #import "DPApple.h"
 #import "DPOrange.h"
 
+#define USE_SOUTH 1
+#define USE_NORTH 0
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPAbstractFruitsFactory : NSObject
++ (instancetype)factory;
+
 - (DPApple *)pruductApple;
 - (DPOrange *)pruductOrange;
 
