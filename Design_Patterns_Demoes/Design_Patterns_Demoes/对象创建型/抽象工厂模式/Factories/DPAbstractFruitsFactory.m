@@ -10,9 +10,12 @@
 
 @implementation DPAbstractFruitsFactory
 - (DPFruit *)pruductApple {
-    return [DPFruit new];
+    //DPApple对应一个继承链
+    return [DPApple new];
 }
+
 - (DPFruit *)pruductOrange {
-    return [DPFruit new];
+    //DPOrange对应一个继承链
+    return [DPOrange new];
 }
 @end
