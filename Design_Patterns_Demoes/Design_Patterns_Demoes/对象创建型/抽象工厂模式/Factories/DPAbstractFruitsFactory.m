@@ -9,7 +9,7 @@
 #import "DPAbstractFruitsFactory.h"
 
 @implementation DPAbstractFruitsFactory
-- (DPFruit *)pruductApple {
+- (DPApple *)pruductApple {
     //DPApple对应一个继承链
     return [DPApple new];
 }

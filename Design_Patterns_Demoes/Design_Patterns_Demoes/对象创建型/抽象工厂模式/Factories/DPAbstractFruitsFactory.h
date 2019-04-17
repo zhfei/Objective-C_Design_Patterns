@@ -15,8 +15,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPAbstractFruitsFactory : NSObject
-- (DPFruit *)pruductApple;
-- (DPFruit *)pruductOrange;
+- (DPApple *)pruductApple;
+- (DPOrange *)pruductOrange;
 
 @end
 

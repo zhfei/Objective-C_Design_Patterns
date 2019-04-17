@@ -7,18 +7,18 @@
 //
 
 #import "DPNorthFruitsFactory.h"
-#import "DPApple.h"
-#import "DPOrange.h"
+#import "DPNorthOrange.h"
+#import "DPNorthApple.h"
 
 @implementation DPNorthFruitsFactory
-- (DPFruit *)pruductApple {
-    DPApple *apple = [DPApple new];
+- (DPApple *)pruductApple {
+    DPApple *apple = [DPNorthApple new];
     apple.origin = @"北方";
     return apple;
 }
 
-- (DPFruit *)pruductOrange {
-    DPOrange *orange = [DPOrange new];
+- (DPOrange *)pruductOrange {
+    DPOrange *orange = [DPNorthOrange new];
     orange.origin = @"北方";
     return orange;
 }
