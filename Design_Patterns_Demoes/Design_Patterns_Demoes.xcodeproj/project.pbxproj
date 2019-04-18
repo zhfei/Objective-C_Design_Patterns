@@ -33,6 +33,7 @@
 		91BA9DF12268C466005EEA57 /* DPChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF02268C466005EEA57 /* DPChasingGame.m */; };
 		91BA9DF42268C486005EEA57 /* DPCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF32268C486005EEA57 /* DPCharacterBuilder.m */; };
 		91BA9DF82268C512005EEA57 /* DPCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF72268C512005EEA57 /* DPCharacter.m */; };
+		91BA9DFB2268C780005EEA57 /* DPStandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DFA2268C780005EEA57 /* DPStandardCharacterBuilder.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -115,6 +116,8 @@
 		91BA9DF32268C486005EEA57 /* DPCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCharacterBuilder.m; sourceTree = "<group>"; };
 		91BA9DF62268C512005EEA57 /* DPCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCharacter.h; sourceTree = "<group>"; };
 		91BA9DF72268C512005EEA57 /* DPCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCharacter.m; sourceTree = "<group>"; };
+		91BA9DF92268C780005EEA57 /* DPStandardCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPStandardCharacterBuilder.h; sourceTree = "<group>"; };
+		91BA9DFA2268C780005EEA57 /* DPStandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPStandardCharacterBuilder.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 			children = (
 				91BA9DF22268C486005EEA57 /* DPCharacterBuilder.h */,
 				91BA9DF32268C486005EEA57 /* DPCharacterBuilder.m */,
+				91BA9DF92268C780005EEA57 /* DPStandardCharacterBuilder.h */,
+				91BA9DFA2268C780005EEA57 /* DPStandardCharacterBuilder.m */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -548,6 +553,7 @@
 				91231F6A22677CA10009AB78 /* DPSouthOrange.m in Sources */,
 				91819EF5225112BD0001F593 /* Dot.m in Sources */,
 				911308CA224E6A45003CD7CB /* DPPrototypeViewController.m in Sources */,
+				91BA9DFB2268C780005EEA57 /* DPStandardCharacterBuilder.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				9152BBAD225A4417004F0749 /* DPCanvasViewGenerator.m in Sources */,
 				91C67B6C225CF4F300994E6E /* DPApple.m in Sources */,
