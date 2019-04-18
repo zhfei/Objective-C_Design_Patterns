@@ -30,6 +30,9 @@
 		91819EEF225112690001F593 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EEE225112690001F593 /* Stroke.m */; };
 		91819EF2225112AA0001F593 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EF1225112AA0001F593 /* Vertex.m */; };
 		91819EF5225112BD0001F593 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EF4225112BD0001F593 /* Dot.m */; };
+		91BA9DF12268C466005EEA57 /* DPChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF02268C466005EEA57 /* DPChasingGame.m */; };
+		91BA9DF42268C486005EEA57 /* DPCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF32268C486005EEA57 /* DPCharacterBuilder.m */; };
+		91BA9DF82268C512005EEA57 /* DPCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF72268C512005EEA57 /* DPCharacter.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -106,6 +109,12 @@
 		91819EF1225112AA0001F593 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		91819EF3225112BD0001F593 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		91819EF4225112BD0001F593 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		91BA9DEF2268C466005EEA57 /* DPChasingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChasingGame.h; sourceTree = "<group>"; };
+		91BA9DF02268C466005EEA57 /* DPChasingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPChasingGame.m; sourceTree = "<group>"; };
+		91BA9DF22268C486005EEA57 /* DPCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCharacterBuilder.h; sourceTree = "<group>"; };
+		91BA9DF32268C486005EEA57 /* DPCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCharacterBuilder.m; sourceTree = "<group>"; };
+		91BA9DF62268C512005EEA57 /* DPCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCharacter.h; sourceTree = "<group>"; };
+		91BA9DF72268C512005EEA57 /* DPCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCharacter.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -269,6 +278,43 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		91BA9DEC2268C34D005EEA57 /* 生成器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91BA9DF52268C4FC005EEA57 /* Models */,
+				91BA9DEE2268C41C005EEA57 /* Builder */,
+				91BA9DED2268C41C005EEA57 /* Director */,
+			);
+			path = "生成器模式";
+			sourceTree = "<group>";
+		};
+		91BA9DED2268C41C005EEA57 /* Director */ = {
+			isa = PBXGroup;
+			children = (
+				91BA9DEF2268C466005EEA57 /* DPChasingGame.h */,
+				91BA9DF02268C466005EEA57 /* DPChasingGame.m */,
+			);
+			path = Director;
+			sourceTree = "<group>";
+		};
+		91BA9DEE2268C41C005EEA57 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				91BA9DF22268C486005EEA57 /* DPCharacterBuilder.h */,
+				91BA9DF32268C486005EEA57 /* DPCharacterBuilder.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		91BA9DF52268C4FC005EEA57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91BA9DF62268C512005EEA57 /* DPCharacter.h */,
+				91BA9DF72268C512005EEA57 /* DPCharacter.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		91BC9179224CE11C00477101 = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +364,7 @@
 		91BC91A9224CE1B700477101 /* 对象创建型 */ = {
 			isa = PBXGroup;
 			children = (
+				91BA9DEC2268C34D005EEA57 /* 生成器模式 */,
 				91C67B5B225CF32300994E6E /* 抽象工厂模式 */,
 				9152BB922258F26B004F0749 /* 工厂方法模式 */,
 				911308C7224E6A02003CD7CB /* 原型模式 */,
@@ -484,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91819EEA22510EF70001F593 /* DPSubTitleTableVCFactory.m in Sources */,
+				91BA9DF12268C466005EEA57 /* DPChasingGame.m in Sources */,
 				91BC91AD224CE23300477101 /* DPSingleViewController.m in Sources */,
 				91231F7022677CF30009AB78 /* DPNorthApple.m in Sources */,
 				9152BBB0225A45E4004F0749 /* DPCanvasView.m in Sources */,
@@ -513,7 +561,9 @@
 				91C67B5E225CF36700994E6E /* DPAbstractFactoryViewController.m in Sources */,
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
 				91231F6722677C810009AB78 /* DPSouthApple.m in Sources */,
+				91BA9DF42268C486005EEA57 /* DPCharacterBuilder.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
+				91BA9DF82268C512005EEA57 /* DPCharacter.m in Sources */,
 				91C67B75225CF57300994E6E /* DPNorthFruitsFactory.m in Sources */,
 				9126751222638FC3000E482A /* DPSingleObject.m in Sources */,
 				91819EEF225112690001F593 /* Stroke.m in Sources */,
