@@ -8,6 +8,36 @@
 
 #import "DPCharacterBuilder.h"
 
-@implementation DPCharacterBuilder
+@interface DPCharacterBuilder ()
+@property (nonatomic, strong) DPCharacter *character;
+@end
 
+@implementation DPCharacterBuilder
+- (DPCharacterBuilder *)buildNewCharacter {
+    _character = [DPCharacter new];
+    return self;
+}
+
+- (DPCharacterBuilder *)buildStrength:(CGFloat)value {
+    _character.strength = value;
+    return self;
+}
+
+- (DPCharacterBuilder *)buildStamina:(CGFloat)value {
+    _character.stamina = value;
+    return self;
+}
+
+- (DPCharacterBuilder *)buildIntelligence:(CGFloat)value {
+    _character.intelligence = value;
+    return self;
+}
+- (DPCharacterBuilder *)buildAgility:(CGFloat)value {
+    _character.agility = value;
+    return self;
+}
+- (DPCharacterBuilder *)buildAggressiveness:(CGFloat)value {
+    _character.aggressiveness = value;
+    return self;
+}
 @end

@@ -10,4 +10,32 @@
 
 @implementation DPStandardCharacterBuilder
 
+- (DPCharacterBuilder *)buildStrength:(CGFloat)value {
+    
+    self.character.protection *= value;
+    self.character.power *= value;
+    return [super buildStrength:value];
+}
+
+- (DPCharacterBuilder *)buildStamina:(CGFloat)value {
+    self.character.protection *= value;
+    self.character.power *= value;
+    return [super buildStamina:value];
+}
+
+- (DPCharacterBuilder *)buildIntelligence:(CGFloat)value {
+    self.character.protection *= value;
+    self.character.power /= value;
+    return [super buildIntelligence:value];
+}
+- (DPCharacterBuilder *)buildAgility:(CGFloat)value {
+    self.character.protection *= value;
+    self.character.power /= value;
+    return [super buildAgility:value];
+}
+- (DPCharacterBuilder *)buildAggressiveness:(CGFloat)value {
+    self.character.protection /= value;
+    self.character.power *= value;
+    return self;
+}
 @end
