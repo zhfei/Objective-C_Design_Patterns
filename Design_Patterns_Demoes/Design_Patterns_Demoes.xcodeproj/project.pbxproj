@@ -30,6 +30,7 @@
 		91819EEF225112690001F593 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EEE225112690001F593 /* Stroke.m */; };
 		91819EF2225112AA0001F593 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EF1225112AA0001F593 /* Vertex.m */; };
 		91819EF5225112BD0001F593 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EF4225112BD0001F593 /* Dot.m */; };
+		91823168226B7911002DDFD0 /* DPBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91823167226B7911002DDFD0 /* DPBuilderViewController.m */; };
 		91BA9DF12268C466005EEA57 /* DPChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF02268C466005EEA57 /* DPChasingGame.m */; };
 		91BA9DF42268C486005EEA57 /* DPCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF32268C486005EEA57 /* DPCharacterBuilder.m */; };
 		91BA9DF82268C512005EEA57 /* DPCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA9DF72268C512005EEA57 /* DPCharacter.m */; };
@@ -110,6 +111,8 @@
 		91819EF1225112AA0001F593 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		91819EF3225112BD0001F593 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		91819EF4225112BD0001F593 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		91823166226B7911002DDFD0 /* DPBuilderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBuilderViewController.h; sourceTree = "<group>"; };
+		91823167226B7911002DDFD0 /* DPBuilderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBuilderViewController.m; sourceTree = "<group>"; };
 		91BA9DEF2268C466005EEA57 /* DPChasingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChasingGame.h; sourceTree = "<group>"; };
 		91BA9DF02268C466005EEA57 /* DPChasingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPChasingGame.m; sourceTree = "<group>"; };
 		91BA9DF22268C486005EEA57 /* DPCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCharacterBuilder.h; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 				91BA9DF52268C4FC005EEA57 /* Models */,
 				91BA9DEE2268C41C005EEA57 /* Builder */,
 				91BA9DED2268C41C005EEA57 /* Director */,
+				91823166226B7911002DDFD0 /* DPBuilderViewController.h */,
+				91823167226B7911002DDFD0 /* DPBuilderViewController.m */,
 			);
 			path = "生成器模式";
 			sourceTree = "<group>";
@@ -561,6 +566,7 @@
 				91BC9195224CE11E00477101 /* main.m in Sources */,
 				9152BBAA225A43E9004F0749 /* DPPaperCanvasView.m in Sources */,
 				91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */,
+				91823168226B7911002DDFD0 /* DPBuilderViewController.m in Sources */,
 				91C67B69225CF49D00994E6E /* DPFruit.m in Sources */,
 				91819EF2225112AA0001F593 /* Vertex.m in Sources */,
 				91C67B6F225CF51200994E6E /* DPOrange.m in Sources */,
