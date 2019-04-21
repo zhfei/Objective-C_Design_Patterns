@@ -7,26 +7,64 @@
 //
 
 #import "DPBuilderViewController.h"
+#import "DPStandardCharacterBuilder.h"
+#import "DPChasingGame.h"
+
 
 @interface DPBuilderViewController ()
 
 @end
 
 @implementation DPBuilderViewController
-
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self addUI];
+    [self setupUI];
+    [self setupLayout];
+    [self setupData];
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+#pragma mark - Getter, Setter
+
+#pragma mark - Event
+
+#pragma mark - Public Method
+
+#pragma mark - Private Method
+
+- (void)addUI {
+    [self.view addSubview:self.contextLabel];
 }
-*/
+
+- (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)setupLayout {
+    
+}
+
+- (void)setupData {
+    self.contextLabel.text = @"生成器模式";
+    
+    DPStandardCharacterBuilder *builder = [DPStandardCharacterBuilder new];
+    DPChasingGame *chase = [DPChasingGame new];
+    DPCharacter *enemy = [chase createEnemy:builder];
+    NSLog(@"enemy :%@",enemy);
+}
+
+
+
+#pragma mark - Delegate
+
+#pragma mark - NSCopying
+
+#pragma mark - NSObject
 
 @end

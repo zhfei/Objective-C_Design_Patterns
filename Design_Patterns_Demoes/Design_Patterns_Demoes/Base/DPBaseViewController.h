@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPBaseViewController : UIViewController
+@property (nonatomic, strong) UILabel *contextLabel;
 
 @end
 

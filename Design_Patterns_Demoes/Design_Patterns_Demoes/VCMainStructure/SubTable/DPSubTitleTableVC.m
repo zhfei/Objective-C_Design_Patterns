@@ -11,6 +11,7 @@
 #import "DPMacro.h"
 #import "DPFactoryViewController.h"
 #import "DPAbstractFactoryViewController.h"
+#import "DPBuilderViewController.h"
 
 
 static NSString *cellID =@"myCell";
@@ -96,6 +97,18 @@ static NSString *cellID =@"myCell";
                     DPAbstractFactoryViewController *abstractFactory = [DPAbstractFactoryViewController new];
                     [self.navigationController pushViewController:abstractFactory animated:YES];
                 }
+                    break;
+                case 3:
+                {
+                    DPBuilderViewController *builderFactory = [DPBuilderViewController new];
+                    [self.navigationController pushViewController:builderFactory animated:YES];
+                }
+                    break;
+                case 4:
+                {
+                    
+                }
+                    break;
                     
                     
                 default:
