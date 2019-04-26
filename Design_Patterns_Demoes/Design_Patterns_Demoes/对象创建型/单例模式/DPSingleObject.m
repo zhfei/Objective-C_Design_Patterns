@@ -8,6 +8,18 @@
 
 #import "DPSingleObject.h"
 
+static DPSingleObject *singleObj = nil;
 @implementation DPSingleObject
++ (DPSingleObject *)sharedInstance {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        singleObj = [[super alloc] init];
+    });
+    return singleObj;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    return singleObj;
+}
 
 @end
