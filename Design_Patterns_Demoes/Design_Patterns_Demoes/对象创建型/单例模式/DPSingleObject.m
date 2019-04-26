@@ -13,12 +13,20 @@ static DPSingleObject *singleObj = nil;
 + (DPSingleObject *)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        singleObj = [[super alloc] init];
+        singleObj = [[self alloc] init];
     });
     return singleObj;
 }
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        singleObj = [super allocWithZone:zone];
+    });
+    return singleObj;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
     return singleObj;
 }
 
