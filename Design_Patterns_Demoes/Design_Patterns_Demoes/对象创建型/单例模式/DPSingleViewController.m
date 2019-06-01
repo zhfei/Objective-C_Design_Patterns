@@ -7,6 +7,7 @@
 //
 
 #import "DPSingleViewController.h"
+#import "DPSingleObject.h"
 
 @interface DPSingleViewController ()
 
@@ -17,6 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        DPSingleObject *obj = [DPSingleObject sharedInstance];
+        NSLog(@"obj:%@",obj);
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        DPSingleObject *obj = [DPSingleObject sharedInstance];
+        NSLog(@"obj:%@",obj);
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        DPSingleObject *obj = [DPSingleObject sharedInstance];
+        NSLog(@"obj:%@",obj);
+    });
 }
 
 /*
