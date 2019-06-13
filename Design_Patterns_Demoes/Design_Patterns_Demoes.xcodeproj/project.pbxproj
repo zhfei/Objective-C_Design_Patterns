@@ -40,6 +40,10 @@
 		916E2D0522B2563F00538A39 /* DPCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2CE222B2563F00538A39 /* DPCharacter.m */; };
 		916E2D0622B2563F00538A39 /* DPCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2CE722B2563F00538A39 /* DPCharacterBuilder.m */; };
 		916E2D0722B2563F00538A39 /* DPStandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2CE822B2563F00538A39 /* DPStandardCharacterBuilder.m */; };
+		916E2D0D22B257C700538A39 /* DPClassAdaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2D0C22B257C700538A39 /* DPClassAdaptee.m */; };
+		916E2D1122B25B1C00538A39 /* DPClassAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2D1022B25B1C00538A39 /* DPClassAdapter.m */; };
+		916E2D1422B25E6100538A39 /* DPObjectAdaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2D1322B25E6100538A39 /* DPObjectAdaptee.m */; };
+		916E2D1722B25E7700538A39 /* DPObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2D1622B25E7700538A39 /* DPObjectAdapter.m */; };
 		91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EDC22510EF70001F593 /* DPMainTableVC.m */; };
 		91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EDD22510EF70001F593 /* DPMainTableViewModel.m */; };
 		91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EE022510EF70001F593 /* DPSubTitleTableViewModel.m */; };
@@ -133,6 +137,15 @@
 		916E2CE622B2563F00538A39 /* DPStandardCharacterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPStandardCharacterBuilder.h; sourceTree = "<group>"; };
 		916E2CE722B2563F00538A39 /* DPCharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCharacterBuilder.m; sourceTree = "<group>"; };
 		916E2CE822B2563F00538A39 /* DPStandardCharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPStandardCharacterBuilder.m; sourceTree = "<group>"; };
+		916E2D0B22B257C700538A39 /* DPClassAdaptee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPClassAdaptee.h; sourceTree = "<group>"; };
+		916E2D0C22B257C700538A39 /* DPClassAdaptee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPClassAdaptee.m; sourceTree = "<group>"; };
+		916E2D0E22B259A900538A39 /* DPAdapteProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAdapteProtocol.h; sourceTree = "<group>"; };
+		916E2D0F22B25B1C00538A39 /* DPClassAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPClassAdapter.h; sourceTree = "<group>"; };
+		916E2D1022B25B1C00538A39 /* DPClassAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPClassAdapter.m; sourceTree = "<group>"; };
+		916E2D1222B25E6100538A39 /* DPObjectAdaptee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPObjectAdaptee.h; sourceTree = "<group>"; };
+		916E2D1322B25E6100538A39 /* DPObjectAdaptee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObjectAdaptee.m; sourceTree = "<group>"; };
+		916E2D1522B25E7700538A39 /* DPObjectAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPObjectAdapter.h; sourceTree = "<group>"; };
+		916E2D1622B25E7700538A39 /* DPObjectAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObjectAdapter.m; sourceTree = "<group>"; };
 		91819EDB22510EF70001F593 /* DPMainTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMainTableViewModel.h; sourceTree = "<group>"; };
 		91819EDC22510EF70001F593 /* DPMainTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMainTableVC.m; sourceTree = "<group>"; };
 		91819EDD22510EF70001F593 /* DPMainTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMainTableViewModel.m; sourceTree = "<group>"; };
@@ -226,8 +239,9 @@
 			children = (
 				916E2C9C22B2563E00538A39 /* 类适配器 */,
 				916E2C9A22B2563E00538A39 /* 对象适配器 */,
-				916E2C9922B2563E00538A39 /* DPAdapterViewController.m */,
 				916E2C9B22B2563E00538A39 /* DPAdapterViewController.h */,
+				916E2C9922B2563E00538A39 /* DPAdapterViewController.m */,
+				916E2D0E22B259A900538A39 /* DPAdapteProtocol.h */,
 			);
 			path = "适配器模式";
 			sourceTree = "<group>";
@@ -235,6 +249,10 @@
 		916E2C9A22B2563E00538A39 /* 对象适配器 */ = {
 			isa = PBXGroup;
 			children = (
+				916E2D1222B25E6100538A39 /* DPObjectAdaptee.h */,
+				916E2D1322B25E6100538A39 /* DPObjectAdaptee.m */,
+				916E2D1522B25E7700538A39 /* DPObjectAdapter.h */,
+				916E2D1622B25E7700538A39 /* DPObjectAdapter.m */,
 			);
 			path = "对象适配器";
 			sourceTree = "<group>";
@@ -242,6 +260,10 @@
 		916E2C9C22B2563E00538A39 /* 类适配器 */ = {
 			isa = PBXGroup;
 			children = (
+				916E2D0B22B257C700538A39 /* DPClassAdaptee.h */,
+				916E2D0C22B257C700538A39 /* DPClassAdaptee.m */,
+				916E2D0F22B25B1C00538A39 /* DPClassAdapter.h */,
+				916E2D1022B25B1C00538A39 /* DPClassAdapter.m */,
 			);
 			path = "类适配器";
 			sourceTree = "<group>";
@@ -618,7 +640,9 @@
 				916E2CEE22B2563F00538A39 /* DPClothCanvasViewGenerator.m in Sources */,
 				91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
+				916E2D1722B25E7700538A39 /* DPObjectAdapter.m in Sources */,
 				916E2C9522B253F600538A39 /* DPClient.m in Sources */,
+				916E2D0D22B257C700538A39 /* DPClassAdaptee.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
 				916E2D0622B2563F00538A39 /* DPCharacterBuilder.m in Sources */,
@@ -628,6 +652,8 @@
 				916E2D0122B2563F00538A39 /* DPNorthFruitsFactory.m in Sources */,
 				916E2CEC22B2563F00538A39 /* DPPaperCanvasView.m in Sources */,
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
+				916E2D1422B25E6100538A39 /* DPObjectAdaptee.m in Sources */,
+				916E2D1122B25B1C00538A39 /* DPClassAdapter.m in Sources */,
 				916E2D0322B2563F00538A39 /* DPBuilderViewController.m in Sources */,
 				916E2D0722B2563F00538A39 /* DPStandardCharacterBuilder.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,

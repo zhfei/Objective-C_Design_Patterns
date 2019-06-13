@@ -1,5 +1,5 @@
 //
-//  DPClient.h
+//  DPObjectAdapter.h
 //  Design_Patterns_Demoes
 //
 //  Created by zhoufei on 2019/6/13.
@@ -11,10 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPClient : NSObject
-+ (instancetype)sharedClient;
-
-@property (nonatomic, strong) id<DPAdapteProtocol> adapteObj;
+@interface DPObjectAdapter : NSObject <DPAdapteProtocol>
 
 @end
 

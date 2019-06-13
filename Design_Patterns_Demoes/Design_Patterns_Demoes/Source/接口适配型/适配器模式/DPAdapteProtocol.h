@@ -1,5 +1,5 @@
 //
-//  DPClient.h
+//  DPAdapteProtocol.h
 //  Design_Patterns_Demoes
 //
 //  Created by zhoufei on 2019/6/13.
@@ -7,14 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPAdapteProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPClient : NSObject
-+ (instancetype)sharedClient;
-
-@property (nonatomic, strong) id<DPAdapteProtocol> adapteObj;
+@protocol DPAdapteProtocol <NSObject>
+//给我一盘红烧鱼
+- (NSString *)giveMeAPlateOfBraisedFish;
 
 @end
 

@@ -1,20 +1,17 @@
 //
-//  DPClient.h
+//  DPClassAdapter.h
 //  Design_Patterns_Demoes
 //
 //  Created by zhoufei on 2019/6/13.
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DPClassAdaptee.h"
 #import "DPAdapteProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPClient : NSObject
-+ (instancetype)sharedClient;
-
-@property (nonatomic, strong) id<DPAdapteProtocol> adapteObj;
+@interface DPClassAdapter : DPClassAdaptee <DPAdapteProtocol>
 
 @end
 
