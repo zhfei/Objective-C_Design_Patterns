@@ -1367,6 +1367,7 @@
 				916E36382163209200602088 /* Sources */,
 				916E36392163209200602088 /* Frameworks */,
 				916E363A2163209200602088 /* Resources */,
+				19DECE01CFF0979B1D71779D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1508,6 +1509,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		19DECE01CFF0979B1D71779D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh",
+				"${PODS_ROOT}/BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertView.xib",
+				"${PODS_ROOT}/BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertViewController.xib",
+				"${PODS_ROOT}/BottomComponentLib/SRC/Resouce/Document.strings",
+				"${PODS_ROOT}/BottomComponentLib/SRC/Resouce/phoneNumPrefix.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFAlertView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFAlertViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Document.strings",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/phoneNumPrefix.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Objective-C_Design_Patterns/Pods-Objective-C_Design_Patterns-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		48A0ED1D54E68162ADD70103 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
