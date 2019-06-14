@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56AE22B3A16600467009 /* DPFlyweightViewController.m */; };
+		910D56B422B3A1AB00467009 /* DPFlyweightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56B322B3A1AB00467009 /* DPFlyweightModel.m */; };
+		910D56B722B3A1C000467009 /* DPFlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56B622B3A1C000467009 /* DPFlyweightFactory.m */; };
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
 		916E2C9522B253F600538A39 /* DPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9422B253F600538A39 /* DPClient.m */; };
 		916E2CE922B2563F00538A39 /* DPAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9922B2563E00538A39 /* DPAdapterViewController.m */; };
@@ -69,6 +72,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910D56AD22B3A16600467009 /* DPFlyweightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFlyweightViewController.h; sourceTree = "<group>"; };
+		910D56AE22B3A16600467009 /* DPFlyweightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFlyweightViewController.m; sourceTree = "<group>"; };
+		910D56B222B3A1AB00467009 /* DPFlyweightModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFlyweightModel.h; sourceTree = "<group>"; };
+		910D56B322B3A1AB00467009 /* DPFlyweightModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFlyweightModel.m; sourceTree = "<group>"; };
+		910D56B522B3A1C000467009 /* DPFlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFlyweightFactory.h; sourceTree = "<group>"; };
+		910D56B622B3A1C000467009 /* DPFlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFlyweightFactory.m; sourceTree = "<group>"; };
 		911308CC224E6C19003CD7CB /* DPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBaseViewController.h; sourceTree = "<group>"; };
 		911308CD224E6C19003CD7CB /* DPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBaseViewController.m; sourceTree = "<group>"; };
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
@@ -189,6 +198,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		910D56AB22B3A10B00467009 /* 性能和对象访问型 */ = {
+			isa = PBXGroup;
+			children = (
+				910D56AC22B3A12B00467009 /* 享元模式 */,
+			);
+			path = "性能和对象访问型";
+			sourceTree = "<group>";
+		};
+		910D56AC22B3A12B00467009 /* 享元模式 */ = {
+			isa = PBXGroup;
+			children = (
+				910D56B122B3A19200467009 /* Factory */,
+				910D56B022B3A19200467009 /* Model */,
+				910D56AD22B3A16600467009 /* DPFlyweightViewController.h */,
+				910D56AE22B3A16600467009 /* DPFlyweightViewController.m */,
+			);
+			path = "享元模式";
+			sourceTree = "<group>";
+		};
+		910D56B022B3A19200467009 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				910D56B222B3A1AB00467009 /* DPFlyweightModel.h */,
+				910D56B322B3A1AB00467009 /* DPFlyweightModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		910D56B122B3A19200467009 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				910D56B522B3A1C000467009 /* DPFlyweightFactory.h */,
+				910D56B622B3A1C000467009 /* DPFlyweightFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		911308CB224E6C03003CD7CB /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +266,7 @@
 		916E2C9622B2563E00538A39 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				910D56AB22B3A10B00467009 /* 性能和对象访问型 */,
 				916E2C9722B2563E00538A39 /* 接口适配型 */,
 				916E2C9D22B2563E00538A39 /* 对象创建型 */,
 			);
@@ -644,6 +691,7 @@
 				916E2C9522B253F600538A39 /* DPClient.m in Sources */,
 				916E2D0D22B257C700538A39 /* DPClassAdaptee.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
+				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
 				916E2D0622B2563F00538A39 /* DPCharacterBuilder.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
@@ -654,6 +702,7 @@
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
 				916E2D1422B25E6100538A39 /* DPObjectAdaptee.m in Sources */,
 				916E2D1122B25B1C00538A39 /* DPClassAdapter.m in Sources */,
+				910D56B422B3A1AB00467009 /* DPFlyweightModel.m in Sources */,
 				916E2D0322B2563F00538A39 /* DPBuilderViewController.m in Sources */,
 				916E2D0722B2563F00538A39 /* DPStandardCharacterBuilder.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
@@ -664,6 +713,7 @@
 				916E2CF722B2563F00538A39 /* DPPrototypeViewController.m in Sources */,
 				916E2CF122B2563F00538A39 /* DPSingleViewController.m in Sources */,
 				916E2CE922B2563F00538A39 /* DPAdapterViewController.m in Sources */,
+				910D56B722B3A1C000467009 /* DPFlyweightFactory.m in Sources */,
 				916E2CEA22B2563F00538A39 /* DPFactoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
