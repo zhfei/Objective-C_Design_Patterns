@@ -8,6 +8,31 @@
 
 #import "DPFlyweightFactory.h"
 
+static DPFlyweightFactory *shared;
+
 @implementation DPFlyweightFactory
++ (instancetype)sharedFlyweightFactory {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shared = [[self alloc] init];
+    });
+    return shared;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shared = [super allocWithZone:zone];
+    });
+    return shared;
+}
+
+- (id)copy {
+    return shared;
+}
+
+- (id)mutableCopy {
+    return shared;
+}
 
 @end
