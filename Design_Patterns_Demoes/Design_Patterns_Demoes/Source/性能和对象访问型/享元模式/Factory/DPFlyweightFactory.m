@@ -10,7 +10,13 @@
 
 static DPFlyweightFactory *shared;
 
+@interface DPFlyweightFactory ()
+@property (nonatomic, strong) NSMutableDictionary *flyweightPool;
+
+@end
+
 @implementation DPFlyweightFactory
+#pragma mark - Life Cycle
 + (instancetype)sharedFlyweightFactory {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -34,5 +40,38 @@ static DPFlyweightFactory *shared;
 - (id)mutableCopy {
     return shared;
 }
+
+
+#pragma mark - Private Method
+
+#pragma mark - Public Method
+- (DPFlyweightModel *)flyweightModelWithName:(NSString *)name {
+    DPFlyweightModel *target = self.flyweightPool[name];
+    if (!target) {
+        DPFlyweightModel *model = [DPFlyweightModel new];
+        model.flower = [[UIImageView alloc] initWithImage:[UIImage imageNamed:name]];
+        model.area = CGRectZero;
+        [self.flyweightPool setObject:model forKey:name];
+    }
+    return target;
+}
+
+#pragma mark - Event
+
+#pragma mark - Delegate
+
+#pragma mark - Getter, Setter
+- (NSMutableDictionary *)flyweightPool {
+    if (!_flyweightPool) {
+        _flyweightPool = @{}.mutableCopy;
+    }
+    return _flyweightPool;
+}
+
+#pragma mark - NSCopying
+
+#pragma mark - NSObject
+
+
 
 @end
