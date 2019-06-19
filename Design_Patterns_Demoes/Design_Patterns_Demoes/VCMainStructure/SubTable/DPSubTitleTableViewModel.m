@@ -17,4 +17,10 @@ NSArray *createTypeDataSource() {
 
 }
 
+NSArray *createPerformanceTypeDataSource() {
+    NSArray *source = @[@"享元模式",@"代理模式"];
+    return source;
+    
+}
+
 @end

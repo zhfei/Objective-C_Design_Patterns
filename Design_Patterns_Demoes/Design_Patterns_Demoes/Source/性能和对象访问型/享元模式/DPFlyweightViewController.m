@@ -33,14 +33,22 @@
 
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
-    NSMutableArray *pool = @[].mutableCopy;
     
+    CGFloat minHeigh = 20.f;
+    CGFloat minWidth = 20.f;
     for (NSInteger i = 0; i < 5000; i++) {
-        DPFlyweightModel *flyweight = [[DPFlyweightFactory sharedFlyweightFactory] flyweightModelWithName:@""];
-        flyweight.area = CGRectMake(arc4random_uniform(320), arc4random_uniform(480), arc4random_uniform(320),  arc4random_uniform(480));
-        [pool addObject:flyweight];
+        NSString *name = [NSString stringWithFormat:@"flower%ld",(i%6)+1];
+        DPFlyweightModel *flyweight = [[DPFlyweightFactory sharedFlyweightFactory] flyweightModelWithName:name];
+        
+        CGFloat width = arc4random_uniform(80);
+        width = width > minWidth ?width: minWidth;
+        
+        CGFloat heigh = arc4random_uniform(80);
+        heigh = heigh > minHeigh ?heigh: minHeigh;
+        
+        flyweight.area = CGRectMake(arc4random_uniform(320)-width, arc4random_uniform(480)-heigh, width,  heigh);
+        [self.view addSubview:flyweight.flower];
     }
-
 }
 
 - (void)setupLayout {

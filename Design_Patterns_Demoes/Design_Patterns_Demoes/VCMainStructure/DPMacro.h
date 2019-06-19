@@ -12,7 +12,8 @@
 //单个类型枚举
 typedef NS_ENUM(NSInteger,DPSubTitleTableType) {
     DPSubTitleTableCreateType = 0,
-    DPSubTitleTableNone
+    DPSubTitleTablePerformanceType,
+    DPSubTitleTableNone,
 };
 
 #endif /* DPMacro_h */

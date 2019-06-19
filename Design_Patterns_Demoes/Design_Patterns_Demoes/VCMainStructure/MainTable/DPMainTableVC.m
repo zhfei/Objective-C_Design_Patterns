@@ -94,6 +94,13 @@ static NSString *cellID =@"myCell";
             
         }
             break;
+        case 3:
+        {
+            DPSubTitleTableVC *subTable = [DPSubTitleTableVCFactory subTitleTableVC:DPSubTitleTablePerformanceType];
+            [self.navigationController pushViewController:subTable animated:YES];
+            
+        }
+            break;
             
         default:
             break;

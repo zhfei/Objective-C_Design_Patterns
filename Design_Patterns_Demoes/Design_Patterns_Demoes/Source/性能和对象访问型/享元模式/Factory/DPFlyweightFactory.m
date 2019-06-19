@@ -49,7 +49,7 @@ static DPFlyweightFactory *shared;
     DPFlyweightModel *target = self.flyweightPool[name];
     if (!target) {
         DPFlyweightModel *model = [DPFlyweightModel new];
-        model.flower = [[UIImageView alloc] initWithImage:[UIImage imageNamed:name]];
+        model.flower.image = [UIImage imageNamed:name];
         model.area = CGRectZero;
         [self.flyweightPool setObject:model forKey:name];
     }

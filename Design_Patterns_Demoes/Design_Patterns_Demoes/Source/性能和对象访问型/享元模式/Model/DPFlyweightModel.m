@@ -9,5 +9,14 @@
 #import "DPFlyweightModel.h"
 
 @implementation DPFlyweightModel
+- (UIImageView *)flower {
+    if (!_flower) {
+        _flower = [UIImageView new];
+        _flower.contentMode = UIViewContentModeScaleToFill;
+    }
+    _flower.frame = _area;
+    return _flower;
+}
+
 
 @end

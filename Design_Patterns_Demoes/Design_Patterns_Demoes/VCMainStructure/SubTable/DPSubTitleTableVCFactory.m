@@ -20,6 +20,12 @@
             dataSource = createTypeDataSource();
         }
             break;
+        case DPSubTitleTablePerformanceType:
+        {
+            dataSource = createPerformanceTypeDataSource();
+        }
+            break;
+            
             
         default:
             break;

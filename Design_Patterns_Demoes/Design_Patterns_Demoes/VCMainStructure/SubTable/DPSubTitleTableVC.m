@@ -12,6 +12,7 @@
 #import "DPFactoryViewController.h"
 #import "DPAbstractFactoryViewController.h"
 #import "DPBuilderViewController.h"
+#import "DPFlyweightViewController.h"
 
 
 static NSString *cellID =@"myCell";
@@ -117,9 +118,18 @@ static NSString *cellID =@"myCell";
             
         }
             break;
-        case 1:
+        case DPSubTitleTablePerformanceType:
         {
-
+            switch (indexPath.row) {
+                case 0:
+                {
+                    DPFlyweightViewController *subTable = [DPFlyweightViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                default:
+                    break;
+            }
         }
             break;
         case 2:
@@ -131,6 +141,9 @@ static NSString *cellID =@"myCell";
         default:
             break;
     }
+    
+    
+    //DPFlyweightViewController
     
 }
 
