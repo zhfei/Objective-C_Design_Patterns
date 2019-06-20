@@ -11,6 +11,7 @@
 		910D56B422B3A1AB00467009 /* DPFlyweightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56B322B3A1AB00467009 /* DPFlyweightModel.m */; };
 		910D56B722B3A1C000467009 /* DPFlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56B622B3A1C000467009 /* DPFlyweightFactory.m */; };
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
+		9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */; };
 		916E2C9522B253F600538A39 /* DPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9422B253F600538A39 /* DPClient.m */; };
 		916E2CE922B2563F00538A39 /* DPAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9922B2563E00538A39 /* DPAdapterViewController.m */; };
 		916E2CEA22B2563F00538A39 /* DPFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9F22B2563E00538A39 /* DPFactoryViewController.m */; };
@@ -81,6 +82,8 @@
 		911308CC224E6C19003CD7CB /* DPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBaseViewController.h; sourceTree = "<group>"; };
 		911308CD224E6C19003CD7CB /* DPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBaseViewController.m; sourceTree = "<group>"; };
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
+		9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChainOfRespViewController.h; sourceTree = "<group>"; };
+		9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPChainOfRespViewController.m; sourceTree = "<group>"; };
 		916E2C9322B253F600538A39 /* DPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPClient.h; sourceTree = "<group>"; };
 		916E2C9422B253F600538A39 /* DPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPClient.m; sourceTree = "<group>"; };
 		916E2C9922B2563E00538A39 /* DPAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAdapterViewController.m; sourceTree = "<group>"; };
@@ -254,6 +257,23 @@
 			path = VCMainStructure;
 			sourceTree = "<group>";
 		};
+		9155AD2F22BBD89900B7C1B8 /* 行为扩张型 */ = {
+			isa = PBXGroup;
+			children = (
+				9155AD3022BBD8B200B7C1B8 /* 责任链模式 */,
+			);
+			path = "行为扩张型";
+			sourceTree = "<group>";
+		};
+		9155AD3022BBD8B200B7C1B8 /* 责任链模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */,
+				9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */,
+			);
+			path = "责任链模式";
+			sourceTree = "<group>";
+		};
 		916E2C9222B253DA00538A39 /* Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +286,7 @@
 		916E2C9622B2563E00538A39 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9155AD2F22BBD89900B7C1B8 /* 行为扩张型 */,
 				910D56AB22B3A10B00467009 /* 性能和对象访问型 */,
 				916E2C9722B2563E00538A39 /* 接口适配型 */,
 				916E2C9D22B2563E00538A39 /* 对象创建型 */,
@@ -676,6 +697,7 @@
 				916E2CF222B2563F00538A39 /* Dot.m in Sources */,
 				916E2D0022B2563F00538A39 /* DPSouthFruitsFactory.m in Sources */,
 				916E2CFA22B2563F00538A39 /* DPApple.m in Sources */,
+				9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */,
 				916E2D0522B2563F00538A39 /* DPCharacter.m in Sources */,
 				916E2D0222B2563F00538A39 /* DPAbstractFactoryViewController.m in Sources */,
 				91819EE922510EF70001F593 /* DPSubTitleTableVC.m in Sources */,
