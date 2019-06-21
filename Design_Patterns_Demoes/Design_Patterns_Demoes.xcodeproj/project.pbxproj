@@ -53,6 +53,10 @@
 		91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EE022510EF70001F593 /* DPSubTitleTableViewModel.m */; };
 		91819EE922510EF70001F593 /* DPSubTitleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EE222510EF70001F593 /* DPSubTitleTableVC.m */; };
 		91819EEA22510EF70001F593 /* DPSubTitleTableVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91819EE322510EF70001F593 /* DPSubTitleTableVCFactory.m */; };
+		918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006422BD32ED002D7AA9 /* DPEventHandler.m */; };
+		918E006822BD3300002D7AA9 /* DPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006722BD3300002D7AA9 /* DPEvent.m */; };
+		918E006B22BD34C4002D7AA9 /* DPEventAHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006A22BD34C4002D7AA9 /* DPEventAHandler.m */; };
+		918E006E22BD34D8002D7AA9 /* DPEventA.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006D22BD34D8002D7AA9 /* DPEventA.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -168,6 +172,14 @@
 		91819EE322510EF70001F593 /* DPSubTitleTableVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableVCFactory.m; sourceTree = "<group>"; };
 		91819EE422510EF70001F593 /* DPSubTitleTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableViewModel.h; sourceTree = "<group>"; };
 		91819EE522510EF70001F593 /* DPSubTitleTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableVC.h; sourceTree = "<group>"; };
+		918E006322BD32ED002D7AA9 /* DPEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventHandler.h; sourceTree = "<group>"; };
+		918E006422BD32ED002D7AA9 /* DPEventHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventHandler.m; sourceTree = "<group>"; };
+		918E006622BD3300002D7AA9 /* DPEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEvent.h; sourceTree = "<group>"; };
+		918E006722BD3300002D7AA9 /* DPEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEvent.m; sourceTree = "<group>"; };
+		918E006922BD34C4002D7AA9 /* DPEventAHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventAHandler.h; sourceTree = "<group>"; };
+		918E006A22BD34C4002D7AA9 /* DPEventAHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventAHandler.m; sourceTree = "<group>"; };
+		918E006C22BD34D8002D7AA9 /* DPEventA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventA.h; sourceTree = "<group>"; };
+		918E006D22BD34D8002D7AA9 /* DPEventA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventA.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -268,6 +280,8 @@
 		9155AD3022BBD8B200B7C1B8 /* 责任链模式 */ = {
 			isa = PBXGroup;
 			children = (
+				918E006222BD32D6002D7AA9 /* Event */,
+				918E006122BD32D6002D7AA9 /* EventHandler */,
 				9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */,
 				9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */,
 			);
@@ -540,6 +554,28 @@
 			path = SubTable;
 			sourceTree = "<group>";
 		};
+		918E006122BD32D6002D7AA9 /* EventHandler */ = {
+			isa = PBXGroup;
+			children = (
+				918E006322BD32ED002D7AA9 /* DPEventHandler.h */,
+				918E006422BD32ED002D7AA9 /* DPEventHandler.m */,
+				918E006922BD34C4002D7AA9 /* DPEventAHandler.h */,
+				918E006A22BD34C4002D7AA9 /* DPEventAHandler.m */,
+			);
+			path = EventHandler;
+			sourceTree = "<group>";
+		};
+		918E006222BD32D6002D7AA9 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				918E006622BD3300002D7AA9 /* DPEvent.h */,
+				918E006722BD3300002D7AA9 /* DPEvent.m */,
+				918E006C22BD34D8002D7AA9 /* DPEventA.h */,
+				918E006D22BD34D8002D7AA9 /* DPEventA.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		91BC9179224CE11C00477101 = {
 			isa = PBXGroup;
 			children = (
@@ -697,6 +733,7 @@
 				916E2CF222B2563F00538A39 /* Dot.m in Sources */,
 				916E2D0022B2563F00538A39 /* DPSouthFruitsFactory.m in Sources */,
 				916E2CFA22B2563F00538A39 /* DPApple.m in Sources */,
+				918E006B22BD34C4002D7AA9 /* DPEventAHandler.m in Sources */,
 				9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */,
 				916E2D0522B2563F00538A39 /* DPCharacter.m in Sources */,
 				916E2D0222B2563F00538A39 /* DPAbstractFactoryViewController.m in Sources */,
@@ -709,10 +746,12 @@
 				916E2CEE22B2563F00538A39 /* DPClothCanvasViewGenerator.m in Sources */,
 				91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
+				918E006E22BD34D8002D7AA9 /* DPEventA.m in Sources */,
 				916E2D1722B25E7700538A39 /* DPObjectAdapter.m in Sources */,
 				916E2C9522B253F600538A39 /* DPClient.m in Sources */,
 				916E2D0D22B257C700538A39 /* DPClassAdaptee.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
+				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
 				916E2D0622B2563F00538A39 /* DPCharacterBuilder.m in Sources */,
@@ -735,6 +774,7 @@
 				916E2CF722B2563F00538A39 /* DPPrototypeViewController.m in Sources */,
 				916E2CF122B2563F00538A39 /* DPSingleViewController.m in Sources */,
 				916E2CE922B2563F00538A39 /* DPAdapterViewController.m in Sources */,
+				918E006822BD3300002D7AA9 /* DPEvent.m in Sources */,
 				910D56B722B3A1C000467009 /* DPFlyweightFactory.m in Sources */,
 				916E2CEA22B2563F00538A39 /* DPFactoryViewController.m in Sources */,
 			);
