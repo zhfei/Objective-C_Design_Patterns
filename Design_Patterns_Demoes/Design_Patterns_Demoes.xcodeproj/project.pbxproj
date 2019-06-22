@@ -11,6 +11,8 @@
 		910D56B422B3A1AB00467009 /* DPFlyweightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56B322B3A1AB00467009 /* DPFlyweightModel.m */; };
 		910D56B722B3A1C000467009 /* DPFlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56B622B3A1C000467009 /* DPFlyweightFactory.m */; };
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
+		912A396922BE7A230094A647 /* DPEventB.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396822BE7A230094A647 /* DPEventB.m */; };
+		912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396B22BE7A3C0094A647 /* DPEventBHandler.m */; };
 		9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */; };
 		916E2C9522B253F600538A39 /* DPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9422B253F600538A39 /* DPClient.m */; };
 		916E2CE922B2563F00538A39 /* DPAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9922B2563E00538A39 /* DPAdapterViewController.m */; };
@@ -85,6 +87,10 @@
 		910D56B622B3A1C000467009 /* DPFlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFlyweightFactory.m; sourceTree = "<group>"; };
 		911308CC224E6C19003CD7CB /* DPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBaseViewController.h; sourceTree = "<group>"; };
 		911308CD224E6C19003CD7CB /* DPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBaseViewController.m; sourceTree = "<group>"; };
+		912A396722BE7A230094A647 /* DPEventB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventB.h; sourceTree = "<group>"; };
+		912A396822BE7A230094A647 /* DPEventB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventB.m; sourceTree = "<group>"; };
+		912A396A22BE7A3C0094A647 /* DPEventBHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventBHandler.h; sourceTree = "<group>"; };
+		912A396B22BE7A3C0094A647 /* DPEventBHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventBHandler.m; sourceTree = "<group>"; };
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
 		9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChainOfRespViewController.h; sourceTree = "<group>"; };
 		9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPChainOfRespViewController.m; sourceTree = "<group>"; };
@@ -561,6 +567,8 @@
 				918E006422BD32ED002D7AA9 /* DPEventHandler.m */,
 				918E006922BD34C4002D7AA9 /* DPEventAHandler.h */,
 				918E006A22BD34C4002D7AA9 /* DPEventAHandler.m */,
+				912A396A22BE7A3C0094A647 /* DPEventBHandler.h */,
+				912A396B22BE7A3C0094A647 /* DPEventBHandler.m */,
 			);
 			path = EventHandler;
 			sourceTree = "<group>";
@@ -572,6 +580,8 @@
 				918E006722BD3300002D7AA9 /* DPEvent.m */,
 				918E006C22BD34D8002D7AA9 /* DPEventA.h */,
 				918E006D22BD34D8002D7AA9 /* DPEventA.m */,
+				912A396722BE7A230094A647 /* DPEventB.h */,
+				912A396822BE7A230094A647 /* DPEventB.m */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -749,8 +759,10 @@
 				918E006E22BD34D8002D7AA9 /* DPEventA.m in Sources */,
 				916E2D1722B25E7700538A39 /* DPObjectAdapter.m in Sources */,
 				916E2C9522B253F600538A39 /* DPClient.m in Sources */,
+				912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */,
 				916E2D0D22B257C700538A39 /* DPClassAdaptee.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
+				912A396922BE7A230094A647 /* DPEventB.m in Sources */,
 				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,

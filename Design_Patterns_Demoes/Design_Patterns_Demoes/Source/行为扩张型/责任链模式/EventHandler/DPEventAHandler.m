@@ -12,7 +12,7 @@
 @implementation DPEventAHandler
 - (void)handlerEvent:(DPEvent *)event {
     if ([event isKindOfClass:[DPEventA class]]) {
-        
+        NSLog(@"处理DPEventA...");
     } else {
         [super handlerEvent:event];
     }
