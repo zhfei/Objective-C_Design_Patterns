@@ -12,6 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPEventHandler : NSObject
+@property (nonatomic, strong) DPEventHandler *nextEventHandler;
+
 - (void)handlerEvent:(DPEvent *)event;
 
 @end

@@ -8,10 +8,8 @@
 
 #import "DPEventHandler.h"
 
-
-
 @interface DPEventHandler ()
-@property (nonatomic, strong) DPEventHandler *nextEventHandler;
+
 @end
 
 @implementation DPEventHandler
