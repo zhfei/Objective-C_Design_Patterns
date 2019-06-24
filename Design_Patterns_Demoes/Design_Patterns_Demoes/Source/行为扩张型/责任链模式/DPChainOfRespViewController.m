@@ -50,11 +50,18 @@
 }
 
 - (void)setupData {
+    //eventA处理者
     DPEventAHandler *eventAHandler = [DPEventAHandler new];
-    
+    //eventB处理者
     DPEventBHandler *eventBHandler = [DPEventBHandler new];
-
+    eventBHandler.nextEventHandler = eventAHandler;
     
+    //eventB
+    DPEventB *eventB = [DPEventB new];
+    [eventBHandler handlerEvent:eventB];
+    //eventA
+    DPEventA *eventA = [DPEventA new];
+    [eventBHandler handlerEvent:eventA];
 }
 
 // MARK: overwrite

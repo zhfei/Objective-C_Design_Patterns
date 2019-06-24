@@ -13,6 +13,7 @@
 #import "DPAbstractFactoryViewController.h"
 #import "DPBuilderViewController.h"
 #import "DPFlyweightViewController.h"
+#import "DPChainOfRespViewController.h"
 
 
 static NSString *cellID =@"myCell";
@@ -132,9 +133,18 @@ static NSString *cellID =@"myCell";
             }
         }
             break;
-        case 2:
+        case DPSubTitleTableActionExtendType:
         {
-            
+            switch (indexPath.row) {
+                case 0:
+                {
+                    DPChainOfRespViewController *subTable = [DPChainOfRespViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                default:
+                    break;
+            }
         }
             break;
             

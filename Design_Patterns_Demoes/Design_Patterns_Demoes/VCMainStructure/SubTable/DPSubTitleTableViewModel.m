@@ -20,7 +20,11 @@ NSArray *createTypeDataSource() {
 NSArray *createPerformanceTypeDataSource() {
     NSArray *source = @[@"享元模式",@"代理模式"];
     return source;
-    
+}
+
+NSArray *actionExtendTypeDataSource() {
+    NSArray *source = @[@"责任链模式",@"装饰器模式",@"访问者模式"];
+    return source;
 }
 
 @end

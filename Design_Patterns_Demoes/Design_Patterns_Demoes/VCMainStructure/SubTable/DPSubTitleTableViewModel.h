@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DPSubTitleTableViewModel : NSObject
 NSArray *createTypeDataSource();
 NSArray *createPerformanceTypeDataSource();
+NSArray *actionExtendTypeDataSource();
 @end
 
 NS_ASSUME_NONNULL_END

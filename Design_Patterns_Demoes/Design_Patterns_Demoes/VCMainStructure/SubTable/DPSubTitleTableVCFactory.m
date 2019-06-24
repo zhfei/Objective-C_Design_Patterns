@@ -25,7 +25,11 @@
             dataSource = createPerformanceTypeDataSource();
         }
             break;
-            
+        case DPSubTitleTableActionExtendType:
+        {
+            dataSource = actionExtendTypeDataSource();
+        }
+            break;
             
         default:
             break;
