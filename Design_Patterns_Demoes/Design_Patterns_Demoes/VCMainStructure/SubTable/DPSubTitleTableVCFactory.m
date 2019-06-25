@@ -30,7 +30,12 @@
             dataSource = actionExtendTypeDataSource();
         }
             break;
-            
+        case DPSubTitleTableActionArithmeticType:
+        {
+            dataSource = arithmeticTypeDataSource();
+        }
+            break;
+
         default:
             break;
     }

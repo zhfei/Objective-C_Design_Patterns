@@ -108,6 +108,13 @@ static NSString *cellID =@"myCell";
             
         }
             break;
+        case 6:
+        {
+            DPSubTitleTableVC *subTable = [DPSubTitleTableVCFactory subTitleTableVC:DPSubTitleTableActionArithmeticType];
+            [self.navigationController pushViewController:subTable animated:YES];
+            
+        }
+            break;
             
         default:
             break;

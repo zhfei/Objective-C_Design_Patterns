@@ -27,4 +27,9 @@ NSArray *actionExtendTypeDataSource() {
     return source;
 }
 
+NSArray *arithmeticTypeDataSource() {
+    NSArray *source = @[@"命令模式",@"策略模式",@"模版方法模式"];
+    return source;
+}
+
 @end

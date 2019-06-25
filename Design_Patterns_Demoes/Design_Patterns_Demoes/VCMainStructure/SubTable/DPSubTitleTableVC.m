@@ -14,6 +14,7 @@
 #import "DPBuilderViewController.h"
 #import "DPFlyweightViewController.h"
 #import "DPChainOfRespViewController.h"
+#import "DPCommandViewController.h"
 
 
 static NSString *cellID =@"myCell";
@@ -147,7 +148,22 @@ static NSString *cellID =@"myCell";
             }
         }
             break;
+        case DPSubTitleTableActionArithmeticType:
+        {
+            switch (indexPath.row) {
+                case 0:
+                {
+                    DPCommandViewController *subTable = [DPCommandViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+            break;
             
+
         default:
             break;
     }

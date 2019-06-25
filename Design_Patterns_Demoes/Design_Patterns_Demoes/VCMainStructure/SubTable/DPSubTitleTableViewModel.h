@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 NSArray *createTypeDataSource();
 NSArray *createPerformanceTypeDataSource();
 NSArray *actionExtendTypeDataSource();
+//算法封装型
+NSArray *arithmeticTypeDataSource();
 @end
 
 NS_ASSUME_NONNULL_END

@@ -59,6 +59,11 @@
 		918E006822BD3300002D7AA9 /* DPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006722BD3300002D7AA9 /* DPEvent.m */; };
 		918E006B22BD34C4002D7AA9 /* DPEventAHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006A22BD34C4002D7AA9 /* DPEventAHandler.m */; };
 		918E006E22BD34D8002D7AA9 /* DPEventA.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006D22BD34D8002D7AA9 /* DPEventA.m */; };
+		91ADBC5E22C1F5C200176FD6 /* DPCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC5C22C1F5C200176FD6 /* DPCommandViewController.m */; };
+		91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91ADBC5D22C1F5C200176FD6 /* DPCommandViewController.xib */; };
+		91ADBC6922C1F89000176FD6 /* DPInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC6822C1F89000176FD6 /* DPInvoker.m */; };
+		91ADBC6C22C1F89E00176FD6 /* DPReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC6B22C1F89E00176FD6 /* DPReceiver.m */; };
+		91ADBC6F22C1F8B800176FD6 /* DPInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC6E22C1F8B800176FD6 /* DPInvocation.m */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -186,6 +191,15 @@
 		918E006A22BD34C4002D7AA9 /* DPEventAHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventAHandler.m; sourceTree = "<group>"; };
 		918E006C22BD34D8002D7AA9 /* DPEventA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventA.h; sourceTree = "<group>"; };
 		918E006D22BD34D8002D7AA9 /* DPEventA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventA.m; sourceTree = "<group>"; };
+		91ADBC5B22C1F5C200176FD6 /* DPCommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCommandViewController.h; sourceTree = "<group>"; };
+		91ADBC5C22C1F5C200176FD6 /* DPCommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCommandViewController.m; sourceTree = "<group>"; };
+		91ADBC5D22C1F5C200176FD6 /* DPCommandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPCommandViewController.xib; sourceTree = "<group>"; };
+		91ADBC6722C1F89000176FD6 /* DPInvoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPInvoker.h; sourceTree = "<group>"; };
+		91ADBC6822C1F89000176FD6 /* DPInvoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPInvoker.m; sourceTree = "<group>"; };
+		91ADBC6A22C1F89E00176FD6 /* DPReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPReceiver.h; sourceTree = "<group>"; };
+		91ADBC6B22C1F89E00176FD6 /* DPReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPReceiver.m; sourceTree = "<group>"; };
+		91ADBC6D22C1F8B800176FD6 /* DPInvocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPInvocation.h; sourceTree = "<group>"; };
+		91ADBC6E22C1F8B800176FD6 /* DPInvocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPInvocation.m; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -275,12 +289,12 @@
 			path = VCMainStructure;
 			sourceTree = "<group>";
 		};
-		9155AD2F22BBD89900B7C1B8 /* 行为扩张型 */ = {
+		9155AD2F22BBD89900B7C1B8 /* 行为扩展型 */ = {
 			isa = PBXGroup;
 			children = (
 				9155AD3022BBD8B200B7C1B8 /* 责任链模式 */,
 			);
-			path = "行为扩张型";
+			path = "行为扩展型";
 			sourceTree = "<group>";
 		};
 		9155AD3022BBD8B200B7C1B8 /* 责任链模式 */ = {
@@ -306,7 +320,8 @@
 		916E2C9622B2563E00538A39 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				9155AD2F22BBD89900B7C1B8 /* 行为扩张型 */,
+				91ADBC5922C1F57200176FD6 /* 算法封装型 */,
+				9155AD2F22BBD89900B7C1B8 /* 行为扩展型 */,
 				910D56AB22B3A10B00467009 /* 性能和对象访问型 */,
 				916E2C9722B2563E00538A39 /* 接口适配型 */,
 				916E2C9D22B2563E00538A39 /* 对象创建型 */,
@@ -586,6 +601,54 @@
 			path = Event;
 			sourceTree = "<group>";
 		};
+		91ADBC5922C1F57200176FD6 /* 算法封装型 */ = {
+			isa = PBXGroup;
+			children = (
+				91ADBC5A22C1F57200176FD6 /* 命令模式 */,
+			);
+			path = "算法封装型";
+			sourceTree = "<group>";
+		};
+		91ADBC5A22C1F57200176FD6 /* 命令模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91ADBC6522C1F84A00176FD6 /* Command */,
+				91ADBC6622C1F84A00176FD6 /* Receiver */,
+				91ADBC6422C1F7F400176FD6 /* Invoker */,
+				91ADBC5B22C1F5C200176FD6 /* DPCommandViewController.h */,
+				91ADBC5C22C1F5C200176FD6 /* DPCommandViewController.m */,
+				91ADBC5D22C1F5C200176FD6 /* DPCommandViewController.xib */,
+			);
+			path = "命令模式";
+			sourceTree = "<group>";
+		};
+		91ADBC6422C1F7F400176FD6 /* Invoker */ = {
+			isa = PBXGroup;
+			children = (
+				91ADBC6722C1F89000176FD6 /* DPInvoker.h */,
+				91ADBC6822C1F89000176FD6 /* DPInvoker.m */,
+			);
+			path = Invoker;
+			sourceTree = "<group>";
+		};
+		91ADBC6522C1F84A00176FD6 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				91ADBC6D22C1F8B800176FD6 /* DPInvocation.h */,
+				91ADBC6E22C1F8B800176FD6 /* DPInvocation.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		91ADBC6622C1F84A00176FD6 /* Receiver */ = {
+			isa = PBXGroup;
+			children = (
+				91ADBC6A22C1F89E00176FD6 /* DPReceiver.h */,
+				91ADBC6B22C1F89E00176FD6 /* DPReceiver.m */,
+			);
+			path = Receiver;
+			sourceTree = "<group>";
+		};
 		91BC9179224CE11C00477101 = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +779,7 @@
 			files = (
 				91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */,
 				91BC918F224CE11D00477101 /* Assets.xcassets in Resources */,
+				91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */,
 				91BC918D224CE11D00477101 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -752,8 +816,10 @@
 				916E2CF022B2563F00538A39 /* DPSingleObject.m in Sources */,
 				916E2D0422B2563F00538A39 /* DPChasingGame.m in Sources */,
 				916E2CF622B2563F00538A39 /* DPScribble.m in Sources */,
+				91ADBC6922C1F89000176FD6 /* DPInvoker.m in Sources */,
 				916E2CFD22B2563F00538A39 /* DPNorthOrange.m in Sources */,
 				916E2CEE22B2563F00538A39 /* DPClothCanvasViewGenerator.m in Sources */,
+				91ADBC6F22C1F8B800176FD6 /* DPInvocation.m in Sources */,
 				91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
 				918E006E22BD34D8002D7AA9 /* DPEventA.m in Sources */,
@@ -772,6 +838,7 @@
 				916E2CFB22B2563F00538A39 /* DPSouthApple.m in Sources */,
 				916E2D0122B2563F00538A39 /* DPNorthFruitsFactory.m in Sources */,
 				916E2CEC22B2563F00538A39 /* DPPaperCanvasView.m in Sources */,
+				91ADBC5E22C1F5C200176FD6 /* DPCommandViewController.m in Sources */,
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
 				916E2D1422B25E6100538A39 /* DPObjectAdaptee.m in Sources */,
 				916E2D1122B25B1C00538A39 /* DPClassAdapter.m in Sources */,
@@ -788,6 +855,7 @@
 				916E2CE922B2563F00538A39 /* DPAdapterViewController.m in Sources */,
 				918E006822BD3300002D7AA9 /* DPEvent.m in Sources */,
 				910D56B722B3A1C000467009 /* DPFlyweightFactory.m in Sources */,
+				91ADBC6C22C1F89E00176FD6 /* DPReceiver.m in Sources */,
 				916E2CEA22B2563F00538A39 /* DPFactoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
