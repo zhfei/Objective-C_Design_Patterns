@@ -59,6 +59,8 @@
 		918E006822BD3300002D7AA9 /* DPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006722BD3300002D7AA9 /* DPEvent.m */; };
 		918E006B22BD34C4002D7AA9 /* DPEventAHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006A22BD34C4002D7AA9 /* DPEventAHandler.m */; };
 		918E006E22BD34D8002D7AA9 /* DPEventA.m in Sources */ = {isa = PBXBuildFile; fileRef = 918E006D22BD34D8002D7AA9 /* DPEventA.m */; };
+		919969F022C516E10077A31B /* DPTemplateMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919969EE22C516E10077A31B /* DPTemplateMethodViewController.m */; };
+		919969F122C516E10077A31B /* DPTemplateMethodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919969EF22C516E10077A31B /* DPTemplateMethodViewController.xib */; };
 		91ADBC5E22C1F5C200176FD6 /* DPCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC5C22C1F5C200176FD6 /* DPCommandViewController.m */; };
 		91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91ADBC5D22C1F5C200176FD6 /* DPCommandViewController.xib */; };
 		91ADBC6922C1F89000176FD6 /* DPInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC6822C1F89000176FD6 /* DPInvoker.m */; };
@@ -191,6 +193,9 @@
 		918E006A22BD34C4002D7AA9 /* DPEventAHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventAHandler.m; sourceTree = "<group>"; };
 		918E006C22BD34D8002D7AA9 /* DPEventA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventA.h; sourceTree = "<group>"; };
 		918E006D22BD34D8002D7AA9 /* DPEventA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventA.m; sourceTree = "<group>"; };
+		919969ED22C516E10077A31B /* DPTemplateMethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTemplateMethodViewController.h; sourceTree = "<group>"; };
+		919969EE22C516E10077A31B /* DPTemplateMethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTemplateMethodViewController.m; sourceTree = "<group>"; };
+		919969EF22C516E10077A31B /* DPTemplateMethodViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPTemplateMethodViewController.xib; sourceTree = "<group>"; };
 		91ADBC5B22C1F5C200176FD6 /* DPCommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCommandViewController.h; sourceTree = "<group>"; };
 		91ADBC5C22C1F5C200176FD6 /* DPCommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCommandViewController.m; sourceTree = "<group>"; };
 		91ADBC5D22C1F5C200176FD6 /* DPCommandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPCommandViewController.xib; sourceTree = "<group>"; };
@@ -601,9 +606,20 @@
 			path = Event;
 			sourceTree = "<group>";
 		};
+		919969EC22C516510077A31B /* 模版方法模式 */ = {
+			isa = PBXGroup;
+			children = (
+				919969ED22C516E10077A31B /* DPTemplateMethodViewController.h */,
+				919969EE22C516E10077A31B /* DPTemplateMethodViewController.m */,
+				919969EF22C516E10077A31B /* DPTemplateMethodViewController.xib */,
+			);
+			path = "模版方法模式";
+			sourceTree = "<group>";
+		};
 		91ADBC5922C1F57200176FD6 /* 算法封装型 */ = {
 			isa = PBXGroup;
 			children = (
+				919969EC22C516510077A31B /* 模版方法模式 */,
 				91ADBC5A22C1F57200176FD6 /* 命令模式 */,
 			);
 			path = "算法封装型";
@@ -778,6 +794,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */,
+				919969F122C516E10077A31B /* DPTemplateMethodViewController.xib in Resources */,
 				91BC918F224CE11D00477101 /* Assets.xcassets in Resources */,
 				91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */,
 				91BC918D224CE11D00477101 /* Main.storyboard in Resources */,
@@ -848,6 +865,7 @@
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
 				916E2CED22B2563F00538A39 /* DPCanvasViewGenerator.m in Sources */,
 				916E2CFC22B2563F00538A39 /* DPFruit.m in Sources */,
+				919969F022C516E10077A31B /* DPTemplateMethodViewController.m in Sources */,
 				916E2CFE22B2563F00538A39 /* DPNorthApple.m in Sources */,
 				916E2CF922B2563F00538A39 /* DPOrange.m in Sources */,
 				916E2CF722B2563F00538A39 /* DPPrototypeViewController.m in Sources */,
