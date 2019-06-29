@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPTemplateModel : NSObject
+- (void)step1 ;
+- (void)step2 ;
 
 @end
 

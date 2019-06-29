@@ -9,6 +9,15 @@
 #import "DPTemplateModel.h"
 
 @implementation DPTemplateModel
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self action];
+    }
+    return self;
+}
+
 - (void)action {
     [self step1];
     [self step2];

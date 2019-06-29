@@ -74,6 +74,8 @@
 		91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC9190224CE11D00477101 /* LaunchScreen.storyboard */; };
 		91BC9195224CE11E00477101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9194224CE11E00477101 /* main.m */; };
 		91BC919F224CE11E00477101 /* Design_Patterns_DemoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC919E224CE11E00477101 /* Design_Patterns_DemoesTests.m */; };
+		91C5011722C7C04400D4A895 /* DPEntity1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5011622C7C04400D4A895 /* DPEntity1Model.m */; };
+		91C5011A22C7C05100D4A895 /* DPEntity2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5011922C7C05100D4A895 /* DPEntity2Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +223,10 @@
 		91BC919A224CE11E00477101 /* Design_Patterns_DemoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Design_Patterns_DemoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC919E224CE11E00477101 /* Design_Patterns_DemoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Design_Patterns_DemoesTests.m; sourceTree = "<group>"; };
 		91BC91A0224CE11E00477101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C5011522C7C04400D4A895 /* DPEntity1Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEntity1Model.h; sourceTree = "<group>"; };
+		91C5011622C7C04400D4A895 /* DPEntity1Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEntity1Model.m; sourceTree = "<group>"; };
+		91C5011822C7C05100D4A895 /* DPEntity2Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEntity2Model.h; sourceTree = "<group>"; };
+		91C5011922C7C05100D4A895 /* DPEntity2Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEntity2Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -625,6 +631,10 @@
 			children = (
 				919969F322C66F3D0077A31B /* DPTemplateModel.h */,
 				919969F422C66F3D0077A31B /* DPTemplateModel.m */,
+				91C5011522C7C04400D4A895 /* DPEntity1Model.h */,
+				91C5011622C7C04400D4A895 /* DPEntity1Model.m */,
+				91C5011822C7C05100D4A895 /* DPEntity2Model.h */,
+				91C5011922C7C05100D4A895 /* DPEntity2Model.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -838,8 +848,10 @@
 				916E2D0022B2563F00538A39 /* DPSouthFruitsFactory.m in Sources */,
 				916E2CFA22B2563F00538A39 /* DPApple.m in Sources */,
 				918E006B22BD34C4002D7AA9 /* DPEventAHandler.m in Sources */,
+				91C5011A22C7C05100D4A895 /* DPEntity2Model.m in Sources */,
 				9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */,
 				916E2D0522B2563F00538A39 /* DPCharacter.m in Sources */,
+				91C5011722C7C04400D4A895 /* DPEntity1Model.m in Sources */,
 				916E2D0222B2563F00538A39 /* DPAbstractFactoryViewController.m in Sources */,
 				91819EE922510EF70001F593 /* DPSubTitleTableVC.m in Sources */,
 				916E2CF522B2563F00538A39 /* DPCanvasView.m in Sources */,
