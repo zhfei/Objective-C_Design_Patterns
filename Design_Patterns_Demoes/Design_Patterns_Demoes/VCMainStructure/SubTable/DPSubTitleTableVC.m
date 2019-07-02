@@ -15,6 +15,7 @@
 #import "DPFlyweightViewController.h"
 #import "DPChainOfRespViewController.h"
 #import "DPCommandViewController.h"
+#import "DPTemplateMethodViewController.h"
 
 
 static NSString *cellID =@"myCell";
@@ -154,6 +155,12 @@ static NSString *cellID =@"myCell";
                 case 0:
                 {
                     DPCommandViewController *subTable = [DPCommandViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                case 2:
+                {
+                    DPTemplateMethodViewController *subTable = [DPTemplateMethodViewController new];
                     [self.navigationController pushViewController:subTable animated:YES];
                 }
                     break;
