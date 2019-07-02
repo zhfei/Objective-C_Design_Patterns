@@ -9,25 +9,17 @@
 #import "DPTemplateModel.h"
 
 @implementation DPTemplateModel
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self action];
-    }
-    return self;
+//开始做蛋糕
+- (void)startMakingCake {
+    [self prepareFlour];
+    [self prepareSugar];
 }
-
-- (void)action {
-    [self step1];
-    [self step2];
-}
-
-- (void)step1 {
+//准备面粉
+- (void)prepareFlour {
     
 }
-
-- (void)step2 {
+//准备糖
+- (void)prepareSugar {
     
 }
 

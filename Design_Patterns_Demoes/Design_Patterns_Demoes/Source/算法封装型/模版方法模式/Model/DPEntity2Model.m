@@ -9,11 +9,12 @@
 #import "DPEntity2Model.h"
 
 @implementation DPEntity2Model
-- (void)step1 {
-    // TODO: 实体2的步骤1实现
+//准备面粉
+- (void)prepareFlour {
+    NSLog(@"🍠粉");
 }
-
-- (void)step2 {
-    // TODO: 实体2的步骤2实现
+//准备糖
+- (void)prepareSugar {
+    NSLog(@"白糖 ");
 }
 @end

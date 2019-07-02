@@ -7,6 +7,8 @@
 //
 
 #import "DPTemplateMethodViewController.h"
+#import "DPEntity1Model.h"
+#import "DPEntity2Model.h"
 
 @interface DPTemplateMethodViewController ()
 
@@ -19,14 +21,13 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    DPTemplateModel *tm1 = [DPEntity1Model new];
+    [tm1 startMakingCake];
+    
+    DPTemplateModel *tm2 = [DPEntity1Model new];
+    [tm2 startMakingCake];
 }
-*/
+
 
 @end

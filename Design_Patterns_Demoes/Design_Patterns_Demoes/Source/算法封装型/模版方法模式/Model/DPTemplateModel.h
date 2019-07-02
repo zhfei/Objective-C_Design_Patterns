@@ -11,9 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPTemplateModel : NSObject
-- (void)step1 ;
-- (void)step2 ;
-
+//开始做蛋糕
+- (void)startMakingCake;
+//准备面粉
+- (void)prepareFlour ;
+//准备糖
+- (void)prepareSugar ;
 @end
 
 NS_ASSUME_NONNULL_END
