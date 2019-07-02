@@ -10,6 +10,11 @@
 		910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56AE22B3A16600467009 /* DPFlyweightViewController.m */; };
 		910D56B422B3A1AB00467009 /* DPFlyweightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56B322B3A1AB00467009 /* DPFlyweightModel.m */; };
 		910D56B722B3A1C000467009 /* DPFlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D56B622B3A1C000467009 /* DPFlyweightFactory.m */; };
+		9110701522CBAB1200516583 /* DPStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9110701322CBAB1200516583 /* DPStrategyViewController.m */; };
+		9110701622CBAB1200516583 /* DPStrategyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9110701422CBAB1200516583 /* DPStrategyViewController.xib */; };
+		9110701A22CBAC4600516583 /* DPStrategyValidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9110701922CBAC4600516583 /* DPStrategyValidModel.m */; };
+		9110701D22CBAC6600516583 /* DPStrategyNumberValidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9110701C22CBAC6600516583 /* DPStrategyNumberValidModel.m */; };
+		9110702022CBAC8200516583 /* DPStrategyStringValidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9110701F22CBAC8200516583 /* DPStrategyStringValidModel.m */; };
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
 		912A396922BE7A230094A647 /* DPEventB.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396822BE7A230094A647 /* DPEventB.m */; };
 		912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396B22BE7A3C0094A647 /* DPEventBHandler.m */; };
@@ -95,6 +100,15 @@
 		910D56B322B3A1AB00467009 /* DPFlyweightModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFlyweightModel.m; sourceTree = "<group>"; };
 		910D56B522B3A1C000467009 /* DPFlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFlyweightFactory.h; sourceTree = "<group>"; };
 		910D56B622B3A1C000467009 /* DPFlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFlyweightFactory.m; sourceTree = "<group>"; };
+		9110701222CBAB1200516583 /* DPStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPStrategyViewController.h; sourceTree = "<group>"; };
+		9110701322CBAB1200516583 /* DPStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPStrategyViewController.m; sourceTree = "<group>"; };
+		9110701422CBAB1200516583 /* DPStrategyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPStrategyViewController.xib; sourceTree = "<group>"; };
+		9110701822CBAC4600516583 /* DPStrategyValidModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPStrategyValidModel.h; sourceTree = "<group>"; };
+		9110701922CBAC4600516583 /* DPStrategyValidModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPStrategyValidModel.m; sourceTree = "<group>"; };
+		9110701B22CBAC6600516583 /* DPStrategyNumberValidModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPStrategyNumberValidModel.h; sourceTree = "<group>"; };
+		9110701C22CBAC6600516583 /* DPStrategyNumberValidModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPStrategyNumberValidModel.m; sourceTree = "<group>"; };
+		9110701E22CBAC8200516583 /* DPStrategyStringValidModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPStrategyStringValidModel.h; sourceTree = "<group>"; };
+		9110701F22CBAC8200516583 /* DPStrategyStringValidModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPStrategyStringValidModel.m; sourceTree = "<group>"; };
 		911308CC224E6C19003CD7CB /* DPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBaseViewController.h; sourceTree = "<group>"; };
 		911308CD224E6C19003CD7CB /* DPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBaseViewController.m; sourceTree = "<group>"; };
 		912A396722BE7A230094A647 /* DPEventB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventB.h; sourceTree = "<group>"; };
@@ -282,6 +296,30 @@
 				910D56B622B3A1C000467009 /* DPFlyweightFactory.m */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		9110701122CBAAC700516583 /* 策略模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9110701722CBAC0000516583 /* Model */,
+				9110701222CBAB1200516583 /* DPStrategyViewController.h */,
+				9110701322CBAB1200516583 /* DPStrategyViewController.m */,
+				9110701422CBAB1200516583 /* DPStrategyViewController.xib */,
+			);
+			path = "策略模式";
+			sourceTree = "<group>";
+		};
+		9110701722CBAC0000516583 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9110701822CBAC4600516583 /* DPStrategyValidModel.h */,
+				9110701922CBAC4600516583 /* DPStrategyValidModel.m */,
+				9110701B22CBAC6600516583 /* DPStrategyNumberValidModel.h */,
+				9110701C22CBAC6600516583 /* DPStrategyNumberValidModel.m */,
+				9110701E22CBAC8200516583 /* DPStrategyStringValidModel.h */,
+				9110701F22CBAC8200516583 /* DPStrategyStringValidModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		911308CB224E6C03003CD7CB /* Base */ = {
@@ -642,6 +680,7 @@
 		91ADBC5922C1F57200176FD6 /* 算法封装型 */ = {
 			isa = PBXGroup;
 			children = (
+				9110701122CBAAC700516583 /* 策略模式 */,
 				919969EC22C516510077A31B /* 模版方法模式 */,
 				91ADBC5A22C1F57200176FD6 /* 命令模式 */,
 			);
@@ -819,6 +858,7 @@
 				91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */,
 				919969F122C516E10077A31B /* DPTemplateMethodViewController.xib in Resources */,
 				91BC918F224CE11D00477101 /* Assets.xcassets in Resources */,
+				9110701622CBAB1200516583 /* DPStrategyViewController.xib in Resources */,
 				91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */,
 				91BC918D224CE11D00477101 /* Main.storyboard in Resources */,
 			);
@@ -850,6 +890,7 @@
 				918E006B22BD34C4002D7AA9 /* DPEventAHandler.m in Sources */,
 				91C5011A22C7C05100D4A895 /* DPEntity2Model.m in Sources */,
 				9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */,
+				9110701A22CBAC4600516583 /* DPStrategyValidModel.m in Sources */,
 				916E2D0522B2563F00538A39 /* DPCharacter.m in Sources */,
 				91C5011722C7C04400D4A895 /* DPEntity1Model.m in Sources */,
 				916E2D0222B2563F00538A39 /* DPAbstractFactoryViewController.m in Sources */,
@@ -863,8 +904,11 @@
 				916E2CEE22B2563F00538A39 /* DPClothCanvasViewGenerator.m in Sources */,
 				91ADBC6F22C1F8B800176FD6 /* DPInvocation.m in Sources */,
 				91819EE822510EF70001F593 /* DPSubTitleTableViewModel.m in Sources */,
+				9110702022CBAC8200516583 /* DPStrategyStringValidModel.m in Sources */,
 				911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */,
 				918E006E22BD34D8002D7AA9 /* DPEventA.m in Sources */,
+				9110701D22CBAC6600516583 /* DPStrategyNumberValidModel.m in Sources */,
+				9110701522CBAB1200516583 /* DPStrategyViewController.m in Sources */,
 				916E2D1722B25E7700538A39 /* DPObjectAdapter.m in Sources */,
 				916E2C9522B253F600538A39 /* DPClient.m in Sources */,
 				912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */,
