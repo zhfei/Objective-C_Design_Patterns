@@ -9,7 +9,7 @@
 #import "DPStrategyValidModel.h"
 
 @implementation DPStrategyValidModel
-+ (BOOL)validText:(NSString *)text error:(NSError **)error {
+- (BOOL)validText:(NSString *)text error:(NSError **)error {
     if (error) {
         *error = nil;
     }

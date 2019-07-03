@@ -7,6 +7,9 @@
 //
 
 #import "DPStrategyViewController.h"
+#import "DPStrategyNumberValidModel.h"
+#import "DPStrategyStringValidModel.h"
+
 
 @interface DPStrategyViewController ()
 
@@ -17,6 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    DPStrategyValidModel *strategy = [DPStrategyNumberValidModel new];
+    
+    NSError *error;
+    [strategy validText:@"123456789a" error:&error];
+    
 }
 
 @end

@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPStrategyValidModel : NSObject
-+ (BOOL)validText:(NSString *)text error:(NSError **)error;
+- (BOOL)validText:(NSString *)text error:(NSError **)error;
 
 @end
 
