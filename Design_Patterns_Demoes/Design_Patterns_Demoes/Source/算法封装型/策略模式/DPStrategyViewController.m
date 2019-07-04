@@ -26,8 +26,14 @@
     DPStrategyValidModel *strategy = [DPStrategyNumberValidModel new];
     
     NSError *error;
-    [strategy validText:@"123456789a" error:&error];
+    if ([strategy validText:@"123456789a" error:&error]) {
+        NSLog(@"验证通过：Number...");
+    }
     
+    strategy = [DPStrategyStringValidModel new];
+    if ([strategy validText:@"abcdefghijklmn" error:&error]) {
+        NSLog(@"验证通过：String...");
+    }
 }
 
 @end

@@ -11,9 +11,11 @@
 @implementation DPStrategyNumberValidModel
 - (BOOL)validText:(NSString *)text error:(NSError * _Nullable __autoreleasing *)error {
     NSString *check = @"^[0-9]*$";
-    NSPredicate *predice =[NSPredicate predicateWithFormat:@"self matches",check];
-    BOOL result = [predice evaluateWithObject:text];
-    return result;
+    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:check options:NSRegularExpressionCaseInsensitive error:nil];
+    NSInteger num = [regular numberOfMatchesInString:text options:NSMatchingReportProgress range:NSMakeRange(0, text.length-1)];
+    
+    return num == 1;
 }
+
 
 @end
