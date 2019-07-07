@@ -9,5 +9,8 @@
 #import "DPImageComponentObject1.h"
 
 @implementation DPImageComponentObject1
+- (void)operation {
+    
+}
 
 @end

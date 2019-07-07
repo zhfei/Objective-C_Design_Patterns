@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPImageComponent : NSObject
-
+- (void)operation;
 @end
 
 NS_ASSUME_NONNULL_END

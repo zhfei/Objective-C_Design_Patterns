@@ -9,5 +9,11 @@
 #import "DPImageFilter.h"
 
 @implementation DPImageFilter
+- (void)operation {
+    [self.imageComponent operation];
+}
 
+- (void)addBehaviour {
+    NSLog(@"父过滤器原始动作...");
+}
 @end

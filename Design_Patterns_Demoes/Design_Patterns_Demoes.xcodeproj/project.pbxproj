@@ -86,6 +86,7 @@
 		91BC919F224CE11E00477101 /* Design_Patterns_DemoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC919E224CE11E00477101 /* Design_Patterns_DemoesTests.m */; };
 		91C5011722C7C04400D4A895 /* DPEntity1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5011622C7C04400D4A895 /* DPEntity1Model.m */; };
 		91C5011A22C7C05100D4A895 /* DPEntity2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5011922C7C05100D4A895 /* DPEntity2Model.m */; };
+		91F20F5F22D24A20003C303B /* DPImageFilterObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +256,8 @@
 		91C5011622C7C04400D4A895 /* DPEntity1Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEntity1Model.m; sourceTree = "<group>"; };
 		91C5011822C7C05100D4A895 /* DPEntity2Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEntity2Model.h; sourceTree = "<group>"; };
 		91C5011922C7C05100D4A895 /* DPEntity2Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEntity2Model.m; sourceTree = "<group>"; };
+		91F20F5D22D24A20003C303B /* DPImageFilterObject1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPImageFilterObject1.h; sourceTree = "<group>"; };
+		91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPImageFilterObject1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -646,6 +649,8 @@
 			children = (
 				9172595F22D0F5BD0077A220 /* DPImageFilter.h */,
 				9172596022D0F5BD0077A220 /* DPImageFilter.m */,
+				91F20F5D22D24A20003C303B /* DPImageFilterObject1.h */,
+				91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */,
 			);
 			path = Decorater;
 			sourceTree = "<group>";
@@ -964,6 +969,7 @@
 				916E2C9522B253F600538A39 /* DPClient.m in Sources */,
 				912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */,
 				916E2D0D22B257C700538A39 /* DPClassAdaptee.m in Sources */,
+				91F20F5F22D24A20003C303B /* DPImageFilterObject1.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				912A396922BE7A230094A647 /* DPEventB.m in Sources */,
 				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,

@@ -9,5 +9,7 @@
 #import "DPImageComponent.h"
 
 @implementation DPImageComponent
-
+- (void)operation {
+    NSLog(@"父类原始操作...");
+}
 @end

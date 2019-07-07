@@ -6,14 +6,13 @@
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "DPImageComponent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPImageFilter : NSObject
+@interface DPImageFilter : DPImageComponent
 @property (nonatomic, strong) DPImageComponent *imageComponent;
-
+- (void)addBehaviour;
 @end
 
 NS_ASSUME_NONNULL_END
