@@ -9,6 +9,13 @@
 #import "DPImageFilterObject1.h"
 
 @implementation DPImageFilterObject1
+- (void)operation {
+    [super operation];
+    [self addBehavior];
+}
 
+- (void)addBehavior {
+    NSLog(@"特有动作");
+}
 
 @end

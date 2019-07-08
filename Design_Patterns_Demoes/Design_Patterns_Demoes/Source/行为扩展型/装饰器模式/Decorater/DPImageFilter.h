@@ -11,8 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPImageFilter : DPImageComponent
-@property (nonatomic, strong) DPImageComponent *imageComponent;
-- (void)addBehaviour;
++ (instancetype)imageFilter:(DPImageComponent *)component;
+
+//每个装饰器特添加的动作
+- (void)addBehavior;
 @end
 
 NS_ASSUME_NONNULL_END
