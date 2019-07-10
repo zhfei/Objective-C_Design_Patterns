@@ -84,6 +84,12 @@
 		91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC9190224CE11D00477101 /* LaunchScreen.storyboard */; };
 		91BC9195224CE11E00477101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9194224CE11E00477101 /* main.m */; };
 		91BC919F224CE11E00477101 /* Design_Patterns_DemoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC919E224CE11E00477101 /* Design_Patterns_DemoesTests.m */; };
+		91BDA47522D63AD80040C3F6 /* DPVisitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BDA47322D63AD80040C3F6 /* DPVisitorViewController.m */; };
+		91BDA47622D63AD80040C3F6 /* DPVisitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BDA47422D63AD80040C3F6 /* DPVisitorViewController.xib */; };
+		91BDA47B22D63B120040C3F6 /* DPVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BDA47A22D63B120040C3F6 /* DPVisitor.m */; };
+		91BDA47E22D63B370040C3F6 /* DPElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BDA47D22D63B370040C3F6 /* DPElement.m */; };
+		91BDA48122D63B990040C3F6 /* DPConcreteElementA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BDA48022D63B990040C3F6 /* DPConcreteElementA.m */; };
+		91BDA48722D63CDD0040C3F6 /* DPConcreteVisitorA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BDA48622D63CDD0040C3F6 /* DPConcreteVisitorA.m */; };
 		91C5011722C7C04400D4A895 /* DPEntity1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5011622C7C04400D4A895 /* DPEntity1Model.m */; };
 		91C5011A22C7C05100D4A895 /* DPEntity2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5011922C7C05100D4A895 /* DPEntity2Model.m */; };
 		91F20F5F22D24A20003C303B /* DPImageFilterObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */; };
@@ -252,6 +258,17 @@
 		91BC919A224CE11E00477101 /* Design_Patterns_DemoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Design_Patterns_DemoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC919E224CE11E00477101 /* Design_Patterns_DemoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Design_Patterns_DemoesTests.m; sourceTree = "<group>"; };
 		91BC91A0224CE11E00477101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91BDA47222D63AD80040C3F6 /* DPVisitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPVisitorViewController.h; sourceTree = "<group>"; };
+		91BDA47322D63AD80040C3F6 /* DPVisitorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPVisitorViewController.m; sourceTree = "<group>"; };
+		91BDA47422D63AD80040C3F6 /* DPVisitorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPVisitorViewController.xib; sourceTree = "<group>"; };
+		91BDA47922D63B120040C3F6 /* DPVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPVisitor.h; sourceTree = "<group>"; };
+		91BDA47A22D63B120040C3F6 /* DPVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPVisitor.m; sourceTree = "<group>"; };
+		91BDA47C22D63B370040C3F6 /* DPElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPElement.h; sourceTree = "<group>"; };
+		91BDA47D22D63B370040C3F6 /* DPElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPElement.m; sourceTree = "<group>"; };
+		91BDA47F22D63B990040C3F6 /* DPConcreteElementA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPConcreteElementA.h; sourceTree = "<group>"; };
+		91BDA48022D63B990040C3F6 /* DPConcreteElementA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPConcreteElementA.m; sourceTree = "<group>"; };
+		91BDA48522D63CDD0040C3F6 /* DPConcreteVisitorA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPConcreteVisitorA.h; sourceTree = "<group>"; };
+		91BDA48622D63CDD0040C3F6 /* DPConcreteVisitorA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPConcreteVisitorA.m; sourceTree = "<group>"; };
 		91C5011522C7C04400D4A895 /* DPEntity1Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEntity1Model.h; sourceTree = "<group>"; };
 		91C5011622C7C04400D4A895 /* DPEntity1Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEntity1Model.m; sourceTree = "<group>"; };
 		91C5011822C7C05100D4A895 /* DPEntity2Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEntity2Model.h; sourceTree = "<group>"; };
@@ -373,6 +390,7 @@
 		9155AD2F22BBD89900B7C1B8 /* 行为扩展型 */ = {
 			isa = PBXGroup;
 			children = (
+				91BDA47122D63AA80040C3F6 /* 访问者模式 */,
 				9129B70E22CFAA650075648D /* 装饰器模式 */,
 				9155AD3022BBD8B200B7C1B8 /* 责任链模式 */,
 			);
@@ -826,6 +844,40 @@
 			path = Design_Patterns_DemoesTests;
 			sourceTree = "<group>";
 		};
+		91BDA47122D63AA80040C3F6 /* 访问者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91BDA47722D63B040040C3F6 /* Element */,
+				91BDA47822D63B040040C3F6 /* Visitor */,
+				91BDA47222D63AD80040C3F6 /* DPVisitorViewController.h */,
+				91BDA47322D63AD80040C3F6 /* DPVisitorViewController.m */,
+				91BDA47422D63AD80040C3F6 /* DPVisitorViewController.xib */,
+			);
+			path = "访问者模式";
+			sourceTree = "<group>";
+		};
+		91BDA47722D63B040040C3F6 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				91BDA47C22D63B370040C3F6 /* DPElement.h */,
+				91BDA47D22D63B370040C3F6 /* DPElement.m */,
+				91BDA47F22D63B990040C3F6 /* DPConcreteElementA.h */,
+				91BDA48022D63B990040C3F6 /* DPConcreteElementA.m */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		91BDA47822D63B040040C3F6 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				91BDA47922D63B120040C3F6 /* DPVisitor.h */,
+				91BDA47A22D63B120040C3F6 /* DPVisitor.m */,
+				91BDA48522D63CDD0040C3F6 /* DPConcreteVisitorA.h */,
+				91BDA48622D63CDD0040C3F6 /* DPConcreteVisitorA.m */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -914,6 +966,7 @@
 				91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */,
 				9129B71822CFAA9E0075648D /* DPDecoraterViewController.xib in Resources */,
 				91BC918D224CE11D00477101 /* Main.storyboard in Resources */,
+				91BDA47622D63AD80040C3F6 /* DPVisitorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -970,11 +1023,13 @@
 				912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */,
 				916E2D0D22B257C700538A39 /* DPClassAdaptee.m in Sources */,
 				91F20F5F22D24A20003C303B /* DPImageFilterObject1.m in Sources */,
+				91BDA47E22D63B370040C3F6 /* DPElement.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				912A396922BE7A230094A647 /* DPEventB.m in Sources */,
 				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
+				91BDA48122D63B990040C3F6 /* DPConcreteElementA.m in Sources */,
 				916E2D0622B2563F00538A39 /* DPCharacterBuilder.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
 				91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */,
@@ -986,9 +1041,11 @@
 				916E2D1422B25E6100538A39 /* DPObjectAdaptee.m in Sources */,
 				916E2D1122B25B1C00538A39 /* DPClassAdapter.m in Sources */,
 				910D56B422B3A1AB00467009 /* DPFlyweightModel.m in Sources */,
+				91BDA47522D63AD80040C3F6 /* DPVisitorViewController.m in Sources */,
 				916E2D0322B2563F00538A39 /* DPBuilderViewController.m in Sources */,
 				916E2D0722B2563F00538A39 /* DPStandardCharacterBuilder.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
+				91BDA48722D63CDD0040C3F6 /* DPConcreteVisitorA.m in Sources */,
 				916E2CED22B2563F00538A39 /* DPCanvasViewGenerator.m in Sources */,
 				916E2CFC22B2563F00538A39 /* DPFruit.m in Sources */,
 				919969F022C516E10077A31B /* DPTemplateMethodViewController.m in Sources */,
@@ -1000,6 +1057,7 @@
 				916E2CF122B2563F00538A39 /* DPSingleViewController.m in Sources */,
 				916E2CE922B2563F00538A39 /* DPAdapterViewController.m in Sources */,
 				918E006822BD3300002D7AA9 /* DPEvent.m in Sources */,
+				91BDA47B22D63B120040C3F6 /* DPVisitor.m in Sources */,
 				910D56B722B3A1C000467009 /* DPFlyweightFactory.m in Sources */,
 				91ADBC6C22C1F89E00176FD6 /* DPReceiver.m in Sources */,
 				916E2CEA22B2563F00538A39 /* DPFactoryViewController.m in Sources */,
