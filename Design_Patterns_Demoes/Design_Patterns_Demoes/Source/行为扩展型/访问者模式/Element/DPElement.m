@@ -10,6 +10,6 @@
 
 @implementation DPElement
 - (void)acceptElement:(DPVisitor *)visitor {
-    
+    [visitor visitorConcreteA:self];
 }
 @end

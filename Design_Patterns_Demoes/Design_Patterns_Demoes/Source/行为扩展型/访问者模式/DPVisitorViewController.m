@@ -7,6 +7,8 @@
 //
 
 #import "DPVisitorViewController.h"
+#import "DPConcreteElementA.h"
+#import "DPConcreteVisitorA.h"
 
 @interface DPVisitorViewController ()
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    DPConcreteElementA *elementA = [DPConcreteElementA new];
+    DPConcreteVisitorA *visitorA = [DPConcreteVisitorA new];
+    
+    [elementA acceptElement:visitorA];
 }
 
 /*

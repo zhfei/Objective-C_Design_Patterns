@@ -9,5 +9,7 @@
 #import "DPVisitor.h"
 
 @implementation DPVisitor
-
+- (void)visitorConcreteA:(DPElement *)element {
+    NSLog(@"处理元素对象：%@",element);
+}
 @end

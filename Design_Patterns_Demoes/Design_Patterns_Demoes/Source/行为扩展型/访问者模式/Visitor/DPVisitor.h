@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DPElement.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPVisitor : NSObject
-- (void)visitorConcreteA;
+- (void)visitorConcreteA:(DPElement *)element;
 @end
 
 NS_ASSUME_NONNULL_END
