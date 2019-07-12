@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPElement.h"
+@class DPElement;
 
 NS_ASSUME_NONNULL_BEGIN
 

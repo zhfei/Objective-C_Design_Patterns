@@ -7,6 +7,7 @@
 //
 
 #import "DPVisitor.h"
+#import "DPElement.h"
 
 @implementation DPVisitor
 - (void)visitorConcreteA:(DPElement *)element {

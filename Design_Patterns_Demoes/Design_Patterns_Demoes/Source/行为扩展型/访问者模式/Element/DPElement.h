@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPVisitor.h"
+@class DPVisitor;
 
 NS_ASSUME_NONNULL_BEGIN
 

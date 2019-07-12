@@ -7,6 +7,7 @@
 //
 
 #import "DPElement.h"
+#import "DPVisitor.h"
 
 @implementation DPElement
 - (void)acceptElement:(DPVisitor *)visitor {

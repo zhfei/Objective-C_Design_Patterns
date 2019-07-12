@@ -17,6 +17,8 @@
 #import "DPCommandViewController.h"
 #import "DPTemplateMethodViewController.h"
 #import "DPStrategyViewController.h"
+#import "DPVisitorViewController.h"
+#import "DPDecoraterViewController.h"
 
 static NSString *cellID =@"myCell";
 
@@ -141,6 +143,18 @@ static NSString *cellID =@"myCell";
                 case 0:
                 {
                     DPChainOfRespViewController *subTable = [DPChainOfRespViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                case 1:
+                {
+                    DPDecoraterViewController *subTable = [DPDecoraterViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                case 2:
+                {
+                    DPVisitorViewController *subTable = [DPVisitorViewController new];
                     [self.navigationController pushViewController:subTable animated:YES];
                 }
                     break;
