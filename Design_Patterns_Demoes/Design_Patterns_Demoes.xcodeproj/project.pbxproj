@@ -21,6 +21,8 @@
 		912A396922BE7A230094A647 /* DPEventB.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396822BE7A230094A647 /* DPEventB.m */; };
 		912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396B22BE7A3C0094A647 /* DPEventBHandler.m */; };
 		9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */; };
+		916A277A22DA2BE00026776F /* DPFacadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916A277822DA2BE00026776F /* DPFacadeViewController.m */; };
+		916A277B22DA2BE00026776F /* DPFacadeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916A277922DA2BE00026776F /* DPFacadeViewController.xib */; };
 		916E2C9522B253F600538A39 /* DPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9422B253F600538A39 /* DPClient.m */; };
 		916E2CE922B2563F00538A39 /* DPAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9922B2563E00538A39 /* DPAdapterViewController.m */; };
 		916E2CEA22B2563F00538A39 /* DPFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9F22B2563E00538A39 /* DPFactoryViewController.m */; };
@@ -133,6 +135,9 @@
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
 		9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChainOfRespViewController.h; sourceTree = "<group>"; };
 		9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPChainOfRespViewController.m; sourceTree = "<group>"; };
+		916A277722DA2BE00026776F /* DPFacadeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFacadeViewController.h; sourceTree = "<group>"; };
+		916A277822DA2BE00026776F /* DPFacadeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFacadeViewController.m; sourceTree = "<group>"; };
+		916A277922DA2BE00026776F /* DPFacadeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPFacadeViewController.xib; sourceTree = "<group>"; };
 		916E2C9322B253F600538A39 /* DPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPClient.h; sourceTree = "<group>"; };
 		916E2C9422B253F600538A39 /* DPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPClient.m; sourceTree = "<group>"; };
 		916E2C9922B2563E00538A39 /* DPAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAdapterViewController.m; sourceTree = "<group>"; };
@@ -408,6 +413,16 @@
 			path = "责任链模式";
 			sourceTree = "<group>";
 		};
+		916A277622DA2B990026776F /* 外观模式 */ = {
+			isa = PBXGroup;
+			children = (
+				916A277722DA2BE00026776F /* DPFacadeViewController.h */,
+				916A277822DA2BE00026776F /* DPFacadeViewController.m */,
+				916A277922DA2BE00026776F /* DPFacadeViewController.xib */,
+			);
+			path = "外观模式";
+			sourceTree = "<group>";
+		};
 		916E2C9222B253DA00538A39 /* Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,6 +447,7 @@
 		916E2C9722B2563E00538A39 /* 接口适配型 */ = {
 			isa = PBXGroup;
 			children = (
+				916A277622DA2B990026776F /* 外观模式 */,
 				916E2C9822B2563E00538A39 /* 适配器模式 */,
 			);
 			path = "接口适配型";
@@ -962,6 +978,7 @@
 				91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */,
 				919969F122C516E10077A31B /* DPTemplateMethodViewController.xib in Resources */,
 				91BC918F224CE11D00477101 /* Assets.xcassets in Resources */,
+				916A277B22DA2BE00026776F /* DPFacadeViewController.xib in Resources */,
 				9110701622CBAB1200516583 /* DPStrategyViewController.xib in Resources */,
 				91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */,
 				9129B71822CFAA9E0075648D /* DPDecoraterViewController.xib in Resources */,
@@ -1046,6 +1063,7 @@
 				916E2D0722B2563F00538A39 /* DPStandardCharacterBuilder.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
 				91BDA48722D63CDD0040C3F6 /* DPConcreteVisitorA.m in Sources */,
+				916A277A22DA2BE00026776F /* DPFacadeViewController.m in Sources */,
 				916E2CED22B2563F00538A39 /* DPCanvasViewGenerator.m in Sources */,
 				916E2CFC22B2563F00538A39 /* DPFruit.m in Sources */,
 				919969F022C516E10077A31B /* DPTemplateMethodViewController.m in Sources */,
