@@ -94,6 +94,10 @@
 		91BDA48722D63CDD0040C3F6 /* DPConcreteVisitorA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BDA48622D63CDD0040C3F6 /* DPConcreteVisitorA.m */; };
 		91C5011722C7C04400D4A895 /* DPEntity1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5011622C7C04400D4A895 /* DPEntity1Model.m */; };
 		91C5011A22C7C05100D4A895 /* DPEntity2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5011922C7C05100D4A895 /* DPEntity2Model.m */; };
+		91CDECCD22DB809A0017388A /* DPSystemModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECCC22DB809A0017388A /* DPSystemModule.m */; };
+		91CDECD022DB80BA0017388A /* DPSystemModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECCF22DB80BA0017388A /* DPSystemModuleA.m */; };
+		91CDECD322DB80C60017388A /* DPSystemModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECD222DB80C60017388A /* DPSystemModuleB.m */; };
+		91CDECD722DB81100017388A /* DPFacader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECD622DB81100017388A /* DPFacader.m */; };
 		91F20F5F22D24A20003C303B /* DPImageFilterObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */; };
 /* End PBXBuildFile section */
 
@@ -278,6 +282,14 @@
 		91C5011622C7C04400D4A895 /* DPEntity1Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEntity1Model.m; sourceTree = "<group>"; };
 		91C5011822C7C05100D4A895 /* DPEntity2Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEntity2Model.h; sourceTree = "<group>"; };
 		91C5011922C7C05100D4A895 /* DPEntity2Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEntity2Model.m; sourceTree = "<group>"; };
+		91CDECCB22DB809A0017388A /* DPSystemModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSystemModule.h; sourceTree = "<group>"; };
+		91CDECCC22DB809A0017388A /* DPSystemModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSystemModule.m; sourceTree = "<group>"; };
+		91CDECCE22DB80BA0017388A /* DPSystemModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSystemModuleA.h; sourceTree = "<group>"; };
+		91CDECCF22DB80BA0017388A /* DPSystemModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSystemModuleA.m; sourceTree = "<group>"; };
+		91CDECD122DB80C60017388A /* DPSystemModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSystemModuleB.h; sourceTree = "<group>"; };
+		91CDECD222DB80C60017388A /* DPSystemModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSystemModuleB.m; sourceTree = "<group>"; };
+		91CDECD522DB81100017388A /* DPFacader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFacader.h; sourceTree = "<group>"; };
+		91CDECD622DB81100017388A /* DPFacader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFacader.m; sourceTree = "<group>"; };
 		91F20F5D22D24A20003C303B /* DPImageFilterObject1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPImageFilterObject1.h; sourceTree = "<group>"; };
 		91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPImageFilterObject1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -416,6 +428,8 @@
 		916A277622DA2B990026776F /* 外观模式 */ = {
 			isa = PBXGroup;
 			children = (
+				91CDECD422DB80EB0017388A /* Facade */,
+				91CDECCA22DB80880017388A /* SystemModule */,
 				916A277722DA2BE00026776F /* DPFacadeViewController.h */,
 				916A277822DA2BE00026776F /* DPFacadeViewController.m */,
 				916A277922DA2BE00026776F /* DPFacadeViewController.xib */,
@@ -894,6 +908,28 @@
 			path = Visitor;
 			sourceTree = "<group>";
 		};
+		91CDECCA22DB80880017388A /* SystemModule */ = {
+			isa = PBXGroup;
+			children = (
+				91CDECCB22DB809A0017388A /* DPSystemModule.h */,
+				91CDECCC22DB809A0017388A /* DPSystemModule.m */,
+				91CDECCE22DB80BA0017388A /* DPSystemModuleA.h */,
+				91CDECCF22DB80BA0017388A /* DPSystemModuleA.m */,
+				91CDECD122DB80C60017388A /* DPSystemModuleB.h */,
+				91CDECD222DB80C60017388A /* DPSystemModuleB.m */,
+			);
+			path = SystemModule;
+			sourceTree = "<group>";
+		};
+		91CDECD422DB80EB0017388A /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				91CDECD522DB81100017388A /* DPFacader.h */,
+				91CDECD622DB81100017388A /* DPFacader.m */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1015,6 +1051,7 @@
 				918E006B22BD34C4002D7AA9 /* DPEventAHandler.m in Sources */,
 				91C5011A22C7C05100D4A895 /* DPEntity2Model.m in Sources */,
 				9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */,
+				91CDECD722DB81100017388A /* DPFacader.m in Sources */,
 				9110701A22CBAC4600516583 /* DPStrategyValidModel.m in Sources */,
 				916E2D0522B2563F00538A39 /* DPCharacter.m in Sources */,
 				91C5011722C7C04400D4A895 /* DPEntity1Model.m in Sources */,
@@ -1039,11 +1076,13 @@
 				916E2C9522B253F600538A39 /* DPClient.m in Sources */,
 				912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */,
 				916E2D0D22B257C700538A39 /* DPClassAdaptee.m in Sources */,
+				91CDECCD22DB809A0017388A /* DPSystemModule.m in Sources */,
 				91F20F5F22D24A20003C303B /* DPImageFilterObject1.m in Sources */,
 				91BDA47E22D63B370040C3F6 /* DPElement.m in Sources */,
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				912A396922BE7A230094A647 /* DPEventB.m in Sources */,
 				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,
+				91CDECD022DB80BA0017388A /* DPSystemModuleA.m in Sources */,
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
 				91BDA48122D63B990040C3F6 /* DPConcreteElementA.m in Sources */,
@@ -1055,6 +1094,7 @@
 				916E2CEC22B2563F00538A39 /* DPPaperCanvasView.m in Sources */,
 				91ADBC5E22C1F5C200176FD6 /* DPCommandViewController.m in Sources */,
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
+				91CDECD322DB80C60017388A /* DPSystemModuleB.m in Sources */,
 				916E2D1422B25E6100538A39 /* DPObjectAdaptee.m in Sources */,
 				916E2D1122B25B1C00538A39 /* DPClassAdapter.m in Sources */,
 				910D56B422B3A1AB00467009 /* DPFlyweightModel.m in Sources */,
