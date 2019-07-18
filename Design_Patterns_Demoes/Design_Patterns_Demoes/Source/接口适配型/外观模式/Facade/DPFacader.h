@@ -12,7 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPFacader : NSObject
-
+//吃饭
+- (void)eatFood;
 @end
 
 NS_ASSUME_NONNULL_END

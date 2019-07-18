@@ -7,6 +7,7 @@
 //
 
 #import "DPFacadeViewController.h"
+#import "DPFacader.h"
 
 @interface DPFacadeViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    DPFacader *facader = [DPFacader new];
+    [facader eatFood];
 }
 
 /*
