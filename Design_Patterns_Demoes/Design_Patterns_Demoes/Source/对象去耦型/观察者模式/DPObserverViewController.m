@@ -1,30 +1,22 @@
 //
-//  DPVisitorViewController.m
+//  DPObserverViewController.m
 //  Design_Patterns_Demoes
 //
-//  Created by 周飞 on 2019/7/10.
+//  Created by zhoufei on 2019/7/19.
 //  Copyright © 2019年 zhf. All rights reserved.
 //
-//  客户端想通过一个简单的访问方式（访问者提供的简单接口），来间接访问子系统的复杂接口操作
 
-#import "DPVisitorViewController.h"
-#import "DPConcreteElementA.h"
-#import "DPConcreteVisitorA.h"
+#import "DPObserverViewController.h"
 
-@interface DPVisitorViewController ()
+@interface DPObserverViewController ()
 
 @end
 
-@implementation DPVisitorViewController
+@implementation DPObserverViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    DPConcreteElementA *elementA = [DPConcreteElementA new];
-    DPConcreteVisitorA *visitorA = [DPConcreteVisitorA new];
-    
-    [elementA acceptElement:visitorA];
 }
 
 /*

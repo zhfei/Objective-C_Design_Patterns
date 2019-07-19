@@ -79,6 +79,8 @@
 		91ADBC6922C1F89000176FD6 /* DPInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC6822C1F89000176FD6 /* DPInvoker.m */; };
 		91ADBC6C22C1F89E00176FD6 /* DPReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC6B22C1F89E00176FD6 /* DPReceiver.m */; };
 		91ADBC6F22C1F8B800176FD6 /* DPInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC6E22C1F8B800176FD6 /* DPInvocation.m */; };
+		91B761D922E1CC3800A6BCDE /* DPObserverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B761D722E1CC3800A6BCDE /* DPObserverViewController.m */; };
+		91B761DA22E1CC3800A6BCDE /* DPObserverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B761D822E1CC3800A6BCDE /* DPObserverViewController.xib */; };
 		91BC9187224CE11D00477101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9186224CE11D00477101 /* AppDelegate.m */; };
 		91BC918A224CE11D00477101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BC9189224CE11D00477101 /* ViewController.m */; };
 		91BC918D224CE11D00477101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BC918B224CE11D00477101 /* Main.storyboard */; };
@@ -254,6 +256,9 @@
 		91ADBC6B22C1F89E00176FD6 /* DPReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPReceiver.m; sourceTree = "<group>"; };
 		91ADBC6D22C1F8B800176FD6 /* DPInvocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPInvocation.h; sourceTree = "<group>"; };
 		91ADBC6E22C1F8B800176FD6 /* DPInvocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPInvocation.m; sourceTree = "<group>"; };
+		91B761D622E1CC3800A6BCDE /* DPObserverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPObserverViewController.h; sourceTree = "<group>"; };
+		91B761D722E1CC3800A6BCDE /* DPObserverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObserverViewController.m; sourceTree = "<group>"; };
+		91B761D822E1CC3800A6BCDE /* DPObserverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPObserverViewController.xib; sourceTree = "<group>"; };
 		91BC9182224CE11C00477101 /* Design_Patterns_Demoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Design_Patterns_Demoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BC9185224CE11C00477101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91BC9186224CE11D00477101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -449,6 +454,7 @@
 		916E2C9622B2563E00538A39 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				91B761D422E1CB8B00A6BCDE /* 对象去耦型 */,
 				91ADBC5922C1F57200176FD6 /* 算法封装型 */,
 				9155AD2F22BBD89900B7C1B8 /* 行为扩展型 */,
 				910D56AB22B3A10B00467009 /* 性能和对象访问型 */,
@@ -827,6 +833,24 @@
 			path = Receiver;
 			sourceTree = "<group>";
 		};
+		91B761D422E1CB8B00A6BCDE /* 对象去耦型 */ = {
+			isa = PBXGroup;
+			children = (
+				91B761D522E1CBFF00A6BCDE /* 观察者模式 */,
+			);
+			path = "对象去耦型";
+			sourceTree = "<group>";
+		};
+		91B761D522E1CBFF00A6BCDE /* 观察者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91B761D622E1CC3800A6BCDE /* DPObserverViewController.h */,
+				91B761D722E1CC3800A6BCDE /* DPObserverViewController.m */,
+				91B761D822E1CC3800A6BCDE /* DPObserverViewController.xib */,
+			);
+			path = "观察者模式";
+			sourceTree = "<group>";
+		};
 		91BC9179224CE11C00477101 = {
 			isa = PBXGroup;
 			children = (
@@ -1019,6 +1043,7 @@
 				91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */,
 				9129B71822CFAA9E0075648D /* DPDecoraterViewController.xib in Resources */,
 				91BC918D224CE11D00477101 /* Main.storyboard in Resources */,
+				91B761DA22E1CC3800A6BCDE /* DPObserverViewController.xib in Resources */,
 				91BDA47622D63AD80040C3F6 /* DPVisitorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1082,6 +1107,7 @@
 				91BC918A224CE11D00477101 /* ViewController.m in Sources */,
 				912A396922BE7A230094A647 /* DPEventB.m in Sources */,
 				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,
+				91B761D922E1CC3800A6BCDE /* DPObserverViewController.m in Sources */,
 				91CDECD022DB80BA0017388A /* DPSystemModuleA.m in Sources */,
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
