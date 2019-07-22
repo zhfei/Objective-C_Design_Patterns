@@ -20,6 +20,8 @@
 		9129B71822CFAA9E0075648D /* DPDecoraterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9129B71622CFAA9E0075648D /* DPDecoraterViewController.xib */; };
 		912A396922BE7A230094A647 /* DPEventB.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396822BE7A230094A647 /* DPEventB.m */; };
 		912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396B22BE7A3C0094A647 /* DPEventBHandler.m */; };
+		9134845222E60B0B007B8389 /* DPObserverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134845122E60B0B007B8389 /* DPObserverModel.m */; };
+		9134845522E60B29007B8389 /* DPObserverCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134845422E60B29007B8389 /* DPObserverCenter.m */; };
 		9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */; };
 		916A277A22DA2BE00026776F /* DPFacadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916A277822DA2BE00026776F /* DPFacadeViewController.m */; };
 		916A277B22DA2BE00026776F /* DPFacadeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916A277922DA2BE00026776F /* DPFacadeViewController.xib */; };
@@ -139,6 +141,10 @@
 		912A396A22BE7A3C0094A647 /* DPEventBHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventBHandler.h; sourceTree = "<group>"; };
 		912A396B22BE7A3C0094A647 /* DPEventBHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventBHandler.m; sourceTree = "<group>"; };
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
+		9134845022E60B0B007B8389 /* DPObserverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPObserverModel.h; sourceTree = "<group>"; };
+		9134845122E60B0B007B8389 /* DPObserverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObserverModel.m; sourceTree = "<group>"; };
+		9134845322E60B29007B8389 /* DPObserverCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPObserverCenter.h; sourceTree = "<group>"; };
+		9134845422E60B29007B8389 /* DPObserverCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObserverCenter.m; sourceTree = "<group>"; };
 		9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChainOfRespViewController.h; sourceTree = "<group>"; };
 		9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPChainOfRespViewController.m; sourceTree = "<group>"; };
 		916A277722DA2BE00026776F /* DPFacadeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFacadeViewController.h; sourceTree = "<group>"; };
@@ -407,6 +413,24 @@
 				9129B71622CFAA9E0075648D /* DPDecoraterViewController.xib */,
 			);
 			path = "装饰器模式";
+			sourceTree = "<group>";
+		};
+		9134844B22E60AD0007B8389 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				9134845322E60B29007B8389 /* DPObserverCenter.h */,
+				9134845422E60B29007B8389 /* DPObserverCenter.m */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		9134844C22E60AD0007B8389 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9134845022E60B0B007B8389 /* DPObserverModel.h */,
+				9134845122E60B0B007B8389 /* DPObserverModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9155AD2F22BBD89900B7C1B8 /* 行为扩展型 */ = {
@@ -844,6 +868,8 @@
 		91B761D522E1CBFF00A6BCDE /* 观察者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9134844B22E60AD0007B8389 /* Center */,
+				9134844C22E60AD0007B8389 /* Model */,
 				91B761D622E1CC3800A6BCDE /* DPObserverViewController.h */,
 				91B761D722E1CC3800A6BCDE /* DPObserverViewController.m */,
 				91B761D822E1CC3800A6BCDE /* DPObserverViewController.xib */,
@@ -1081,6 +1107,7 @@
 				916E2D0522B2563F00538A39 /* DPCharacter.m in Sources */,
 				91C5011722C7C04400D4A895 /* DPEntity1Model.m in Sources */,
 				916E2D0222B2563F00538A39 /* DPAbstractFactoryViewController.m in Sources */,
+				9134845222E60B0B007B8389 /* DPObserverModel.m in Sources */,
 				91819EE922510EF70001F593 /* DPSubTitleTableVC.m in Sources */,
 				916E2CF522B2563F00538A39 /* DPCanvasView.m in Sources */,
 				916E2CF022B2563F00538A39 /* DPSingleObject.m in Sources */,
@@ -1112,6 +1139,7 @@
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
 				91BDA48122D63B990040C3F6 /* DPConcreteElementA.m in Sources */,
+				9134845522E60B29007B8389 /* DPObserverCenter.m in Sources */,
 				916E2D0622B2563F00538A39 /* DPCharacterBuilder.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
 				91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */,
