@@ -102,6 +102,8 @@
 		91CDECD022DB80BA0017388A /* DPSystemModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECCF22DB80BA0017388A /* DPSystemModuleA.m */; };
 		91CDECD322DB80C60017388A /* DPSystemModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECD222DB80C60017388A /* DPSystemModuleB.m */; };
 		91CDECD722DB81100017388A /* DPFacader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECD622DB81100017388A /* DPFacader.m */; };
+		91EA16E522E74CEC005EDCC2 /* DPMediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EA16E322E74CEC005EDCC2 /* DPMediatorViewController.m */; };
+		91EA16E622E74CEC005EDCC2 /* DPMediatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91EA16E422E74CEC005EDCC2 /* DPMediatorViewController.xib */; };
 		91F20F5F22D24A20003C303B /* DPImageFilterObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */; };
 /* End PBXBuildFile section */
 
@@ -301,6 +303,9 @@
 		91CDECD222DB80C60017388A /* DPSystemModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSystemModuleB.m; sourceTree = "<group>"; };
 		91CDECD522DB81100017388A /* DPFacader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFacader.h; sourceTree = "<group>"; };
 		91CDECD622DB81100017388A /* DPFacader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFacader.m; sourceTree = "<group>"; };
+		91EA16E222E74CEC005EDCC2 /* DPMediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorViewController.h; sourceTree = "<group>"; };
+		91EA16E322E74CEC005EDCC2 /* DPMediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMediatorViewController.m; sourceTree = "<group>"; };
+		91EA16E422E74CEC005EDCC2 /* DPMediatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPMediatorViewController.xib; sourceTree = "<group>"; };
 		91F20F5D22D24A20003C303B /* DPImageFilterObject1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPImageFilterObject1.h; sourceTree = "<group>"; };
 		91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPImageFilterObject1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -860,6 +865,7 @@
 		91B761D422E1CB8B00A6BCDE /* 对象去耦型 */ = {
 			isa = PBXGroup;
 			children = (
+				91EA16E122E74C96005EDCC2 /* 中介者模式 */,
 				91B761D522E1CBFF00A6BCDE /* 观察者模式 */,
 			);
 			path = "对象去耦型";
@@ -980,6 +986,16 @@
 			path = Facade;
 			sourceTree = "<group>";
 		};
+		91EA16E122E74C96005EDCC2 /* 中介者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				91EA16E222E74CEC005EDCC2 /* DPMediatorViewController.h */,
+				91EA16E322E74CEC005EDCC2 /* DPMediatorViewController.m */,
+				91EA16E422E74CEC005EDCC2 /* DPMediatorViewController.xib */,
+			);
+			path = "中介者模式";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1061,6 +1077,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EA16E622E74CEC005EDCC2 /* DPMediatorViewController.xib in Resources */,
 				91BC9192224CE11D00477101 /* LaunchScreen.storyboard in Resources */,
 				919969F122C516E10077A31B /* DPTemplateMethodViewController.xib in Resources */,
 				91BC918F224CE11D00477101 /* Assets.xcassets in Resources */,
@@ -1157,6 +1174,7 @@
 				916E2D0722B2563F00538A39 /* DPStandardCharacterBuilder.m in Sources */,
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
 				91BDA48722D63CDD0040C3F6 /* DPConcreteVisitorA.m in Sources */,
+				91EA16E522E74CEC005EDCC2 /* DPMediatorViewController.m in Sources */,
 				916A277A22DA2BE00026776F /* DPFacadeViewController.m in Sources */,
 				916E2CED22B2563F00538A39 /* DPCanvasViewGenerator.m in Sources */,
 				916E2CFC22B2563F00538A39 /* DPFruit.m in Sources */,
