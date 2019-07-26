@@ -1,16 +1,16 @@
 //
-//  DPObserverCenter.h
+//  DPTargetModelA.h
 //  Design_Patterns_Demoes
 //
-//  Created by 周飞 on 2019/7/22.
+//  Created by 周飞 on 2019/7/26.
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DPTargetModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPObserverCenter : NSObject
+@interface DPTargetModelA : DPTargetModel
 
 @end
 
