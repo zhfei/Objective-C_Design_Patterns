@@ -79,6 +79,10 @@
 		91A8ADC322EB535A001C5A12 /* DPTargetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8ADC222EB535A001C5A12 /* DPTargetModel.m */; };
 		91A8ADC822EB55E7001C5A12 /* DPObserverA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8ADC722EB55E7001C5A12 /* DPObserverA.m */; };
 		91A8ADCB22EB55FB001C5A12 /* DPTargetModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8ADCA22EB55FB001C5A12 /* DPTargetModelA.m */; };
+		91AB12A822EDDD3A0077DBAF /* DPMediatorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB12A722EDDD3A0077DBAF /* DPMediatorProtocol.m */; };
+		91AB12AC22EDDD690077DBAF /* DPMediatorViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB12AA22EDDD690077DBAF /* DPMediatorViewControllerA.m */; };
+		91AB12AD22EDDD690077DBAF /* DPMediatorViewControllerA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AB12AB22EDDD690077DBAF /* DPMediatorViewControllerA.xib */; };
+		91AB12B022EDDD790077DBAF /* DPMediatorViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB12AF22EDDD790077DBAF /* DPMediatorViewControllerB.m */; };
 		91ADBC5E22C1F5C200176FD6 /* DPCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC5C22C1F5C200176FD6 /* DPCommandViewController.m */; };
 		91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91ADBC5D22C1F5C200176FD6 /* DPCommandViewController.xib */; };
 		91ADBC6922C1F89000176FD6 /* DPInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADBC6822C1F89000176FD6 /* DPInvoker.m */; };
@@ -264,6 +268,13 @@
 		91A8ADC722EB55E7001C5A12 /* DPObserverA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObserverA.m; sourceTree = "<group>"; };
 		91A8ADC922EB55FB001C5A12 /* DPTargetModelA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTargetModelA.h; sourceTree = "<group>"; };
 		91A8ADCA22EB55FB001C5A12 /* DPTargetModelA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTargetModelA.m; sourceTree = "<group>"; };
+		91AB12A622EDDD3A0077DBAF /* DPMediatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorProtocol.h; sourceTree = "<group>"; };
+		91AB12A722EDDD3A0077DBAF /* DPMediatorProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMediatorProtocol.m; sourceTree = "<group>"; };
+		91AB12A922EDDD690077DBAF /* DPMediatorViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorViewControllerA.h; sourceTree = "<group>"; };
+		91AB12AA22EDDD690077DBAF /* DPMediatorViewControllerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMediatorViewControllerA.m; sourceTree = "<group>"; };
+		91AB12AB22EDDD690077DBAF /* DPMediatorViewControllerA.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPMediatorViewControllerA.xib; sourceTree = "<group>"; };
+		91AB12AE22EDDD790077DBAF /* DPMediatorViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorViewControllerB.h; sourceTree = "<group>"; };
+		91AB12AF22EDDD790077DBAF /* DPMediatorViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMediatorViewControllerB.m; sourceTree = "<group>"; };
 		91ADBC5B22C1F5C200176FD6 /* DPCommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCommandViewController.h; sourceTree = "<group>"; };
 		91ADBC5C22C1F5C200176FD6 /* DPCommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCommandViewController.m; sourceTree = "<group>"; };
 		91ADBC5D22C1F5C200176FD6 /* DPCommandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPCommandViewController.xib; sourceTree = "<group>"; };
@@ -818,6 +829,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		91AB12A422EDDCDA0077DBAF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				91AB12A922EDDD690077DBAF /* DPMediatorViewControllerA.h */,
+				91AB12AA22EDDD690077DBAF /* DPMediatorViewControllerA.m */,
+				91AB12AB22EDDD690077DBAF /* DPMediatorViewControllerA.xib */,
+				91AB12AE22EDDD790077DBAF /* DPMediatorViewControllerB.h */,
+				91AB12AF22EDDD790077DBAF /* DPMediatorViewControllerB.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		91AB12A522EDDD1C0077DBAF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91AB12A622EDDD3A0077DBAF /* DPMediatorProtocol.h */,
+				91AB12A722EDDD3A0077DBAF /* DPMediatorProtocol.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		91ADBC5922C1F57200176FD6 /* 算法封装型 */ = {
 			isa = PBXGroup;
 			children = (
@@ -994,6 +1026,8 @@
 		91EA16E122E74C96005EDCC2 /* 中介者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				91AB12A522EDDD1C0077DBAF /* Protocol */,
+				91AB12A422EDDCDA0077DBAF /* VC */,
 				91EA16E222E74CEC005EDCC2 /* DPMediatorViewController.h */,
 				91EA16E322E74CEC005EDCC2 /* DPMediatorViewController.m */,
 				91EA16E422E74CEC005EDCC2 /* DPMediatorViewController.xib */,
@@ -1095,6 +1129,7 @@
 				91BC918D224CE11D00477101 /* Main.storyboard in Resources */,
 				91B761DA22E1CC3800A6BCDE /* DPObserverViewController.xib in Resources */,
 				91BDA47622D63AD80040C3F6 /* DPVisitorViewController.xib in Resources */,
+				91AB12AD22EDDD690077DBAF /* DPMediatorViewControllerA.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,12 +1199,15 @@
 				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,
 				91B761D922E1CC3800A6BCDE /* DPObserverViewController.m in Sources */,
 				91CDECD022DB80BA0017388A /* DPSystemModuleA.m in Sources */,
+				91AB12A822EDDD3A0077DBAF /* DPMediatorProtocol.m in Sources */,
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
 				91BDA48122D63B990040C3F6 /* DPConcreteElementA.m in Sources */,
+				91AB12AC22EDDD690077DBAF /* DPMediatorViewControllerA.m in Sources */,
 				916E2D0622B2563F00538A39 /* DPCharacterBuilder.m in Sources */,
 				91BC9195224CE11E00477101 /* main.m in Sources */,
 				91819EE622510EF70001F593 /* DPMainTableVC.m in Sources */,
+				91AB12B022EDDD790077DBAF /* DPMediatorViewControllerB.m in Sources */,
 				916E2CFB22B2563F00538A39 /* DPSouthApple.m in Sources */,
 				916E2D0122B2563F00538A39 /* DPNorthFruitsFactory.m in Sources */,
 				916E2CEC22B2563F00538A39 /* DPPaperCanvasView.m in Sources */,
