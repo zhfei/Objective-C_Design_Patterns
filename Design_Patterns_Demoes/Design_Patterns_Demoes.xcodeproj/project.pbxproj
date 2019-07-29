@@ -16,6 +16,8 @@
 		9110701D22CBAC6600516583 /* DPStrategyNumberValidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9110701C22CBAC6600516583 /* DPStrategyNumberValidModel.m */; };
 		9110702022CBAC8200516583 /* DPStrategyStringValidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9110701F22CBAC8200516583 /* DPStrategyStringValidModel.m */; };
 		911308CE224E6C19003CD7CB /* DPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911308CD224E6C19003CD7CB /* DPBaseViewController.m */; };
+		911A799122EF4974007BB58D /* DPCompositeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A798F22EF4974007BB58D /* DPCompositeViewController.m */; };
+		911A799222EF4974007BB58D /* DPCompositeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911A799022EF4974007BB58D /* DPCompositeViewController.xib */; };
 		9129B71722CFAA9E0075648D /* DPDecoraterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9129B71522CFAA9E0075648D /* DPDecoraterViewController.m */; };
 		9129B71822CFAA9E0075648D /* DPDecoraterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9129B71622CFAA9E0075648D /* DPDecoraterViewController.xib */; };
 		912A396922BE7A230094A647 /* DPEventB.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396822BE7A230094A647 /* DPEventB.m */; };
@@ -142,6 +144,9 @@
 		9110701F22CBAC8200516583 /* DPStrategyStringValidModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPStrategyStringValidModel.m; sourceTree = "<group>"; };
 		911308CC224E6C19003CD7CB /* DPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBaseViewController.h; sourceTree = "<group>"; };
 		911308CD224E6C19003CD7CB /* DPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBaseViewController.m; sourceTree = "<group>"; };
+		911A798E22EF4974007BB58D /* DPCompositeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCompositeViewController.h; sourceTree = "<group>"; };
+		911A798F22EF4974007BB58D /* DPCompositeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCompositeViewController.m; sourceTree = "<group>"; };
+		911A799022EF4974007BB58D /* DPCompositeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPCompositeViewController.xib; sourceTree = "<group>"; };
 		9129B71422CFAA9E0075648D /* DPDecoraterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDecoraterViewController.h; sourceTree = "<group>"; };
 		9129B71522CFAA9E0075648D /* DPDecoraterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPDecoraterViewController.m; sourceTree = "<group>"; };
 		9129B71622CFAA9E0075648D /* DPDecoraterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPDecoraterViewController.xib; sourceTree = "<group>"; };
@@ -428,6 +433,24 @@
 			path = VCMainStructure;
 			sourceTree = "<group>";
 		};
+		911A798C22EF48EC007BB58D /* 抽象集合型 */ = {
+			isa = PBXGroup;
+			children = (
+				911A798D22EF4915007BB58D /* 组合模式 */,
+			);
+			path = "抽象集合型";
+			sourceTree = "<group>";
+		};
+		911A798D22EF4915007BB58D /* 组合模式 */ = {
+			isa = PBXGroup;
+			children = (
+				911A798E22EF4974007BB58D /* DPCompositeViewController.h */,
+				911A798F22EF4974007BB58D /* DPCompositeViewController.m */,
+				911A799022EF4974007BB58D /* DPCompositeViewController.xib */,
+			);
+			path = "组合模式";
+			sourceTree = "<group>";
+		};
 		9129B70E22CFAA650075648D /* 装饰器模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +523,7 @@
 		916E2C9622B2563E00538A39 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				911A798C22EF48EC007BB58D /* 抽象集合型 */,
 				91B761D422E1CB8B00A6BCDE /* 对象去耦型 */,
 				91ADBC5922C1F57200176FD6 /* 算法封装型 */,
 				9155AD2F22BBD89900B7C1B8 /* 行为扩展型 */,
@@ -1124,6 +1148,7 @@
 				91BC918F224CE11D00477101 /* Assets.xcassets in Resources */,
 				916A277B22DA2BE00026776F /* DPFacadeViewController.xib in Resources */,
 				9110701622CBAB1200516583 /* DPStrategyViewController.xib in Resources */,
+				911A799222EF4974007BB58D /* DPCompositeViewController.xib in Resources */,
 				91ADBC5F22C1F5C200176FD6 /* DPCommandViewController.xib in Resources */,
 				9129B71822CFAA9E0075648D /* DPDecoraterViewController.xib in Resources */,
 				91BC918D224CE11D00477101 /* Main.storyboard in Resources */,
@@ -1160,6 +1185,7 @@
 				916E2D0022B2563F00538A39 /* DPSouthFruitsFactory.m in Sources */,
 				916E2CFA22B2563F00538A39 /* DPApple.m in Sources */,
 				918E006B22BD34C4002D7AA9 /* DPEventAHandler.m in Sources */,
+				911A799122EF4974007BB58D /* DPCompositeViewController.m in Sources */,
 				91C5011A22C7C05100D4A895 /* DPEntity2Model.m in Sources */,
 				9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */,
 				91CDECD722DB81100017388A /* DPFacader.m in Sources */,
