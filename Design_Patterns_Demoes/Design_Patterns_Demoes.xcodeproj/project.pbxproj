@@ -24,6 +24,8 @@
 		912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396B22BE7A3C0094A647 /* DPEventBHandler.m */; };
 		9134845222E60B0B007B8389 /* DPObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134845122E60B0B007B8389 /* DPObserver.m */; };
 		9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */; };
+		9169D1F922F09B3B008A91AC /* DPComposite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9169D1F822F09B3B008A91AC /* DPComposite.m */; };
+		9169D1FC22F09B54008A91AC /* DPLeaf.m in Sources */ = {isa = PBXBuildFile; fileRef = 9169D1FB22F09B54008A91AC /* DPLeaf.m */; };
 		916A277A22DA2BE00026776F /* DPFacadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916A277822DA2BE00026776F /* DPFacadeViewController.m */; };
 		916A277B22DA2BE00026776F /* DPFacadeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916A277922DA2BE00026776F /* DPFacadeViewController.xib */; };
 		916E2C9522B253F600538A39 /* DPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E2C9422B253F600538A39 /* DPClient.m */; };
@@ -159,6 +161,11 @@
 		9134845122E60B0B007B8389 /* DPObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObserver.m; sourceTree = "<group>"; };
 		9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChainOfRespViewController.h; sourceTree = "<group>"; };
 		9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPChainOfRespViewController.m; sourceTree = "<group>"; };
+		9169D1F622F09AE9008A91AC /* DPCompositeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCompositeProtocol.h; sourceTree = "<group>"; };
+		9169D1F722F09B3B008A91AC /* DPComposite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPComposite.h; sourceTree = "<group>"; };
+		9169D1F822F09B3B008A91AC /* DPComposite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPComposite.m; sourceTree = "<group>"; };
+		9169D1FA22F09B54008A91AC /* DPLeaf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPLeaf.h; sourceTree = "<group>"; };
+		9169D1FB22F09B54008A91AC /* DPLeaf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPLeaf.m; sourceTree = "<group>"; };
 		916A277722DA2BE00026776F /* DPFacadeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFacadeViewController.h; sourceTree = "<group>"; };
 		916A277822DA2BE00026776F /* DPFacadeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFacadeViewController.m; sourceTree = "<group>"; };
 		916A277922DA2BE00026776F /* DPFacadeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPFacadeViewController.xib; sourceTree = "<group>"; };
@@ -444,6 +451,8 @@
 		911A798D22EF4915007BB58D /* 组合模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9169D1F422F09ACF008A91AC /* Model */,
+				9169D1F522F09ACF008A91AC /* Protocol */,
 				911A798E22EF4974007BB58D /* DPCompositeViewController.h */,
 				911A798F22EF4974007BB58D /* DPCompositeViewController.m */,
 				911A799022EF4974007BB58D /* DPCompositeViewController.xib */,
@@ -497,6 +506,25 @@
 				9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */,
 			);
 			path = "责任链模式";
+			sourceTree = "<group>";
+		};
+		9169D1F422F09ACF008A91AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9169D1F722F09B3B008A91AC /* DPComposite.h */,
+				9169D1F822F09B3B008A91AC /* DPComposite.m */,
+				9169D1FA22F09B54008A91AC /* DPLeaf.h */,
+				9169D1FB22F09B54008A91AC /* DPLeaf.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9169D1F522F09ACF008A91AC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9169D1F622F09AE9008A91AC /* DPCompositeProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		916A277622DA2B990026776F /* 外观模式 */ = {
@@ -1241,6 +1269,7 @@
 				91819EE722510EF70001F593 /* DPMainTableViewModel.m in Sources */,
 				91CDECD322DB80C60017388A /* DPSystemModuleB.m in Sources */,
 				916E2D1422B25E6100538A39 /* DPObjectAdaptee.m in Sources */,
+				9169D1FC22F09B54008A91AC /* DPLeaf.m in Sources */,
 				916E2D1122B25B1C00538A39 /* DPClassAdapter.m in Sources */,
 				910D56B422B3A1AB00467009 /* DPFlyweightModel.m in Sources */,
 				91BDA47522D63AD80040C3F6 /* DPVisitorViewController.m in Sources */,
@@ -1249,6 +1278,7 @@
 				91BC9187224CE11D00477101 /* AppDelegate.m in Sources */,
 				91BDA48722D63CDD0040C3F6 /* DPConcreteVisitorA.m in Sources */,
 				91EA16E522E74CEC005EDCC2 /* DPMediatorViewController.m in Sources */,
+				9169D1F922F09B3B008A91AC /* DPComposite.m in Sources */,
 				916A277A22DA2BE00026776F /* DPFacadeViewController.m in Sources */,
 				916E2CED22B2563F00538A39 /* DPCanvasViewGenerator.m in Sources */,
 				916E2CFC22B2563F00538A39 /* DPFruit.m in Sources */,
