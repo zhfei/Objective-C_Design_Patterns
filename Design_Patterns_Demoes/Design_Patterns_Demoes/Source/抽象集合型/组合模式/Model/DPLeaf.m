@@ -9,6 +9,8 @@
 #import "DPLeaf.h"
 
 @implementation DPLeaf
+@synthesize location = _location;
+
 - (void)operation {
     NSLog(@"叶子结点操作...");
 }

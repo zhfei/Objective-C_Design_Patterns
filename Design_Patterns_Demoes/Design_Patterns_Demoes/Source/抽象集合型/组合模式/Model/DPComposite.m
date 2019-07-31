@@ -13,6 +13,8 @@
 @end
 
 @implementation DPComposite
+@synthesize location = _location;
+
 - (void)operation {
     NSLog(@"复杂组件操作...");
 }

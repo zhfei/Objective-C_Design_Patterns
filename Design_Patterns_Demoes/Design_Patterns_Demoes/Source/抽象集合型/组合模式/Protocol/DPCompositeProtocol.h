@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPCompositeProtocol <NSObject>
+@property (nonatomic, assign) CGPoint location;
+
 - (void)operation;
 - (void)addComposite:(id<DPCompositeProtocol>)comp;
 - (void)removeComposite:(id<DPCompositeProtocol>)comp;

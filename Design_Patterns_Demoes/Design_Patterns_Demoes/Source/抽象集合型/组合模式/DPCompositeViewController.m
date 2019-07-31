@@ -23,18 +23,35 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    DPComposite *comp = [DPComposite new];
+    CGPoint startP = [[touches anyObject] locationInView:self.view];
+    comp.location = startP;
+    [self.compositePool addObject:comp];
+    
     NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.compositePool removeLastObject];
+    
     NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    DPComposite *comp = [DPComposite new];
+    CGPoint moveP = [[touches anyObject] locationInView:self.view];
+    comp.location = moveP;
+    [self.compositePool.lastObject addComposite:comp];
+    
     NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    DPLeaf *comp = [DPLeaf new];
+    CGPoint moveP = [[touches anyObject] locationInView:self.view];
+    comp.location = moveP;
+    [self.compositePool.lastObject addComposite:comp];
+
     NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
