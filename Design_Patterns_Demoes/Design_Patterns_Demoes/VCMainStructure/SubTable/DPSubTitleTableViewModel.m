@@ -32,4 +32,11 @@ NSArray *arithmeticTypeDataSource() {
     return source;
 }
 
+NSArray *abstractTypeDataSource() {
+    NSArray *source = @[@"组合模式",@"迭代器模式"];
+    return source;
+}
+
+
+
 @end

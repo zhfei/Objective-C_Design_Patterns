@@ -35,6 +35,11 @@
             dataSource = arithmeticTypeDataSource();
         }
             break;
+        case DPSubTitleTableAbstractType:
+        {
+            dataSource = abstractTypeDataSource();
+        }
+            break;
 
         default:
             break;

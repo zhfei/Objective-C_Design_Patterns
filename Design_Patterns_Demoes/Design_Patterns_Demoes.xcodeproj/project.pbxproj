@@ -83,7 +83,6 @@
 		91A8ADC322EB535A001C5A12 /* DPTargetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8ADC222EB535A001C5A12 /* DPTargetModel.m */; };
 		91A8ADC822EB55E7001C5A12 /* DPObserverA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8ADC722EB55E7001C5A12 /* DPObserverA.m */; };
 		91A8ADCB22EB55FB001C5A12 /* DPTargetModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8ADCA22EB55FB001C5A12 /* DPTargetModelA.m */; };
-		91AB12A822EDDD3A0077DBAF /* DPMediatorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB12A722EDDD3A0077DBAF /* DPMediatorProtocol.m */; };
 		91AB12AC22EDDD690077DBAF /* DPMediatorViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB12AA22EDDD690077DBAF /* DPMediatorViewControllerA.m */; };
 		91AB12AD22EDDD690077DBAF /* DPMediatorViewControllerA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AB12AB22EDDD690077DBAF /* DPMediatorViewControllerA.xib */; };
 		91AB12B022EDDD790077DBAF /* DPMediatorViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB12AF22EDDD790077DBAF /* DPMediatorViewControllerB.m */; };
@@ -157,6 +156,7 @@
 		912A396A22BE7A3C0094A647 /* DPEventBHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventBHandler.h; sourceTree = "<group>"; };
 		912A396B22BE7A3C0094A647 /* DPEventBHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventBHandler.m; sourceTree = "<group>"; };
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
+		912B526B22F1DC6F00A50E0F /* DPMediatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorProtocol.h; sourceTree = "<group>"; };
 		9134845022E60B0B007B8389 /* DPObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPObserver.h; sourceTree = "<group>"; };
 		9134845122E60B0B007B8389 /* DPObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObserver.m; sourceTree = "<group>"; };
 		9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChainOfRespViewController.h; sourceTree = "<group>"; };
@@ -280,8 +280,6 @@
 		91A8ADC722EB55E7001C5A12 /* DPObserverA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObserverA.m; sourceTree = "<group>"; };
 		91A8ADC922EB55FB001C5A12 /* DPTargetModelA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTargetModelA.h; sourceTree = "<group>"; };
 		91A8ADCA22EB55FB001C5A12 /* DPTargetModelA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTargetModelA.m; sourceTree = "<group>"; };
-		91AB12A622EDDD3A0077DBAF /* DPMediatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorProtocol.h; sourceTree = "<group>"; };
-		91AB12A722EDDD3A0077DBAF /* DPMediatorProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMediatorProtocol.m; sourceTree = "<group>"; };
 		91AB12A922EDDD690077DBAF /* DPMediatorViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorViewControllerA.h; sourceTree = "<group>"; };
 		91AB12AA22EDDD690077DBAF /* DPMediatorViewControllerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMediatorViewControllerA.m; sourceTree = "<group>"; };
 		91AB12AB22EDDD690077DBAF /* DPMediatorViewControllerA.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPMediatorViewControllerA.xib; sourceTree = "<group>"; };
@@ -896,8 +894,7 @@
 		91AB12A522EDDD1C0077DBAF /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				91AB12A622EDDD3A0077DBAF /* DPMediatorProtocol.h */,
-				91AB12A722EDDD3A0077DBAF /* DPMediatorProtocol.m */,
+				912B526B22F1DC6F00A50E0F /* DPMediatorProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -1253,7 +1250,6 @@
 				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,
 				91B761D922E1CC3800A6BCDE /* DPObserverViewController.m in Sources */,
 				91CDECD022DB80BA0017388A /* DPSystemModuleA.m in Sources */,
-				91AB12A822EDDD3A0077DBAF /* DPMediatorProtocol.m in Sources */,
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
 				91BDA48122D63B990040C3F6 /* DPConcreteElementA.m in Sources */,

@@ -2,7 +2,7 @@
 //  DPMediatorProtocol.h
 //  Design_Patterns_Demoes
 //
-//  Created by 周飞 on 2019/7/28.
+//  Created by 周飞 on 2019/7/31.
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPMediatorProtocol : NSObject
+@protocol DPMediatorProtocol <NSObject>
 
 @end
 

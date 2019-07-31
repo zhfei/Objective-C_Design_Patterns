@@ -19,6 +19,7 @@
 #import "DPStrategyViewController.h"
 #import "DPVisitorViewController.h"
 #import "DPDecoraterViewController.h"
+#import "DPCompositeViewController.h"
 
 static NSString *cellID =@"myCell";
 
@@ -189,7 +190,20 @@ static NSString *cellID =@"myCell";
             }
         }
             break;
-            
+        case DPSubTitleTableAbstractType:
+        {
+            switch (indexPath.row) {
+                case 0:
+                {
+                    DPCompositeViewController *subTable = [DPCompositeViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+            break;
 
         default:
             break;

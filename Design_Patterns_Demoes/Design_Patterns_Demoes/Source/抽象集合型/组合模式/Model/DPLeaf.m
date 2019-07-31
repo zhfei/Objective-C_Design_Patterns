@@ -9,5 +9,11 @@
 #import "DPLeaf.h"
 
 @implementation DPLeaf
+- (void)operation {
+    NSLog(@"叶子结点操作...");
+}
+- (void)addComposite:(id<DPCompositeProtocol>)comp{}
+- (void)removeComposite:(id<DPCompositeProtocol>)comp{}
+- (id<DPCompositeProtocol>)getChild:(NSInteger)index{return nil;}
 
 @end
