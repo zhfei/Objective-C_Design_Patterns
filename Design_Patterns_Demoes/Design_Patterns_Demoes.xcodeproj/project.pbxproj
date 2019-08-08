@@ -267,6 +267,7 @@
 		91819EE322510EF70001F593 /* DPSubTitleTableVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubTitleTableVCFactory.m; sourceTree = "<group>"; };
 		91819EE422510EF70001F593 /* DPSubTitleTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableViewModel.h; sourceTree = "<group>"; };
 		91819EE522510EF70001F593 /* DPSubTitleTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubTitleTableVC.h; sourceTree = "<group>"; };
+		9184053522FC7BF80067E7BC /* DPIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPIterator.h; sourceTree = "<group>"; };
 		918E006322BD32ED002D7AA9 /* DPEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEventHandler.h; sourceTree = "<group>"; };
 		918E006422BD32ED002D7AA9 /* DPEventHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventHandler.m; sourceTree = "<group>"; };
 		918E006622BD3300002D7AA9 /* DPEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEvent.h; sourceTree = "<group>"; };
@@ -826,6 +827,7 @@
 		917774EA22F735F20054EFE9 /* 迭代器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				9184053422FC7BC40067E7BC /* Protocol */,
 				910404F322F887E9004EF3C0 /* Model */,
 				917774EB22F7361D0054EFE9 /* DPIteratorViewController.h */,
 				917774EC22F7361D0054EFE9 /* DPIteratorViewController.m */,
@@ -856,6 +858,14 @@
 				91819EE222510EF70001F593 /* DPSubTitleTableVC.m */,
 			);
 			path = SubTable;
+			sourceTree = "<group>";
+		};
+		9184053422FC7BC40067E7BC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9184053522FC7BF80067E7BC /* DPIterator.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		918E006122BD32D6002D7AA9 /* EventHandler */ = {
