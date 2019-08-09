@@ -9,5 +9,20 @@
 #import "DPIteratorSet.h"
 
 @implementation DPIteratorSet
-
+- (DPEnumerator *)enumerator {
+    return [[DPEnumerator alloc] init];
+}
+- (void)enumerateUsingBlock:(void(^)(DPIteratorSet *obj, BOOL *stop))block {
+    DPEnumerator *enumer = [self enumerator];
+    
+    DPIteratorSet *innerObj;
+    BOOL *stop = NO;
+    for (DPIteratorSet *obj in enumer) {
+        block(obj, stop);
+        if (*stop) {
+            break;
+        }
+    }
+    
+}
 @end

@@ -115,6 +115,7 @@
 		91CDECD022DB80BA0017388A /* DPSystemModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECCF22DB80BA0017388A /* DPSystemModuleA.m */; };
 		91CDECD322DB80C60017388A /* DPSystemModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECD222DB80C60017388A /* DPSystemModuleB.m */; };
 		91CDECD722DB81100017388A /* DPFacader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CDECD622DB81100017388A /* DPFacader.m */; };
+		91D4697722FDCDEA0052AB50 /* DPEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D4697622FDCDEA0052AB50 /* DPEnumerator.m */; };
 		91EA16E522E74CEC005EDCC2 /* DPMediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EA16E322E74CEC005EDCC2 /* DPMediatorViewController.m */; };
 		91EA16E622E74CEC005EDCC2 /* DPMediatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91EA16E422E74CEC005EDCC2 /* DPMediatorViewController.xib */; };
 		91F20F5F22D24A20003C303B /* DPImageFilterObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F20F5E22D24A20003C303B /* DPImageFilterObject1.m */; };
@@ -342,6 +343,8 @@
 		91CDECD222DB80C60017388A /* DPSystemModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSystemModuleB.m; sourceTree = "<group>"; };
 		91CDECD522DB81100017388A /* DPFacader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFacader.h; sourceTree = "<group>"; };
 		91CDECD622DB81100017388A /* DPFacader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFacader.m; sourceTree = "<group>"; };
+		91D4697522FDCDEA0052AB50 /* DPEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEnumerator.h; sourceTree = "<group>"; };
+		91D4697622FDCDEA0052AB50 /* DPEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEnumerator.m; sourceTree = "<group>"; };
 		91EA16E222E74CEC005EDCC2 /* DPMediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorViewController.h; sourceTree = "<group>"; };
 		91EA16E322E74CEC005EDCC2 /* DPMediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMediatorViewController.m; sourceTree = "<group>"; };
 		91EA16E422E74CEC005EDCC2 /* DPMediatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPMediatorViewController.xib; sourceTree = "<group>"; };
@@ -372,6 +375,8 @@
 			children = (
 				910404F422F887FE004EF3C0 /* DPIteratorSet.h */,
 				910404F522F887FE004EF3C0 /* DPIteratorSet.m */,
+				91D4697522FDCDEA0052AB50 /* DPEnumerator.h */,
+				91D4697622FDCDEA0052AB50 /* DPEnumerator.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1291,6 +1296,7 @@
 				918E006522BD32ED002D7AA9 /* DPEventHandler.m in Sources */,
 				91B761D922E1CC3800A6BCDE /* DPObserverViewController.m in Sources */,
 				91CDECD022DB80BA0017388A /* DPSystemModuleA.m in Sources */,
+				91D4697722FDCDEA0052AB50 /* DPEnumerator.m in Sources */,
 				910D56AF22B3A16600467009 /* DPFlyweightViewController.m in Sources */,
 				916E2CF822B2563F00538A39 /* DPSouthOrange.m in Sources */,
 				91BDA48122D63B990040C3F6 /* DPConcreteElementA.m in Sources */,

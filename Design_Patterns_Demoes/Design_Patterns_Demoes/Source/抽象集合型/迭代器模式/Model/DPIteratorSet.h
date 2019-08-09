@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DPEnumerator.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPIteratorSet : NSObject
-
+- (DPEnumerator *)enumerator;
+- (void)enumerateUsingBlock:(void(^)(DPIteratorSet *obj, BOOL *stop))block;
 @end
 
 NS_ASSUME_NONNULL_END
