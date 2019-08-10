@@ -12,6 +12,8 @@
 - (DPEnumerator *)enumerator {
     return [[DPEnumerator alloc] init];
 }
+
+
 - (void)enumerateUsingBlock:(void(^)(DPIteratorSet *obj, BOOL *stop))block {
     DPEnumerator *enumer = [self enumerator];
     
@@ -23,6 +25,9 @@
             break;
         }
     }
-    
 }
+
+
+
+
 @end

@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+@class DPIteratorSet;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPEnumerator : NSEnumerator
+- (instancetype)initWithSets:(NSArray<DPIteratorSet *> *)sets;
 
+- (id)first;
+- (id)next;
+- (BOOL)hasNext;
 @end
 
 NS_ASSUME_NONNULL_END
