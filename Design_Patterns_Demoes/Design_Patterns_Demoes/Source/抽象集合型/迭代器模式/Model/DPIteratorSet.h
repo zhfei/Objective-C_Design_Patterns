@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPIteratorSet : NSObject
+@interface DPIteratorSet : NSArray
 - (DPEnumerator *)enumerator;
 - (void)enumerateUsingBlock:(void(^)(DPIteratorSet *obj, BOOL *stop))block;
 @end

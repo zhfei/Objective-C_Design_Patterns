@@ -10,18 +10,17 @@
 
 @implementation DPIteratorSet
 - (DPEnumerator *)enumerator {
-    return [[DPEnumerator alloc] init];
+    return [[DPEnumerator alloc] initWithSets:self];
 }
 
 
 - (void)enumerateUsingBlock:(void(^)(DPIteratorSet *obj, BOOL *stop))block {
     DPEnumerator *enumer = [self enumerator];
     
-    DPIteratorSet *innerObj;
-    BOOL *stop = NO;
-    for (DPIteratorSet *obj in enumer) {
-        block(obj, stop);
-        if (*stop) {
+    BOOL p_stop = NO;
+    for (DPIteratorSet *obj in enumer.allObjects) {
+        block(obj, &p_stop);
+        if (p_stop) {
             break;
         }
     }
