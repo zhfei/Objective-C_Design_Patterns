@@ -23,6 +23,8 @@
 		9129B71822CFAA9E0075648D /* DPDecoraterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9129B71622CFAA9E0075648D /* DPDecoraterViewController.xib */; };
 		912A396922BE7A230094A647 /* DPEventB.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396822BE7A230094A647 /* DPEventB.m */; };
 		912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 912A396B22BE7A3C0094A647 /* DPEventBHandler.m */; };
+		912DC0B72301C2330065CF4E /* DPMementoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912DC0B62301C2330065CF4E /* DPMementoViewController.m */; };
+		912DC0BB2301C2D40065CF4E /* DPOriginator.m in Sources */ = {isa = PBXBuildFile; fileRef = 912DC0BA2301C2D40065CF4E /* DPOriginator.m */; };
 		9134845222E60B0B007B8389 /* DPObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134845122E60B0B007B8389 /* DPObserver.m */; };
 		9155AD3322BBD8ED00B7C1B8 /* DPChainOfRespViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9155AD3222BBD8ED00B7C1B8 /* DPChainOfRespViewController.m */; };
 		9169D1F922F09B3B008A91AC /* DPComposite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9169D1F822F09B3B008A91AC /* DPComposite.m */; };
@@ -163,6 +165,10 @@
 		912A396B22BE7A3C0094A647 /* DPEventBHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEventBHandler.m; sourceTree = "<group>"; };
 		912B42BA224F4CDC005A3DD8 /* DPMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMacro.h; sourceTree = "<group>"; };
 		912B526B22F1DC6F00A50E0F /* DPMediatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMediatorProtocol.h; sourceTree = "<group>"; };
+		912DC0B52301C2330065CF4E /* DPMementoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMementoViewController.h; sourceTree = "<group>"; };
+		912DC0B62301C2330065CF4E /* DPMementoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMementoViewController.m; sourceTree = "<group>"; };
+		912DC0B92301C2D40065CF4E /* DPOriginator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPOriginator.h; sourceTree = "<group>"; };
+		912DC0BA2301C2D40065CF4E /* DPOriginator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPOriginator.m; sourceTree = "<group>"; };
 		9134845022E60B0B007B8389 /* DPObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPObserver.h; sourceTree = "<group>"; };
 		9134845122E60B0B007B8389 /* DPObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPObserver.m; sourceTree = "<group>"; };
 		9155AD3122BBD8ED00B7C1B8 /* DPChainOfRespViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPChainOfRespViewController.h; sourceTree = "<group>"; };
@@ -493,6 +499,33 @@
 			path = "装饰器模式";
 			sourceTree = "<group>";
 		};
+		912DC0B32301C1F60065CF4E /* 对象状态型 */ = {
+			isa = PBXGroup;
+			children = (
+				912DC0B42301C2130065CF4E /* 备忘录模式 */,
+			);
+			path = "对象状态型";
+			sourceTree = "<group>";
+		};
+		912DC0B42301C2130065CF4E /* 备忘录模式 */ = {
+			isa = PBXGroup;
+			children = (
+				912DC0B82301C2540065CF4E /* Model */,
+				912DC0B52301C2330065CF4E /* DPMementoViewController.h */,
+				912DC0B62301C2330065CF4E /* DPMementoViewController.m */,
+			);
+			path = "备忘录模式";
+			sourceTree = "<group>";
+		};
+		912DC0B82301C2540065CF4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				912DC0B92301C2D40065CF4E /* DPOriginator.h */,
+				912DC0BA2301C2D40065CF4E /* DPOriginator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9134844C22E60AD0007B8389 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +605,7 @@
 		916E2C9622B2563E00538A39 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				912DC0B32301C1F60065CF4E /* 对象状态型 */,
 				911A798C22EF48EC007BB58D /* 抽象集合型 */,
 				91B761D422E1CB8B00A6BCDE /* 对象去耦型 */,
 				91ADBC5922C1F57200176FD6 /* 算法封装型 */,
@@ -1282,6 +1316,8 @@
 				91A8ADC322EB535A001C5A12 /* DPTargetModel.m in Sources */,
 				9110701D22CBAC6600516583 /* DPStrategyNumberValidModel.m in Sources */,
 				9110701522CBAB1200516583 /* DPStrategyViewController.m in Sources */,
+				912DC0BB2301C2D40065CF4E /* DPOriginator.m in Sources */,
+				912DC0B72301C2330065CF4E /* DPMementoViewController.m in Sources */,
 				916E2D1722B25E7700538A39 /* DPObjectAdapter.m in Sources */,
 				916E2C9522B253F600538A39 /* DPClient.m in Sources */,
 				912A396C22BE7A3C0094A647 /* DPEventBHandler.m in Sources */,
