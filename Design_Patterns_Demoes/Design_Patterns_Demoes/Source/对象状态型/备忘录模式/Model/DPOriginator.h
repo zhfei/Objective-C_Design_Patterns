@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPOriginator : NSObject
+@interface DPOriginator : NSObject <NSObject, NSCoding>
 @property (nonatomic, strong) NSNumber *state;
 
 + (instancetype)originatorWithMemento:(NSData *)memento;
