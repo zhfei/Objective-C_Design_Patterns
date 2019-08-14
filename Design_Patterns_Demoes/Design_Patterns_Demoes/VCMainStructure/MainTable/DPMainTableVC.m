@@ -10,6 +10,7 @@
 #import "DPMainTableViewModel.h"
 #import "DPSubTitleTableVCFactory.h"
 
+
 static NSString *cellID =@"myCell";
 
 @interface DPMainTableVC ()
@@ -105,6 +106,13 @@ static NSString *cellID =@"myCell";
         case 3:
         {
             DPSubTitleTableVC *subTable = [DPSubTitleTableVCFactory subTitleTableVC:DPSubTitleTablePerformanceType];
+            [self.navigationController pushViewController:subTable animated:YES];
+            
+        }
+            break;
+        case 4:
+        {
+            DPSubTitleTableVC *subTable = [DPSubTitleTableVCFactory subTitleTableVC:DPSubTitleTableMementoType];
             [self.navigationController pushViewController:subTable animated:YES];
             
         }

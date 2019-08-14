@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger,DPSubTitleTableType) {
     DPSubTitleTableActionExtendType,
     DPSubTitleTableActionArithmeticType,
     DPSubTitleTableAbstractType,
+    DPSubTitleTableMementoType,
     DPSubTitleTableNone,
 };
 

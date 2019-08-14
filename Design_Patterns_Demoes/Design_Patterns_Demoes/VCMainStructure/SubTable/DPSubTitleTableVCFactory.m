@@ -40,6 +40,11 @@
             dataSource = abstractTypeDataSource();
         }
             break;
+        case DPSubTitleTableMementoType:
+        {
+            dataSource = mementoTypeDataSource();
+        }
+            break;
 
         default:
             break;

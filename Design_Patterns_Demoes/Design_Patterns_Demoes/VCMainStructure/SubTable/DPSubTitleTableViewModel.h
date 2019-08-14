@@ -17,6 +17,7 @@ NSArray *actionExtendTypeDataSource();
 //算法封装型
 NSArray *arithmeticTypeDataSource();
 NSArray *abstractTypeDataSource();
+NSArray *mementoTypeDataSource() ;
 @end
 
 NS_ASSUME_NONNULL_END

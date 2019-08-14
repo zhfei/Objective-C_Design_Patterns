@@ -37,6 +37,11 @@ NSArray *abstractTypeDataSource() {
     return source;
 }
 
+NSArray *mementoTypeDataSource() {
+    NSArray *source = @[@"备忘录模式"];
+    return source;
+}
+
 
 
 @end
