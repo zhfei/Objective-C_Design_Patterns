@@ -28,7 +28,6 @@
     
     DPOriginator *org2 = [DPOriginator originatorWithMemento:data];
     NSLog(@"state:%@",org2.state);
-    
 }
 
 @end

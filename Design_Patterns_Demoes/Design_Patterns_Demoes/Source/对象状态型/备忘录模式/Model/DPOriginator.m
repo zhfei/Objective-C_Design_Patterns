@@ -10,7 +10,7 @@
 
 @implementation DPOriginator
 + (instancetype)originatorWithMemento:(NSData *)memento {
-    return [NSKeyedUnarchiver unarchivedObjectOfClass:[self class] fromData:memento error:nil];
+    return [NSKeyedUnarchiver unarchiveObjectWithData:memento];
 }
 
 - (NSData *)memento {
