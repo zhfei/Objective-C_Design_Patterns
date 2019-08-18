@@ -21,6 +21,9 @@
 #import "DPDecoraterViewController.h"
 #import "DPCompositeViewController.h"
 #import "DPMementoViewController.h"
+#import "DPObserverViewController.h"
+#import "DPMediatorViewController.h"
+
 
 static NSString *cellID =@"myCell";
 
@@ -211,6 +214,26 @@ static NSString *cellID =@"myCell";
                 case 0:
                 {
                     DPMementoViewController *subTable = [DPMementoViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+            break;
+        case DPSubTitleTableDecouplingType:
+        {
+            switch (indexPath.row) {
+                case 0:
+                {
+                    DPObserverViewController *subTable = [DPObserverViewController new];
+                    [self.navigationController pushViewController:subTable animated:YES];
+                }
+                    break;
+                case 1:
+                {
+                    DPMediatorViewController *subTable = [DPMediatorViewController new];
                     [self.navigationController pushViewController:subTable animated:YES];
                 }
                     break;

@@ -18,6 +18,7 @@ NSArray *actionExtendTypeDataSource();
 NSArray *arithmeticTypeDataSource();
 NSArray *abstractTypeDataSource();
 NSArray *mementoTypeDataSource() ;
+NSArray *decouplingTypeDataSource();
 @end
 
 NS_ASSUME_NONNULL_END

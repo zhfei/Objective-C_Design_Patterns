@@ -45,6 +45,11 @@
             dataSource = mementoTypeDataSource();
         }
             break;
+        case DPSubTitleTableDecouplingType:
+        {
+            dataSource = decouplingTypeDataSource();
+        }
+            break;
 
         default:
             break;

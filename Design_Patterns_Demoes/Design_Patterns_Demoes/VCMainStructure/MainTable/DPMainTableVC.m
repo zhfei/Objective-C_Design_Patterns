@@ -95,6 +95,15 @@ static NSString *cellID =@"myCell";
             
         }
             break;
+        case 1:
+        {
+            DPSubTitleTableVC *subTable = [DPSubTitleTableVCFactory subTitleTableVC:DPSubTitleTableDecouplingType];
+            [self.navigationController pushViewController:subTable animated:YES];
+            
+        }
+            break;
+            
+            
         case 2:
         {
             DPSubTitleTableVC *subTable = [DPSubTitleTableVCFactory subTitleTableVC:DPSubTitleTableAbstractType];

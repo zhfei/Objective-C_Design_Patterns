@@ -42,6 +42,13 @@ NSArray *mementoTypeDataSource() {
     return source;
 }
 
+NSArray *decouplingTypeDataSource() {
+    NSArray *source = @[@"观察者模式",@"中介者模式"];
+    return source;
+}
+
+
+
 
 
 @end
