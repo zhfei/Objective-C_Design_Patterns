@@ -21,6 +21,10 @@
 
 
 @implementation ScrawlMementoModel
-
++ (instancetype)mementoModel:(NSString *)scrawState {
+    ScrawlMementoModel *model = [ScrawlMementoModel new];
+    model.scrawState;
+    return model;
+}
 
 @end

@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MarkMementoModel : NSObject
-@property (nonatomic, strong) NSString *colorHexState;
+@property (nonatomic, copy) NSString *colorHexState;
 @property (nonatomic, assign) CGSize sizeState;
 @property (nonatomic, assign) CGPoint locationState;
 + (instancetype)mementoModel:(UIColor *)color size:(CGSize)size location:(CGPoint)location;
@@ -20,7 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface ScrawlMementoModel : NSObject
-@property (nonatomic, strong) NSString *scrawState;
+@property (nonatomic, copy) NSString *scrawState;
++ (instancetype)mementoModel:(NSString *)scrawState;
+
 @end
 
 NS_ASSUME_NONNULL_END
